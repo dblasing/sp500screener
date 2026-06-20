@@ -35,6 +35,18 @@ Every stock is evaluated against all four criteria. The criteria are applied pro
 
 ---
 
+## Data Quality Guards
+
+`screener.py` applies the following sanity checks before including any stock in results:
+
+| Guard | Rule | Reason |
+|-------|------|--------|
+| **Yield cap** | Yield > 20% → stock excluded | Yahoo Finance sometimes reports stale or one-time special dividend data that inflates the trailing yield to obviously wrong levels (e.g. 484%) |
+| **Revenue sanity** | \|Revenue growth\| > 200% → treated as unavailable | Extreme revenue swings are usually M&A or restatement artifacts, not organic growth; flagging as N/A is more honest than passing/failing on bad data |
+| **Min price history** | < 13 weeks of price data → stock excluded | Can't meaningfully assess either trend without at least one quarter of weekly data |
+
+---
+
 ## Status Key
 
 Status is computed automatically based on which criteria pass:
