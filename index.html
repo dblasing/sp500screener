@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&P 500 Dividend Growth Stock Screener</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3251;
+      --text: #e2e8f0;
+      --text-muted: #8892a4;
+      --accent: #4f8ef7;
+      --accent2: #7c6af7;
+
+      --green:   #22c55e;
+      --yellow:  #f59e0b;
+      --orange:  #f97316;
+      --red:     #ef4444;
+      --blue:    #3b82f6;
+      --purple:  #a855f7;
+
+      /* sector colors */
+      --sector-tech:      #3b82f6;
+      --sector-health:    #22c55e;
+      --sector-staples:   #f59e0b;
+      --sector-energy:    #f97316;
+      --sector-financial: #a855f7;
+      --sector-other:     #64748b;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+    a { color: var(--accent); text-decoration: none; }
+
+    /* ── Header ── */
+    header { background: linear-gradient(135deg, #1a1d27 0%, #12152a 100%); border-bottom: 1px solid var(--border); padding: 24px 32px; }
+    header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    header h1 span { color: var(--accent); }
+    .header-meta { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+
+    /* ── Criteria bar ── */
+    .criteria-bar { display: flex; gap: 12px; flex-wrap: wrap; padding: 16px 32px; background: var(--surface); border-bottom: 1px solid var(--border); }
+    .criterion { display: flex; align-items: center; gap: 8px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; font-size: 0.8rem; }
+    .criterion .num { width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.7rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .criterion strong { color: var(--text); }
+    .criterion span { color: var(--text-muted); }
+
+    /* ── Controls ── */
+    .controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; padding: 16px 32px; background: var(--bg); border-bottom: 1px solid var(--border); }
+    .search-wrap { position: relative; flex: 1; min-width: 200px; max-width: 320px; }
+    .search-wrap input { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px 8px 36px; color: var(--text); font-size: 0.85rem; outline: none; transition: border-color 0.15s; }
+    .search-wrap input:focus { border-color: var(--accent); }
+    .search-wrap svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+    select { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 32px 8px 12px; color: var(--text); font-size: 0.85rem; outline: none; cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238892a4' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10px center; }
+    select:focus { border-color: var(--accent); }
+    .count-badge { margin-left: auto; background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 5px 14px; font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; }
+    .count-badge strong { color: var(--text); }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; padding: 0 32px 32px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin-top: 20px; }
+    thead th { background: var(--surface); color: var(--text-muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; cursor: pointer; user-select: none; position: sticky; top: 0; z-index: 10; }
+    thead th:hover { color: var(--text); }
+    thead th .sort-icon { display: inline-block; margin-left: 4px; opacity: 0.4; font-size: 0.7rem; }
+    thead th.sorted .sort-icon { opacity: 1; color: var(--accent); }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+    tbody tr:hover { background: var(--surface2); }
+    td { padding: 12px 14px; vertical-align: middle; }
+
+    /* ticker cell */
+    .ticker-cell { font-weight: 700; font-size: 0.9rem; color: var(--accent); letter-spacing: 0.02em; }
+    .company-name { color: var(--text-muted); font-size: 0.75rem; margin-top: 2px; }
+
+    /* sector badge */
+    .sector-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; opacity: 0.9; }
+    .sector-tech      { background: rgba(59,130,246,0.15); color: #60a5fa; }
+    .sector-health    { background: rgba(34,197,94,0.15);  color: #4ade80; }
+    .sector-staples   { background: rgba(245,158,11,0.15); color: #fbbf24; }
+    .sector-energy    { background: rgba(249,115,22,0.15); color: #fb923c; }
+    .sector-financial { background: rgba(168,85,247,0.15); color: #c084fc; }
+    .sector-other     { background: rgba(100,116,139,0.15);color: #94a3b8; }
+
+    /* trend cell */
+    .trend { font-size: 0.85rem; white-space: nowrap; }
+    .trend-up      { color: var(--green); }
+    .trend-moderate { color: #86efac; }
+    .trend-mixed   { color: var(--yellow); }
+    .trend-flag    { color: var(--red); }
+
+    /* status badge */
+    .status-badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
+    .status-meets    { background: rgba(34,197,94,0.15);  color: #4ade80; border: 1px solid rgba(34,197,94,0.3); }
+    .status-likely   { background: rgba(79,142,247,0.15); color: #7cb9ff; border: 1px solid rgba(79,142,247,0.3); }
+    .status-monitor  { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+    .status-border   { background: rgba(148,163,184,0.1); color: #94a3b8; border: 1px solid rgba(148,163,184,0.2); }
+    .status-flagged  { background: rgba(239,68,68,0.15);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+
+    /* yield */
+    .yield-high   { color: var(--green); font-weight: 600; }
+    .yield-mid    { color: #86efac; font-weight: 600; }
+    .yield-low    { color: var(--text-muted); }
+
+    /* div streak */
+    .streak { color: var(--text-muted); font-size: 0.8rem; }
+    .streak-long { color: var(--yellow); font-weight: 600; }
+
+    /* notes */
+    .notes-cell { color: var(--text-muted); font-size: 0.75rem; max-width: 320px; line-height: 1.4; }
+
+    /* ── Legend ── */
+    .legend { display: flex; gap: 24px; flex-wrap: wrap; padding: 0 32px 24px; }
+    .legend-group h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 8px; }
+    .legend-items { display: flex; flex-direction: column; gap: 4px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; }
+
+    /* ── Footer ── */
+    footer { padding: 20px 32px; border-top: 1px solid var(--border); background: var(--surface); font-size: 0.73rem; color: var(--text-muted); line-height: 1.6; }
+    footer strong { color: var(--text); }
+
+    /* ── Empty state ── */
+    .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+    .empty svg { margin: 0 auto 12px; display: block; opacity: 0.3; }
+
+    @media (max-width: 768px) {
+      header, .criteria-bar, .controls, .table-wrap, .legend { padding-left: 16px; padding-right: 16px; }
+      header h1 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>S&P 500 <span>Dividend Growth</span> Stock Screener</h1>
+  <div class="header-meta">Screens S&P 500 constituents against four dividend + price-trend criteria &nbsp;·&nbsp; Data as of April 2026 &nbsp;·&nbsp; For research purposes only</div>
+</header>
+
+<div class="criteria-bar">
+  <div class="criterion">
+    <div class="num">1</div>
+    <div><strong>5-Year Trend</strong> <span>— Net upward price movement over trailing 5 years</span></div>
+  </div>
+  <div class="criterion">
+    <div class="num">2</div>
+    <div><strong>90-Day Trend</strong> <span>— Upward momentum over trailing 90 calendar days</span></div>
+  </div>
+  <div class="criterion">
+    <div class="num">3</div>
+    <div><strong>YoY Revenue Growth</strong> <span>— Most recent FY revenue (or NII) exceeds prior year</span></div>
+  </div>
+  <div class="criterion">
+    <div class="num">4</div>
+    <div><strong>Dividend Growth</strong> <span>— DPS increased consistently over 3–5+ years</span></div>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="search-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="search" placeholder="Search ticker or company…" oninput="applyFilters()" />
+  </div>
+
+  <select id="filterStatus" onchange="applyFilters()">
+    <option value="">All Statuses</option>
+    <option value="meets">✔ Meets All</option>
+    <option value="likely">✦ Likely</option>
+    <option value="monitor">◎ Monitor</option>
+    <option value="border">~ Borderline</option>
+    <option value="flagged">⚠ Flagged</option>
+  </select>
+
+  <select id="filterSector" onchange="applyFilters()">
+    <option value="">All Sectors</option>
+    <option value="Technology">Technology</option>
+    <option value="Semiconductors">Semiconductors</option>
+    <option value="Healthcare">Healthcare</option>
+    <option value="Consumer Staples">Consumer Staples</option>
+    <option value="Energy">Energy</option>
+    <option value="Midstream">Midstream</option>
+    <option value="Banking">Banking</option>
+    <option value="Insurance">Insurance</option>
+    <option value="Financials">Financials</option>
+    <option value="Asset Management">Asset Management</option>
+  </select>
+
+  <select id="filterYield" onchange="applyFilters()">
+    <option value="">All Yields</option>
+    <option value="3">≥ 3.0%</option>
+    <option value="2">≥ 2.0%</option>
+    <option value="1">≥ 1.0%</option>
+  </select>
+
+  <div class="count-badge" id="countBadge"><strong>27</strong> stocks</div>
+</div>
+
+<div class="table-wrap">
+  <table id="screenerTable">
+    <thead>
+      <tr>
+        <th onclick="sortBy('ticker')" data-col="ticker">Ticker <span class="sort-icon">↕</span></th>
+        <th onclick="sortBy('sector')" data-col="sector">Sector <span class="sort-icon">↕</span></th>
+        <th onclick="sortBy('trend5')" data-col="trend5">5-Yr Trend <span class="sort-icon">↕</span></th>
+        <th onclick="sortBy('trend90')" data-col="trend90">90-Day Trend <span class="sort-icon">↕</span></th>
+        <th onclick="sortBy('revenue')" data-col="revenue">YoY Revenue <span class="sort-icon">↕</span></th>
+        <th onclick="sortBy('streak')" data-col="streak">Div Streak <span class="sort-icon">↕</span></th>
+        <th onclick="sortBy('yield')" data-col="yield">Div Yield <span class="sort-icon">↕</span></th>
+        <th onclick="sortBy('status')" data-col="status">Status <span class="sort-icon">↕</span></th>
+        <th>Key Notes</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+  <div class="empty" id="emptyState" style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+    No stocks match your filters.
+  </div>
+</div>
+
+<div class="legend">
+  <div class="legend-group">
+    <h4>Status</h4>
+    <div class="legend-items">
+      <div class="legend-item"><span class="status-badge status-meets">✔ Meets All</span> Passes all four criteria</div>
+      <div class="legend-item"><span class="status-badge status-likely">✦ Likely</span> Very likely; confirm 90-day chart</div>
+      <div class="legend-item"><span class="status-badge status-monitor">◎ Monitor</span> Strong fit; one near-term concern</div>
+      <div class="legend-item"><span class="status-badge status-border">~ Borderline</span> One criterion marginal</div>
+      <div class="legend-item"><span class="status-badge status-flagged">⚠ Flagged</span> 90-day trend broken; re-evaluate</div>
+    </div>
+  </div>
+  <div class="legend-group">
+    <h4>Trend</h4>
+    <div class="legend-items">
+      <div class="legend-item"><span class="trend trend-up">⬆ Uptrend</span> Clear upward price trend</div>
+      <div class="legend-item"><span class="trend trend-moderate">↗ Moderate</span> Upward but pace slowed / choppy</div>
+      <div class="legend-item"><span class="trend trend-mixed">↔ Mixed</span> Direction unclear; near-term concern</div>
+      <div class="legend-item"><span class="trend trend-flag">⚠ Flagged</span> Recent decline broke uptrend</div>
+    </div>
+  </div>
+  <div class="legend-group">
+    <h4>Sectors</h4>
+    <div class="legend-items">
+      <div class="legend-item"><span class="sector-badge sector-tech">Technology / Semiconductors</span></div>
+      <div class="legend-item"><span class="sector-badge sector-health">Healthcare</span></div>
+      <div class="legend-item"><span class="sector-badge sector-staples">Consumer Staples</span></div>
+      <div class="legend-item"><span class="sector-badge sector-energy">Energy / Midstream</span></div>
+      <div class="legend-item"><span class="sector-badge sector-financial">Financials / Insurance / Banking</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>Sources:</strong> Sure Dividend, Simply Safe Dividends, Seeking Alpha, MarketBeat, Macrotrends, company investor relations pages &nbsp;·&nbsp;
+  <strong>Disclaimer:</strong> This screen is for research purposes only. Not investment advice. Dividend yields are approximate as of April 2026. Verify all data independently before making investment decisions.
+</footer>
+
+<script>
+const STOCKS = [
+  { ticker:'KMI',  company:'Kinder Morgan',           sector:'Midstream',        trend5:'up',   trend90:'moderate', revenue:'Stable',         streakRaw:'9 yrs',     streakNum:9,  yieldRaw:'~5.8%', yieldNum:5.8, statusKey:'monitor',  notes:'Up ~22% over 90 days but pulled back from March peak; watch for re-entry' },
+  { ticker:'OKE',  company:'ONEOK',                   sector:'Midstream',        trend5:'up',   trend90:'up',       revenue:'Stable',         streakRaw:'Growing',   streakNum:5,  yieldRaw:'~4.8%', yieldNum:4.8, statusKey:'border',   notes:'Stable fee-based model; lower dividend growth rate (~2.7% CAGR)' },
+  { ticker:'WMB',  company:'Williams Companies',      sector:'Midstream',        trend5:'up',   trend90:'up',       revenue:'~6% EBITDA',     streakRaw:'52 yrs',    streakNum:52, yieldRaw:'~4.5%', yieldNum:4.5, statusKey:'meets',    notes:'Longest energy div streak on screen; raised 5% for 2026; EBITDA guidance raised' },
+  { ticker:'CVX',  company:'Chevron',                 sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'39 yrs',    streakNum:39, yieldRaw:'~4.2%', yieldNum:4.2, statusKey:'meets',    notes:'~84% 5-yr gain; Guyana assets fueling continued growth' },
+  { ticker:'ABBV', company:'AbbVie',                  sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Consecutive',streakNum:10,yieldRaw:'~3.5%', yieldNum:3.5, statusKey:'meets',    notes:'Humira successor pipeline supporting revenue growth' },
+  { ticker:'PEP',  company:'PepsiCo',                 sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'~2.2%',          streakRaw:'52 yrs',    streakNum:52, yieldRaw:'~3.5%', yieldNum:3.5, statusKey:'monitor',  notes:'Watch near-term volume softness; long-term thesis intact' },
+  { ticker:'XOM',  company:'ExxonMobil',              sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'43 yrs',    streakNum:43, yieldRaw:'~3.5%', yieldNum:3.5, statusKey:'meets',    notes:'Permian Basin driving volume growth; cleanest energy fit' },
+  { ticker:'JNJ',  company:'Johnson & Johnson',       sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'~6.1%',          streakRaw:'63 yrs',    streakNum:63, yieldRaw:'~3.2%', yieldNum:3.2, statusKey:'meets',    notes:'Dividend King; Pharma + MedTech revenue diversification' },
+  { ticker:'KO',   company:'Coca-Cola',               sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'63 yrs',    streakNum:63, yieldRaw:'~3.1%', yieldNum:3.1, statusKey:'meets',    notes:'Dividend King; global pricing power intact' },
+  { ticker:'COP',  company:'ConocoPhillips',          sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'14 yrs',    streakNum:14, yieldRaw:'~3.1%', yieldNum:3.1, statusKey:'border',   notes:'Solid E&P but shorter dividend history vs peers' },
+  { ticker:'MRK',  company:'Merck',                   sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'Mixed',          streakRaw:'Consistent',streakNum:12, yieldRaw:'~2.8%', yieldNum:2.8, statusKey:'meets',    notes:'Keytruda revenue strong; watch LOE cycle post-2028' },
+  { ticker:'EOG',  company:'EOG Resources',           sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Growing',   streakNum:8,  yieldRaw:'~2.8%', yieldNum:2.8, statusKey:'meets',    notes:'Disciplined E&P; special dividends on top of regular' },
+  { ticker:'BLK',  company:'BlackRock',               sector:'Asset Management', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'17 yrs',    streakNum:17, yieldRaw:'~2.8%', yieldNum:2.8, statusKey:'likely',   notes:'AUM growth driving fee revenue; confirm 90-day chart' },
+  { ticker:'BAC',  company:'Bank of America',         sector:'Banking',          trend5:'up',   trend90:'flagged',  revenue:'Positive',       streakRaw:'13 yrs',    streakNum:13, yieldRaw:'~2.7%', yieldNum:2.7, statusKey:'flagged',  notes:'~8.8% annual div growth; tariff-driven 90-day breakdown like JPM' },
+  { ticker:'PG',   company:'Procter & Gamble',        sector:'Consumer Staples', trend5:'up',   trend90:'mixed',    revenue:'Positive',       streakRaw:'70 yrs',    streakNum:70, yieldRaw:'~2.5%', yieldNum:2.5, statusKey:'monitor',  notes:'Longest streak in S&P 500; price slipped to ~$144 range in early 2026 — confirm 90-day' },
+  { ticker:'CL',   company:'Colgate-Palmolive',       sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'63 yrs',    streakNum:63, yieldRaw:'~2.4%', yieldNum:2.4, statusKey:'meets',    notes:'Dividend King; emerging market pricing strength' },
+  { ticker:'JPM',  company:'JPMorgan Chase',          sector:'Banking',          trend5:'up',   trend90:'flagged',  revenue:'~5.7% NII',      streakRaw:'16 yrs',    streakNum:16, yieldRaw:'~2.4%', yieldNum:2.4, statusKey:'flagged',  notes:'Best bank on the screen; up 25% YTD then fell ~7% on tariff news — re-check chart' },
+  { ticker:'ADP',  company:'Automatic Data Processing',sector:'Technology',     trend5:'up',   trend90:'up',       revenue:'~6.6%',          streakRaw:'25+ yrs',   streakNum:25, yieldRaw:'~2.3%', yieldNum:2.3, statusKey:'meets',    notes:'~10.5% dividend CAGR; payroll processing moat' },
+  { ticker:'AFL',  company:'Aflac',                   sector:'Insurance',        trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'43 yrs',    streakNum:43, yieldRaw:'~2.2%', yieldNum:2.2, statusKey:'meets',    notes:'~15.2% 5-yr div CAGR; supplemental insurance model less exposed to tariff noise' },
+  { ticker:'ABT',  company:'Abbott Laboratories',     sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'~5.7%',          streakRaw:'Solid streak',streakNum:15,yieldRaw:'~1.8%', yieldNum:1.8, statusKey:'meets',   notes:'Diagnostics + devices driving consistent growth' },
+  { ticker:'CB',   company:'Chubb',                   sector:'Insurance',        trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'33 yrs',    streakNum:33, yieldRaw:'~1.4%', yieldNum:1.4, statusKey:'meets',    notes:'Best-in-class P&C underwriter; less correlated to rate/tariff volatility' },
+  { ticker:'AVGO', company:'Broadcom',                sector:'Semiconductors',   trend5:'up',   trend90:'up',       revenue:'~25.2%',         streakRaw:'Aggressive',streakNum:7,  yieldRaw:'~1.2%', yieldNum:1.2, statusKey:'meets',    notes:'Highest revenue growth on entire screen; AI chip demand' },
+  { ticker:'ZTS',  company:'Zoetis',                  sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Consistent',streakNum:10, yieldRaw:'~1.2%', yieldNum:1.2, statusKey:'meets',    notes:'Animal health leader; steady compounder' },
+  { ticker:'WMT',  company:'Walmart',                 sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'51 yrs',    streakNum:51, yieldRaw:'~1.0%', yieldNum:1.0, statusKey:'meets',    notes:'Up ~78% through 2025; eCommerce + advertising growth' },
+  { ticker:'MSCI', company:'MSCI Inc.',               sector:'Financials',       trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Robust',    streakNum:10, yieldRaw:'~0.9%', yieldNum:0.9, statusKey:'meets',    notes:'Index/analytics subscription model; strong recurring revenue' },
+  { ticker:'MSFT', company:'Microsoft',               sector:'Technology',       trend5:'up',   trend90:'up',       revenue:'Double-digit %', streakRaw:'Consistent',streakNum:20, yieldRaw:'~0.8%', yieldNum:0.8, statusKey:'meets',    notes:'Best-in-class compounder; cloud + AI revenue surging' },
+  { ticker:'INTU', company:'Intuit',                  sector:'Technology',       trend5:'up',   trend90:'up',       revenue:'Strong',         streakRaw:'Consistent',streakNum:12, yieldRaw:'~0.6%', yieldNum:0.6, statusKey:'meets',    notes:'TurboTax + QuickBooks revenue growth accelerating' },
+];
+
+const STATUS_META = {
+  meets:   { label:'✔ Meets All', cls:'status-meets',   order:1 },
+  likely:  { label:'✦ Likely',    cls:'status-likely',  order:2 },
+  monitor: { label:'◎ Monitor',   cls:'status-monitor', order:3 },
+  border:  { label:'~ Borderline',cls:'status-border',  order:4 },
+  flagged: { label:'⚠ Flagged',   cls:'status-flagged', order:5 },
+};
+
+const TREND_META = {
+  up:       { label:'⬆ Uptrend', cls:'trend-up',       order:1 },
+  moderate: { label:'↗ Moderate',cls:'trend-moderate', order:2 },
+  mixed:    { label:'↔ Mixed',   cls:'trend-mixed',    order:3 },
+  flagged:  { label:'⚠ Flagged', cls:'trend-flag',     order:4 },
+};
+
+function sectorClass(s) {
+  if (['Technology','Semiconductors'].includes(s)) return 'sector-tech';
+  if (s === 'Healthcare') return 'sector-health';
+  if (s === 'Consumer Staples') return 'sector-staples';
+  if (['Energy','Midstream'].includes(s)) return 'sector-energy';
+  if (['Banking','Insurance','Financials','Asset Management'].includes(s)) return 'sector-financial';
+  return 'sector-other';
+}
+
+function yieldClass(n) {
+  if (n >= 3) return 'yield-high';
+  if (n >= 1.5) return 'yield-mid';
+  return 'yield-low';
+}
+
+function streakClass(n) {
+  return n >= 25 ? 'streak-long' : 'streak';
+}
+
+let sortCol = null;
+let sortAsc = true;
+let filtered = [...STOCKS];
+
+function sortBy(col) {
+  if (sortCol === col) sortAsc = !sortAsc;
+  else { sortCol = col; sortAsc = true; }
+  document.querySelectorAll('thead th').forEach(th => {
+    th.classList.toggle('sorted', th.dataset.col === col);
+    if (th.dataset.col === col) th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
+    else if (th.querySelector('.sort-icon')) th.querySelector('.sort-icon').textContent = '↕';
+  });
+  render();
+}
+
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const st = document.getElementById('filterStatus').value;
+  const sec = document.getElementById('filterSector').value;
+  const yld = parseFloat(document.getElementById('filterYield').value) || 0;
+
+  filtered = STOCKS.filter(s => {
+    if (q && !s.ticker.toLowerCase().includes(q) && !s.company.toLowerCase().includes(q)) return false;
+    if (st && s.statusKey !== st) return false;
+    if (sec && s.sector !== sec) return false;
+    if (yld && s.yieldNum < yld) return false;
+    return true;
+  });
+  render();
+}
+
+function render() {
+  let data = [...filtered];
+
+  if (sortCol) {
+    data.sort((a, b) => {
+      let av, bv;
+      switch(sortCol) {
+        case 'ticker':  av = a.ticker; bv = b.ticker; break;
+        case 'sector':  av = a.sector; bv = b.sector; break;
+        case 'trend5':  av = TREND_META[a.trend5]?.order  ?? 99; bv = TREND_META[b.trend5]?.order  ?? 99; break;
+        case 'trend90': av = TREND_META[a.trend90]?.order ?? 99; bv = TREND_META[b.trend90]?.order ?? 99; break;
+        case 'revenue': av = a.revenue; bv = b.revenue; break;
+        case 'streak':  av = a.streakNum; bv = b.streakNum; break;
+        case 'yield':   av = a.yieldNum;  bv = b.yieldNum;  break;
+        case 'status':  av = STATUS_META[a.statusKey]?.order ?? 99; bv = STATUS_META[b.statusKey]?.order ?? 99; break;
+        default: return 0;
+      }
+      if (typeof av === 'string') return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
+      return sortAsc ? av - bv : bv - av;
+    });
+  }
+
+  const tbody = document.getElementById('tableBody');
+  const empty = document.getElementById('emptyState');
+
+  if (data.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    document.getElementById('countBadge').innerHTML = '<strong>0</strong> stocks';
+    return;
+  }
+  empty.style.display = 'none';
+  document.getElementById('countBadge').innerHTML = `<strong>${data.length}</strong> stock${data.length !== 1 ? 's' : ''}`;
+
+  const tm = TREND_META;
+  const sm = STATUS_META;
+
+  tbody.innerHTML = data.map(s => {
+    const t5  = tm[s.trend5]  || tm.up;
+    const t90 = tm[s.trend90] || tm.up;
+    const st  = sm[s.statusKey] || sm.meets;
+    const secCls = sectorClass(s.sector);
+    return `<tr>
+      <td>
+        <div class="ticker-cell">${s.ticker}</div>
+        <div class="company-name">${s.company}</div>
+      </td>
+      <td><span class="sector-badge ${secCls}">${s.sector}</span></td>
+      <td><span class="trend ${t5.cls}">${t5.label}</span></td>
+      <td><span class="trend ${t90.cls}">${t90.label}</span></td>
+      <td style="font-size:0.8rem;color:var(--text-muted)">${s.revenue}</td>
+      <td class="${streakClass(s.streakNum)}">${s.streakRaw}</td>
+      <td class="${yieldClass(s.yieldNum)}">${s.yieldRaw}</td>
+      <td><span class="status-badge ${st.cls}">${st.label}</span></td>
+      <td class="notes-cell">${s.notes}</td>
+    </tr>`;
+  }).join('');
+}
+
+render();
+</script>
+</body>
+</html>
