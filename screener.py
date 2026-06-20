@@ -70,7 +70,7 @@ def price_trend(hist: pd.DataFrame, days: int) -> dict:
 
 
 def dividend_analysis(divs: pd.Series) -> dict:
-    """Count consecutive years of dividend growth."""
+    """Count consecutive years of dividend growth using only completed calendar years."""
     if divs is None or divs.empty:
         return {"pass": False, "streak": 0}
 
@@ -79,6 +79,12 @@ def dividend_analysis(divs: pd.Series) -> dict:
         return {"pass": False, "streak": 0}
 
     by_year = divs.groupby(divs.index.year).sum()
+
+    # Exclude the current (incomplete) year — partial year totals are always
+    # lower than completed years, which would incorrectly break the streak.
+    current_year = datetime.now(timezone.utc).year
+    by_year = by_year[by_year.index < current_year]
+
     if len(by_year) < 2:
         return {"pass": False, "streak": 0}
 
