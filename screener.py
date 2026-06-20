@@ -155,11 +155,24 @@ def screen_ticker(ticker: str) -> dict | None:
         info  = stock.info or {}
 
         div_yield = info.get("trailingAnnualDividendYield") or info.get("dividendYield") or 0
+
+        # Guard: must pay a dividend
         if div_yield < 0.001:
-            return None  # not a dividend payer
+            return None
+
+        # Guard: yield sanity check — anything above 20% is almost certainly a
+        # stale/bad data artifact from Yahoo Finance (e.g. a special one-time
+        # dividend inflating the trailing figure)
+        if div_yield > 0.20:
+            print(f"  [{ticker}] skipped — yield {div_yield*100:.1f}% looks like bad data")
+            return None
 
         hist = stock.history(period="5y", interval="1wk", auto_adjust=True)
         divs = stock.dividends
+
+        # Guard: need enough price history to assess trends
+        if hist.empty or len(hist) < 13:
+            return None
 
         t5  = price_trend(hist, 365 * 5)
         t90 = price_trend(hist, 90)
@@ -167,7 +180,13 @@ def screen_ticker(ticker: str) -> dict | None:
 
         rev_growth = info.get("revenueGrowth")
         rev_avail  = rev_growth is not None
-        rev_pass   = bool(rev_growth > 0) if rev_avail else None
+
+        # Guard: revenue growth sanity check — values outside ±200% are likely bad data
+        if rev_avail and abs(rev_growth) > 2.0:
+            rev_avail = False
+            rev_growth = None
+
+        rev_pass = bool(rev_growth > 0) if rev_avail else None
 
         status_key = compute_status(t5["pass"], t90["pass"], rev_pass, div["pass"], rev_avail)
         if not status_key:
