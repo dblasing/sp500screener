@@ -297,7 +297,7 @@ let isRunning  = false;
 // ── API helpers ───────────────────────────────────────────────────────────────
 const YF1 = 'https://query1.finance.yahoo.com';
 const YF2 = 'https://query2.finance.yahoo.com';
-const PROXY = 'https://corsproxy.io/?url=';
+const PROXY = 'https://corsproxy.io/?';
 
 async function apiFetch(url) {
   // Try direct first (works locally); fall back to CORS proxy for GitHub Pages
@@ -306,7 +306,7 @@ async function apiFetch(url) {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     return r.json();
   } catch {
-    const r = await fetch(PROXY + encodeURIComponent(url));
+    const r = await fetch(PROXY + url);
     if (!r.ok) throw new Error(`HTTP ${r.status} (proxied)`);
     return r.json();
   }
