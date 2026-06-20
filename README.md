@@ -189,7 +189,9 @@ All market data comes from **Yahoo Finance** via the [`yfinance`](https://github
 
 ## Disclaimer
 
-This screener is for **research and educational purposes only**. It is not investment advice. All data comes from Yahoo Finance and may be delayed or inaccurate. Verify all figures independently before making any investment decisions.
+This screener is for **research and educational purposes only**. It is not investment advice.
+
+All data is sourced from Yahoo Finance via the unofficial `yfinance` API. Yahoo Finance occasionally returns spurious, stale, or otherwise incorrect values — particularly for dividend yields, revenue growth, and sector classifications. **Always sanity-check results before acting on them.** Verify all figures independently through primary sources (company filings, investor relations pages, or a paid data provider) before making any investment decisions.
 
 ---
 
