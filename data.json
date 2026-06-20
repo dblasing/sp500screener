@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-20T13:34:51Z",
-  "count": 97,
+  "generated": "2026-06-20T13:44:15Z",
+  "count": 109,
   "results": [
     {
       "ticker": "PAYX",
@@ -23,12 +23,68 @@
       "revPass": true,
       "revPct": 0.199,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 12,
       "yieldNum": 484.0,
       "yieldRaw": "484.0%",
+      "statusKey": "meets",
+      "note": "5yr: +8.1% \u00b7 90d: +8.5% \u00b7 Rev: +19.9% YoY \u00b7 Div streak: 12 yrs"
+    },
+    {
+      "ticker": "GIS",
+      "company": "General Mills, Inc.",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.3247,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0677,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.022,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 20,
+      "yieldNum": 7.28,
+      "yieldRaw": "7.3%",
       "statusKey": "border",
-      "note": "5yr: +8.1% \u00b7 90d: +8.5% \u00b7 Rev: +19.9% YoY"
+      "note": "5yr: -32.5% \u00b7 90d: -6.8% \u00b7 Rev: +2.2% YoY \u00b7 Div streak: 20 yrs"
+    },
+    {
+      "ticker": "PFE",
+      "company": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1643,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0523,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.054,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "yieldNum": 6.64,
+      "yieldRaw": "6.6%",
+      "statusKey": "border",
+      "note": "5yr: -16.4% \u00b7 90d: -5.2% \u00b7 Rev: +5.4% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "MO",
@@ -51,12 +107,12 @@
       "revPass": true,
       "revPct": 0.053,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 6.09,
       "yieldRaw": "6.1%",
-      "statusKey": "border",
-      "note": "5yr: +113.6% \u00b7 90d: +7.3% \u00b7 Rev: +5.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +113.6% \u00b7 90d: +7.3% \u00b7 Rev: +5.3% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "VZ",
@@ -79,12 +135,40 @@
       "revPass": true,
       "revPct": 0.029,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 24,
       "yieldNum": 6.03,
       "yieldRaw": "6.0%",
+      "statusKey": "monitor",
+      "note": "5yr: +9.8% \u00b7 90d: -8.5% \u00b7 Rev: +2.9% YoY \u00b7 Div streak: 24 yrs"
+    },
+    {
+      "ticker": "CMCSA",
+      "company": "Comcast Corporation",
+      "sector": "Communication",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.5053,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.1991,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.053,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 6,
+      "yieldNum": 5.82,
+      "yieldRaw": "5.8%",
       "statusKey": "border",
-      "note": "5yr: +9.8% \u00b7 90d: -8.5% \u00b7 Rev: +2.9% YoY"
+      "note": "5yr: -50.5% \u00b7 90d: -19.9% \u00b7 Rev: +5.3% YoY \u00b7 Div streak: 6 yrs"
     },
     {
       "ticker": "O",
@@ -108,11 +192,11 @@
       "revPct": 0.12,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 0,
+      "divStreak": 1,
       "yieldNum": 5.34,
       "yieldRaw": "5.3%",
       "statusKey": "border",
-      "note": "5yr: +17.8% \u00b7 90d: +0.6% \u00b7 Rev: +12.0% YoY"
+      "note": "5yr: +17.8% \u00b7 90d: +0.6% \u00b7 Rev: +12.0% YoY \u00b7 Div streak: 1 yr"
     },
     {
       "ticker": "CLX",
@@ -135,12 +219,12 @@
       "revPass": true,
       "revPct": 0.001,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 38,
       "yieldNum": 5.22,
       "yieldRaw": "5.2%",
       "statusKey": "border",
-      "note": "5yr: -35.7% \u00b7 90d: -4.9% \u00b7 Rev: +0.1% YoY"
+      "note": "5yr: -35.7% \u00b7 90d: -4.9% \u00b7 Rev: +0.1% YoY \u00b7 Div streak: 38 yrs"
     },
     {
       "ticker": "KMB",
@@ -163,12 +247,12 @@
       "revPass": true,
       "revPct": 0.027,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 20,
       "yieldNum": 4.99,
       "yieldRaw": "5.0%",
-      "statusKey": "border",
-      "note": "5yr: -6.7% \u00b7 90d: +5.4% \u00b7 Rev: +2.7% YoY"
+      "statusKey": "meets",
+      "note": "5yr: -6.7% \u00b7 90d: +5.4% \u00b7 Rev: +2.7% YoY \u00b7 Div streak: 20 yrs"
     },
     {
       "ticker": "T",
@@ -192,11 +276,11 @@
       "revPct": 0.029,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 0,
+      "divStreak": 2,
       "yieldNum": 4.95,
       "yieldRaw": "5.0%",
       "statusKey": "border",
-      "note": "5yr: +37.9% \u00b7 90d: -23.6% \u00b7 Rev: +2.9% YoY"
+      "note": "5yr: +37.9% \u00b7 90d: -23.6% \u00b7 Rev: +2.9% YoY \u00b7 Div streak: 2 yrs"
     },
     {
       "ticker": "OKE",
@@ -219,12 +303,40 @@
       "revPass": true,
       "revPct": 0.196,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 37,
       "yieldNum": 4.91,
       "yieldRaw": "4.9%",
+      "statusKey": "monitor",
+      "note": "5yr: +98.2% \u00b7 90d: -8.4% \u00b7 Rev: +19.6% YoY \u00b7 Div streak: 37 yrs"
+    },
+    {
+      "ticker": "HRL",
+      "company": "Hormel Foods Corporation",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.4041,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0622,
+        "pass": true
+      },
+      "revPass": false,
+      "revPct": -0.029,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 24,
+      "yieldNum": 4.79,
+      "yieldRaw": "4.8%",
       "statusKey": "border",
-      "note": "5yr: +98.2% \u00b7 90d: -8.4% \u00b7 Rev: +19.6% YoY"
+      "note": "5yr: -40.4% \u00b7 90d: +6.2% \u00b7 Rev: -2.9% YoY \u00b7 Div streak: 24 yrs"
     },
     {
       "ticker": "BMY",
@@ -247,12 +359,12 @@
       "revPass": true,
       "revPct": 0.026,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 4,
       "yieldNum": 4.52,
       "yieldRaw": "4.5%",
-      "statusKey": "border",
-      "note": "5yr: -1.1% \u00b7 90d: -6.8% \u00b7 Rev: +2.6% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: -1.1% \u00b7 90d: -6.8% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 4 yrs"
     },
     {
       "ticker": "ES",
@@ -275,12 +387,12 @@
       "revPass": true,
       "revPct": 0.094,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 26,
       "yieldNum": 4.41,
       "yieldRaw": "4.4%",
-      "statusKey": "border",
-      "note": "5yr: +5.8% \u00b7 90d: +4.2% \u00b7 Rev: +9.4% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +5.8% \u00b7 90d: +4.2% \u00b7 Rev: +9.4% YoY \u00b7 Div streak: 26 yrs"
     },
     {
       "ticker": "TFC",
@@ -303,12 +415,12 @@
       "revPass": true,
       "revPct": 0.052,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 11,
       "yieldNum": 4.32,
       "yieldRaw": "4.3%",
-      "statusKey": "border",
-      "note": "5yr: +9.3% \u00b7 90d: +9.7% \u00b7 Rev: +5.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +9.3% \u00b7 90d: +9.7% \u00b7 Rev: +5.2% YoY \u00b7 Div streak: 11 yrs"
     },
     {
       "ticker": "PEP",
@@ -331,12 +443,40 @@
       "revPass": true,
       "revPct": 0.085,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 27,
       "yieldNum": 4.02,
       "yieldRaw": "4.0%",
+      "statusKey": "monitor",
+      "note": "5yr: +13.6% \u00b7 90d: -6.2% \u00b7 Rev: +8.5% YoY \u00b7 Div streak: 27 yrs"
+    },
+    {
+      "ticker": "MKC",
+      "company": "McCormick & Company, Incorporated",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.4044,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1133,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.167,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 27,
+      "yieldNum": 3.94,
+      "yieldRaw": "3.9%",
       "statusKey": "border",
-      "note": "5yr: +13.6% \u00b7 90d: -6.2% \u00b7 Rev: +8.5% YoY"
+      "note": "5yr: -40.4% \u00b7 90d: -11.3% \u00b7 Rev: +16.7% YoY \u00b7 Div streak: 27 yrs"
     },
     {
       "ticker": "OMC",
@@ -359,12 +499,12 @@
       "revPass": true,
       "revPct": 0.692,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 39,
       "yieldNum": 3.93,
       "yieldRaw": "3.9%",
-      "statusKey": "border",
-      "note": "5yr: +6.2% \u00b7 90d: -2.3% \u00b7 Rev: +69.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +6.2% \u00b7 90d: -2.3% \u00b7 Rev: +69.2% YoY \u00b7 Div streak: 39 yrs"
     },
     {
       "ticker": "CVX",
@@ -387,12 +527,12 @@
       "revPass": true,
       "revPct": 0.023,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 45,
       "yieldNum": 3.89,
       "yieldRaw": "3.9%",
-      "statusKey": "border",
-      "note": "5yr: +98.7% \u00b7 90d: -17.0% \u00b7 Rev: +2.3% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +98.7% \u00b7 90d: -17.0% \u00b7 Rev: +2.3% YoY \u00b7 Div streak: 45 yrs"
     },
     {
       "ticker": "PSA",
@@ -416,11 +556,11 @@
       "revPct": 0.032,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 0,
+      "divStreak": 2,
       "yieldNum": 3.84,
       "yieldRaw": "3.8%",
       "statusKey": "border",
-      "note": "5yr: +29.9% \u00b7 90d: +20.7% \u00b7 Rev: +3.2% YoY"
+      "note": "5yr: +29.9% \u00b7 90d: +20.7% \u00b7 Rev: +3.2% YoY \u00b7 Div streak: 2 yrs"
     },
     {
       "ticker": "AMT",
@@ -443,12 +583,12 @@
       "revPass": true,
       "revPct": 0.068,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 14,
       "yieldNum": 3.8,
       "yieldRaw": "3.8%",
       "statusKey": "border",
-      "note": "5yr: -22.8% \u00b7 90d: +5.9% \u00b7 Rev: +6.8% YoY"
+      "note": "5yr: -22.8% \u00b7 90d: +5.9% \u00b7 Rev: +6.8% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "KMI",
@@ -471,12 +611,68 @@
       "revPass": true,
       "revPct": 0.138,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 9,
       "yieldNum": 3.75,
       "yieldRaw": "3.8%",
+      "statusKey": "monitor",
+      "note": "5yr: +127.7% \u00b7 90d: -6.3% \u00b7 Rev: +13.8% YoY \u00b7 Div streak: 9 yrs"
+    },
+    {
+      "ticker": "NKE",
+      "company": "NIKE, Inc.",
+      "sector": "Consumer Cyclical",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.6819,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1122,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.001,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 34,
+      "yieldNum": 3.67,
+      "yieldRaw": "3.7%",
       "statusKey": "border",
-      "note": "5yr: +127.7% \u00b7 90d: -6.3% \u00b7 Rev: +13.8% YoY"
+      "note": "5yr: -68.2% \u00b7 90d: -11.2% \u00b7 Rev: +0.1% YoY \u00b7 Div streak: 34 yrs"
+    },
+    {
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.2602,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0821,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.099,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 7,
+      "yieldNum": 3.63,
+      "yieldRaw": "3.6%",
+      "statusKey": "border",
+      "note": "5yr: -26.0% \u00b7 90d: -8.2% \u00b7 Rev: +9.9% YoY \u00b7 Div streak: 7 yrs"
     },
     {
       "ticker": "USB",
@@ -499,12 +695,12 @@
       "revPass": true,
       "revPct": 0.046,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 3.56,
       "yieldRaw": "3.6%",
-      "statusKey": "border",
-      "note": "5yr: +24.9% \u00b7 90d: +15.5% \u00b7 Rev: +4.6% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +24.9% \u00b7 90d: +15.5% \u00b7 Rev: +4.6% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "TGT",
@@ -527,12 +723,12 @@
       "revPass": true,
       "revPct": 0.067,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 42,
       "yieldNum": 3.55,
       "yieldRaw": "3.5%",
       "statusKey": "border",
-      "note": "5yr: -36.8% \u00b7 90d: +10.1% \u00b7 Rev: +6.7% YoY"
+      "note": "5yr: -36.8% \u00b7 90d: +10.1% \u00b7 Rev: +6.7% YoY \u00b7 Div streak: 42 yrs"
     },
     {
       "ticker": "DUK",
@@ -555,12 +751,12 @@
       "revPass": true,
       "revPct": 0.113,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 19,
       "yieldNum": 3.43,
       "yieldRaw": "3.4%",
-      "statusKey": "border",
-      "note": "5yr: +50.7% \u00b7 90d: -3.9% \u00b7 Rev: +11.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +50.7% \u00b7 90d: -3.9% \u00b7 Rev: +11.3% YoY \u00b7 Div streak: 19 yrs"
     },
     {
       "ticker": "WEC",
@@ -583,12 +779,12 @@
       "revPass": true,
       "revPct": 0.09,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 24,
       "yieldNum": 3.23,
       "yieldRaw": "3.2%",
-      "statusKey": "border",
-      "note": "5yr: +47.4% \u00b7 90d: -1.1% \u00b7 Rev: +9.0% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +47.4% \u00b7 90d: -1.1% \u00b7 Rev: +9.0% YoY \u00b7 Div streak: 24 yrs"
     },
     {
       "ticker": "PM",
@@ -611,12 +807,12 @@
       "revPass": true,
       "revPct": 0.091,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 13,
       "yieldNum": 3.21,
       "yieldRaw": "3.2%",
-      "statusKey": "border",
-      "note": "5yr: +128.4% \u00b7 90d: +9.1% \u00b7 Rev: +9.1% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +128.4% \u00b7 90d: +9.1% \u00b7 Rev: +9.1% YoY \u00b7 Div streak: 13 yrs"
     },
     {
       "ticker": "ED",
@@ -639,12 +835,12 @@
       "revPass": true,
       "revPct": 0.062,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 37,
       "yieldNum": 3.21,
       "yieldRaw": "3.2%",
-      "statusKey": "border",
-      "note": "5yr: +71.5% \u00b7 90d: -4.0% \u00b7 Rev: +6.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +71.5% \u00b7 90d: -4.0% \u00b7 Rev: +6.2% YoY \u00b7 Div streak: 37 yrs"
     },
     {
       "ticker": "SO",
@@ -667,12 +863,12 @@
       "revPass": true,
       "revPct": 0.08,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 43,
       "yieldNum": 3.2,
       "yieldRaw": "3.2%",
-      "statusKey": "border",
-      "note": "5yr: +82.0% \u00b7 90d: -1.8% \u00b7 Rev: +8.0% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +82.0% \u00b7 90d: -1.8% \u00b7 Rev: +8.0% YoY \u00b7 Div streak: 43 yrs"
     },
     {
       "ticker": "PPL",
@@ -695,12 +891,12 @@
       "revPass": true,
       "revPct": 0.108,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 3,
       "yieldNum": 3.12,
       "yieldRaw": "3.1%",
-      "statusKey": "border",
-      "note": "5yr: +49.5% \u00b7 90d: -5.3% \u00b7 Rev: +10.8% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +49.5% \u00b7 90d: -5.3% \u00b7 Rev: +10.8% YoY \u00b7 Div streak: 3 yrs"
     },
     {
       "ticker": "ABBV",
@@ -723,12 +919,12 @@
       "revPass": true,
       "revPct": 0.124,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 12,
       "yieldNum": 3.05,
       "yieldRaw": "3.0%",
-      "statusKey": "border",
-      "note": "5yr: +131.1% \u00b7 90d: +4.2% \u00b7 Rev: +12.4% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +131.1% \u00b7 90d: +4.2% \u00b7 Rev: +12.4% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "EOG",
@@ -752,11 +948,11 @@
       "revPct": 0.156,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 0,
+      "divStreak": 1,
       "yieldNum": 3.03,
       "yieldRaw": "3.0%",
       "statusKey": "border",
-      "note": "5yr: +89.8% \u00b7 90d: -12.4% \u00b7 Rev: +15.6% YoY"
+      "note": "5yr: +89.8% \u00b7 90d: -12.4% \u00b7 Rev: +15.6% YoY \u00b7 Div streak: 1 yr"
     },
     {
       "ticker": "XEL",
@@ -780,11 +976,11 @@
       "revPct": 0.029,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 0,
+      "divStreak": 1,
       "yieldNum": 2.97,
       "yieldRaw": "3.0%",
       "statusKey": "border",
-      "note": "5yr: +35.3% \u00b7 90d: -0.1% \u00b7 Rev: +2.9% YoY"
+      "note": "5yr: +35.3% \u00b7 90d: -0.1% \u00b7 Rev: +2.9% YoY \u00b7 Div streak: 1 yr"
     },
     {
       "ticker": "ADP",
@@ -807,12 +1003,40 @@
       "revPass": true,
       "revPct": 0.07,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 23,
       "yieldNum": 2.96,
       "yieldRaw": "3.0%",
+      "statusKey": "meets",
+      "note": "5yr: +23.5% \u00b7 90d: +9.3% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 23 yrs"
+    },
+    {
+      "ticker": "BDX",
+      "company": "Becton, Dickinson and Company",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1509,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0616,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.052,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 43,
+      "yieldNum": 2.95,
+      "yieldRaw": "3.0%",
       "statusKey": "border",
-      "note": "5yr: +23.5% \u00b7 90d: +9.3% \u00b7 Rev: +7.0% YoY"
+      "note": "5yr: -15.1% \u00b7 90d: -6.2% \u00b7 Rev: +5.2% YoY \u00b7 Div streak: 43 yrs"
     },
     {
       "ticker": "AEP",
@@ -835,12 +1059,12 @@
       "revPass": true,
       "revPct": 0.102,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 21,
       "yieldNum": 2.93,
       "yieldRaw": "2.9%",
-      "statusKey": "border",
-      "note": "5yr: +80.4% \u00b7 90d: -1.1% \u00b7 Rev: +10.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +80.4% \u00b7 90d: -1.1% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "PSX",
@@ -863,12 +1087,12 @@
       "revPass": true,
       "revPct": 0.069,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 13,
       "yieldNum": 2.91,
       "yieldRaw": "2.9%",
-      "statusKey": "border",
-      "note": "5yr: +122.9% \u00b7 90d: -11.1% \u00b7 Rev: +6.9% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +122.9% \u00b7 90d: -11.1% \u00b7 Rev: +6.9% YoY \u00b7 Div streak: 13 yrs"
     },
     {
       "ticker": "PLD",
@@ -891,12 +1115,12 @@
       "revPass": true,
       "revPct": 0.083,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 2.91,
       "yieldRaw": "2.9%",
-      "statusKey": "border",
-      "note": "5yr: +33.1% \u00b7 90d: +9.8% \u00b7 Rev: +8.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +33.1% \u00b7 90d: +9.8% \u00b7 Rev: +8.3% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "XOM",
@@ -919,12 +1143,12 @@
       "revPass": true,
       "revPct": 0.026,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 42,
       "yieldNum": 2.87,
       "yieldRaw": "2.9%",
-      "statusKey": "border",
-      "note": "5yr: +156.2% \u00b7 90d: -18.9% \u00b7 Rev: +2.6% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +156.2% \u00b7 90d: -18.9% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 42 yrs"
     },
     {
       "ticker": "PNC",
@@ -947,12 +1171,12 @@
       "revPass": true,
       "revPct": 0.138,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 15,
       "yieldNum": 2.87,
       "yieldRaw": "2.9%",
-      "statusKey": "border",
-      "note": "5yr: +44.0% \u00b7 90d: +15.5% \u00b7 Rev: +13.8% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +44.0% \u00b7 90d: +15.5% \u00b7 Rev: +13.8% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "MRK",
@@ -975,12 +1199,12 @@
       "revPass": true,
       "revPct": 0.049,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 21,
       "yieldNum": 2.84,
       "yieldRaw": "2.8%",
-      "statusKey": "border",
-      "note": "5yr: +72.4% \u00b7 90d: -4.1% \u00b7 Rev: +4.9% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +72.4% \u00b7 90d: -4.1% \u00b7 Rev: +4.9% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "WMB",
@@ -1003,12 +1227,12 @@
       "revPass": true,
       "revPct": 0.09,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 8,
       "yieldNum": 2.84,
       "yieldRaw": "2.8%",
-      "statusKey": "border",
-      "note": "5yr: +243.4% \u00b7 90d: +0.1% \u00b7 Rev: +9.0% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +243.4% \u00b7 90d: +0.1% \u00b7 Rev: +9.0% YoY \u00b7 Div streak: 8 yrs"
     },
     {
       "ticker": "AMGN",
@@ -1031,12 +1255,12 @@
       "revPass": true,
       "revPct": 0.058,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 14,
       "yieldNum": 2.83,
       "yieldRaw": "2.8%",
-      "statusKey": "border",
-      "note": "5yr: +62.8% \u00b7 90d: -2.5% \u00b7 Rev: +5.8% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +62.8% \u00b7 90d: -2.5% \u00b7 Rev: +5.8% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "PG",
@@ -1059,12 +1283,12 @@
       "revPass": true,
       "revPct": 0.074,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 22,
       "yieldNum": 2.81,
       "yieldRaw": "2.8%",
-      "statusKey": "border",
-      "note": "5yr: +26.6% \u00b7 90d: +6.2% \u00b7 Rev: +7.4% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +26.6% \u00b7 90d: +6.2% \u00b7 Rev: +7.4% YoY \u00b7 Div streak: 22 yrs"
     },
     {
       "ticker": "DRI",
@@ -1087,12 +1311,40 @@
       "revPass": true,
       "revPct": 0.059,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 5,
       "yieldNum": 2.79,
       "yieldRaw": "2.8%",
+      "statusKey": "meets",
+      "note": "5yr: +74.5% \u00b7 90d: +11.7% \u00b7 Rev: +5.9% YoY \u00b7 Div streak: 5 yrs"
+    },
+    {
+      "ticker": "ABT",
+      "company": "Abbott Laboratories",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1384,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.1445,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.078,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 12,
+      "yieldNum": 2.76,
+      "yieldRaw": "2.8%",
       "statusKey": "border",
-      "note": "5yr: +74.5% \u00b7 90d: +11.7% \u00b7 Rev: +5.9% YoY"
+      "note": "5yr: -13.8% \u00b7 90d: -14.4% \u00b7 Rev: +7.8% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "NEE",
@@ -1115,12 +1367,68 @@
       "revPass": true,
       "revPct": 0.073,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 30,
       "yieldNum": 2.71,
       "yieldRaw": "2.7%",
+      "statusKey": "meets",
+      "note": "5yr: +34.0% \u00b7 90d: -4.4% \u00b7 Rev: +7.3% YoY \u00b7 Div streak: 30 yrs"
+    },
+    {
+      "ticker": "AWK",
+      "company": "American Water Works Company, Inc.",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1054,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0796,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.057,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 12,
+      "yieldNum": 2.64,
+      "yieldRaw": "2.6%",
       "statusKey": "border",
-      "note": "5yr: +34.0% \u00b7 90d: -4.4% \u00b7 Rev: +7.3% YoY"
+      "note": "5yr: -10.5% \u00b7 90d: -8.0% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 12 yrs"
+    },
+    {
+      "ticker": "ZTS",
+      "company": "Zoetis Inc.",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.5578,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.3026,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.029,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 12,
+      "yieldNum": 2.63,
+      "yieldRaw": "2.6%",
+      "statusKey": "border",
+      "note": "5yr: -55.8% \u00b7 90d: -30.3% \u00b7 Rev: +2.9% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "DLR",
@@ -1143,12 +1451,12 @@
       "revPass": true,
       "revPct": 0.167,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 21,
       "yieldNum": 2.61,
       "yieldRaw": "2.6%",
-      "statusKey": "border",
-      "note": "5yr: +46.6% \u00b7 90d: +8.0% \u00b7 Rev: +16.7% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +46.6% \u00b7 90d: +8.0% \u00b7 Rev: +16.7% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "KO",
@@ -1171,12 +1479,12 @@
       "revPass": true,
       "revPct": 0.121,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 23,
       "yieldNum": 2.58,
       "yieldRaw": "2.6%",
-      "statusKey": "border",
-      "note": "5yr: +69.5% \u00b7 90d: +5.5% \u00b7 Rev: +12.1% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +69.5% \u00b7 90d: +5.5% \u00b7 Rev: +12.1% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "IBM",
@@ -1199,12 +1507,12 @@
       "revPass": true,
       "revPct": 0.095,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 31,
       "yieldNum": 2.56,
       "yieldRaw": "2.6%",
-      "statusKey": "border",
-      "note": "5yr: +115.8% \u00b7 90d: +6.2% \u00b7 Rev: +9.5% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +115.8% \u00b7 90d: +6.2% \u00b7 Rev: +9.5% YoY \u00b7 Div streak: 31 yrs"
     },
     {
       "ticker": "MCD",
@@ -1227,12 +1535,12 @@
       "revPass": true,
       "revPct": 0.094,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 50,
       "yieldNum": 2.56,
       "yieldRaw": "2.6%",
-      "statusKey": "border",
-      "note": "5yr: +34.5% \u00b7 90d: -8.3% \u00b7 Rev: +9.4% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +34.5% \u00b7 90d: -8.3% \u00b7 Rev: +9.4% YoY \u00b7 Div streak: 50 yrs"
     },
     {
       "ticker": "APD",
@@ -1256,11 +1564,11 @@
       "revPct": 0.088,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 0,
+      "divStreak": 1,
       "yieldNum": 2.55,
       "yieldRaw": "2.5%",
       "statusKey": "border",
-      "note": "5yr: +10.0% \u00b7 90d: -3.5% \u00b7 Rev: +8.8% YoY"
+      "note": "5yr: +10.0% \u00b7 90d: -3.5% \u00b7 Rev: +8.8% YoY \u00b7 Div streak: 1 yr"
     },
     {
       "ticker": "LMT",
@@ -1283,12 +1591,12 @@
       "revPass": true,
       "revPct": 0.003,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 25,
       "yieldNum": 2.54,
       "yieldRaw": "2.5%",
-      "statusKey": "border",
-      "note": "5yr: +53.0% \u00b7 90d: -16.5% \u00b7 Rev: +0.3% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +53.0% \u00b7 90d: -16.5% \u00b7 Rev: +0.3% YoY \u00b7 Div streak: 25 yrs"
     },
     {
       "ticker": "SBUX",
@@ -1311,12 +1619,12 @@
       "revPass": true,
       "revPct": 0.088,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 15,
       "yieldNum": 2.47,
       "yieldRaw": "2.5%",
-      "statusKey": "border",
-      "note": "5yr: +0.1% \u00b7 90d: +16.6% \u00b7 Rev: +8.8% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +0.1% \u00b7 90d: +16.6% \u00b7 Rev: +8.8% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "ITW",
@@ -1339,12 +1647,12 @@
       "revPass": true,
       "revPct": 0.046,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 30,
       "yieldNum": 2.42,
       "yieldRaw": "2.4%",
-      "statusKey": "border",
-      "note": "5yr: +33.2% \u00b7 90d: +2.6% \u00b7 Rev: +4.6% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +33.2% \u00b7 90d: +2.6% \u00b7 Rev: +4.6% YoY \u00b7 Div streak: 30 yrs"
     },
     {
       "ticker": "CL",
@@ -1367,12 +1675,12 @@
       "revPass": true,
       "revPct": 0.084,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 52,
       "yieldNum": 2.3,
       "yieldRaw": "2.3%",
-      "statusKey": "border",
-      "note": "5yr: +23.7% \u00b7 90d: +6.8% \u00b7 Rev: +8.4% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +23.7% \u00b7 90d: +6.8% \u00b7 Rev: +8.4% YoY \u00b7 Div streak: 52 yrs"
     },
     {
       "ticker": "JNJ",
@@ -1395,12 +1703,12 @@
       "revPass": true,
       "revPct": 0.099,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 63,
       "yieldNum": 2.22,
       "yieldRaw": "2.2%",
-      "statusKey": "border",
-      "note": "5yr: +60.1% \u00b7 90d: -4.5% \u00b7 Rev: +9.9% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +60.1% \u00b7 90d: -4.5% \u00b7 Rev: +9.9% YoY \u00b7 Div streak: 63 yrs"
     },
     {
       "ticker": "LOW",
@@ -1423,12 +1731,12 @@
       "revPass": true,
       "revPct": 0.103,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 26,
       "yieldNum": 2.21,
       "yieldRaw": "2.2%",
-      "statusKey": "border",
-      "note": "5yr: +26.8% \u00b7 90d: -3.1% \u00b7 Rev: +10.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +26.8% \u00b7 90d: -3.1% \u00b7 Rev: +10.3% YoY \u00b7 Div streak: 26 yrs"
     },
     {
       "ticker": "PKG",
@@ -1451,12 +1759,12 @@
       "revPass": true,
       "revPct": 0.106,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 2.18,
       "yieldRaw": "2.2%",
-      "statusKey": "border",
-      "note": "5yr: +96.2% \u00b7 90d: +8.6% \u00b7 Rev: +10.6% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +96.2% \u00b7 90d: +8.6% \u00b7 Rev: +10.6% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "HD",
@@ -1479,12 +1787,12 @@
       "revPass": true,
       "revPct": 0.048,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 23,
       "yieldNum": 2.12,
       "yieldRaw": "2.1%",
-      "statusKey": "border",
-      "note": "5yr: +20.7% \u00b7 90d: +4.7% \u00b7 Rev: +4.8% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +20.7% \u00b7 90d: +4.7% \u00b7 Rev: +4.8% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "WFC",
@@ -1507,12 +1815,12 @@
       "revPass": true,
       "revPct": 0.057,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 4,
       "yieldNum": 2.09,
       "yieldRaw": "2.1%",
-      "statusKey": "border",
-      "note": "5yr: +99.9% \u00b7 90d: +7.1% \u00b7 Rev: +5.7% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +99.9% \u00b7 90d: +7.1% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 4 yrs"
     },
     {
       "ticker": "HON",
@@ -1535,12 +1843,12 @@
       "revPass": true,
       "revPct": 0.024,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 31,
       "yieldNum": 2.03,
       "yieldRaw": "2.0%",
-      "statusKey": "border",
-      "note": "5yr: +23.2% \u00b7 90d: +3.2% \u00b7 Rev: +2.4% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +23.2% \u00b7 90d: +3.2% \u00b7 Rev: +2.4% YoY \u00b7 Div streak: 31 yrs"
     },
     {
       "ticker": "BLK",
@@ -1563,12 +1871,12 @@
       "revPass": true,
       "revPct": 0.27,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 22,
       "yieldNum": 2.02,
       "yieldRaw": "2.0%",
-      "statusKey": "border",
-      "note": "5yr: +35.5% \u00b7 90d: +13.1% \u00b7 Rev: +27.0% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +35.5% \u00b7 90d: +13.1% \u00b7 Rev: +27.0% YoY \u00b7 Div streak: 22 yrs"
     },
     {
       "ticker": "AFL",
@@ -1591,12 +1899,12 @@
       "revPass": true,
       "revPct": 0.279,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 41,
       "yieldNum": 2.02,
       "yieldRaw": "2.0%",
-      "statusKey": "border",
-      "note": "5yr: +138.6% \u00b7 90d: +9.1% \u00b7 Rev: +27.9% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +138.6% \u00b7 90d: +9.1% \u00b7 Rev: +27.9% YoY \u00b7 Div streak: 41 yrs"
     },
     {
       "ticker": "CME",
@@ -1620,11 +1928,11 @@
       "revPct": 0.144,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 1,
+      "divStreak": 0,
       "yieldNum": 2.0,
       "yieldRaw": "2.0%",
       "statusKey": "border",
-      "note": "5yr: +39.4% \u00b7 90d: -15.7% \u00b7 Rev: +14.4% YoY \u00b7 Div streak: 1 yr"
+      "note": "5yr: +39.4% \u00b7 90d: -15.7% \u00b7 Rev: +14.4% YoY"
     },
     {
       "ticker": "BAC",
@@ -1647,12 +1955,12 @@
       "revPass": true,
       "revPct": 0.081,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 1.95,
       "yieldRaw": "1.9%",
-      "statusKey": "border",
-      "note": "5yr: +52.6% \u00b7 90d: +20.3% \u00b7 Rev: +8.1% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +52.6% \u00b7 90d: +20.3% \u00b7 Rev: +8.1% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "MCHP",
@@ -1675,12 +1983,12 @@
       "revPass": true,
       "revPct": 0.351,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 14,
       "yieldNum": 1.93,
       "yieldRaw": "1.9%",
-      "statusKey": "border",
-      "note": "5yr: +49.1% \u00b7 90d: +61.7% \u00b7 Rev: +35.1% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +49.1% \u00b7 90d: +61.7% \u00b7 Rev: +35.1% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "VLO",
@@ -1703,12 +2011,12 @@
       "revPass": true,
       "revPct": 0.066,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 15,
       "yieldNum": 1.91,
       "yieldRaw": "1.9%",
-      "statusKey": "border",
-      "note": "5yr: +239.6% \u00b7 90d: -6.6% \u00b7 Rev: +6.6% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +239.6% \u00b7 90d: -6.6% \u00b7 Rev: +6.6% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "MMM",
@@ -1759,12 +2067,12 @@
       "revPass": true,
       "revPct": 0.186,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 27,
       "yieldNum": 1.84,
       "yieldRaw": "1.8%",
-      "statusKey": "border",
-      "note": "5yr: +97.8% \u00b7 90d: +70.5% \u00b7 Rev: +18.6% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +97.8% \u00b7 90d: +70.5% \u00b7 Rev: +18.6% YoY \u00b7 Div streak: 27 yrs"
     },
     {
       "ticker": "ALL",
@@ -1787,12 +2095,12 @@
       "revPass": true,
       "revPct": 0.03,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 1.84,
       "yieldRaw": "1.8%",
-      "statusKey": "border",
-      "note": "5yr: +90.7% \u00b7 90d: +9.7% \u00b7 Rev: +3.0% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +90.7% \u00b7 90d: +9.7% \u00b7 Rev: +3.0% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "JPM",
@@ -1815,12 +2123,40 @@
       "revPass": true,
       "revPct": 0.127,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 15,
       "yieldNum": 1.77,
       "yieldRaw": "1.8%",
+      "statusKey": "meets",
+      "note": "5yr: +139.5% \u00b7 90d: +15.6% \u00b7 Rev: +12.7% YoY \u00b7 Div streak: 15 yrs"
+    },
+    {
+      "ticker": "INTU",
+      "company": "Intuit Inc.",
+      "sector": "Technology",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.4321,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.3569,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.104,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 14,
+      "yieldNum": 1.72,
+      "yieldRaw": "1.7%",
       "statusKey": "border",
-      "note": "5yr: +139.5% \u00b7 90d: +15.6% \u00b7 Rev: +12.7% YoY"
+      "note": "5yr: -43.2% \u00b7 90d: -35.7% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "QCOM",
@@ -1843,12 +2179,12 @@
       "revPass": false,
       "revPct": -0.035,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 23,
       "yieldNum": 1.67,
       "yieldRaw": "1.7%",
       "statusKey": "border",
-      "note": "5yr: +83.0% \u00b7 90d: +78.5% \u00b7 Rev: -3.5% YoY"
+      "note": "5yr: +83.0% \u00b7 90d: +78.5% \u00b7 Rev: -3.5% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "MPC",
@@ -1871,12 +2207,12 @@
       "revPass": true,
       "revPct": 0.088,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 14,
       "yieldNum": 1.6,
       "yieldRaw": "1.6%",
-      "statusKey": "border",
-      "note": "5yr: +337.3% \u00b7 90d: -3.2% \u00b7 Rev: +8.8% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +337.3% \u00b7 90d: -3.2% \u00b7 Rev: +8.8% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "ICE",
@@ -1899,12 +2235,12 @@
       "revPass": true,
       "revPct": 0.204,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 12,
       "yieldNum": 1.46,
       "yieldRaw": "1.5%",
-      "statusKey": "border",
-      "note": "5yr: +19.8% \u00b7 90d: -12.0% \u00b7 Rev: +20.4% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +19.8% \u00b7 90d: -12.0% \u00b7 Rev: +20.4% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "EMR",
@@ -1927,12 +2263,12 @@
       "revPass": true,
       "revPct": 0.029,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 34,
       "yieldNum": 1.45,
       "yieldRaw": "1.4%",
-      "statusKey": "border",
-      "note": "5yr: +73.5% \u00b7 90d: +20.6% \u00b7 Rev: +2.9% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +73.5% \u00b7 90d: +20.6% \u00b7 Rev: +2.9% YoY \u00b7 Div streak: 34 yrs"
     },
     {
       "ticker": "TRV",
@@ -1955,12 +2291,12 @@
       "revPass": true,
       "revPct": 0.01,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 20,
       "yieldNum": 1.44,
       "yieldRaw": "1.4%",
-      "statusKey": "border",
-      "note": "5yr: +123.6% \u00b7 90d: +8.3% \u00b7 Rev: +1.0% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +123.6% \u00b7 90d: +8.3% \u00b7 Rev: +1.0% YoY \u00b7 Div streak: 20 yrs"
     },
     {
       "ticker": "GS",
@@ -1983,12 +2319,12 @@
       "revPass": true,
       "revPct": 0.145,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 15,
       "yieldNum": 1.41,
       "yieldRaw": "1.4%",
-      "statusKey": "border",
-      "note": "5yr: +235.7% \u00b7 90d: +37.2% \u00b7 Rev: +14.5% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +235.7% \u00b7 90d: +37.2% \u00b7 Rev: +14.5% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "RTX",
@@ -2011,12 +2347,12 @@
       "revPass": true,
       "revPct": 0.087,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 33,
       "yieldNum": 1.41,
       "yieldRaw": "1.4%",
-      "statusKey": "border",
-      "note": "5yr: +138.9% \u00b7 90d: -1.8% \u00b7 Rev: +8.7% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +138.9% \u00b7 90d: -1.8% \u00b7 Rev: +8.7% YoY \u00b7 Div streak: 33 yrs"
     },
     {
       "ticker": "YUM",
@@ -2039,12 +2375,12 @@
       "revPass": true,
       "revPct": 0.152,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 8,
       "yieldNum": 1.41,
       "yieldRaw": "1.4%",
-      "statusKey": "border",
-      "note": "5yr: +42.4% \u00b7 90d: -0.8% \u00b7 Rev: +15.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +42.4% \u00b7 90d: -0.8% \u00b7 Rev: +15.2% YoY \u00b7 Div streak: 8 yrs"
     },
     {
       "ticker": "MSCI",
@@ -2067,12 +2403,12 @@
       "revPass": true,
       "revPct": 0.141,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 11,
       "yieldNum": 1.25,
       "yieldRaw": "1.2%",
-      "statusKey": "border",
-      "note": "5yr: +15.5% \u00b7 90d: +11.4% \u00b7 Rev: +14.1% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +15.5% \u00b7 90d: +11.4% \u00b7 Rev: +14.1% YoY \u00b7 Div streak: 11 yrs"
     },
     {
       "ticker": "CHD",
@@ -2095,12 +2431,12 @@
       "revPass": true,
       "revPct": 0.002,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 35,
       "yieldNum": 1.23,
       "yieldRaw": "1.2%",
-      "statusKey": "border",
-      "note": "5yr: +20.5% \u00b7 90d: +1.3% \u00b7 Rev: +0.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +20.5% \u00b7 90d: +1.3% \u00b7 Rev: +0.2% YoY \u00b7 Div streak: 35 yrs"
     },
     {
       "ticker": "CB",
@@ -2124,11 +2460,11 @@
       "revPct": 0.102,
       "revAvail": true,
       "divPass": false,
-      "divStreak": 1,
+      "divStreak": 0,
       "yieldNum": 1.18,
       "yieldRaw": "1.2%",
       "statusKey": "border",
-      "note": "5yr: +113.2% \u00b7 90d: +1.7% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 1 yr"
+      "note": "5yr: +113.2% \u00b7 90d: +1.7% \u00b7 Rev: +10.2% YoY"
     },
     {
       "ticker": "LIN",
@@ -2151,12 +2487,12 @@
       "revPass": true,
       "revPct": 0.082,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 33,
       "yieldNum": 1.18,
       "yieldRaw": "1.2%",
-      "statusKey": "border",
-      "note": "5yr: +92.2% \u00b7 90d: +4.6% \u00b7 Rev: +8.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +92.2% \u00b7 90d: +4.6% \u00b7 Rev: +8.2% YoY \u00b7 Div streak: 33 yrs"
     },
     {
       "ticker": "SYK",
@@ -2179,12 +2515,12 @@
       "revPass": true,
       "revPct": 0.026,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 1.14,
       "yieldRaw": "1.1%",
-      "statusKey": "border",
-      "note": "5yr: +23.2% \u00b7 90d: -5.7% \u00b7 Rev: +2.6% YoY"
+      "statusKey": "monitor",
+      "note": "5yr: +23.2% \u00b7 90d: -5.7% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "DE",
@@ -2207,12 +2543,12 @@
       "revPass": false,
       "revPct": -0.111,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 38,
       "yieldNum": 1.1,
       "yieldRaw": "1.1%",
       "statusKey": "border",
-      "note": "5yr: +79.8% \u00b7 90d: +4.3% \u00b7 Rev: -11.1% YoY"
+      "note": "5yr: +79.8% \u00b7 90d: +4.3% \u00b7 Rev: -11.1% YoY \u00b7 Div streak: 38 yrs"
     },
     {
       "ticker": "ROP",
@@ -2235,12 +2571,12 @@
       "revPass": true,
       "revPct": 0.113,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 12,
       "yieldNum": 1.05,
       "yieldRaw": "1.1%",
       "statusKey": "border",
-      "note": "5yr: -27.0% \u00b7 90d: -3.9% \u00b7 Rev: +11.3% YoY"
+      "note": "5yr: -27.0% \u00b7 90d: -3.9% \u00b7 Rev: +11.3% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "ECL",
@@ -2263,12 +2599,12 @@
       "revPass": true,
       "revPct": 0.1,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 23,
       "yieldNum": 1.03,
       "yieldRaw": "1.0%",
-      "statusKey": "border",
-      "note": "5yr: +37.1% \u00b7 90d: +3.2% \u00b7 Rev: +10.0% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +37.1% \u00b7 90d: +3.2% \u00b7 Rev: +10.0% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "ETN",
@@ -2291,12 +2627,12 @@
       "revPass": true,
       "revPct": 0.168,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 5,
       "yieldNum": 1.03,
       "yieldRaw": "1.0%",
-      "statusKey": "border",
-      "note": "5yr: +211.4% \u00b7 90d: +18.4% \u00b7 Rev: +16.8% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +211.4% \u00b7 90d: +18.4% \u00b7 Rev: +16.8% YoY \u00b7 Div streak: 5 yrs"
     },
     {
       "ticker": "ADI",
@@ -2319,12 +2655,12 @@
       "revPass": true,
       "revPct": 0.372,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 22,
       "yieldNum": 1.01,
       "yieldRaw": "1.0%",
-      "statusKey": "border",
-      "note": "5yr: +182.0% \u00b7 90d: +41.7% \u00b7 Rev: +37.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +182.0% \u00b7 90d: +41.7% \u00b7 Rev: +37.2% YoY \u00b7 Div streak: 22 yrs"
     },
     {
       "ticker": "SHW",
@@ -2347,12 +2683,12 @@
       "revPass": true,
       "revPct": 0.068,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 40,
       "yieldNum": 1.01,
       "yieldRaw": "1.0%",
-      "statusKey": "border",
-      "note": "5yr: +22.5% \u00b7 90d: +2.0% \u00b7 Rev: +6.8% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +22.5% \u00b7 90d: +2.0% \u00b7 Rev: +6.8% YoY \u00b7 Div streak: 40 yrs"
     },
     {
       "ticker": "AXP",
@@ -2375,12 +2711,12 @@
       "revPass": true,
       "revPct": 0.116,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 21,
       "yieldNum": 1.0,
       "yieldRaw": "1.0%",
-      "statusKey": "border",
-      "note": "5yr: +111.9% \u00b7 90d: +16.0% \u00b7 Rev: +11.6% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +111.9% \u00b7 90d: +16.0% \u00b7 Rev: +11.6% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "MSFT",
@@ -2403,12 +2739,12 @@
       "revPass": true,
       "revPct": 0.183,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 20,
       "yieldNum": 0.94,
       "yieldRaw": "0.9%",
-      "statusKey": "border",
-      "note": "5yr: +49.2% \u00b7 90d: +6.6% \u00b7 Rev: +18.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +49.2% \u00b7 90d: +6.6% \u00b7 Rev: +18.3% YoY \u00b7 Div streak: 20 yrs"
     },
     {
       "ticker": "DOV",
@@ -2431,12 +2767,12 @@
       "revPass": true,
       "revPct": 0.101,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 41,
       "yieldNum": 0.94,
       "yieldRaw": "0.9%",
-      "statusKey": "border",
-      "note": "5yr: +59.3% \u00b7 90d: +8.5% \u00b7 Rev: +10.1% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +59.3% \u00b7 90d: +8.5% \u00b7 Rev: +10.1% YoY \u00b7 Div streak: 41 yrs"
     },
     {
       "ticker": "SPGI",
@@ -2459,12 +2795,12 @@
       "revPass": true,
       "revPct": 0.104,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 12,
       "yieldNum": 0.92,
       "yieldRaw": "0.9%",
-      "statusKey": "border",
-      "note": "5yr: +3.9% \u00b7 90d: +1.4% \u00b7 Rev: +10.4% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +3.9% \u00b7 90d: +1.4% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "NUE",
@@ -2487,12 +2823,12 @@
       "revPass": true,
       "revPct": 0.213,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 16,
       "yieldNum": 0.88,
       "yieldRaw": "0.9%",
-      "statusKey": "border",
-      "note": "5yr: +172.1% \u00b7 90d: +49.8% \u00b7 Rev: +21.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +172.1% \u00b7 90d: +49.8% \u00b7 Rev: +21.3% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "MCO",
@@ -2515,12 +2851,12 @@
       "revPass": true,
       "revPct": 0.081,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 25,
       "yieldNum": 0.84,
       "yieldRaw": "0.8%",
-      "statusKey": "border",
-      "note": "5yr: +28.8% \u00b7 90d: +6.3% \u00b7 Rev: +8.1% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +28.8% \u00b7 90d: +6.3% \u00b7 Rev: +8.1% YoY \u00b7 Div streak: 25 yrs"
     },
     {
       "ticker": "WMT",
@@ -2543,12 +2879,12 @@
       "revPass": true,
       "revPct": 0.073,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 43,
       "yieldNum": 0.81,
       "yieldRaw": "0.8%",
-      "statusKey": "border",
-      "note": "5yr: +170.5% \u00b7 90d: -4.5% \u00b7 Rev: +7.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +170.5% \u00b7 90d: -4.5% \u00b7 Rev: +7.3% YoY \u00b7 Div streak: 43 yrs"
     },
     {
       "ticker": "DHR",
@@ -2571,12 +2907,12 @@
       "revPass": true,
       "revPct": 0.037,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 8,
       "yieldNum": 0.77,
       "yieldRaw": "0.8%",
       "statusKey": "border",
-      "note": "5yr: -23.3% \u00b7 90d: -2.2% \u00b7 Rev: +3.7% YoY"
+      "note": "5yr: -23.3% \u00b7 90d: -2.2% \u00b7 Rev: +3.7% YoY \u00b7 Div streak: 8 yrs"
     },
     {
       "ticker": "AVGO",
@@ -2599,12 +2935,12 @@
       "revPass": true,
       "revPct": 0.479,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 15,
       "yieldNum": 0.65,
       "yieldRaw": "0.7%",
-      "statusKey": "border",
-      "note": "5yr: +883.7% \u00b7 90d: +37.1% \u00b7 Rev: +47.9% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +883.7% \u00b7 90d: +37.1% \u00b7 Rev: +47.9% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "CAT",
@@ -2627,12 +2963,12 @@
       "revPass": true,
       "revPct": 0.222,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 12,
       "yieldNum": 0.63,
       "yieldRaw": "0.6%",
-      "statusKey": "border",
-      "note": "5yr: +398.4% \u00b7 90d: +42.0% \u00b7 Rev: +22.2% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +398.4% \u00b7 90d: +42.0% \u00b7 Rev: +22.2% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "AME",
@@ -2655,12 +2991,12 @@
       "revPass": true,
       "revPct": 0.113,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 23,
       "yieldNum": 0.55,
       "yieldRaw": "0.6%",
-      "statusKey": "border",
-      "note": "5yr: +83.5% \u00b7 90d: +13.6% \u00b7 Rev: +11.3% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +83.5% \u00b7 90d: +13.6% \u00b7 Rev: +11.3% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "AAPL",
@@ -2683,12 +3019,12 @@
       "revPass": true,
       "revPct": 0.166,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 22,
       "yieldNum": 0.35,
       "yieldRaw": "0.3%",
-      "statusKey": "border",
-      "note": "5yr: +129.7% \u00b7 90d: +19.9% \u00b7 Rev: +16.6% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +129.7% \u00b7 90d: +19.9% \u00b7 Rev: +16.6% YoY \u00b7 Div streak: 22 yrs"
     },
     {
       "ticker": "KLAC",
@@ -2711,12 +3047,12 @@
       "revPass": true,
       "revPct": 0.115,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
+      "divPass": true,
+      "divStreak": 10,
       "yieldNum": 0.32,
       "yieldRaw": "0.3%",
-      "statusKey": "border",
-      "note": "5yr: +763.4% \u00b7 90d: +80.1% \u00b7 Rev: +11.5% YoY"
+      "statusKey": "meets",
+      "note": "5yr: +763.4% \u00b7 90d: +80.1% \u00b7 Rev: +11.5% YoY \u00b7 Div streak: 10 yrs"
     }
   ]
 }
