@@ -1,6 +1,6 @@
 # S&P 500 Dividend Growth Stock Screener
 
-An interactive, single-file HTML screener that filters S&P 500 constituents against four dividend + price-trend criteria. No build tools, no dependencies, no backend — open `index.html` in any browser or host it on GitHub Pages.
+An interactive, single-file HTML screener that fetches **live data from Yahoo Finance** and applies four dividend + price-trend criteria dynamically across ~100 S&P 500 dividend-paying stocks. No build tools, no dependencies, no backend, no API key required — open `index.html` in any browser or host it on GitHub Pages.
 
 🔗 **Live demo:** https://dblasing.github.io/sp500screener
 
@@ -40,13 +40,27 @@ Every stock on the screen must pass (or be evaluated against) all four of the fo
 
 ---
 
+## How It Works
+
+1. Click **Run Screen** — the app fetches live data from Yahoo Finance (no API key needed)
+2. Batch quote calls retrieve current price, dividend yield, and sector for all tickers
+3. Per-stock chart data (5-year weekly prices + dividend events) determines both price trends and dividend streak
+4. Per-stock `financialData` determines YoY revenue growth
+5. All four criteria are applied programmatically; status is computed automatically
+6. Results are cached in `localStorage` for 24 hours — a stale-data banner appears when the cache is old
+
 ## Features
 
-- **Filter** by status, sector, and minimum dividend yield
-- **Search** by ticker symbol or company name
+- **Live data** — fetches directly from Yahoo Finance, no API key, no backend
+- **~100 S&P 500 dividend stocks** screened dynamically
+- **Streams results** as each stock finishes — no waiting for all 100 to complete
+- **Filter** by status, sector, minimum yield, and criteria pass count
+- **Search** by ticker or company name
 - **Sort** any column ascending or descending
 - **Color-coded** sector badges, trend indicators, status pills, and yield values
-- **27 S&P 500 stocks** pre-screened as of April 2026
+- **Per-row criteria dots** (●●●●) showing which of the 4 criteria each stock passes
+- **Auto-generated detail notes** with actual % figures (e.g. `5yr: +142% · 90d: +8.2% · Rev: +6.1% YoY`)
+- **24-hour localStorage cache** with version invalidation
 - Zero dependencies — pure HTML, CSS, and vanilla JavaScript
 
 ---
@@ -63,37 +77,23 @@ Every stock on the screen must pass (or be evaluated against) all four of the fo
 
 ---
 
-## Stocks Included (April 2026)
+## Ticker Universe (~100 S&P 500 Dividend Stocks)
 
-| Ticker | Company | Sector | Div Yield | Status |
-|--------|---------|--------|-----------|--------|
-| KMI | Kinder Morgan | Midstream | ~5.8% | ◎ Monitor |
-| OKE | ONEOK | Midstream | ~4.8% | ~ Borderline |
-| WMB | Williams Companies | Midstream | ~4.5% | ✔ Meets All |
-| CVX | Chevron | Energy | ~4.2% | ✔ Meets All |
-| ABBV | AbbVie | Healthcare | ~3.5% | ✔ Meets All |
-| PEP | PepsiCo | Consumer Staples | ~3.5% | ◎ Monitor |
-| XOM | ExxonMobil | Energy | ~3.5% | ✔ Meets All |
-| JNJ | Johnson & Johnson | Healthcare | ~3.2% | ✔ Meets All |
-| KO | Coca-Cola | Consumer Staples | ~3.1% | ✔ Meets All |
-| COP | ConocoPhillips | Energy | ~3.1% | ~ Borderline |
-| MRK | Merck | Healthcare | ~2.8% | ✔ Meets All |
-| EOG | EOG Resources | Energy | ~2.8% | ✔ Meets All |
-| BLK | BlackRock | Asset Management | ~2.8% | ✦ Likely |
-| BAC | Bank of America | Banking | ~2.7% | ⚠ Flagged |
-| PG | Procter & Gamble | Consumer Staples | ~2.5% | ◎ Monitor |
-| CL | Colgate-Palmolive | Consumer Staples | ~2.4% | ✔ Meets All |
-| JPM | JPMorgan Chase | Banking | ~2.4% | ⚠ Flagged |
-| ADP | Automatic Data Processing | Technology | ~2.3% | ✔ Meets All |
-| AFL | Aflac | Insurance | ~2.2% | ✔ Meets All |
-| ABT | Abbott Laboratories | Healthcare | ~1.8% | ✔ Meets All |
-| CB | Chubb | Insurance | ~1.4% | ✔ Meets All |
-| AVGO | Broadcom | Semiconductors | ~1.2% | ✔ Meets All |
-| ZTS | Zoetis | Healthcare | ~1.2% | ✔ Meets All |
-| WMT | Walmart | Consumer Staples | ~1.0% | ✔ Meets All |
-| MSCI | MSCI Inc. | Financials | ~0.9% | ✔ Meets All |
-| MSFT | Microsoft | Technology | ~0.8% | ✔ Meets All |
-| INTU | Intuit | Technology | ~0.6% | ✔ Meets All |
+The screener evaluates these tickers on every run. Results vary by date based on live data.
+
+| Sector | Tickers |
+|--------|---------|
+| Technology | AAPL, MSFT, AVGO, TXN, QCOM, IBM, ADI, ADP, INTU, PAYX, KLAC, MCHP |
+| Healthcare | JNJ, ABBV, MRK, ABT, MDT, BMY, AMGN, PFE, ZTS, SYK, BDX, DHR, EW |
+| Consumer Staples | KO, PEP, PG, CL, KMB, WMT, MO, PM, GIS, HRL, CLX, CHD, ECL, MKC |
+| Energy | XOM, CVX, COP, EOG, PSX, VLO, MPC, KMI, WMB, OKE |
+| Financials | JPM, BAC, WFC, GS, BLK, AFL, CB, ALL, TRV, AXP, USB, PNC, TFC, MSCI, SPGI, MCO, ICE, CME |
+| Industrials | HON, MMM, RTX, LMT, CAT, DE, EMR, ETN, ITW, DOV, ROP, AME |
+| Utilities | NEE, DUK, SO, AEP, WEC, XEL, ES, AWK, ED, PPL |
+| Real Estate | O, PLD, AMT, DLR, PSA |
+| Materials | LIN, APD, SHW, NUE, PKG |
+| Communication | VZ, T, CMCSA, OMC |
+| Consumer Discretionary | HD, LOW, TGT, MCD, SBUX, NKE, YUM, DRI |
 
 ---
 

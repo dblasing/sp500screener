@@ -6,161 +6,158 @@
   <title>S&P 500 Dividend Growth Stock Screener</title>
   <style>
     :root {
-      --bg: #0f1117;
-      --surface: #1a1d27;
-      --surface2: #22263a;
-      --border: #2e3251;
-      --text: #e2e8f0;
-      --text-muted: #8892a4;
-      --accent: #4f8ef7;
-      --accent2: #7c6af7;
-
-      --green:   #22c55e;
-      --yellow:  #f59e0b;
-      --orange:  #f97316;
-      --red:     #ef4444;
-      --blue:    #3b82f6;
-      --purple:  #a855f7;
-
-      /* sector colors */
-      --sector-tech:      #3b82f6;
-      --sector-health:    #22c55e;
-      --sector-staples:   #f59e0b;
-      --sector-energy:    #f97316;
-      --sector-financial: #a855f7;
-      --sector-other:     #64748b;
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a; --border: #2e3251;
+      --text: #e2e8f0; --muted: #8892a4; --accent: #4f8ef7;
+      --green: #22c55e; --yellow: #f59e0b; --red: #ef4444; --orange: #f97316;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-    a { color: var(--accent); text-decoration: none; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
 
-    /* ── Header ── */
-    header { background: linear-gradient(135deg, #1a1d27 0%, #12152a 100%); border-bottom: 1px solid var(--border); padding: 24px 32px; }
-    header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    /* Header */
+    header { background: linear-gradient(135deg, #1a1d27 0%, #12152a 100%); border-bottom: 1px solid var(--border); padding: 20px 28px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    header h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; flex: 1; }
     header h1 span { color: var(--accent); }
-    .header-meta { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+    .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    #lastRun { font-size: 0.75rem; color: var(--muted); }
 
-    /* ── Criteria bar ── */
-    .criteria-bar { display: flex; gap: 12px; flex-wrap: wrap; padding: 16px 32px; background: var(--surface); border-bottom: 1px solid var(--border); }
-    .criterion { display: flex; align-items: center; gap: 8px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; font-size: 0.8rem; }
-    .criterion .num { width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.7rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    /* Run button */
+    #runBtn { display: flex; align-items: center; gap: 7px; background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 9px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: opacity 0.15s, transform 0.1s; }
+    #runBtn:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
+    #runBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+    #runBtn svg { width: 14px; height: 14px; }
+
+    /* Criteria bar */
+    .criteria-bar { display: flex; gap: 10px; flex-wrap: wrap; padding: 14px 28px; background: var(--surface); border-bottom: 1px solid var(--border); }
+    .criterion { display: flex; align-items: center; gap: 8px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 7px 12px; font-size: 0.78rem; }
+    .criterion .num { width: 18px; height: 18px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 0.65rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .criterion strong { color: var(--text); }
-    .criterion span { color: var(--text-muted); }
+    .criterion em { color: var(--muted); font-style: normal; }
 
-    /* ── Controls ── */
-    .controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; padding: 16px 32px; background: var(--bg); border-bottom: 1px solid var(--border); }
-    .search-wrap { position: relative; flex: 1; min-width: 200px; max-width: 320px; }
-    .search-wrap input { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px 8px 36px; color: var(--text); font-size: 0.85rem; outline: none; transition: border-color 0.15s; }
+    /* Progress */
+    #progressWrap { display: none; padding: 12px 28px; background: var(--surface); border-bottom: 1px solid var(--border); }
+    .progress-track { background: var(--surface2); border-radius: 99px; height: 6px; overflow: hidden; margin-bottom: 6px; }
+    #progressBar { height: 100%; background: var(--accent); border-radius: 99px; transition: width 0.3s; width: 0%; }
+    #progressText { font-size: 0.75rem; color: var(--muted); }
+
+    /* Error banner */
+    #errorBanner { display: none; padding: 10px 28px; background: rgba(239,68,68,0.1); border-bottom: 1px solid rgba(239,68,68,0.3); color: #f87171; font-size: 0.8rem; }
+
+    /* Controls */
+    .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; padding: 14px 28px; border-bottom: 1px solid var(--border); }
+    .search-wrap { position: relative; min-width: 200px; max-width: 280px; }
+    .search-wrap input { width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px 8px 32px; color: var(--text); font-size: 0.83rem; outline: none; }
     .search-wrap input:focus { border-color: var(--accent); }
-    .search-wrap svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
-    select { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 32px 8px 12px; color: var(--text); font-size: 0.85rem; outline: none; cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238892a4' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10px center; }
+    .search-wrap svg { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; width: 13px; height: 13px; }
+    select { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 28px 8px 10px; color: var(--text); font-size: 0.83rem; outline: none; cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238892a4' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; }
     select:focus { border-color: var(--accent); }
-    .count-badge { margin-left: auto; background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 5px 14px; font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; }
+    .count-badge { margin-left: auto; background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 5px 12px; font-size: 0.76rem; color: var(--muted); white-space: nowrap; }
     .count-badge strong { color: var(--text); }
 
-    /* ── Table ── */
-    .table-wrap { overflow-x: auto; padding: 0 32px 32px; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin-top: 20px; }
-    thead th { background: var(--surface); color: var(--text-muted); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; cursor: pointer; user-select: none; position: sticky; top: 0; z-index: 10; }
+    /* Table */
+    .table-wrap { overflow-x: auto; padding: 0 28px 28px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 18px; }
+    thead th { background: var(--surface); color: var(--muted); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; cursor: pointer; user-select: none; position: sticky; top: 0; z-index: 10; }
     thead th:hover { color: var(--text); }
-    thead th .sort-icon { display: inline-block; margin-left: 4px; opacity: 0.4; font-size: 0.7rem; }
-    thead th.sorted .sort-icon { opacity: 1; color: var(--accent); }
+    thead th .si { margin-left: 3px; opacity: 0.35; font-size: 0.68rem; }
+    thead th.sorted .si { opacity: 1; color: var(--accent); }
     tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
     tbody tr:hover { background: var(--surface2); }
-    td { padding: 12px 14px; vertical-align: middle; }
+    td { padding: 11px 12px; vertical-align: middle; }
 
-    /* ticker cell */
-    .ticker-cell { font-weight: 700; font-size: 0.9rem; color: var(--accent); letter-spacing: 0.02em; }
-    .company-name { color: var(--text-muted); font-size: 0.75rem; margin-top: 2px; }
+    .ticker-cell { font-weight: 700; font-size: 0.88rem; color: var(--accent); }
+    .company-name { color: var(--muted); font-size: 0.73rem; margin-top: 2px; white-space: nowrap; max-width: 160px; overflow: hidden; text-overflow: ellipsis; }
 
-    /* sector badge */
-    .sector-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; opacity: 0.9; }
-    .sector-tech      { background: rgba(59,130,246,0.15); color: #60a5fa; }
-    .sector-health    { background: rgba(34,197,94,0.15);  color: #4ade80; }
-    .sector-staples   { background: rgba(245,158,11,0.15); color: #fbbf24; }
-    .sector-energy    { background: rgba(249,115,22,0.15); color: #fb923c; }
-    .sector-financial { background: rgba(168,85,247,0.15); color: #c084fc; }
-    .sector-other     { background: rgba(100,116,139,0.15);color: #94a3b8; }
+    .sector-badge { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 0.68rem; font-weight: 600; white-space: nowrap; }
+    .s-tech      { background: rgba(59,130,246,.15); color: #60a5fa; }
+    .s-health    { background: rgba(34,197,94,.15);  color: #4ade80; }
+    .s-staples   { background: rgba(245,158,11,.15); color: #fbbf24; }
+    .s-energy    { background: rgba(249,115,22,.15); color: #fb923c; }
+    .s-financial { background: rgba(168,85,247,.15); color: #c084fc; }
+    .s-industrial{ background: rgba(100,116,139,.15);color: #94a3b8; }
+    .s-utility   { background: rgba(34,211,238,.15); color: #67e8f9; }
+    .s-reit      { background: rgba(251,113,133,.15);color: #fb7185; }
+    .s-other     { background: rgba(100,116,139,.12);color: #94a3b8; }
 
-    /* trend cell */
-    .trend { font-size: 0.85rem; white-space: nowrap; }
-    .trend-up      { color: var(--green); }
-    .trend-moderate { color: #86efac; }
-    .trend-mixed   { color: var(--yellow); }
-    .trend-flag    { color: var(--red); }
+    .trend { font-size: 0.83rem; white-space: nowrap; }
+    .t-up   { color: var(--green); }
+    .t-mod  { color: #86efac; }
+    .t-mix  { color: var(--yellow); }
+    .t-flag { color: var(--red); }
+    .t-unk  { color: var(--muted); }
 
-    /* status badge */
-    .status-badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
-    .status-meets    { background: rgba(34,197,94,0.15);  color: #4ade80; border: 1px solid rgba(34,197,94,0.3); }
-    .status-likely   { background: rgba(79,142,247,0.15); color: #7cb9ff; border: 1px solid rgba(79,142,247,0.3); }
-    .status-monitor  { background: rgba(245,158,11,0.15); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
-    .status-border   { background: rgba(148,163,184,0.1); color: #94a3b8; border: 1px solid rgba(148,163,184,0.2); }
-    .status-flagged  { background: rgba(239,68,68,0.15);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+    /* Criteria pass/fail dots */
+    .criteria-dots { display: flex; gap: 3px; margin-top: 3px; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; }
+    .dot-pass { background: var(--green); }
+    .dot-fail { background: var(--red); }
+    .dot-unk  { background: var(--muted); opacity: 0.4; }
 
-    /* yield */
-    .yield-high   { color: var(--green); font-weight: 600; }
-    .yield-mid    { color: #86efac; font-weight: 600; }
-    .yield-low    { color: var(--text-muted); }
+    .status-badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 6px; font-size: 0.73rem; font-weight: 600; white-space: nowrap; }
+    .st-meets  { background: rgba(34,197,94,.15);  color: #4ade80; border: 1px solid rgba(34,197,94,.3); }
+    .st-likely { background: rgba(79,142,247,.15); color: #7cb9ff; border: 1px solid rgba(79,142,247,.3); }
+    .st-monitor{ background: rgba(245,158,11,.15); color: #fbbf24; border: 1px solid rgba(245,158,11,.3); }
+    .st-border { background: rgba(148,163,184,.1); color: #94a3b8; border: 1px solid rgba(148,163,184,.2); }
+    .st-flagged{ background: rgba(239,68,68,.15);  color: #f87171; border: 1px solid rgba(239,68,68,.3); }
 
-    /* div streak */
-    .streak { color: var(--text-muted); font-size: 0.8rem; }
-    .streak-long { color: var(--yellow); font-weight: 600; }
+    .yield-hi  { color: var(--green); font-weight: 600; }
+    .yield-mid { color: #86efac; font-weight: 600; }
+    .yield-lo  { color: var(--muted); }
 
-    /* notes */
-    .notes-cell { color: var(--text-muted); font-size: 0.75rem; max-width: 320px; line-height: 1.4; }
+    .note-cell { color: var(--muted); font-size: 0.73rem; line-height: 1.4; max-width: 280px; }
 
-    /* ── Legend ── */
-    .legend { display: flex; gap: 24px; flex-wrap: wrap; padding: 0 32px 24px; }
-    .legend-group h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 8px; }
+    /* Skeleton loader */
+    .skeleton { background: linear-gradient(90deg, var(--surface2) 25%, var(--surface) 50%, var(--surface2) 75%); background-size: 400% 100%; animation: shimmer 1.4s infinite; border-radius: 4px; height: 14px; }
+    @keyframes shimmer { 0% { background-position: 100% 0 } 100% { background-position: -100% 0 } }
+
+    /* Legend */
+    .legend { display: flex; gap: 24px; flex-wrap: wrap; padding: 0 28px 24px; }
+    .legend-group h4 { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 7px; }
     .legend-items { display: flex; flex-direction: column; gap: 4px; }
-    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.73rem; color: var(--muted); }
 
-    /* ── Footer ── */
-    footer { padding: 20px 32px; border-top: 1px solid var(--border); background: var(--surface); font-size: 0.73rem; color: var(--text-muted); line-height: 1.6; }
+    /* Empty / error states */
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
+    .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .empty-state p { font-size: 0.85rem; }
+    .empty-state .cta { margin-top: 16px; display: inline-flex; align-items: center; gap: 7px; background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 9px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+
+    footer { padding: 18px 28px; border-top: 1px solid var(--border); background: var(--surface); font-size: 0.71rem; color: var(--muted); line-height: 1.7; }
     footer strong { color: var(--text); }
-
-    /* ── Empty state ── */
-    .empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
-    .empty svg { margin: 0 auto 12px; display: block; opacity: 0.3; }
-
-    @media (max-width: 768px) {
-      header, .criteria-bar, .controls, .table-wrap, .legend { padding-left: 16px; padding-right: 16px; }
-      header h1 { font-size: 1.2rem; }
-    }
+    @media (max-width: 768px) { header, .criteria-bar, .controls, .table-wrap, .legend { padding-left: 14px; padding-right: 14px; } }
   </style>
 </head>
 <body>
 
 <header>
   <h1>S&P 500 <span>Dividend Growth</span> Stock Screener</h1>
-  <div class="header-meta">Screens S&P 500 constituents against four dividend + price-trend criteria &nbsp;·&nbsp; Data as of April 2026 &nbsp;·&nbsp; For research purposes only</div>
+  <div class="header-right">
+    <span id="lastRun"></span>
+    <button id="runBtn" onclick="runScreen()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      Run Screen
+    </button>
+  </div>
 </header>
 
 <div class="criteria-bar">
-  <div class="criterion">
-    <div class="num">1</div>
-    <div><strong>5-Year Trend</strong> <span>— Net upward price movement over trailing 5 years</span></div>
-  </div>
-  <div class="criterion">
-    <div class="num">2</div>
-    <div><strong>90-Day Trend</strong> <span>— Upward momentum over trailing 90 calendar days</span></div>
-  </div>
-  <div class="criterion">
-    <div class="num">3</div>
-    <div><strong>YoY Revenue Growth</strong> <span>— Most recent FY revenue (or NII) exceeds prior year</span></div>
-  </div>
-  <div class="criterion">
-    <div class="num">4</div>
-    <div><strong>Dividend Growth</strong> <span>— DPS increased consistently over 3–5+ years</span></div>
-  </div>
+  <div class="criterion"><div class="num">1</div><strong>5-Year Trend</strong><em>— Net upward price movement over 5 years</em></div>
+  <div class="criterion"><div class="num">2</div><strong>90-Day Trend</strong><em>— Upward momentum over trailing 90 days</em></div>
+  <div class="criterion"><div class="num">3</div><strong>YoY Revenue</strong><em>— Most recent FY revenue exceeds prior year</em></div>
+  <div class="criterion"><div class="num">4</div><strong>Dividend Growth</strong><em>— DPS increased for 3+ consecutive years</em></div>
 </div>
+
+<div id="progressWrap">
+  <div class="progress-track"><div id="progressBar"></div></div>
+  <div id="progressText">Initializing…</div>
+</div>
+
+<div id="errorBanner"></div>
 
 <div class="controls">
   <div class="search-wrap">
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
     <input type="text" id="search" placeholder="Search ticker or company…" oninput="applyFilters()" />
   </div>
-
   <select id="filterStatus" onchange="applyFilters()">
     <option value="">All Statuses</option>
     <option value="meets">✔ Meets All</option>
@@ -169,51 +166,60 @@
     <option value="border">~ Borderline</option>
     <option value="flagged">⚠ Flagged</option>
   </select>
-
   <select id="filterSector" onchange="applyFilters()">
     <option value="">All Sectors</option>
     <option value="Technology">Technology</option>
-    <option value="Semiconductors">Semiconductors</option>
     <option value="Healthcare">Healthcare</option>
     <option value="Consumer Staples">Consumer Staples</option>
     <option value="Energy">Energy</option>
-    <option value="Midstream">Midstream</option>
-    <option value="Banking">Banking</option>
-    <option value="Insurance">Insurance</option>
     <option value="Financials">Financials</option>
-    <option value="Asset Management">Asset Management</option>
+    <option value="Industrials">Industrials</option>
+    <option value="Utilities">Utilities</option>
+    <option value="Real Estate">Real Estate</option>
+    <option value="Materials">Materials</option>
+    <option value="Communication">Communication</option>
+    <option value="Consumer Discretionary">Consumer Discretionary</option>
   </select>
-
   <select id="filterYield" onchange="applyFilters()">
     <option value="">All Yields</option>
+    <option value="4">≥ 4.0%</option>
     <option value="3">≥ 3.0%</option>
     <option value="2">≥ 2.0%</option>
     <option value="1">≥ 1.0%</option>
   </select>
-
-  <div class="count-badge" id="countBadge"><strong>27</strong> stocks</div>
+  <select id="filterCriteria" onchange="applyFilters()">
+    <option value="">All Pass Counts</option>
+    <option value="4">All 4 criteria</option>
+    <option value="3">3+ criteria</option>
+    <option value="2">2+ criteria</option>
+  </select>
+  <div class="count-badge" id="countBadge"><strong>—</strong> stocks</div>
 </div>
 
 <div class="table-wrap">
   <table id="screenerTable">
     <thead>
       <tr>
-        <th onclick="sortBy('ticker')" data-col="ticker">Ticker <span class="sort-icon">↕</span></th>
-        <th onclick="sortBy('sector')" data-col="sector">Sector <span class="sort-icon">↕</span></th>
-        <th onclick="sortBy('trend5')" data-col="trend5">5-Yr Trend <span class="sort-icon">↕</span></th>
-        <th onclick="sortBy('trend90')" data-col="trend90">90-Day Trend <span class="sort-icon">↕</span></th>
-        <th onclick="sortBy('revenue')" data-col="revenue">YoY Revenue <span class="sort-icon">↕</span></th>
-        <th onclick="sortBy('streak')" data-col="streak">Div Streak <span class="sort-icon">↕</span></th>
-        <th onclick="sortBy('yield')" data-col="yield">Div Yield <span class="sort-icon">↕</span></th>
-        <th onclick="sortBy('status')" data-col="status">Status <span class="sort-icon">↕</span></th>
-        <th>Key Notes</th>
+        <th onclick="sortBy('ticker')" data-col="ticker">Ticker <span class="si">↕</span></th>
+        <th onclick="sortBy('sector')" data-col="sector">Sector <span class="si">↕</span></th>
+        <th onclick="sortBy('trend5')" data-col="trend5">5-Yr Trend <span class="si">↕</span></th>
+        <th onclick="sortBy('trend90')" data-col="trend90">90-Day Trend <span class="si">↕</span></th>
+        <th onclick="sortBy('revenue')" data-col="revenue">YoY Revenue <span class="si">↕</span></th>
+        <th onclick="sortBy('streak')" data-col="streak">Div Streak <span class="si">↕</span></th>
+        <th onclick="sortBy('yield')" data-col="yield">Yield <span class="si">↕</span></th>
+        <th onclick="sortBy('status')" data-col="status">Status <span class="si">↕</span></th>
+        <th>Details</th>
       </tr>
     </thead>
     <tbody id="tableBody"></tbody>
   </table>
-  <div class="empty" id="emptyState" style="display:none">
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
-    No stocks match your filters.
+  <div class="empty-state" id="emptyState">
+    <div class="icon">📊</div>
+    <p>No results yet. Click <strong>Run Screen</strong> to fetch live data and apply all four criteria.</p>
+    <button class="cta" onclick="runScreen()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      Run Screen
+    </button>
   </div>
 </div>
 
@@ -221,150 +227,358 @@
   <div class="legend-group">
     <h4>Status</h4>
     <div class="legend-items">
-      <div class="legend-item"><span class="status-badge status-meets">✔ Meets All</span> Passes all four criteria</div>
-      <div class="legend-item"><span class="status-badge status-likely">✦ Likely</span> Very likely; confirm 90-day chart</div>
-      <div class="legend-item"><span class="status-badge status-monitor">◎ Monitor</span> Strong fit; one near-term concern</div>
-      <div class="legend-item"><span class="status-badge status-border">~ Borderline</span> One criterion marginal</div>
-      <div class="legend-item"><span class="status-badge status-flagged">⚠ Flagged</span> 90-day trend broken; re-evaluate</div>
+      <div class="legend-item"><span class="status-badge st-meets">✔ Meets All</span> All 4 criteria pass</div>
+      <div class="legend-item"><span class="status-badge st-likely">✦ Likely</span> 3 pass; revenue data unavailable</div>
+      <div class="legend-item"><span class="status-badge st-monitor">◎ Monitor</span> 3 pass; 90-day concern</div>
+      <div class="legend-item"><span class="status-badge st-border">~ Borderline</span> 3 pass; div streak &lt; 3 yrs</div>
+      <div class="legend-item"><span class="status-badge st-flagged">⚠ Flagged</span> 90-day trend broken</div>
     </div>
   </div>
   <div class="legend-group">
     <h4>Trend</h4>
     <div class="legend-items">
-      <div class="legend-item"><span class="trend trend-up">⬆ Uptrend</span> Clear upward price trend</div>
-      <div class="legend-item"><span class="trend trend-moderate">↗ Moderate</span> Upward but pace slowed / choppy</div>
-      <div class="legend-item"><span class="trend trend-mixed">↔ Mixed</span> Direction unclear; near-term concern</div>
-      <div class="legend-item"><span class="trend trend-flag">⚠ Flagged</span> Recent decline broke uptrend</div>
+      <div class="legend-item"><span class="trend t-up">⬆ Uptrend</span> Clear upward movement</div>
+      <div class="legend-item"><span class="trend t-mod">↗ Moderate</span> Positive but slowing</div>
+      <div class="legend-item"><span class="trend t-mix">↔ Mixed</span> Choppy; marginal</div>
+      <div class="legend-item"><span class="trend t-flag">⚠ Flagged</span> Significant decline</div>
     </div>
   </div>
   <div class="legend-group">
-    <h4>Sectors</h4>
+    <h4>Criteria Dots</h4>
     <div class="legend-items">
-      <div class="legend-item"><span class="sector-badge sector-tech">Technology / Semiconductors</span></div>
-      <div class="legend-item"><span class="sector-badge sector-health">Healthcare</span></div>
-      <div class="legend-item"><span class="sector-badge sector-staples">Consumer Staples</span></div>
-      <div class="legend-item"><span class="sector-badge sector-energy">Energy / Midstream</span></div>
-      <div class="legend-item"><span class="sector-badge sector-financial">Financials / Insurance / Banking</span></div>
+      <div class="legend-item"><span style="display:flex;gap:3px"><span class="dot dot-pass"></span><span class="dot dot-pass"></span><span class="dot dot-pass"></span><span class="dot dot-pass"></span></span> All 4 pass</div>
+      <div class="legend-item"><span style="display:flex;gap:3px"><span class="dot dot-pass"></span><span class="dot dot-fail"></span><span class="dot dot-pass"></span><span class="dot dot-pass"></span></span> 3/4 pass (order: 5yr, 90d, rev, div)</div>
+      <div class="legend-item"><span style="display:flex;gap:3px"><span class="dot dot-unk"></span></span> Data unavailable</div>
     </div>
   </div>
 </div>
 
 <footer>
-  <strong>Sources:</strong> Sure Dividend, Simply Safe Dividends, Seeking Alpha, MarketBeat, Macrotrends, company investor relations pages &nbsp;·&nbsp;
-  <strong>Disclaimer:</strong> This screen is for research purposes only. Not investment advice. Dividend yields are approximate as of April 2026. Verify all data independently before making investment decisions.
+  <strong>Data:</strong> Yahoo Finance (live, via unofficial API) &nbsp;·&nbsp;
+  <strong>Universe:</strong> ~100 S&P 500 dividend-paying stocks &nbsp;·&nbsp;
+  <strong>Disclaimer:</strong> For research purposes only. Not investment advice. Verify independently before acting.
 </footer>
 
 <script>
-const STOCKS = [
-  { ticker:'KMI',  company:'Kinder Morgan',           sector:'Midstream',        trend5:'up',   trend90:'moderate', revenue:'Stable',         streakRaw:'9 yrs',     streakNum:9,  yieldRaw:'~5.8%', yieldNum:5.8, statusKey:'monitor',  notes:'Up ~22% over 90 days but pulled back from March peak; watch for re-entry' },
-  { ticker:'OKE',  company:'ONEOK',                   sector:'Midstream',        trend5:'up',   trend90:'up',       revenue:'Stable',         streakRaw:'Growing',   streakNum:5,  yieldRaw:'~4.8%', yieldNum:4.8, statusKey:'border',   notes:'Stable fee-based model; lower dividend growth rate (~2.7% CAGR)' },
-  { ticker:'WMB',  company:'Williams Companies',      sector:'Midstream',        trend5:'up',   trend90:'up',       revenue:'~6% EBITDA',     streakRaw:'52 yrs',    streakNum:52, yieldRaw:'~4.5%', yieldNum:4.5, statusKey:'meets',    notes:'Longest energy div streak on screen; raised 5% for 2026; EBITDA guidance raised' },
-  { ticker:'CVX',  company:'Chevron',                 sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'39 yrs',    streakNum:39, yieldRaw:'~4.2%', yieldNum:4.2, statusKey:'meets',    notes:'~84% 5-yr gain; Guyana assets fueling continued growth' },
-  { ticker:'ABBV', company:'AbbVie',                  sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Consecutive',streakNum:10,yieldRaw:'~3.5%', yieldNum:3.5, statusKey:'meets',    notes:'Humira successor pipeline supporting revenue growth' },
-  { ticker:'PEP',  company:'PepsiCo',                 sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'~2.2%',          streakRaw:'52 yrs',    streakNum:52, yieldRaw:'~3.5%', yieldNum:3.5, statusKey:'monitor',  notes:'Watch near-term volume softness; long-term thesis intact' },
-  { ticker:'XOM',  company:'ExxonMobil',              sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'43 yrs',    streakNum:43, yieldRaw:'~3.5%', yieldNum:3.5, statusKey:'meets',    notes:'Permian Basin driving volume growth; cleanest energy fit' },
-  { ticker:'JNJ',  company:'Johnson & Johnson',       sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'~6.1%',          streakRaw:'63 yrs',    streakNum:63, yieldRaw:'~3.2%', yieldNum:3.2, statusKey:'meets',    notes:'Dividend King; Pharma + MedTech revenue diversification' },
-  { ticker:'KO',   company:'Coca-Cola',               sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'63 yrs',    streakNum:63, yieldRaw:'~3.1%', yieldNum:3.1, statusKey:'meets',    notes:'Dividend King; global pricing power intact' },
-  { ticker:'COP',  company:'ConocoPhillips',          sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'14 yrs',    streakNum:14, yieldRaw:'~3.1%', yieldNum:3.1, statusKey:'border',   notes:'Solid E&P but shorter dividend history vs peers' },
-  { ticker:'MRK',  company:'Merck',                   sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'Mixed',          streakRaw:'Consistent',streakNum:12, yieldRaw:'~2.8%', yieldNum:2.8, statusKey:'meets',    notes:'Keytruda revenue strong; watch LOE cycle post-2028' },
-  { ticker:'EOG',  company:'EOG Resources',           sector:'Energy',           trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Growing',   streakNum:8,  yieldRaw:'~2.8%', yieldNum:2.8, statusKey:'meets',    notes:'Disciplined E&P; special dividends on top of regular' },
-  { ticker:'BLK',  company:'BlackRock',               sector:'Asset Management', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'17 yrs',    streakNum:17, yieldRaw:'~2.8%', yieldNum:2.8, statusKey:'likely',   notes:'AUM growth driving fee revenue; confirm 90-day chart' },
-  { ticker:'BAC',  company:'Bank of America',         sector:'Banking',          trend5:'up',   trend90:'flagged',  revenue:'Positive',       streakRaw:'13 yrs',    streakNum:13, yieldRaw:'~2.7%', yieldNum:2.7, statusKey:'flagged',  notes:'~8.8% annual div growth; tariff-driven 90-day breakdown like JPM' },
-  { ticker:'PG',   company:'Procter & Gamble',        sector:'Consumer Staples', trend5:'up',   trend90:'mixed',    revenue:'Positive',       streakRaw:'70 yrs',    streakNum:70, yieldRaw:'~2.5%', yieldNum:2.5, statusKey:'monitor',  notes:'Longest streak in S&P 500; price slipped to ~$144 range in early 2026 — confirm 90-day' },
-  { ticker:'CL',   company:'Colgate-Palmolive',       sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'63 yrs',    streakNum:63, yieldRaw:'~2.4%', yieldNum:2.4, statusKey:'meets',    notes:'Dividend King; emerging market pricing strength' },
-  { ticker:'JPM',  company:'JPMorgan Chase',          sector:'Banking',          trend5:'up',   trend90:'flagged',  revenue:'~5.7% NII',      streakRaw:'16 yrs',    streakNum:16, yieldRaw:'~2.4%', yieldNum:2.4, statusKey:'flagged',  notes:'Best bank on the screen; up 25% YTD then fell ~7% on tariff news — re-check chart' },
-  { ticker:'ADP',  company:'Automatic Data Processing',sector:'Technology',     trend5:'up',   trend90:'up',       revenue:'~6.6%',          streakRaw:'25+ yrs',   streakNum:25, yieldRaw:'~2.3%', yieldNum:2.3, statusKey:'meets',    notes:'~10.5% dividend CAGR; payroll processing moat' },
-  { ticker:'AFL',  company:'Aflac',                   sector:'Insurance',        trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'43 yrs',    streakNum:43, yieldRaw:'~2.2%', yieldNum:2.2, statusKey:'meets',    notes:'~15.2% 5-yr div CAGR; supplemental insurance model less exposed to tariff noise' },
-  { ticker:'ABT',  company:'Abbott Laboratories',     sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'~5.7%',          streakRaw:'Solid streak',streakNum:15,yieldRaw:'~1.8%', yieldNum:1.8, statusKey:'meets',   notes:'Diagnostics + devices driving consistent growth' },
-  { ticker:'CB',   company:'Chubb',                   sector:'Insurance',        trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'33 yrs',    streakNum:33, yieldRaw:'~1.4%', yieldNum:1.4, statusKey:'meets',    notes:'Best-in-class P&C underwriter; less correlated to rate/tariff volatility' },
-  { ticker:'AVGO', company:'Broadcom',                sector:'Semiconductors',   trend5:'up',   trend90:'up',       revenue:'~25.2%',         streakRaw:'Aggressive',streakNum:7,  yieldRaw:'~1.2%', yieldNum:1.2, statusKey:'meets',    notes:'Highest revenue growth on entire screen; AI chip demand' },
-  { ticker:'ZTS',  company:'Zoetis',                  sector:'Healthcare',       trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Consistent',streakNum:10, yieldRaw:'~1.2%', yieldNum:1.2, statusKey:'meets',    notes:'Animal health leader; steady compounder' },
-  { ticker:'WMT',  company:'Walmart',                 sector:'Consumer Staples', trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'51 yrs',    streakNum:51, yieldRaw:'~1.0%', yieldNum:1.0, statusKey:'meets',    notes:'Up ~78% through 2025; eCommerce + advertising growth' },
-  { ticker:'MSCI', company:'MSCI Inc.',               sector:'Financials',       trend5:'up',   trend90:'up',       revenue:'Positive',       streakRaw:'Robust',    streakNum:10, yieldRaw:'~0.9%', yieldNum:0.9, statusKey:'meets',    notes:'Index/analytics subscription model; strong recurring revenue' },
-  { ticker:'MSFT', company:'Microsoft',               sector:'Technology',       trend5:'up',   trend90:'up',       revenue:'Double-digit %', streakRaw:'Consistent',streakNum:20, yieldRaw:'~0.8%', yieldNum:0.8, statusKey:'meets',    notes:'Best-in-class compounder; cloud + AI revenue surging' },
-  { ticker:'INTU', company:'Intuit',                  sector:'Technology',       trend5:'up',   trend90:'up',       revenue:'Strong',         streakRaw:'Consistent',streakNum:12, yieldRaw:'~0.6%', yieldNum:0.6, statusKey:'meets',    notes:'TurboTax + QuickBooks revenue growth accelerating' },
+// ── Universe: S&P 500 dividend-paying stocks ──────────────────────────────────
+const TICKERS = [
+  // Technology
+  'AAPL','MSFT','AVGO','TXN','QCOM','IBM','ADI','ADP','INTU','PAYX','KLAC','MCHP',
+  // Healthcare
+  'JNJ','ABBV','MRK','ABT','MDT','BMY','AMGN','PFE','ZTS','SYK','BDX','DHR','EW',
+  // Consumer Staples
+  'KO','PEP','PG','CL','KMB','WMT','MO','PM','GIS','HRL','CLX','CHD','ECL','MKC',
+  // Energy
+  'XOM','CVX','COP','EOG','PSX','VLO','MPC','KMI','WMB','OKE',
+  // Financials / Insurance / Banking
+  'JPM','BAC','WFC','GS','BLK','AFL','CB','ALL','TRV','AXP','USB','PNC','TFC',
+  'MSCI','SPGI','MCO','ICE','CME',
+  // Industrials
+  'HON','MMM','RTX','LMT','CAT','DE','EMR','ETN','ITW','DOV','ROP','AME',
+  // Utilities
+  'NEE','DUK','SO','AEP','WEC','XEL','ES','AWK','ED','PPL',
+  // Real Estate
+  'O','PLD','AMT','DLR','PSA',
+  // Materials
+  'LIN','APD','SHW','NUE','PKG',
+  // Communication
+  'VZ','T','CMCSA','OMC',
+  // Consumer Discretionary
+  'HD','LOW','TGT','MCD','SBUX','NKE','YUM','DRI',
 ];
 
-const STATUS_META = {
-  meets:   { label:'✔ Meets All', cls:'status-meets',   order:1 },
-  likely:  { label:'✦ Likely',    cls:'status-likely',  order:2 },
-  monitor: { label:'◎ Monitor',   cls:'status-monitor', order:3 },
-  border:  { label:'~ Borderline',cls:'status-border',  order:4 },
-  flagged: { label:'⚠ Flagged',   cls:'status-flagged', order:5 },
-};
+// ── State ─────────────────────────────────────────────────────────────────────
+let allResults = [];
+let filtered   = [];
+let sortCol    = 'yield';
+let sortAsc    = false;
+let isRunning  = false;
 
-const TREND_META = {
-  up:       { label:'⬆ Uptrend', cls:'trend-up',       order:1 },
-  moderate: { label:'↗ Moderate',cls:'trend-moderate', order:2 },
-  mixed:    { label:'↔ Mixed',   cls:'trend-mixed',    order:3 },
-  flagged:  { label:'⚠ Flagged', cls:'trend-flag',     order:4 },
-};
+// ── API helpers ───────────────────────────────────────────────────────────────
+const YF1 = 'https://query1.finance.yahoo.com';
+const YF2 = 'https://query2.finance.yahoo.com';
 
-function sectorClass(s) {
-  if (['Technology','Semiconductors'].includes(s)) return 'sector-tech';
-  if (s === 'Healthcare') return 'sector-health';
-  if (s === 'Consumer Staples') return 'sector-staples';
-  if (['Energy','Midstream'].includes(s)) return 'sector-energy';
-  if (['Banking','Insurance','Financials','Asset Management'].includes(s)) return 'sector-financial';
-  return 'sector-other';
+async function apiFetch(url) {
+  const r = await fetch(url, { headers: { Accept: 'application/json' } });
+  if (!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
+  return r.json();
 }
 
-function yieldClass(n) {
-  if (n >= 3) return 'yield-high';
-  if (n >= 1.5) return 'yield-mid';
-  return 'yield-low';
+async function fetchBatchQuotes(tickers) {
+  const data = await apiFetch(`${YF1}/v7/finance/quote?symbols=${tickers.join(',')}&fields=longName,shortName,sector,regularMarketPrice,trailingAnnualDividendYield,dividendYield,dividendRate`);
+  return (data.quoteResponse?.result || []);
 }
 
-function streakClass(n) {
-  return n >= 25 ? 'streak-long' : 'streak';
+async function fetchChart(ticker) {
+  const data = await apiFetch(`${YF1}/v8/finance/chart/${ticker}?interval=1wk&range=5y&events=dividends&includePrePost=false`);
+  return data.chart?.result?.[0] || null;
 }
 
-let sortCol = null;
-let sortAsc = true;
-let filtered = [...STOCKS];
+async function fetchFinancials(ticker) {
+  const data = await apiFetch(`${YF2}/v10/finance/quoteSummary/${ticker}?modules=financialData`);
+  return data.quoteSummary?.result?.[0]?.financialData || null;
+}
 
-function sortBy(col) {
-  if (sortCol === col) sortAsc = !sortAsc;
-  else { sortCol = col; sortAsc = true; }
-  document.querySelectorAll('thead th').forEach(th => {
-    th.classList.toggle('sorted', th.dataset.col === col);
-    if (th.dataset.col === col) th.querySelector('.sort-icon').textContent = sortAsc ? '↑' : '↓';
-    else if (th.querySelector('.sort-icon')) th.querySelector('.sort-icon').textContent = '↕';
+// ── Criteria logic ────────────────────────────────────────────────────────────
+function priceTrend(timestamps, closes, lookbackDays) {
+  if (!timestamps?.length || !closes?.length) return { label: 'unknown', cls: 't-unk', order: 5, pct: null };
+  const cutoff = (timestamps[timestamps.length - 1]) - (lookbackDays * 86400);
+  let si = 0;
+  for (let i = 0; i < timestamps.length; i++) { if (timestamps[i] >= cutoff) { si = i; break; } }
+  const validFrom = closes.slice(si).filter(Boolean);
+  const validAll  = closes.filter(Boolean);
+  const start = validFrom[0];
+  const end   = validAll[validAll.length - 1];
+  if (!start || !end) return { label: 'unknown', cls: 't-unk', order: 5, pct: null };
+  const pct = (end - start) / start;
+  if (lookbackDays >= 365 * 4) { // 5yr
+    if (pct >  0.05) return { label: '⬆ Uptrend',  cls: 't-up',   order: 1, pct, pass: true };
+    if (pct > -0.10) return { label: '↗ Moderate',  cls: 't-mod',  order: 2, pct, pass: true };
+    if (pct > -0.25) return { label: '↔ Mixed',     cls: 't-mix',  order: 3, pct, pass: false };
+    return               { label: '⚠ Flagged',  cls: 't-flag', order: 4, pct, pass: false };
+  } else { // 90d
+    if (pct >  0.00) return { label: '⬆ Uptrend',  cls: 't-up',   order: 1, pct, pass: true };
+    if (pct > -0.05) return { label: '↗ Moderate',  cls: 't-mod',  order: 2, pct, pass: true };
+    if (pct > -0.12) return { label: '↔ Mixed',     cls: 't-mix',  order: 3, pct, pass: false };
+    return               { label: '⚠ Flagged',  cls: 't-flag', order: 4, pct, pass: false };
+  }
+}
+
+function dividendAnalysis(divEvents) {
+  if (!divEvents) return { pass: false, streak: 0 };
+  const events = Object.values(divEvents);
+  if (events.length < 4) return { pass: false, streak: 0 };
+  const byYear = {};
+  events.forEach(e => {
+    const yr = new Date(e.date * 1000).getFullYear();
+    byYear[yr] = (byYear[yr] || 0) + e.amount;
   });
-  render();
+  const yrs = Object.keys(byYear).sort().map(Number);
+  const amts = yrs.map(y => byYear[y]);
+  let streak = 0;
+  for (let i = amts.length - 1; i > 0; i--) {
+    if (amts[i] >= amts[i - 1] * 0.98) streak++;
+    else break;
+  }
+  return { pass: streak >= 3, streak };
 }
+
+function revenueAnalysis(fin) {
+  if (!fin?.revenueGrowth?.raw && fin?.revenueGrowth?.raw !== 0) return { pass: null, pct: null };
+  const v = fin.revenueGrowth.raw;
+  return { pass: v > 0, pct: v };
+}
+
+function computeStatus(c5, c90, cRev, cDiv, revAvail) {
+  const passes = [c5, c90, revAvail ? cRev : null, cDiv].filter(v => v === true).length;
+  const fails  = [c5, c90, revAvail ? cRev : null, cDiv].filter(v => v === false).length;
+
+  if (!revAvail) {
+    // Revenue data missing — can still "likely" qualify
+    if (c5 && c90 && cDiv) return 'likely';
+    if ((c5 && c90) || (c5 && cDiv) || (c90 && cDiv)) return 'border';
+    return null;
+  }
+  if (passes === 4) return 'meets';
+  if (passes === 3) {
+    if (!c90) return c90 === false ? 'monitor' : 'border';
+    if (!cDiv) return 'border';
+    if (!cRev) return 'monitor';
+    return 'monitor';
+  }
+  if (passes === 2 && fails <= 1) return 'border';
+  return null; // doesn't qualify
+}
+
+// ── Screen one stock ──────────────────────────────────────────────────────────
+async function screenStock(ticker, quote) {
+  try {
+    const [chart, fin] = await Promise.all([
+      fetchChart(ticker),
+      fetchFinancials(ticker).catch(() => null),
+    ]);
+    if (!chart) return null;
+
+    const ts     = chart.timestamp || [];
+    const closes = chart.indicators?.quote?.[0]?.close || [];
+    const divEvt = chart.events?.dividends;
+
+    const t5   = priceTrend(ts, closes, 365 * 5);
+    const t90  = priceTrend(ts, closes, 90);
+    const div  = dividendAnalysis(divEvt);
+    const rev  = revenueAnalysis(fin);
+
+    // Must pay a dividend
+    const yieldNum = (quote?.trailingAnnualDividendYield || quote?.dividendYield || 0) * 100;
+    if (yieldNum < 0.1) return null;
+
+    const revAvail = rev.pass !== null;
+    const statusKey = computeStatus(t5.pass, t90.pass, rev.pass, div.pass, revAvail);
+    if (!statusKey) return null;
+
+    const sector = normalizeSector(quote?.sector || '');
+
+    // Auto-generate detail note
+    const parts = [];
+    if (t5.pct  !== null) parts.push(`5yr: ${fmtPct(t5.pct)}`);
+    if (t90.pct !== null) parts.push(`90d: ${fmtPct(t90.pct)}`);
+    if (rev.pct !== null) parts.push(`Rev: ${fmtPct(rev.pct)} YoY`);
+    if (div.streak > 0)   parts.push(`Div streak: ${div.streak} yr${div.streak !== 1 ? 's' : ''}`);
+
+    return {
+      ticker,
+      company:    quote?.longName || quote?.shortName || ticker,
+      sector,
+      t5, t90,
+      revPass:    rev.pass, revPct: rev.pct,
+      revAvail,
+      divPass:    div.pass, divStreak: div.streak,
+      yieldNum:   +yieldNum.toFixed(2),
+      yieldRaw:   `${yieldNum.toFixed(1)}%`,
+      statusKey,
+      note:       parts.join(' · '),
+    };
+  } catch (err) {
+    console.warn(`[${ticker}] screen failed:`, err.message);
+    return null;
+  }
+}
+
+function normalizeSector(s) {
+  if (!s) return 'Other';
+  const l = s.toLowerCase();
+  if (l.includes('technology') || l.includes('semiconductor')) return 'Technology';
+  if (l.includes('health'))        return 'Healthcare';
+  if (l.includes('staple'))        return 'Consumer Staples';
+  if (l.includes('energy'))        return 'Energy';
+  if (l.includes('real estate'))   return 'Real Estate';
+  if (l.includes('util'))          return 'Utilities';
+  if (l.includes('material'))      return 'Materials';
+  if (l.includes('communic'))      return 'Communication';
+  if (l.includes('industrial'))    return 'Industrials';
+  if (l.includes('consumer') && l.includes('discret')) return 'Consumer Discretionary';
+  if (l.includes('financial') || l.includes('bank') || l.includes('insur') || l.includes('asset')) return 'Financials';
+  return s;
+}
+
+function fmtPct(v) {
+  return v === null ? '—' : `${v >= 0 ? '+' : ''}${(v * 100).toFixed(1)}%`;
+}
+
+// ── Concurrency pool ──────────────────────────────────────────────────────────
+async function pool(tasks, limit, onDone) {
+  let i = 0, done = 0;
+  async function run() {
+    while (i < tasks.length) {
+      const idx = i++;
+      await tasks[idx]();
+      onDone(++done, tasks.length);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, tasks.length) }, run));
+}
+
+// ── Main entry ────────────────────────────────────────────────────────────────
+async function runScreen() {
+  if (isRunning) return;
+  isRunning = true;
+  allResults = [];
+  filtered   = [];
+
+  const btn = document.getElementById('runBtn');
+  btn.disabled = true;
+  document.getElementById('errorBanner').style.display = 'none';
+  document.getElementById('emptyState').style.display = 'none';
+  showProgress(0, 1, 'Fetching quotes…');
+  renderSkeleton();
+
+  try {
+    // Step 1: batch quotes (50 at a time to stay under URL limits)
+    const BATCH = 50;
+    const quotesMap = {};
+    for (let i = 0; i < TICKERS.length; i += BATCH) {
+      const slice  = TICKERS.slice(i, i + BATCH);
+      const quotes = await fetchBatchQuotes(slice);
+      quotes.forEach(q => { quotesMap[q.symbol] = q; });
+      showProgress(i + slice.length, TICKERS.length, `Fetching quotes… (${Math.min(i + BATCH, TICKERS.length)}/${TICKERS.length})`);
+    }
+
+    // Step 2: filter to dividend payers
+    const candidates = TICKERS.filter(t => {
+      const q = quotesMap[t];
+      return q && ((q.trailingAnnualDividendYield || 0) > 0.001 || (q.dividendYield || 0) > 0.001);
+    });
+
+    if (candidates.length === 0) throw new Error('No dividend-paying stocks found. Yahoo Finance may be rate-limiting — try again in a minute.');
+
+    showProgress(0, candidates.length, `Screening ${candidates.length} dividend stocks…`);
+
+    // Step 3: deep screen each candidate (6 concurrent)
+    const tasks = candidates.map(ticker => async () => {
+      const result = await screenStock(ticker, quotesMap[ticker]);
+      if (result) {
+        allResults.push(result);
+        applyFilters(); // stream results in as they arrive
+      }
+    });
+
+    await pool(tasks, 6, (done, total) => {
+      showProgress(done, total, `Screening stocks… ${done} / ${total}`);
+    });
+
+    // Cache
+    localStorage.setItem('screener_results', JSON.stringify(allResults));
+    localStorage.setItem('screener_ts', String(Date.now()));
+
+  } catch (err) {
+    console.error('Screen failed:', err);
+    const banner = document.getElementById('errorBanner');
+    banner.style.display = 'block';
+    banner.textContent = `⚠ ${err.message}`;
+  } finally {
+    isRunning = false;
+    btn.disabled = false;
+    hideProgress();
+    updateLastRun();
+    applyFilters();
+  }
+}
+
+// ── Filters & sort ────────────────────────────────────────────────────────────
+const STATUS_ORDER = { meets:1, likely:2, monitor:3, border:4, flagged:5 };
+const TREND_ORDER  = { t_up:1, 't-mod':2, 't-mix':3, 't-flag':4, 't-unk':5 };
 
 function applyFilters() {
-  const q = document.getElementById('search').value.toLowerCase();
-  const st = document.getElementById('filterStatus').value;
-  const sec = document.getElementById('filterSector').value;
-  const yld = parseFloat(document.getElementById('filterYield').value) || 0;
+  const q   = (document.getElementById('search')?.value || '').toLowerCase();
+  const st  = document.getElementById('filterStatus')?.value  || '';
+  const sec = document.getElementById('filterSector')?.value  || '';
+  const yld = parseFloat(document.getElementById('filterYield')?.value)    || 0;
+  const cri = parseInt(document.getElementById('filterCriteria')?.value)   || 0;
 
-  filtered = STOCKS.filter(s => {
-    if (q && !s.ticker.toLowerCase().includes(q) && !s.company.toLowerCase().includes(q)) return false;
-    if (st && s.statusKey !== st) return false;
-    if (sec && s.sector !== sec) return false;
-    if (yld && s.yieldNum < yld) return false;
+  filtered = allResults.filter(s => {
+    if (q   && !s.ticker.toLowerCase().includes(q) && !s.company.toLowerCase().includes(q)) return false;
+    if (st  && s.statusKey !== st)   return false;
+    if (sec && s.sector !== sec)     return false;
+    if (yld && s.yieldNum < yld)     return false;
+    if (cri) {
+      const passes = [s.t5.pass, s.t90.pass, s.revPass, s.divPass].filter(v => v === true).length;
+      if (passes < cri) return false;
+    }
     return true;
   });
-  render();
-}
-
-function render() {
-  let data = [...filtered];
 
   if (sortCol) {
-    data.sort((a, b) => {
+    filtered.sort((a, b) => {
       let av, bv;
-      switch(sortCol) {
-        case 'ticker':  av = a.ticker; bv = b.ticker; break;
-        case 'sector':  av = a.sector; bv = b.sector; break;
-        case 'trend5':  av = TREND_META[a.trend5]?.order  ?? 99; bv = TREND_META[b.trend5]?.order  ?? 99; break;
-        case 'trend90': av = TREND_META[a.trend90]?.order ?? 99; bv = TREND_META[b.trend90]?.order ?? 99; break;
-        case 'revenue': av = a.revenue; bv = b.revenue; break;
-        case 'streak':  av = a.streakNum; bv = b.streakNum; break;
+      switch (sortCol) {
+        case 'ticker':  av = a.ticker;  bv = b.ticker;  break;
+        case 'sector':  av = a.sector;  bv = b.sector;  break;
+        case 'trend5':  av = a.t5.order;  bv = b.t5.order;  break;
+        case 'trend90': av = a.t90.order; bv = b.t90.order; break;
+        case 'revenue': av = a.revPct ?? -99; bv = b.revPct ?? -99; break;
+        case 'streak':  av = a.divStreak; bv = b.divStreak; break;
         case 'yield':   av = a.yieldNum;  bv = b.yieldNum;  break;
-        case 'status':  av = STATUS_META[a.statusKey]?.order ?? 99; bv = STATUS_META[b.statusKey]?.order ?? 99; break;
+        case 'status':  av = STATUS_ORDER[a.statusKey] ?? 9; bv = STATUS_ORDER[b.statusKey] ?? 9; break;
         default: return 0;
       }
       if (typeof av === 'string') return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
@@ -372,44 +586,155 @@ function render() {
     });
   }
 
+  render();
+}
+
+function sortBy(col) {
+  if (sortCol === col) sortAsc = !sortAsc;
+  else { sortCol = col; sortAsc = col === 'ticker' || col === 'sector' || col === 'status'; }
+  document.querySelectorAll('thead th').forEach(th => {
+    const isSorted = th.dataset.col === col;
+    th.classList.toggle('sorted', isSorted);
+    const si = th.querySelector('.si');
+    if (si) si.textContent = isSorted ? (sortAsc ? '↑' : '↓') : '↕';
+  });
+  applyFilters();
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+const STATUS_META = {
+  meets:   { label:'✔ Meets All',  cls:'st-meets'  },
+  likely:  { label:'✦ Likely',     cls:'st-likely'  },
+  monitor: { label:'◎ Monitor',    cls:'st-monitor' },
+  border:  { label:'~ Borderline', cls:'st-border'  },
+  flagged: { label:'⚠ Flagged',    cls:'st-flagged' },
+};
+
+function sectorCls(s) {
+  const l = s.toLowerCase();
+  if (l.includes('tech') || l.includes('semi'))   return 's-tech';
+  if (l.includes('health'))   return 's-health';
+  if (l.includes('staple'))   return 's-staples';
+  if (l.includes('energy'))   return 's-energy';
+  if (l.includes('real'))     return 's-reit';
+  if (l.includes('util'))     return 's-utility';
+  if (l.includes('industrial')) return 's-industrial';
+  if (l.includes('financial') || l.includes('bank') || l.includes('insur') || l.includes('asset')) return 's-financial';
+  return 's-other';
+}
+
+function yieldCls(n) { return n >= 3.5 ? 'yield-hi' : n >= 1.5 ? 'yield-mid' : 'yield-lo'; }
+
+function dotHtml(pass) {
+  if (pass === true)  return '<span class="dot dot-pass" title="Pass"></span>';
+  if (pass === false) return '<span class="dot dot-fail" title="Fail"></span>';
+  return '<span class="dot dot-unk" title="N/A"></span>';
+}
+
+function render() {
   const tbody = document.getElementById('tableBody');
   const empty = document.getElementById('emptyState');
 
-  if (data.length === 0) {
+  document.getElementById('countBadge').innerHTML =
+    `<strong>${filtered.length}</strong> stock${filtered.length !== 1 ? 's' : ''}`;
+
+  if (allResults.length === 0 && !isRunning) {
     tbody.innerHTML = '';
     empty.style.display = 'block';
-    document.getElementById('countBadge').innerHTML = '<strong>0</strong> stocks';
     return;
   }
   empty.style.display = 'none';
-  document.getElementById('countBadge').innerHTML = `<strong>${data.length}</strong> stock${data.length !== 1 ? 's' : ''}`;
 
-  const tm = TREND_META;
-  const sm = STATUS_META;
+  if (filtered.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--muted)">No stocks match your filters.</td></tr>`;
+    return;
+  }
 
-  tbody.innerHTML = data.map(s => {
-    const t5  = tm[s.trend5]  || tm.up;
-    const t90 = tm[s.trend90] || tm.up;
-    const st  = sm[s.statusKey] || sm.meets;
-    const secCls = sectorClass(s.sector);
+  tbody.innerHTML = filtered.map(s => {
+    const sm = STATUS_META[s.statusKey] || STATUS_META.border;
     return `<tr>
       <td>
         <div class="ticker-cell">${s.ticker}</div>
         <div class="company-name">${s.company}</div>
       </td>
-      <td><span class="sector-badge ${secCls}">${s.sector}</span></td>
-      <td><span class="trend ${t5.cls}">${t5.label}</span></td>
-      <td><span class="trend ${t90.cls}">${t90.label}</span></td>
-      <td style="font-size:0.8rem;color:var(--text-muted)">${s.revenue}</td>
-      <td class="${streakClass(s.streakNum)}">${s.streakRaw}</td>
-      <td class="${yieldClass(s.yieldNum)}">${s.yieldRaw}</td>
-      <td><span class="status-badge ${st.cls}">${st.label}</span></td>
-      <td class="notes-cell">${s.notes}</td>
+      <td><span class="sector-badge ${sectorCls(s.sector)}">${s.sector}</span></td>
+      <td><span class="trend ${s.t5.cls}">${s.t5.label}</span></td>
+      <td><span class="trend ${s.t90.cls}">${s.t90.label}</span></td>
+      <td style="font-size:0.8rem;color:${s.revPass === true ? 'var(--green)' : s.revPass === false ? 'var(--red)' : 'var(--muted)'}">
+        ${s.revPct !== null ? fmtPct(s.revPct) : '<span style="color:var(--muted)">N/A</span>'}
+      </td>
+      <td style="font-size:0.8rem;color:${s.divStreak >= 10 ? 'var(--yellow)' : 'var(--muted)'}">
+        ${s.divStreak > 0 ? `${s.divStreak} yr${s.divStreak !== 1 ? 's' : ''}` : '<span style="color:var(--muted)">—</span>'}
+      </td>
+      <td class="${yieldCls(s.yieldNum)}">${s.yieldRaw}</td>
+      <td>
+        <span class="status-badge ${sm.cls}">${sm.label}</span>
+        <div class="criteria-dots">
+          ${dotHtml(s.t5.pass)}${dotHtml(s.t90.pass)}${dotHtml(s.revPass)}${dotHtml(s.divPass)}
+        </div>
+      </td>
+      <td class="note-cell">${s.note}</td>
     </tr>`;
   }).join('');
 }
 
-render();
+function renderSkeleton() {
+  const n = 8;
+  document.getElementById('tableBody').innerHTML = Array.from({ length: n }, () => `
+    <tr>${Array.from({ length: 9 }, () => `<td><div class="skeleton" style="width:${60+Math.random()*40}%"></div></td>`).join('')}</tr>
+  `).join('');
+  document.getElementById('emptyState').style.display = 'none';
+}
+
+// ── Progress UI ───────────────────────────────────────────────────────────────
+function showProgress(done, total, msg) {
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+  document.getElementById('progressWrap').style.display = 'block';
+  document.getElementById('progressBar').style.width    = `${pct}%`;
+  document.getElementById('progressText').textContent   = msg;
+}
+function hideProgress() { document.getElementById('progressWrap').style.display = 'none'; }
+
+function updateLastRun() {
+  const ts = localStorage.getItem('screener_ts');
+  if (!ts) return;
+  const d = new Date(+ts);
+  document.getElementById('lastRun').textContent =
+    `Last run: ${d.toLocaleDateString()} ${d.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' })}`;
+}
+
+// ── Init: restore cache ───────────────────────────────────────────────────────
+(function init() {
+  // Set default sort arrow
+  document.querySelectorAll('thead th').forEach(th => {
+    if (th.dataset.col === 'yield') { th.classList.add('sorted'); const si = th.querySelector('.si'); if (si) si.textContent = '↓'; }
+  });
+
+  // Invalidate cache from older schema versions
+  const CACHE_VERSION = '2';
+  if (localStorage.getItem('screener_version') !== CACHE_VERSION) {
+    localStorage.removeItem('screener_results');
+    localStorage.removeItem('screener_ts');
+    localStorage.setItem('screener_version', CACHE_VERSION);
+  }
+
+  const cached = localStorage.getItem('screener_results');
+  const ts     = localStorage.getItem('screener_ts');
+  if (cached) {
+    try {
+      allResults = JSON.parse(cached);
+      updateLastRun();
+      applyFilters();
+
+      // Show age warning if cache is older than 24 hours
+      if (ts && Date.now() - +ts > 86400000) {
+        document.getElementById('errorBanner').style.display = 'block';
+        document.getElementById('errorBanner').textContent =
+          '⚠ Cached results are more than 24 hours old. Click Run Screen to refresh live data.';
+      }
+    } catch { allResults = []; }
+  }
+})();
 </script>
 </body>
 </html>
