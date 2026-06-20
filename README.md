@@ -78,6 +78,7 @@ Status is computed automatically based on which criteria pass:
 - **Filter** by status, sector, minimum yield, and criteria pass count
 - **Search** by ticker or company name
 - **Sort** any column ascending or descending
+- **Export** filtered results to **CSV** or **XLS** directly from the browser — exports reflect whatever is currently on screen after filters are applied
 - **Color-coded** sector badges, trend indicators, status pills, and yield values
 - **Per-row criteria dots** (● ● ● ●) showing exactly which of the 4 criteria each stock passes or fails
 - **Auto-generated detail notes** with real figures: `5yr: +142% · 90d: +8.2% · Rev: +6.1% YoY · Div streak: 15 yrs`
