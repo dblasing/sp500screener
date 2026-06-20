@@ -297,19 +297,23 @@ let isRunning  = false;
 // ── API helpers ───────────────────────────────────────────────────────────────
 const YF1 = 'https://query1.finance.yahoo.com';
 const YF2 = 'https://query2.finance.yahoo.com';
-const PROXY = 'https://corsproxy.io/?';
-
 async function apiFetch(url) {
-  // Try direct first (works locally); fall back to CORS proxy for GitHub Pages
+  // 1. Try direct (no custom headers avoids preflight — works in some environments)
   try {
-    const r = await fetch(url, { headers: { Accept: 'application/json' } });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return r.json();
-  } catch {
-    const r = await fetch(PROXY + url);
-    if (!r.ok) throw new Error(`HTTP ${r.status} (proxied)`);
-    return r.json();
-  }
+    const r = await fetch(url);
+    if (r.ok) return r.json();
+  } catch { /* CORS blocked — fall through */ }
+
+  // 2. allorigins.win proxy
+  try {
+    const r = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`);
+    if (r.ok) return r.json();
+  } catch { /* fall through */ }
+
+  // 3. corsproxy.io proxy
+  const r = await fetch(`https://corsproxy.io/?${url}`);
+  if (!r.ok) throw new Error(`HTTP ${r.status} — all proxy attempts failed`);
+  return r.json();
 }
 
 async function fetchBatchQuotes(tickers) {
