@@ -26,6 +26,16 @@
     #runBtn:disabled { opacity: 0.5; cursor: not-allowed; }
     #runBtn svg { width: 14px; height: 14px; }
 
+    /* Export button */
+    .export-wrap { position: relative; }
+    #exportBtn { display: flex; align-items: center; gap: 7px; background: var(--surface2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 9px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: opacity 0.15s; }
+    #exportBtn:hover { border-color: var(--accent); color: var(--accent); }
+    #exportBtn svg { width: 14px; height: 14px; }
+    .export-menu { display: none; position: absolute; right: 0; top: calc(100% + 6px); background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; z-index: 100; min-width: 140px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    .export-menu.open { display: block; }
+    .export-menu button { display: block; width: 100%; padding: 10px 16px; background: none; border: none; color: var(--text); font-size: 0.83rem; text-align: left; cursor: pointer; }
+    .export-menu button:hover { background: var(--border); }
+
     /* Criteria bar */
     .criteria-bar { display: flex; gap: 10px; flex-wrap: wrap; padding: 14px 28px; background: var(--surface); border-bottom: 1px solid var(--border); }
     .criterion { display: flex; align-items: center; gap: 8px; background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 7px 12px; font-size: 0.78rem; }
@@ -132,6 +142,16 @@
   <h1>S&P 500 <span>Dividend Growth</span> Stock Screener</h1>
   <div class="header-right">
     <span id="lastRun"></span>
+    <div class="export-wrap">
+      <button id="exportBtn" onclick="toggleExportMenu()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Export
+      </button>
+      <div class="export-menu" id="exportMenu">
+        <button onclick="exportCSV()">Download CSV</button>
+        <button onclick="exportXLS()">Download XLS</button>
+      </div>
+    </div>
     <button id="runBtn" onclick="runScreen()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
       Refresh Data
@@ -448,6 +468,91 @@ function showProgress(done, total, msg) {
   document.getElementById('progressText').textContent   = msg;
 }
 function hideProgress() { document.getElementById('progressWrap').style.display = 'none'; }
+
+// ── Export ────────────────────────────────────────────────────────────────────
+function toggleExportMenu() {
+  document.getElementById('exportMenu').classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('.export-wrap')) {
+    document.getElementById('exportMenu')?.classList.remove('open');
+  }
+});
+
+function exportRows() {
+  const ts = document.getElementById('lastRun').textContent || '';
+  const header = ['Ticker','Company','Sector','5-Yr Trend','90-Day Trend','YoY Revenue','Div Streak (yrs)','Yield (%)','Status','5yr %','90d %','Rev Growth %'];
+  const rows = filtered.map(s => [
+    s.ticker,
+    s.company,
+    s.sector,
+    s.t5.label,
+    s.t90.label,
+    s.revPct !== null ? `${(s.revPct*100).toFixed(1)}%` : 'N/A',
+    s.divStreak || '',
+    s.yieldNum,
+    (({ meets:'Meets All', likely:'Likely', monitor:'Monitor', border:'Borderline', flagged:'Flagged' })[s.statusKey] || s.statusKey),
+    s.t5.pct  !== null ? +( s.t5.pct*100).toFixed(1) : '',
+    s.t90.pct !== null ? +(s.t90.pct*100).toFixed(1) : '',
+    s.revPct  !== null ? +(s.revPct*100).toFixed(1)  : '',
+  ]);
+  return { header, rows, ts };
+}
+
+function exportCSV() {
+  document.getElementById('exportMenu').classList.remove('open');
+  const { header, rows, ts } = exportRows();
+  const escape = v => (typeof v === 'string' && (v.includes(',') || v.includes('"') || v.includes('\n'))) ? `"${v.replace(/"/g,'""')}"` : v;
+  const lines = [
+    `# S&P 500 Dividend Growth Screener — ${ts}`,
+    header.map(escape).join(','),
+    ...rows.map(r => r.map(escape).join(',')),
+  ];
+  download('sp500_dividend_screen.csv', lines.join('\n'), 'text/csv');
+}
+
+function exportXLS() {
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.export-wrap')) document.getElementById('exportMenu')?.classList.remove('open');
+  });
+  document.getElementById('exportMenu').classList.remove('open');
+  const { header, rows, ts } = exportRows();
+
+  // Build a minimal XLSX-compatible XML spreadsheet (SpreadsheetML)
+  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  const cell = (v, bold) => {
+    const isNum = typeof v === 'number';
+    const style = bold ? ' ss:StyleID="bold"' : '';
+    return isNum
+      ? `<Cell${style}><Data ss:Type="Number">${v}</Data></Cell>`
+      : `<Cell${style}><Data ss:Type="String">${esc(String(v))}</Data></Cell>`;
+  };
+
+  const xml = `<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+  <Styles>
+    <Style ss:ID="bold"><Font ss:Bold="1"/></Style>
+  </Styles>
+  <Worksheet ss:Name="Screen Results">
+    <Table>
+      <Row>${header.map(h => cell(h, true)).join('')}</Row>
+      ${rows.map(r => `<Row>${r.map(v => cell(v, false)).join('')}</Row>`).join('\n      ')}
+    </Table>
+  </Worksheet>
+</Workbook>`;
+
+  download('sp500_dividend_screen.xls', xml, 'application/vnd.ms-excel');
+}
+
+function download(filename, content, mime) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([content], { type: mime }));
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
 
 // ── Init ──────────────────────────────────────────────────────────────────────
 (function init() {
