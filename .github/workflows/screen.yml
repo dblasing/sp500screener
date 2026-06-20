@@ -1,0 +1,33 @@
+name: Run Dividend Growth Screen
+
+on:
+  schedule:
+    - cron: '0 11 * * 1-5'  # 7am ET (11am UTC) weekdays
+  workflow_dispatch:          # allow manual trigger from GitHub Actions tab
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas
+
+      - name: Run screener
+        run: python screener.py
+
+      - name: Commit data.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "chore: update screener data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push

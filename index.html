@@ -134,7 +134,7 @@
     <span id="lastRun"></span>
     <button id="runBtn" onclick="runScreen()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-      Run Screen
+      Refresh Data
     </button>
   </div>
 </header>
@@ -215,11 +215,7 @@
   </table>
   <div class="empty-state" id="emptyState">
     <div class="icon">📊</div>
-    <p>No results yet. Click <strong>Run Screen</strong> to fetch live data and apply all four criteria.</p>
-    <button class="cta" onclick="runScreen()">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-      Run Screen
-    </button>
+    <p>No data yet. The screener runs automatically each weekday morning via GitHub Actions.<br>You can also trigger a manual run from the <a href="https://github.com/dblasing/sp500screener/actions" target="_blank">Actions tab</a> on GitHub.</p>
   </div>
 </div>
 
@@ -254,304 +250,58 @@
 </div>
 
 <footer>
-  <strong>Data:</strong> Yahoo Finance (live, via unofficial API) &nbsp;·&nbsp;
+  <strong>Data:</strong> Yahoo Finance via <code>screener.py</code> + GitHub Actions (runs weekday mornings) &nbsp;·&nbsp;
   <strong>Universe:</strong> ~100 S&P 500 dividend-paying stocks &nbsp;·&nbsp;
   <strong>Disclaimer:</strong> For research purposes only. Not investment advice. Verify independently before acting.
 </footer>
 
 <script>
-// ── Universe: S&P 500 dividend-paying stocks ──────────────────────────────────
-const TICKERS = [
-  // Technology
-  'AAPL','MSFT','AVGO','TXN','QCOM','IBM','ADI','ADP','INTU','PAYX','KLAC','MCHP',
-  // Healthcare
-  'JNJ','ABBV','MRK','ABT','MDT','BMY','AMGN','PFE','ZTS','SYK','BDX','DHR','EW',
-  // Consumer Staples
-  'KO','PEP','PG','CL','KMB','WMT','MO','PM','GIS','HRL','CLX','CHD','ECL','MKC',
-  // Energy
-  'XOM','CVX','COP','EOG','PSX','VLO','MPC','KMI','WMB','OKE',
-  // Financials / Insurance / Banking
-  'JPM','BAC','WFC','GS','BLK','AFL','CB','ALL','TRV','AXP','USB','PNC','TFC',
-  'MSCI','SPGI','MCO','ICE','CME',
-  // Industrials
-  'HON','MMM','RTX','LMT','CAT','DE','EMR','ETN','ITW','DOV','ROP','AME',
-  // Utilities
-  'NEE','DUK','SO','AEP','WEC','XEL','ES','AWK','ED','PPL',
-  // Real Estate
-  'O','PLD','AMT','DLR','PSA',
-  // Materials
-  'LIN','APD','SHW','NUE','PKG',
-  // Communication
-  'VZ','T','CMCSA','OMC',
-  // Consumer Discretionary
-  'HD','LOW','TGT','MCD','SBUX','NKE','YUM','DRI',
-];
 
 // ── State ─────────────────────────────────────────────────────────────────────
 let allResults = [];
 let filtered   = [];
 let sortCol    = 'yield';
 let sortAsc    = false;
-let isRunning  = false;
-
-// ── API helpers ───────────────────────────────────────────────────────────────
-const YF1 = 'https://query1.finance.yahoo.com';
-const YF2 = 'https://query2.finance.yahoo.com';
-async function apiFetch(url) {
-  // 1. Try direct (no custom headers avoids preflight — works in some environments)
-  try {
-    const r = await fetch(url);
-    if (r.ok) return r.json();
-  } catch { /* CORS blocked — fall through */ }
-
-  // 2. allorigins.win proxy
-  try {
-    const r = await fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`);
-    if (r.ok) return r.json();
-  } catch { /* fall through */ }
-
-  // 3. corsproxy.io proxy
-  const r = await fetch(`https://corsproxy.io/?${url}`);
-  if (!r.ok) throw new Error(`HTTP ${r.status} — all proxy attempts failed`);
-  return r.json();
-}
-
-async function fetchBatchQuotes(tickers) {
-  const data = await apiFetch(`${YF1}/v7/finance/quote?symbols=${tickers.join(',')}&fields=longName,shortName,sector,regularMarketPrice,trailingAnnualDividendYield,dividendYield,dividendRate`);
-  return (data.quoteResponse?.result || []);
-}
-
-async function fetchChart(ticker) {
-  const data = await apiFetch(`${YF1}/v8/finance/chart/${ticker}?interval=1wk&range=5y&events=dividends&includePrePost=false`);
-  return data.chart?.result?.[0] || null;
-}
-
-async function fetchFinancials(ticker) {
-  const data = await apiFetch(`${YF2}/v10/finance/quoteSummary/${ticker}?modules=financialData`);
-  return data.quoteSummary?.result?.[0]?.financialData || null;
-}
-
-// ── Criteria logic ────────────────────────────────────────────────────────────
-function priceTrend(timestamps, closes, lookbackDays) {
-  if (!timestamps?.length || !closes?.length) return { label: 'unknown', cls: 't-unk', order: 5, pct: null };
-  const cutoff = (timestamps[timestamps.length - 1]) - (lookbackDays * 86400);
-  let si = 0;
-  for (let i = 0; i < timestamps.length; i++) { if (timestamps[i] >= cutoff) { si = i; break; } }
-  const validFrom = closes.slice(si).filter(Boolean);
-  const validAll  = closes.filter(Boolean);
-  const start = validFrom[0];
-  const end   = validAll[validAll.length - 1];
-  if (!start || !end) return { label: 'unknown', cls: 't-unk', order: 5, pct: null };
-  const pct = (end - start) / start;
-  if (lookbackDays >= 365 * 4) { // 5yr
-    if (pct >  0.05) return { label: '⬆ Uptrend',  cls: 't-up',   order: 1, pct, pass: true };
-    if (pct > -0.10) return { label: '↗ Moderate',  cls: 't-mod',  order: 2, pct, pass: true };
-    if (pct > -0.25) return { label: '↔ Mixed',     cls: 't-mix',  order: 3, pct, pass: false };
-    return               { label: '⚠ Flagged',  cls: 't-flag', order: 4, pct, pass: false };
-  } else { // 90d
-    if (pct >  0.00) return { label: '⬆ Uptrend',  cls: 't-up',   order: 1, pct, pass: true };
-    if (pct > -0.05) return { label: '↗ Moderate',  cls: 't-mod',  order: 2, pct, pass: true };
-    if (pct > -0.12) return { label: '↔ Mixed',     cls: 't-mix',  order: 3, pct, pass: false };
-    return               { label: '⚠ Flagged',  cls: 't-flag', order: 4, pct, pass: false };
-  }
-}
-
-function dividendAnalysis(divEvents) {
-  if (!divEvents) return { pass: false, streak: 0 };
-  const events = Object.values(divEvents);
-  if (events.length < 4) return { pass: false, streak: 0 };
-  const byYear = {};
-  events.forEach(e => {
-    const yr = new Date(e.date * 1000).getFullYear();
-    byYear[yr] = (byYear[yr] || 0) + e.amount;
-  });
-  const yrs = Object.keys(byYear).sort().map(Number);
-  const amts = yrs.map(y => byYear[y]);
-  let streak = 0;
-  for (let i = amts.length - 1; i > 0; i--) {
-    if (amts[i] >= amts[i - 1] * 0.98) streak++;
-    else break;
-  }
-  return { pass: streak >= 3, streak };
-}
-
-function revenueAnalysis(fin) {
-  if (!fin?.revenueGrowth?.raw && fin?.revenueGrowth?.raw !== 0) return { pass: null, pct: null };
-  const v = fin.revenueGrowth.raw;
-  return { pass: v > 0, pct: v };
-}
-
-function computeStatus(c5, c90, cRev, cDiv, revAvail) {
-  const passes = [c5, c90, revAvail ? cRev : null, cDiv].filter(v => v === true).length;
-  const fails  = [c5, c90, revAvail ? cRev : null, cDiv].filter(v => v === false).length;
-
-  if (!revAvail) {
-    // Revenue data missing — can still "likely" qualify
-    if (c5 && c90 && cDiv) return 'likely';
-    if ((c5 && c90) || (c5 && cDiv) || (c90 && cDiv)) return 'border';
-    return null;
-  }
-  if (passes === 4) return 'meets';
-  if (passes === 3) {
-    if (!c90) return c90 === false ? 'monitor' : 'border';
-    if (!cDiv) return 'border';
-    if (!cRev) return 'monitor';
-    return 'monitor';
-  }
-  if (passes === 2 && fails <= 1) return 'border';
-  return null; // doesn't qualify
-}
-
-// ── Screen one stock ──────────────────────────────────────────────────────────
-async function screenStock(ticker, quote) {
-  try {
-    const [chart, fin] = await Promise.all([
-      fetchChart(ticker),
-      fetchFinancials(ticker).catch(() => null),
-    ]);
-    if (!chart) return null;
-
-    const ts     = chart.timestamp || [];
-    const closes = chart.indicators?.quote?.[0]?.close || [];
-    const divEvt = chart.events?.dividends;
-
-    const t5   = priceTrend(ts, closes, 365 * 5);
-    const t90  = priceTrend(ts, closes, 90);
-    const div  = dividendAnalysis(divEvt);
-    const rev  = revenueAnalysis(fin);
-
-    // Must pay a dividend
-    const yieldNum = (quote?.trailingAnnualDividendYield || quote?.dividendYield || 0) * 100;
-    if (yieldNum < 0.1) return null;
-
-    const revAvail = rev.pass !== null;
-    const statusKey = computeStatus(t5.pass, t90.pass, rev.pass, div.pass, revAvail);
-    if (!statusKey) return null;
-
-    const sector = normalizeSector(quote?.sector || '');
-
-    // Auto-generate detail note
-    const parts = [];
-    if (t5.pct  !== null) parts.push(`5yr: ${fmtPct(t5.pct)}`);
-    if (t90.pct !== null) parts.push(`90d: ${fmtPct(t90.pct)}`);
-    if (rev.pct !== null) parts.push(`Rev: ${fmtPct(rev.pct)} YoY`);
-    if (div.streak > 0)   parts.push(`Div streak: ${div.streak} yr${div.streak !== 1 ? 's' : ''}`);
-
-    return {
-      ticker,
-      company:    quote?.longName || quote?.shortName || ticker,
-      sector,
-      t5, t90,
-      revPass:    rev.pass, revPct: rev.pct,
-      revAvail,
-      divPass:    div.pass, divStreak: div.streak,
-      yieldNum:   +yieldNum.toFixed(2),
-      yieldRaw:   `${yieldNum.toFixed(1)}%`,
-      statusKey,
-      note:       parts.join(' · '),
-    };
-  } catch (err) {
-    console.warn(`[${ticker}] screen failed:`, err.message);
-    return null;
-  }
-}
-
-function normalizeSector(s) {
-  if (!s) return 'Other';
-  const l = s.toLowerCase();
-  if (l.includes('technology') || l.includes('semiconductor')) return 'Technology';
-  if (l.includes('health'))        return 'Healthcare';
-  if (l.includes('staple'))        return 'Consumer Staples';
-  if (l.includes('energy'))        return 'Energy';
-  if (l.includes('real estate'))   return 'Real Estate';
-  if (l.includes('util'))          return 'Utilities';
-  if (l.includes('material'))      return 'Materials';
-  if (l.includes('communic'))      return 'Communication';
-  if (l.includes('industrial'))    return 'Industrials';
-  if (l.includes('consumer') && l.includes('discret')) return 'Consumer Discretionary';
-  if (l.includes('financial') || l.includes('bank') || l.includes('insur') || l.includes('asset')) return 'Financials';
-  return s;
-}
+let isLoading  = false;
 
 function fmtPct(v) {
-  return v === null ? '—' : `${v >= 0 ? '+' : ''}${(v * 100).toFixed(1)}%`;
+  return v === null || v === undefined ? '—' : `${v >= 0 ? '+' : ''}${(v * 100).toFixed(1)}%`;
 }
 
-// ── Concurrency pool ──────────────────────────────────────────────────────────
-async function pool(tasks, limit, onDone) {
-  let i = 0, done = 0;
-  async function run() {
-    while (i < tasks.length) {
-      const idx = i++;
-      await tasks[idx]();
-      onDone(++done, tasks.length);
-    }
-  }
-  await Promise.all(Array.from({ length: Math.min(limit, tasks.length) }, run));
-}
-
-// ── Main entry ────────────────────────────────────────────────────────────────
+// ── Load data.json (written by GitHub Actions / screener.py) ─────────────────
 async function runScreen() {
-  if (isRunning) return;
-  isRunning = true;
-  allResults = [];
-  filtered   = [];
+  if (isLoading) return;
+  isLoading = true;
 
   const btn = document.getElementById('runBtn');
   btn.disabled = true;
   document.getElementById('errorBanner').style.display = 'none';
-  document.getElementById('emptyState').style.display = 'none';
-  showProgress(0, 1, 'Fetching quotes…');
-  renderSkeleton();
+  document.getElementById('emptyState').style.display  = 'none';
+  showProgress(50, 100, 'Loading latest screen results…');
 
   try {
-    // Step 1: batch quotes (50 at a time to stay under URL limits)
-    const BATCH = 50;
-    const quotesMap = {};
-    for (let i = 0; i < TICKERS.length; i += BATCH) {
-      const slice  = TICKERS.slice(i, i + BATCH);
-      const quotes = await fetchBatchQuotes(slice);
-      quotes.forEach(q => { quotesMap[q.symbol] = q; });
-      showProgress(i + slice.length, TICKERS.length, `Fetching quotes… (${Math.min(i + BATCH, TICKERS.length)}/${TICKERS.length})`);
+    const r = await fetch(`data.json?_=${Date.now()}`); // cache-bust
+    if (!r.ok) throw new Error(`data.json not found (HTTP ${r.status}). Trigger a run from the GitHub Actions tab.`);
+    const payload = await r.json();
+
+    allResults = payload.results || [];
+
+    // Store generated timestamp for display
+    if (payload.generated) {
+      const d = new Date(payload.generated);
+      document.getElementById('lastRun').textContent =
+        `Data as of ${d.toLocaleDateString()} ${d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} UTC`;
     }
 
-    // Step 2: filter to dividend payers
-    const candidates = TICKERS.filter(t => {
-      const q = quotesMap[t];
-      return q && ((q.trailingAnnualDividendYield || 0) > 0.001 || (q.dividendYield || 0) > 0.001);
-    });
-
-    if (candidates.length === 0) throw new Error('No dividend-paying stocks found. Yahoo Finance may be rate-limiting — try again in a minute.');
-
-    showProgress(0, candidates.length, `Screening ${candidates.length} dividend stocks…`);
-
-    // Step 3: deep screen each candidate (6 concurrent)
-    const tasks = candidates.map(ticker => async () => {
-      const result = await screenStock(ticker, quotesMap[ticker]);
-      if (result) {
-        allResults.push(result);
-        applyFilters(); // stream results in as they arrive
-      }
-    });
-
-    await pool(tasks, 6, (done, total) => {
-      showProgress(done, total, `Screening stocks… ${done} / ${total}`);
-    });
-
-    // Cache
-    localStorage.setItem('screener_results', JSON.stringify(allResults));
-    localStorage.setItem('screener_ts', String(Date.now()));
-
   } catch (err) {
-    console.error('Screen failed:', err);
+    console.error(err);
     const banner = document.getElementById('errorBanner');
     banner.style.display = 'block';
     banner.textContent = `⚠ ${err.message}`;
   } finally {
-    isRunning = false;
+    isLoading = false;
     btn.disabled = false;
     hideProgress();
-    updateLastRun();
     applyFilters();
   }
 }
@@ -690,14 +440,6 @@ function render() {
   }).join('');
 }
 
-function renderSkeleton() {
-  const n = 8;
-  document.getElementById('tableBody').innerHTML = Array.from({ length: n }, () => `
-    <tr>${Array.from({ length: 9 }, () => `<td><div class="skeleton" style="width:${60+Math.random()*40}%"></div></td>`).join('')}</tr>
-  `).join('');
-  document.getElementById('emptyState').style.display = 'none';
-}
-
 // ── Progress UI ───────────────────────────────────────────────────────────────
 function showProgress(done, total, msg) {
   const pct = total > 0 ? Math.round((done / total) * 100) : 0;
@@ -707,45 +449,12 @@ function showProgress(done, total, msg) {
 }
 function hideProgress() { document.getElementById('progressWrap').style.display = 'none'; }
 
-function updateLastRun() {
-  const ts = localStorage.getItem('screener_ts');
-  if (!ts) return;
-  const d = new Date(+ts);
-  document.getElementById('lastRun').textContent =
-    `Last run: ${d.toLocaleDateString()} ${d.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' })}`;
-}
-
-// ── Init: restore cache ───────────────────────────────────────────────────────
+// ── Init ──────────────────────────────────────────────────────────────────────
 (function init() {
-  // Set default sort arrow
   document.querySelectorAll('thead th').forEach(th => {
     if (th.dataset.col === 'yield') { th.classList.add('sorted'); const si = th.querySelector('.si'); if (si) si.textContent = '↓'; }
   });
-
-  // Invalidate cache from older schema versions
-  const CACHE_VERSION = '2';
-  if (localStorage.getItem('screener_version') !== CACHE_VERSION) {
-    localStorage.removeItem('screener_results');
-    localStorage.removeItem('screener_ts');
-    localStorage.setItem('screener_version', CACHE_VERSION);
-  }
-
-  const cached = localStorage.getItem('screener_results');
-  const ts     = localStorage.getItem('screener_ts');
-  if (cached) {
-    try {
-      allResults = JSON.parse(cached);
-      updateLastRun();
-      applyFilters();
-
-      // Show age warning if cache is older than 24 hours
-      if (ts && Date.now() - +ts > 86400000) {
-        document.getElementById('errorBanner').style.display = 'block';
-        document.getElementById('errorBanner').textContent =
-          '⚠ Cached results are more than 24 hours old. Click Run Screen to refresh live data.';
-      }
-    } catch { allResults = []; }
-  }
+  runScreen(); // auto-load data.json on page open
 })();
 </script>
 </body>
