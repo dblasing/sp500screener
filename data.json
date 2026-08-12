@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-11T11:42:07Z",
-  "count": 108,
+  "generated": "2026-08-12T11:43:40Z",
+  "count": 107,
   "results": [
     {
       "ticker": "GIS",
@@ -10,14 +10,14 @@
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.2489,
+        "pct": -0.2354,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1251,
+        "pct": 0.1453,
         "pass": true
       },
       "revPass": true,
@@ -25,38 +25,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 20,
-      "yieldNum": 6.61,
-      "yieldRaw": "6.6%",
+      "yieldNum": 6.55,
+      "yieldRaw": "6.5%",
       "statusKey": "border",
-      "note": "5yr: -24.9% \u00b7 90d: +12.5% \u00b7 Rev: +2.2% YoY \u00b7 Div streak: 20 yrs"
-    },
-    {
-      "ticker": "PFE",
-      "company": "Pfizer, Inc.",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.2766,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0627,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.026,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 15,
-      "yieldNum": 6.43,
-      "yieldRaw": "6.4%",
-      "statusKey": "border",
-      "note": "5yr: -27.7% \u00b7 90d: +6.3% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 15 yrs"
+      "note": "5yr: -23.5% \u00b7 90d: +14.5% \u00b7 Rev: +2.2% YoY \u00b7 Div streak: 20 yrs"
     },
     {
       "ticker": "MO",
@@ -66,14 +38,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.99,
+        "pct": 0.9745,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0999,
+        "pct": -0.1069,
         "pass": false
       },
       "revPass": true,
@@ -81,10 +53,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 6.2,
-      "yieldRaw": "6.2%",
+      "yieldNum": 6.47,
+      "yieldRaw": "6.5%",
       "statusKey": "monitor",
-      "note": "5yr: +99.0% \u00b7 90d: -10.0% \u00b7 Rev: +1.2% YoY \u00b7 Div streak: 16 yrs"
+      "note": "5yr: +97.5% \u00b7 90d: -10.7% \u00b7 Rev: +1.2% YoY \u00b7 Div streak: 16 yrs"
+    },
+    {
+      "ticker": "PFE",
+      "company": "Pfizer, Inc.",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.2881,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0458,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.026,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "yieldNum": 6.36,
+      "yieldRaw": "6.4%",
+      "statusKey": "border",
+      "note": "5yr: -28.8% \u00b7 90d: +4.6% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "VZ",
@@ -94,14 +94,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.162,
+        "pct": 0.1679,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0107,
+        "pct": -0.0057,
         "pass": true
       },
       "revPass": false,
@@ -112,7 +112,7 @@
       "yieldNum": 5.94,
       "yieldRaw": "5.9%",
       "statusKey": "border",
-      "note": "5yr: +16.2% \u00b7 90d: -1.1% \u00b7 Rev: -0.7% YoY \u00b7 Div streak: 24 yrs"
+      "note": "5yr: +16.8% \u00b7 90d: -0.6% \u00b7 Rev: -0.7% YoY \u00b7 Div streak: 24 yrs"
     },
     {
       "ticker": "CMCSA",
@@ -122,14 +122,14 @@
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.4673,
+        "pct": -0.4578,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0132,
+        "pct": 0.0313,
         "pass": true
       },
       "revPass": false,
@@ -137,10 +137,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 6,
-      "yieldNum": 5.21,
+      "yieldNum": 5.24,
       "yieldRaw": "5.2%",
       "statusKey": "border",
-      "note": "5yr: -46.7% \u00b7 90d: +1.3% \u00b7 Rev: -1.2% YoY \u00b7 Div streak: 6 yrs"
+      "note": "5yr: -45.8% \u00b7 90d: +3.1% \u00b7 Rev: -1.2% YoY \u00b7 Div streak: 6 yrs"
     },
     {
       "ticker": "O",
@@ -165,10 +165,66 @@
       "revAvail": true,
       "divPass": false,
       "divStreak": 1,
-      "yieldNum": 5.17,
+      "yieldNum": 5.23,
       "yieldRaw": "5.2%",
       "statusKey": "border",
       "note": "5yr: +14.9% \u00b7 90d: +1.1% \u00b7 Rev: +9.6% YoY \u00b7 Div streak: 1 yr"
+    },
+    {
+      "ticker": "HRL",
+      "company": "Hormel Foods Corporation",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.378,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1578,
+        "pass": true
+      },
+      "revPass": false,
+      "revPct": -0.029,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 24,
+      "yieldNum": 4.72,
+      "yieldRaw": "4.7%",
+      "statusKey": "border",
+      "note": "5yr: -37.8% \u00b7 90d: +15.8% \u00b7 Rev: -2.9% YoY \u00b7 Div streak: 24 yrs"
+    },
+    {
+      "ticker": "KMB",
+      "company": "Kimberly-Clark Corporation",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0489,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1102,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.006,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 20,
+      "yieldNum": 4.7,
+      "yieldRaw": "4.7%",
+      "statusKey": "meets",
+      "note": "5yr: -4.9% \u00b7 90d: +11.0% \u00b7 Rev: +0.6% YoY \u00b7 Div streak: 20 yrs"
     },
     {
       "ticker": "OKE",
@@ -178,7 +234,483 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.3474,
+        "pct": 1.378,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0151,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.528,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 37,
+      "yieldNum": 4.69,
+      "yieldRaw": "4.7%",
+      "statusKey": "meets",
+      "note": "5yr: +137.8% \u00b7 90d: -1.5% \u00b7 Rev: +52.8% YoY \u00b7 Div streak: 37 yrs"
+    },
+    {
+      "ticker": "T",
+      "company": "AT&T Inc.",
+      "sector": "Communication",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.5909,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0171,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.023,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 2,
+      "yieldNum": 4.62,
+      "yieldRaw": "4.6%",
+      "statusKey": "border",
+      "note": "5yr: +59.1% \u00b7 90d: -1.7% \u00b7 Rev: +2.3% YoY \u00b7 Div streak: 2 yrs"
+    },
+    {
+      "ticker": "CLX",
+      "company": "Clorox Company (The)",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.25,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1382,
+        "pass": true
+      },
+      "revPass": false,
+      "revPct": -0.02,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 38,
+      "yieldNum": 4.61,
+      "yieldRaw": "4.6%",
+      "statusKey": "border",
+      "note": "5yr: -25.0% \u00b7 90d: +13.8% \u00b7 Rev: -2.0% YoY \u00b7 Div streak: 38 yrs"
+    },
+    {
+      "ticker": "ES",
+      "company": "Eversource Energy",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0577,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0161,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.023,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 26,
+      "yieldNum": 4.33,
+      "yieldRaw": "4.3%",
+      "statusKey": "meets",
+      "note": "5yr: -5.8% \u00b7 90d: +1.6% \u00b7 Rev: +2.3% YoY \u00b7 Div streak: 26 yrs"
+    },
+    {
+      "ticker": "PEP",
+      "company": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": 0.024,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0711,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.064,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 27,
+      "yieldNum": 4.17,
+      "yieldRaw": "4.2%",
+      "statusKey": "monitor",
+      "note": "5yr: +2.4% \u00b7 90d: -7.1% \u00b7 Rev: +6.4% YoY \u00b7 Div streak: 27 yrs"
+    },
+    {
+      "ticker": "AMT",
+      "company": "American Tower Corporation",
+      "sector": "Real Estate",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.3184,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.069,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.047,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 14,
+      "yieldNum": 4.13,
+      "yieldRaw": "4.1%",
+      "statusKey": "border",
+      "note": "5yr: -31.8% \u00b7 90d: -6.9% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 14 yrs"
+    },
+    {
+      "ticker": "TFC",
+      "company": "Truist Financial Corporation",
+      "sector": "Financials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1855,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0812,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.082,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 11,
+      "yieldNum": 4.01,
+      "yieldRaw": "4.0%",
+      "statusKey": "meets",
+      "note": "5yr: +18.6% \u00b7 90d: +8.1% \u00b7 Rev: +8.2% YoY \u00b7 Div streak: 11 yrs"
+    },
+    {
+      "ticker": "BMY",
+      "company": "Bristol-Myers Squibb Company",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1281,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0819,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.057,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 4,
+      "yieldNum": 3.87,
+      "yieldRaw": "3.9%",
+      "statusKey": "meets",
+      "note": "5yr: +12.8% \u00b7 90d: +8.2% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 4 yrs"
+    },
+    {
+      "ticker": "HON",
+      "company": "Honeywell International Inc.",
+      "sector": "Industrials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1297,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0373,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.043,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 31,
+      "yieldNum": 3.87,
+      "yieldRaw": "3.9%",
+      "statusKey": "meets",
+      "note": "5yr: +13.0% \u00b7 90d: -3.7% \u00b7 Rev: +4.3% YoY \u00b7 Div streak: 31 yrs"
+    },
+    {
+      "ticker": "KMI",
+      "company": "Kinder Morgan, Inc.",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.5882,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0597,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.108,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 9,
+      "yieldNum": 3.76,
+      "yieldRaw": "3.8%",
+      "statusKey": "monitor",
+      "note": "5yr: +158.8% \u00b7 90d: -6.0% \u00b7 Rev: +10.8% YoY \u00b7 Div streak: 9 yrs"
+    },
+    {
+      "ticker": "PSA",
+      "company": "Public Storage",
+      "sector": "Real Estate",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.248,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0749,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.033,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 2,
+      "yieldNum": 3.68,
+      "yieldRaw": "3.7%",
+      "statusKey": "border",
+      "note": "5yr: +24.8% \u00b7 90d: +7.5% \u00b7 Rev: +3.3% YoY \u00b7 Div streak: 2 yrs"
+    },
+    {
+      "ticker": "OMC",
+      "company": "Omnicom Group Inc.",
+      "sector": "Communication",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.4335,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1593,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.634,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 39,
+      "yieldNum": 3.66,
+      "yieldRaw": "3.7%",
+      "statusKey": "meets",
+      "note": "5yr: +43.4% \u00b7 90d: +15.9% \u00b7 Rev: +63.4% YoY \u00b7 Div streak: 39 yrs"
+    },
+    {
+      "ticker": "CVX",
+      "company": "Chevron Corporation",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.5263,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0273,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.535,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 45,
+      "yieldNum": 3.58,
+      "yieldRaw": "3.6%",
+      "statusKey": "meets",
+      "note": "5yr: +152.6% \u00b7 90d: +2.7% \u00b7 Rev: +53.5% YoY \u00b7 Div streak: 45 yrs"
+    },
+    {
+      "ticker": "DUK",
+      "company": "Duke Energy Corporation",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.381,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0197,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.011,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 19,
+      "yieldNum": 3.52,
+      "yieldRaw": "3.5%",
+      "statusKey": "meets",
+      "note": "5yr: +38.1% \u00b7 90d: -2.0% \u00b7 Rev: +1.1% YoY \u00b7 Div streak: 19 yrs"
+    },
+    {
+      "ticker": "MKC",
+      "company": "McCormick & Company, Incorporated",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.3233,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1165,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.167,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 27,
+      "yieldNum": 3.5,
+      "yieldRaw": "3.5%",
+      "statusKey": "border",
+      "note": "5yr: -32.3% \u00b7 90d: +11.7% \u00b7 Rev: +16.7% YoY \u00b7 Div streak: 27 yrs"
+    },
+    {
+      "ticker": "WEC",
+      "company": "WEC Energy Group, Inc.",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2854,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0593,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.026,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 24,
+      "yieldNum": 3.48,
+      "yieldRaw": "3.5%",
+      "statusKey": "monitor",
+      "note": "5yr: +28.5% \u00b7 90d: -5.9% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 24 yrs"
+    },
+    {
+      "ticker": "ED",
+      "company": "Consolidated Edison, Inc.",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.6471,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0096,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.132,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 37,
+      "yieldNum": 3.27,
+      "yieldRaw": "3.3%",
+      "statusKey": "meets",
+      "note": "5yr: +64.7% \u00b7 90d: -1.0% \u00b7 Rev: +13.2% YoY \u00b7 Div streak: 37 yrs"
+    },
+    {
+      "ticker": "SO",
+      "company": "Southern Company (The)",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.6258,
         "pass": true
       },
       "t90": {
@@ -189,546 +721,14 @@
         "pass": true
       },
       "revPass": true,
-      "revPct": 0.528,
+      "revPct": 0.001,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 37,
-      "yieldNum": 4.91,
-      "yieldRaw": "4.9%",
-      "statusKey": "meets",
-      "note": "5yr: +134.7% \u00b7 90d: -2.8% \u00b7 Rev: +52.8% YoY \u00b7 Div streak: 37 yrs"
-    },
-    {
-      "ticker": "CLX",
-      "company": "Clorox Company (The)",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.2538,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1324,
-        "pass": true
-      },
-      "revPass": false,
-      "revPct": -0.02,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 38,
-      "yieldNum": 4.73,
-      "yieldRaw": "4.7%",
-      "statusKey": "border",
-      "note": "5yr: -25.4% \u00b7 90d: +13.2% \u00b7 Rev: -2.0% YoY \u00b7 Div streak: 38 yrs"
-    },
-    {
-      "ticker": "T",
-      "company": "AT&T Inc.",
-      "sector": "Communication",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.5617,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0352,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.023,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 2,
-      "yieldNum": 4.67,
-      "yieldRaw": "4.7%",
-      "statusKey": "border",
-      "note": "5yr: +56.2% \u00b7 90d: -3.5% \u00b7 Rev: +2.3% YoY \u00b7 Div streak: 2 yrs"
-    },
-    {
-      "ticker": "HRL",
-      "company": "Hormel Foods Corporation",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.3677,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1768,
-        "pass": true
-      },
-      "revPass": false,
-      "revPct": -0.029,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 24,
-      "yieldNum": 4.66,
-      "yieldRaw": "4.7%",
-      "statusKey": "border",
-      "note": "5yr: -36.8% \u00b7 90d: +17.7% \u00b7 Rev: -2.9% YoY \u00b7 Div streak: 24 yrs"
-    },
-    {
-      "ticker": "KMB",
-      "company": "Kimberly-Clark Corporation",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0537,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1045,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.006,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 20,
-      "yieldNum": 4.63,
-      "yieldRaw": "4.6%",
-      "statusKey": "meets",
-      "note": "5yr: -5.4% \u00b7 90d: +10.4% \u00b7 Rev: +0.6% YoY \u00b7 Div streak: 20 yrs"
-    },
-    {
-      "ticker": "ES",
-      "company": "Eversource Energy",
-      "sector": "Utilities",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0571,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0167,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.023,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 26,
-      "yieldNum": 4.26,
-      "yieldRaw": "4.3%",
-      "statusKey": "meets",
-      "note": "5yr: -5.7% \u00b7 90d: +1.7% \u00b7 Rev: +2.3% YoY \u00b7 Div streak: 26 yrs"
-    },
-    {
-      "ticker": "PEP",
-      "company": "PepsiCo, Inc.",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": 0.019,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0757,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.064,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 27,
-      "yieldNum": 4.13,
-      "yieldRaw": "4.1%",
-      "statusKey": "monitor",
-      "note": "5yr: +1.9% \u00b7 90d: -7.6% \u00b7 Rev: +6.4% YoY \u00b7 Div streak: 27 yrs"
-    },
-    {
-      "ticker": "AMT",
-      "company": "American Tower Corporation",
-      "sector": "Real Estate",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.3201,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0714,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.047,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 14,
-      "yieldNum": 4.05,
-      "yieldRaw": "4.0%",
-      "statusKey": "border",
-      "note": "5yr: -32.0% \u00b7 90d: -7.1% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 14 yrs"
-    },
-    {
-      "ticker": "TFC",
-      "company": "Truist Financial Corporation",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1753,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0719,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.082,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 11,
-      "yieldNum": 3.97,
-      "yieldRaw": "4.0%",
-      "statusKey": "meets",
-      "note": "5yr: +17.5% \u00b7 90d: +7.2% \u00b7 Rev: +8.2% YoY \u00b7 Div streak: 11 yrs"
-    },
-    {
-      "ticker": "NKE",
-      "company": "NIKE, Inc.",
-      "sector": "Consumer Cyclical",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.7274,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0489,
-        "pass": true
-      },
-      "revPass": false,
-      "revPct": -0.011,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 34,
-      "yieldNum": 3.91,
-      "yieldRaw": "3.9%",
-      "statusKey": "border",
-      "note": "5yr: -72.7% \u00b7 90d: -4.9% \u00b7 Rev: -1.1% YoY \u00b7 Div streak: 34 yrs"
-    },
-    {
-      "ticker": "BMY",
-      "company": "Bristol-Myers Squibb Company",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1499,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1028,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.057,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 4,
-      "yieldNum": 3.88,
-      "yieldRaw": "3.9%",
-      "statusKey": "meets",
-      "note": "5yr: +15.0% \u00b7 90d: +10.3% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 4 yrs"
-    },
-    {
-      "ticker": "KMI",
-      "company": "Kinder Morgan, Inc.",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.5808,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0623,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.108,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 9,
-      "yieldNum": 3.82,
-      "yieldRaw": "3.8%",
-      "statusKey": "monitor",
-      "note": "5yr: +158.1% \u00b7 90d: -6.2% \u00b7 Rev: +10.8% YoY \u00b7 Div streak: 9 yrs"
-    },
-    {
-      "ticker": "HON",
-      "company": "Honeywell International Inc.",
-      "sector": "Industrials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1926,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0163,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.043,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 31,
-      "yieldNum": 3.82,
-      "yieldRaw": "3.8%",
-      "statusKey": "meets",
-      "note": "5yr: +19.3% \u00b7 90d: +1.6% \u00b7 Rev: +4.3% YoY \u00b7 Div streak: 31 yrs"
-    },
-    {
-      "ticker": "CVX",
-      "company": "Chevron Corporation",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.5038,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0182,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.535,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 45,
-      "yieldNum": 3.74,
-      "yieldRaw": "3.7%",
-      "statusKey": "meets",
-      "note": "5yr: +150.4% \u00b7 90d: +1.8% \u00b7 Rev: +53.5% YoY \u00b7 Div streak: 45 yrs"
-    },
-    {
-      "ticker": "PSA",
-      "company": "Public Storage",
-      "sector": "Real Estate",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2503,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0769,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.033,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 2,
-      "yieldNum": 3.65,
-      "yieldRaw": "3.6%",
-      "statusKey": "border",
-      "note": "5yr: +25.0% \u00b7 90d: +7.7% \u00b7 Rev: +3.3% YoY \u00b7 Div streak: 2 yrs"
-    },
-    {
-      "ticker": "OMC",
-      "company": "Omnicom Group Inc.",
-      "sector": "Communication",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.4118,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1418,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.634,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 39,
-      "yieldNum": 3.64,
-      "yieldRaw": "3.6%",
-      "statusKey": "meets",
-      "note": "5yr: +41.2% \u00b7 90d: +14.2% \u00b7 Rev: +63.4% YoY \u00b7 Div streak: 39 yrs"
-    },
-    {
-      "ticker": "MKC",
-      "company": "McCormick & Company, Incorporated",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.3202,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1216,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.167,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 27,
-      "yieldNum": 3.51,
-      "yieldRaw": "3.5%",
-      "statusKey": "border",
-      "note": "5yr: -32.0% \u00b7 90d: +12.2% \u00b7 Rev: +16.7% YoY \u00b7 Div streak: 27 yrs"
-    },
-    {
-      "ticker": "WEC",
-      "company": "WEC Energy Group, Inc.",
-      "sector": "Utilities",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2787,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0643,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.026,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 24,
-      "yieldNum": 3.43,
-      "yieldRaw": "3.4%",
-      "statusKey": "monitor",
-      "note": "5yr: +27.9% \u00b7 90d: -6.4% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 24 yrs"
-    },
-    {
-      "ticker": "DUK",
-      "company": "Duke Energy Corporation",
-      "sector": "Utilities",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.3586,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0356,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.011,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 19,
-      "yieldNum": 3.41,
-      "yieldRaw": "3.4%",
-      "statusKey": "meets",
-      "note": "5yr: +35.9% \u00b7 90d: -3.6% \u00b7 Rev: +1.1% YoY \u00b7 Div streak: 19 yrs"
-    },
-    {
-      "ticker": "MDT",
-      "company": "Medtronic plc.",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.195,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1478,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.099,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 7,
+      "divStreak": 43,
       "yieldNum": 3.26,
       "yieldRaw": "3.3%",
-      "statusKey": "border",
-      "note": "5yr: -19.5% \u00b7 90d: +14.8% \u00b7 Rev: +9.9% YoY \u00b7 Div streak: 7 yrs"
+      "statusKey": "meets",
+      "note": "5yr: +62.6% \u00b7 90d: -2.8% \u00b7 Rev: +0.1% YoY \u00b7 Div streak: 43 yrs"
     },
     {
       "ticker": "USB",
@@ -738,14 +738,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4339,
+        "pct": 0.4361,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1807,
+        "pct": 0.1826,
         "pass": true
       },
       "revPass": true,
@@ -753,66 +753,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 3.25,
+      "yieldNum": 3.24,
       "yieldRaw": "3.2%",
       "statusKey": "meets",
-      "note": "5yr: +43.4% \u00b7 90d: +18.1% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 16 yrs"
-    },
-    {
-      "ticker": "SO",
-      "company": "Southern Company (The)",
-      "sector": "Utilities",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.6155,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.034,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.001,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 43,
-      "yieldNum": 3.22,
-      "yieldRaw": "3.2%",
-      "statusKey": "meets",
-      "note": "5yr: +61.6% \u00b7 90d: -3.4% \u00b7 Rev: +0.1% YoY \u00b7 Div streak: 43 yrs"
-    },
-    {
-      "ticker": "ED",
-      "company": "Consolidated Edison, Inc.",
-      "sector": "Utilities",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.6287,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0206,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.132,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 37,
-      "yieldNum": 3.22,
-      "yieldRaw": "3.2%",
-      "statusKey": "meets",
-      "note": "5yr: +62.9% \u00b7 90d: -2.1% \u00b7 Rev: +13.2% YoY \u00b7 Div streak: 37 yrs"
+      "note": "5yr: +43.6% \u00b7 90d: +18.3% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "PPL",
@@ -822,14 +766,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4068,
+        "pct": 0.4185,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0289,
+        "pct": -0.0208,
         "pass": true
       },
       "revPass": true,
@@ -837,10 +781,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 3,
-      "yieldNum": 3.14,
-      "yieldRaw": "3.1%",
+      "yieldNum": 3.19,
+      "yieldRaw": "3.2%",
       "statusKey": "meets",
-      "note": "5yr: +40.7% \u00b7 90d: -2.9% \u00b7 Rev: +4.2% YoY \u00b7 Div streak: 3 yrs"
+      "note": "5yr: +41.9% \u00b7 90d: -2.1% \u00b7 Rev: +4.2% YoY \u00b7 Div streak: 3 yrs"
+    },
+    {
+      "ticker": "MDT",
+      "company": "Medtronic plc.",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1835,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1641,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.099,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 7,
+      "yieldNum": 3.18,
+      "yieldRaw": "3.2%",
+      "statusKey": "border",
+      "note": "5yr: -18.4% \u00b7 90d: +16.4% \u00b7 Rev: +9.9% YoY \u00b7 Div streak: 7 yrs"
     },
     {
       "ticker": "PM",
@@ -850,14 +822,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.3167,
+        "pct": 1.3194,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0077,
+        "pct": -0.0065,
         "pass": true
       },
       "revPass": true,
@@ -865,38 +837,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 13,
-      "yieldNum": 3.1,
-      "yieldRaw": "3.1%",
+      "yieldNum": 3.16,
+      "yieldRaw": "3.2%",
       "statusKey": "meets",
-      "note": "5yr: +131.7% \u00b7 90d: -0.8% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 13 yrs"
-    },
-    {
-      "ticker": "EOG",
-      "company": "EOG Resources, Inc.",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.7935,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0146,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.587,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 1,
-      "yieldNum": 3.03,
-      "yieldRaw": "3.0%",
-      "statusKey": "border",
-      "note": "5yr: +179.4% \u00b7 90d: +1.5% \u00b7 Rev: +58.7% YoY \u00b7 Div streak: 1 yr"
+      "note": "5yr: +131.9% \u00b7 90d: -0.7% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 13 yrs"
     },
     {
       "ticker": "AEP",
@@ -906,14 +850,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6145,
+        "pct": 0.6242,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0594,
+        "pct": -0.0537,
         "pass": false
       },
       "revPass": true,
@@ -921,38 +865,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 21,
-      "yieldNum": 3.03,
-      "yieldRaw": "3.0%",
+      "yieldNum": 3.08,
+      "yieldRaw": "3.1%",
       "statusKey": "monitor",
-      "note": "5yr: +61.5% \u00b7 90d: -5.9% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 21 yrs"
-    },
-    {
-      "ticker": "TGT",
-      "company": "Target Corporation",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.3043,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2104,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.067,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 42,
-      "yieldNum": 3.03,
-      "yieldRaw": "3.0%",
-      "statusKey": "border",
-      "note": "5yr: -30.4% \u00b7 90d: +21.0% \u00b7 Rev: +6.7% YoY \u00b7 Div streak: 42 yrs"
+      "note": "5yr: +62.4% \u00b7 90d: -5.4% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "XEL",
@@ -962,14 +878,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2769,
+        "pct": 0.29,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0448,
+        "pct": -0.035,
         "pass": true
       },
       "revPass": false,
@@ -977,10 +893,10 @@
       "revAvail": true,
       "divPass": false,
       "divStreak": 1,
-      "yieldNum": 2.98,
+      "yieldNum": 3.02,
       "yieldRaw": "3.0%",
       "statusKey": "border",
-      "note": "5yr: +27.7% \u00b7 90d: -4.5% \u00b7 Rev: -5.1% YoY \u00b7 Div streak: 1 yr"
+      "note": "5yr: +29.0% \u00b7 90d: -3.5% \u00b7 Rev: -5.1% YoY \u00b7 Div streak: 1 yr"
     },
     {
       "ticker": "PLD",
@@ -990,14 +906,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1938,
+        "pct": 0.2002,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.042,
+        "pct": -0.0369,
         "pass": true
       },
       "revPass": true,
@@ -1005,10 +921,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 2.97,
+      "yieldNum": 3.0,
       "yieldRaw": "3.0%",
       "statusKey": "meets",
-      "note": "5yr: +19.4% \u00b7 90d: -4.2% \u00b7 Rev: +12.3% YoY \u00b7 Div streak: 16 yrs"
+      "note": "5yr: +20.0% \u00b7 90d: -3.7% \u00b7 Rev: +12.3% YoY \u00b7 Div streak: 16 yrs"
+    },
+    {
+      "ticker": "TGT",
+      "company": "Target Corporation",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.3031,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2125,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.067,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 42,
+      "yieldNum": 2.99,
+      "yieldRaw": "3.0%",
+      "statusKey": "border",
+      "note": "5yr: -30.3% \u00b7 90d: +21.2% \u00b7 Rev: +6.7% YoY \u00b7 Div streak: 42 yrs"
     },
     {
       "ticker": "PG",
@@ -1018,14 +962,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1476,
+        "pct": 0.138,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0214,
+        "pct": 0.0128,
         "pass": true
       },
       "revPass": true,
@@ -1033,38 +977,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 22,
-      "yieldNum": 2.92,
+      "yieldNum": 2.91,
       "yieldRaw": "2.9%",
       "statusKey": "meets",
-      "note": "5yr: +14.8% \u00b7 90d: +2.1% \u00b7 Rev: +1.5% YoY \u00b7 Div streak: 22 yrs"
+      "note": "5yr: +13.8% \u00b7 90d: +1.3% \u00b7 Rev: +1.5% YoY \u00b7 Div streak: 22 yrs"
     },
     {
-      "ticker": "WMB",
-      "company": "The Williams Companies, Inc.",
+      "ticker": "EOG",
+      "company": "EOG Resources, Inc.",
       "sector": "Energy",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 2.7587,
+        "pct": 1.8167,
         "pass": true
       },
       "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0776,
-        "pass": false
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.023,
+        "pass": true
       },
       "revPass": true,
-      "revPct": 0.078,
+      "revPct": 0.587,
       "revAvail": true,
-      "divPass": true,
-      "divStreak": 8,
-      "yieldNum": 2.91,
+      "divPass": false,
+      "divStreak": 1,
+      "yieldNum": 2.87,
       "yieldRaw": "2.9%",
-      "statusKey": "monitor",
-      "note": "5yr: +275.9% \u00b7 90d: -7.8% \u00b7 Rev: +7.8% YoY \u00b7 Div streak: 8 yrs"
+      "statusKey": "border",
+      "note": "5yr: +181.7% \u00b7 90d: +2.3% \u00b7 Rev: +58.7% YoY \u00b7 Div streak: 1 yr"
     },
     {
       "ticker": "IBM",
@@ -1074,14 +1018,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.1515,
+        "pct": 1.1707,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0624,
+        "pct": -0.054,
         "pass": false
       },
       "revPass": true,
@@ -1089,38 +1033,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 31,
-      "yieldNum": 2.86,
+      "yieldNum": 2.85,
       "yieldRaw": "2.9%",
       "statusKey": "monitor",
-      "note": "5yr: +115.1% \u00b7 90d: -6.2% \u00b7 Rev: +1.1% YoY \u00b7 Div streak: 31 yrs"
+      "note": "5yr: +117.1% \u00b7 90d: -5.4% \u00b7 Rev: +1.1% YoY \u00b7 Div streak: 31 yrs"
     },
     {
-      "ticker": "COP",
-      "company": "ConocoPhillips",
+      "ticker": "WMB",
+      "company": "The Williams Companies, Inc.",
       "sector": "Energy",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.7654,
+        "pct": 2.7827,
         "pass": true
       },
       "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0213,
-        "pass": true
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0717,
+        "pass": false
       },
       "revPass": true,
-      "revPct": 0.355,
+      "revPct": 0.078,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 1,
-      "yieldNum": 2.81,
-      "yieldRaw": "2.8%",
-      "statusKey": "border",
-      "note": "5yr: +176.5% \u00b7 90d: +2.1% \u00b7 Rev: +35.5% YoY \u00b7 Div streak: 1 yr"
+      "divPass": true,
+      "divStreak": 8,
+      "yieldNum": 2.85,
+      "yieldRaw": "2.9%",
+      "statusKey": "monitor",
+      "note": "5yr: +278.3% \u00b7 90d: -7.2% \u00b7 Rev: +7.8% YoY \u00b7 Div streak: 8 yrs"
     },
     {
       "ticker": "NEE",
@@ -1130,14 +1074,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1196,
+        "pct": 0.1333,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0365,
+        "pct": -0.0246,
         "pass": true
       },
       "revPass": true,
@@ -1148,35 +1092,7 @@
       "yieldNum": 2.81,
       "yieldRaw": "2.8%",
       "statusKey": "meets",
-      "note": "5yr: +12.0% \u00b7 90d: -3.6% \u00b7 Rev: +12.4% YoY \u00b7 Div streak: 30 yrs"
-    },
-    {
-      "ticker": "DRI",
-      "company": "Darden Restaurants, Inc.",
-      "sector": "Consumer Cyclical",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.8443,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0797,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.137,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 5,
-      "yieldNum": 2.81,
-      "yieldRaw": "2.8%",
-      "statusKey": "meets",
-      "note": "5yr: +84.4% \u00b7 90d: +8.0% \u00b7 Rev: +13.7% YoY \u00b7 Div streak: 5 yrs"
+      "note": "5yr: +13.3% \u00b7 90d: -2.5% \u00b7 Rev: +12.4% YoY \u00b7 Div streak: 30 yrs"
     },
     {
       "ticker": "ABBV",
@@ -1186,14 +1102,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.5073,
+        "pct": 1.5288,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1578,
+        "pct": 0.1677,
         "pass": true
       },
       "revPass": true,
@@ -1201,10 +1117,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 12,
-      "yieldNum": 2.78,
+      "yieldNum": 2.75,
       "yieldRaw": "2.8%",
       "statusKey": "meets",
-      "note": "5yr: +150.7% \u00b7 90d: +15.8% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 12 yrs"
+      "note": "5yr: +152.9% \u00b7 90d: +16.8% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 12 yrs"
+    },
+    {
+      "ticker": "DRI",
+      "company": "Darden Restaurants, Inc.",
+      "sector": "Consumer Cyclical",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.8522,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0843,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.137,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 5,
+      "yieldNum": 2.75,
+      "yieldRaw": "2.8%",
+      "statusKey": "meets",
+      "note": "5yr: +85.2% \u00b7 90d: +8.4% \u00b7 Rev: +13.7% YoY \u00b7 Div streak: 5 yrs"
     },
     {
       "ticker": "PNC",
@@ -1214,14 +1158,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6278,
+        "pct": 0.6438,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1575,
+        "pct": 0.1689,
         "pass": true
       },
       "revPass": true,
@@ -1229,10 +1173,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 15,
-      "yieldNum": 2.69,
+      "yieldNum": 2.7,
       "yieldRaw": "2.7%",
       "statusKey": "meets",
-      "note": "5yr: +62.8% \u00b7 90d: +15.8% \u00b7 Rev: +23.6% YoY \u00b7 Div streak: 15 yrs"
+      "note": "5yr: +64.4% \u00b7 90d: +16.9% \u00b7 Rev: +23.6% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "MCD",
@@ -1242,14 +1186,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2874,
+        "pct": 0.2894,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0237,
+        "pct": -0.0222,
         "pass": true
       },
       "revPass": true,
@@ -1257,10 +1201,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 50,
-      "yieldNum": 2.68,
+      "yieldNum": 2.69,
       "yieldRaw": "2.7%",
       "statusKey": "meets",
-      "note": "5yr: +28.7% \u00b7 90d: -2.4% \u00b7 Rev: +3.7% YoY \u00b7 Div streak: 50 yrs"
+      "note": "5yr: +28.9% \u00b7 90d: -2.2% \u00b7 Rev: +3.7% YoY \u00b7 Div streak: 50 yrs"
+    },
+    {
+      "ticker": "COP",
+      "company": "ConocoPhillips",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.8303,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0453,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.355,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 1,
+      "yieldNum": 2.68,
+      "yieldRaw": "2.7%",
+      "statusKey": "border",
+      "note": "5yr: +183.0% \u00b7 90d: +4.5% \u00b7 Rev: +35.5% YoY \u00b7 Div streak: 1 yr"
     },
     {
       "ticker": "XOM",
@@ -1270,14 +1242,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 2.587,
+        "pct": 2.5872,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0314,
+        "pct": 0.0315,
         "pass": true
       },
       "revPass": true,
@@ -1285,38 +1257,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 42,
-      "yieldNum": 2.67,
-      "yieldRaw": "2.7%",
+      "yieldNum": 2.55,
+      "yieldRaw": "2.5%",
       "statusKey": "meets",
       "note": "5yr: +258.7% \u00b7 90d: +3.1% \u00b7 Rev: +44.1% YoY \u00b7 Div streak: 42 yrs"
-    },
-    {
-      "ticker": "MRK",
-      "company": "Merck & Company, Inc.",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.9448,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0772,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.051,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 21,
-      "yieldNum": 2.58,
-      "yieldRaw": "2.6%",
-      "statusKey": "meets",
-      "note": "5yr: +94.5% \u00b7 90d: +7.7% \u00b7 Rev: +5.1% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "DLR",
@@ -1326,14 +1270,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.394,
+        "pct": 0.3905,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0028,
+        "pct": 0.0003,
         "pass": true
       },
       "revPass": true,
@@ -1341,10 +1285,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 21,
-      "yieldNum": 2.52,
+      "yieldNum": 2.55,
       "yieldRaw": "2.5%",
       "statusKey": "meets",
-      "note": "5yr: +39.4% \u00b7 90d: +0.3% \u00b7 Rev: +29.9% YoY \u00b7 Div streak: 21 yrs"
+      "note": "5yr: +39.1% \u00b7 90d: +0.0% \u00b7 Rev: +29.9% YoY \u00b7 Div streak: 21 yrs"
+    },
+    {
+      "ticker": "MRK",
+      "company": "Merck & Company, Inc.",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.9374,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0731,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.051,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 21,
+      "yieldNum": 2.54,
+      "yieldRaw": "2.5%",
+      "statusKey": "meets",
+      "note": "5yr: +93.7% \u00b7 90d: +7.3% \u00b7 Rev: +5.1% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "AWK",
@@ -1354,14 +1326,14 @@
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1859,
+        "pct": -0.1768,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0819,
+        "pct": 0.094,
         "pass": true
       },
       "revPass": true,
@@ -1369,10 +1341,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 12,
-      "yieldNum": 2.5,
+      "yieldNum": 2.51,
       "yieldRaw": "2.5%",
       "statusKey": "border",
-      "note": "5yr: -18.6% \u00b7 90d: +8.2% \u00b7 Rev: +6.2% YoY \u00b7 Div streak: 12 yrs"
+      "note": "5yr: -17.7% \u00b7 90d: +9.4% \u00b7 Rev: +6.2% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "ADP",
@@ -1382,14 +1354,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4435,
+        "pct": 0.4299,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2239,
+        "pct": 0.2123,
         "pass": true
       },
       "revPass": true,
@@ -1397,38 +1369,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 23,
-      "yieldNum": 2.45,
-      "yieldRaw": "2.5%",
-      "statusKey": "meets",
-      "note": "5yr: +44.4% \u00b7 90d: +22.4% \u00b7 Rev: +6.8% YoY \u00b7 Div streak: 23 yrs"
-    },
-    {
-      "ticker": "PSX",
-      "company": "Phillips 66",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 2.8977,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2129,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.531,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 13,
-      "yieldNum": 2.42,
+      "yieldNum": 2.43,
       "yieldRaw": "2.4%",
       "statusKey": "meets",
-      "note": "5yr: +289.8% \u00b7 90d: +21.3% \u00b7 Rev: +53.1% YoY \u00b7 Div streak: 13 yrs"
+      "note": "5yr: +43.0% \u00b7 90d: +21.2% \u00b7 Rev: +6.8% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "KO",
@@ -1438,14 +1382,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.7782,
+        "pct": 0.7702,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.073,
+        "pct": 0.0682,
         "pass": true
       },
       "revPass": true,
@@ -1456,91 +1400,7 @@
       "yieldNum": 2.39,
       "yieldRaw": "2.4%",
       "statusKey": "meets",
-      "note": "5yr: +77.8% \u00b7 90d: +7.3% \u00b7 Rev: +6.7% YoY \u00b7 Div streak: 23 yrs"
-    },
-    {
-      "ticker": "AMGN",
-      "company": "Amgen Inc.",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.1679,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2296,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.095,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 14,
-      "yieldNum": 2.38,
-      "yieldRaw": "2.4%",
-      "statusKey": "meets",
-      "note": "5yr: +116.8% \u00b7 90d: +23.0% \u00b7 Rev: +9.5% YoY \u00b7 Div streak: 14 yrs"
-    },
-    {
-      "ticker": "BDX",
-      "company": "Becton, Dickinson and Company",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": 0.0249,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2253,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.054,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 43,
-      "yieldNum": 2.37,
-      "yieldRaw": "2.4%",
-      "statusKey": "meets",
-      "note": "5yr: +2.5% \u00b7 90d: +22.5% \u00b7 Rev: +5.4% YoY \u00b7 Div streak: 43 yrs"
-    },
-    {
-      "ticker": "APD",
-      "company": "Air Products and Chemicals, Inc",
-      "sector": "Materials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.3069,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0712,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.046,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 1,
-      "yieldNum": 2.37,
-      "yieldRaw": "2.4%",
-      "statusKey": "border",
-      "note": "5yr: +30.7% \u00b7 90d: +7.1% \u00b7 Rev: +4.6% YoY \u00b7 Div streak: 1 yr"
+      "note": "5yr: +77.0% \u00b7 90d: +6.8% \u00b7 Rev: +6.7% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "SBUX",
@@ -1550,14 +1410,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": 0.0219,
+        "pct": 0.0416,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0149,
+        "pct": 0.0344,
         "pass": true
       },
       "revPass": false,
@@ -1565,38 +1425,122 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 15,
-      "yieldNum": 2.35,
+      "yieldNum": 2.37,
       "yieldRaw": "2.4%",
       "statusKey": "border",
-      "note": "5yr: +2.2% \u00b7 90d: +1.5% \u00b7 Rev: -1.4% YoY \u00b7 Div streak: 15 yrs"
+      "note": "5yr: +4.2% \u00b7 90d: +3.4% \u00b7 Rev: -1.4% YoY \u00b7 Div streak: 15 yrs"
     },
     {
-      "ticker": "LMT",
-      "company": "Lockheed Martin Corporation",
-      "sector": "Industrials",
+      "ticker": "AMGN",
+      "company": "Amgen Inc.",
+      "sector": "Healthcare",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.9324,
+        "pct": 1.1529,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1385,
+        "pct": 0.221,
         "pass": true
       },
       "revPass": true,
-      "revPct": 0.105,
+      "revPct": 0.095,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 25,
-      "yieldNum": 2.32,
+      "divStreak": 14,
+      "yieldNum": 2.35,
+      "yieldRaw": "2.4%",
+      "statusKey": "meets",
+      "note": "5yr: +115.3% \u00b7 90d: +22.1% \u00b7 Rev: +9.5% YoY \u00b7 Div streak: 14 yrs"
+    },
+    {
+      "ticker": "APD",
+      "company": "Air Products and Chemicals, Inc",
+      "sector": "Materials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.3117,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0752,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.046,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 1,
+      "yieldNum": 2.34,
+      "yieldRaw": "2.3%",
+      "statusKey": "border",
+      "note": "5yr: +31.2% \u00b7 90d: +7.5% \u00b7 Rev: +4.6% YoY \u00b7 Div streak: 1 yr"
+    },
+    {
+      "ticker": "BDX",
+      "company": "Becton, Dickinson and Company",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": 0.0351,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2375,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.054,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 43,
+      "yieldNum": 2.33,
       "yieldRaw": "2.3%",
       "statusKey": "meets",
-      "note": "5yr: +93.2% \u00b7 90d: +13.9% \u00b7 Rev: +10.5% YoY \u00b7 Div streak: 25 yrs"
+      "note": "5yr: +3.5% \u00b7 90d: +23.8% \u00b7 Rev: +5.4% YoY \u00b7 Div streak: 43 yrs"
+    },
+    {
+      "ticker": "PSX",
+      "company": "Phillips 66",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 3.0576,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2626,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.531,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 13,
+      "yieldNum": 2.29,
+      "yieldRaw": "2.3%",
+      "statusKey": "meets",
+      "note": "5yr: +305.8% \u00b7 90d: +26.3% \u00b7 Rev: +53.1% YoY \u00b7 Div streak: 13 yrs"
     },
     {
       "ticker": "ABT",
@@ -1606,14 +1550,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0523,
+        "pct": -0.0427,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2515,
+        "pct": 0.2642,
         "pass": true
       },
       "revPass": true,
@@ -1621,10 +1565,66 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 12,
-      "yieldNum": 2.3,
+      "yieldNum": 2.28,
       "yieldRaw": "2.3%",
       "statusKey": "meets",
-      "note": "5yr: -5.2% \u00b7 90d: +25.1% \u00b7 Rev: +13.0% YoY \u00b7 Div streak: 12 yrs"
+      "note": "5yr: -4.3% \u00b7 90d: +26.4% \u00b7 Rev: +13.0% YoY \u00b7 Div streak: 12 yrs"
+    },
+    {
+      "ticker": "LMT",
+      "company": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.9151,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1284,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.105,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 25,
+      "yieldNum": 2.26,
+      "yieldRaw": "2.3%",
+      "statusKey": "meets",
+      "note": "5yr: +91.5% \u00b7 90d: +12.8% \u00b7 Rev: +10.5% YoY \u00b7 Div streak: 25 yrs"
+    },
+    {
+      "ticker": "MCHP",
+      "company": "Microchip Technology Incorporated",
+      "sector": "Technology",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2403,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.1328,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.38,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 14,
+      "yieldNum": 2.24,
+      "yieldRaw": "2.2%",
+      "statusKey": "monitor",
+      "note": "5yr: +24.0% \u00b7 90d: -13.3% \u00b7 Rev: +38.0% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "CL",
@@ -1634,14 +1634,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3318,
+        "pct": 0.3197,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0339,
+        "pct": 0.0246,
         "pass": true
       },
       "revPass": true,
@@ -1652,91 +1652,7 @@
       "yieldNum": 2.24,
       "yieldRaw": "2.2%",
       "statusKey": "meets",
-      "note": "5yr: +33.2% \u00b7 90d: +3.4% \u00b7 Rev: +4.9% YoY \u00b7 Div streak: 52 yrs"
-    },
-    {
-      "ticker": "ITW",
-      "company": "Illinois Tool Works Inc.",
-      "sector": "Industrials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.4373,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1749,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.061,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 30,
-      "yieldNum": 2.17,
-      "yieldRaw": "2.2%",
-      "statusKey": "meets",
-      "note": "5yr: +43.7% \u00b7 90d: +17.5% \u00b7 Rev: +6.1% YoY \u00b7 Div streak: 30 yrs"
-    },
-    {
-      "ticker": "MCHP",
-      "company": "Microchip Technology Incorporated",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2459,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.1289,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.38,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 14,
-      "yieldNum": 2.15,
-      "yieldRaw": "2.1%",
-      "statusKey": "monitor",
-      "note": "5yr: +24.6% \u00b7 90d: -12.9% \u00b7 Rev: +38.0% YoY \u00b7 Div streak: 14 yrs"
-    },
-    {
-      "ticker": "LOW",
-      "company": "Lowe's Companies, Inc.",
-      "sector": "Consumer Cyclical",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1581,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0242,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.103,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 26,
-      "yieldNum": 2.15,
-      "yieldRaw": "2.1%",
-      "statusKey": "meets",
-      "note": "5yr: +15.8% \u00b7 90d: +2.4% \u00b7 Rev: +10.3% YoY \u00b7 Div streak: 26 yrs"
+      "note": "5yr: +32.0% \u00b7 90d: +2.5% \u00b7 Rev: +4.9% YoY \u00b7 Div streak: 52 yrs"
     },
     {
       "ticker": "QCOM",
@@ -1746,14 +1662,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2714,
+        "pct": 0.2754,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.3166,
+        "pct": -0.3144,
         "pass": false
       },
       "revPass": false,
@@ -1761,10 +1677,66 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 23,
-      "yieldNum": 2.14,
-      "yieldRaw": "2.1%",
+      "yieldNum": 2.21,
+      "yieldRaw": "2.2%",
       "statusKey": "border",
-      "note": "5yr: +27.1% \u00b7 90d: -31.7% \u00b7 Rev: -4.0% YoY \u00b7 Div streak: 23 yrs"
+      "note": "5yr: +27.5% \u00b7 90d: -31.4% \u00b7 Rev: -4.0% YoY \u00b7 Div streak: 23 yrs"
+    },
+    {
+      "ticker": "ITW",
+      "company": "Illinois Tool Works Inc.",
+      "sector": "Industrials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.4306,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1694,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.061,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 30,
+      "yieldNum": 2.19,
+      "yieldRaw": "2.2%",
+      "statusKey": "meets",
+      "note": "5yr: +43.1% \u00b7 90d: +16.9% \u00b7 Rev: +6.1% YoY \u00b7 Div streak: 30 yrs"
+    },
+    {
+      "ticker": "LOW",
+      "company": "Lowe's Companies, Inc.",
+      "sector": "Consumer Cyclical",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1707,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0353,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.103,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 26,
+      "yieldNum": 2.19,
+      "yieldRaw": "2.2%",
+      "statusKey": "meets",
+      "note": "5yr: +17.1% \u00b7 90d: +3.5% \u00b7 Rev: +10.3% YoY \u00b7 Div streak: 26 yrs"
     },
     {
       "ticker": "WFC",
@@ -1774,14 +1746,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.0847,
+        "pct": 1.083,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1521,
+        "pct": 0.1512,
         "pass": true
       },
       "revPass": true,
@@ -1792,7 +1764,7 @@
       "yieldNum": 2.06,
       "yieldRaw": "2.1%",
       "statusKey": "meets",
-      "note": "5yr: +108.5% \u00b7 90d: +15.2% \u00b7 Rev: +9.5% YoY \u00b7 Div streak: 4 yrs"
+      "note": "5yr: +108.3% \u00b7 90d: +15.1% \u00b7 Rev: +9.5% YoY \u00b7 Div streak: 4 yrs"
     },
     {
       "ticker": "PKG",
@@ -1802,14 +1774,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.9907,
+        "pct": 1.0116,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1877,
+        "pct": 0.2002,
         "pass": true
       },
       "revPass": true,
@@ -1817,38 +1789,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 2.05,
-      "yieldRaw": "2.0%",
+      "yieldNum": 2.06,
+      "yieldRaw": "2.1%",
       "statusKey": "meets",
-      "note": "5yr: +99.1% \u00b7 90d: +18.8% \u00b7 Rev: +14.7% YoY \u00b7 Div streak: 16 yrs"
-    },
-    {
-      "ticker": "JNJ",
-      "company": "Johnson & Johnson",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.6794,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1236,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.066,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 63,
-      "yieldNum": 2.02,
-      "yieldRaw": "2.0%",
-      "statusKey": "meets",
-      "note": "5yr: +67.9% \u00b7 90d: +12.4% \u00b7 Rev: +6.6% YoY \u00b7 Div streak: 63 yrs"
+      "note": "5yr: +101.2% \u00b7 90d: +20.0% \u00b7 Rev: +14.7% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "TXN",
@@ -1858,14 +1802,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.7468,
+        "pct": 0.7518,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0884,
+        "pct": -0.0858,
         "pass": false
       },
       "revPass": true,
@@ -1873,10 +1817,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 27,
-      "yieldNum": 1.96,
+      "yieldNum": 2.0,
       "yieldRaw": "2.0%",
       "statusKey": "monitor",
-      "note": "5yr: +74.7% \u00b7 90d: -8.8% \u00b7 Rev: +22.8% YoY \u00b7 Div streak: 27 yrs"
+      "note": "5yr: +75.2% \u00b7 90d: -8.6% \u00b7 Rev: +22.8% YoY \u00b7 Div streak: 27 yrs"
+    },
+    {
+      "ticker": "JNJ",
+      "company": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.6665,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.115,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.066,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 63,
+      "yieldNum": 2.0,
+      "yieldRaw": "2.0%",
+      "statusKey": "meets",
+      "note": "5yr: +66.6% \u00b7 90d: +11.5% \u00b7 Rev: +6.6% YoY \u00b7 Div streak: 63 yrs"
     },
     {
       "ticker": "HD",
@@ -1886,14 +1858,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2066,
+        "pct": 0.2193,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1289,
+        "pct": 0.1408,
         "pass": true
       },
       "revPass": true,
@@ -1901,10 +1873,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 23,
+      "yieldNum": 1.98,
+      "yieldRaw": "2.0%",
+      "statusKey": "meets",
+      "note": "5yr: +21.9% \u00b7 90d: +14.1% \u00b7 Rev: +4.8% YoY \u00b7 Div streak: 23 yrs"
+    },
+    {
+      "ticker": "AFL",
+      "company": "AFLAC Incorporated",
+      "sector": "Financials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.3934,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0272,
+        "pass": true
+      },
+      "revPass": false,
+      "revPct": -0.01,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 41,
       "yieldNum": 1.95,
       "yieldRaw": "1.9%",
-      "statusKey": "meets",
-      "note": "5yr: +20.7% \u00b7 90d: +12.9% \u00b7 Rev: +4.8% YoY \u00b7 Div streak: 23 yrs"
+      "statusKey": "border",
+      "note": "5yr: +139.3% \u00b7 90d: +2.7% \u00b7 Rev: -1.0% YoY \u00b7 Div streak: 41 yrs"
     },
     {
       "ticker": "BLK",
@@ -1914,14 +1914,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3916,
+        "pct": 0.413,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0604,
+        "pct": 0.0767,
         "pass": true
       },
       "revPass": true,
@@ -1932,7 +1932,7 @@
       "yieldNum": 1.93,
       "yieldRaw": "1.9%",
       "statusKey": "meets",
-      "note": "5yr: +39.2% \u00b7 90d: +6.0% \u00b7 Rev: +30.6% YoY \u00b7 Div streak: 22 yrs"
+      "note": "5yr: +41.3% \u00b7 90d: +7.7% \u00b7 Rev: +30.6% YoY \u00b7 Div streak: 22 yrs"
     },
     {
       "ticker": "CME",
@@ -1942,14 +1942,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6398,
+        "pct": 0.6128,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.09,
+        "pct": -0.105,
         "pass": false
       },
       "revPass": true,
@@ -1960,35 +1960,7 @@
       "yieldNum": 1.93,
       "yieldRaw": "1.9%",
       "statusKey": "border",
-      "note": "5yr: +64.0% \u00b7 90d: -9.0% \u00b7 Rev: +0.8% YoY"
-    },
-    {
-      "ticker": "AFL",
-      "company": "AFLAC Incorporated",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.4106,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0346,
-        "pass": true
-      },
-      "revPass": false,
-      "revPct": -0.01,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 41,
-      "yieldNum": 1.91,
-      "yieldRaw": "1.9%",
-      "statusKey": "border",
-      "note": "5yr: +141.1% \u00b7 90d: +3.5% \u00b7 Rev: -1.0% YoY \u00b7 Div streak: 41 yrs"
+      "note": "5yr: +61.3% \u00b7 90d: -10.5% \u00b7 Rev: +0.8% YoY"
     },
     {
       "ticker": "BAC",
@@ -1998,14 +1970,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.7879,
+        "pct": 0.7918,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2392,
+        "pct": 0.2419,
         "pass": true
       },
       "revPass": true,
@@ -2013,10 +1985,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 1.77,
+      "yieldNum": 1.75,
       "yieldRaw": "1.8%",
       "statusKey": "meets",
-      "note": "5yr: +78.8% \u00b7 90d: +23.9% \u00b7 Rev: +16.8% YoY \u00b7 Div streak: 16 yrs"
+      "note": "5yr: +79.2% \u00b7 90d: +24.2% \u00b7 Rev: +16.8% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "JPM",
@@ -2026,14 +1998,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.6353,
+        "pct": 1.6518,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1796,
+        "pct": 0.187,
         "pass": true
       },
       "revPass": true,
@@ -2041,10 +2013,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 15,
-      "yieldNum": 1.68,
+      "yieldNum": 1.67,
       "yieldRaw": "1.7%",
       "statusKey": "meets",
-      "note": "5yr: +163.5% \u00b7 90d: +18.0% \u00b7 Rev: +30.4% YoY \u00b7 Div streak: 15 yrs"
+      "note": "5yr: +165.2% \u00b7 90d: +18.7% \u00b7 Rev: +30.4% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "MMM",
@@ -2054,14 +2026,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3301,
+        "pct": 0.3381,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1942,
+        "pct": 0.2013,
         "pass": true
       },
       "revPass": true,
@@ -2069,10 +2041,10 @@
       "revAvail": true,
       "divPass": false,
       "divStreak": 0,
-      "yieldNum": 1.65,
-      "yieldRaw": "1.6%",
+      "yieldNum": 1.66,
+      "yieldRaw": "1.7%",
       "statusKey": "border",
-      "note": "5yr: +33.0% \u00b7 90d: +19.4% \u00b7 Rev: +2.5% YoY"
+      "note": "5yr: +33.8% \u00b7 90d: +20.1% \u00b7 Rev: +2.5% YoY"
     },
     {
       "ticker": "GS",
@@ -2082,14 +2054,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.9498,
+        "pct": 1.9495,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0425,
+        "pct": 0.0424,
         "pass": true
       },
       "revPass": true,
@@ -2100,35 +2072,7 @@
       "yieldNum": 1.64,
       "yieldRaw": "1.6%",
       "statusKey": "meets",
-      "note": "5yr: +195.0% \u00b7 90d: +4.2% \u00b7 Rev: +42.5% YoY \u00b7 Div streak: 15 yrs"
-    },
-    {
-      "ticker": "VLO",
-      "company": "Valero Energy Corporation",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 5.1074,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2802,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.517,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 15,
-      "yieldNum": 1.56,
-      "yieldRaw": "1.6%",
-      "statusKey": "meets",
-      "note": "5yr: +510.7% \u00b7 90d: +28.0% \u00b7 Rev: +51.7% YoY \u00b7 Div streak: 15 yrs"
+      "note": "5yr: +194.9% \u00b7 90d: +4.2% \u00b7 Rev: +42.5% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "ALL",
@@ -2138,14 +2082,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.2597,
+        "pct": 1.1974,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2516,
+        "pct": 0.217,
         "pass": true
       },
       "revPass": true,
@@ -2153,10 +2097,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 1.56,
-      "yieldRaw": "1.6%",
+      "yieldNum": 1.54,
+      "yieldRaw": "1.5%",
       "statusKey": "meets",
-      "note": "5yr: +126.0% \u00b7 90d: +25.2% \u00b7 Rev: +11.8% YoY \u00b7 Div streak: 16 yrs"
+      "note": "5yr: +119.7% \u00b7 90d: +21.7% \u00b7 Rev: +11.8% YoY \u00b7 Div streak: 16 yrs"
+    },
+    {
+      "ticker": "VLO",
+      "company": "Valero Energy Corporation",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 5.2814,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.3167,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.517,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "yieldNum": 1.48,
+      "yieldRaw": "1.5%",
+      "statusKey": "meets",
+      "note": "5yr: +528.1% \u00b7 90d: +31.7% \u00b7 Rev: +51.7% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "INTU",
@@ -2166,14 +2138,14 @@
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.3639,
+        "pct": -0.3601,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0499,
+        "pct": 0.0562,
         "pass": true
       },
       "revPass": true,
@@ -2181,10 +2153,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 14,
-      "yieldNum": 1.43,
+      "yieldNum": 1.39,
       "yieldRaw": "1.4%",
       "statusKey": "border",
-      "note": "5yr: -36.4% \u00b7 90d: +5.0% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 14 yrs"
+      "note": "5yr: -36.0% \u00b7 90d: +5.6% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "EMR",
@@ -2194,14 +2166,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.717,
+        "pct": 0.7783,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1634,
+        "pct": 0.205,
         "pass": true
       },
       "revPass": true,
@@ -2209,10 +2181,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 34,
-      "yieldNum": 1.39,
+      "yieldNum": 1.38,
       "yieldRaw": "1.4%",
       "statusKey": "meets",
-      "note": "5yr: +71.7% \u00b7 90d: +16.3% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 34 yrs"
+      "note": "5yr: +77.8% \u00b7 90d: +20.5% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 34 yrs"
     },
     {
       "ticker": "MSCI",
@@ -2222,14 +2194,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.04,
+        "pct": -0.0423,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0433,
+        "pct": -0.0456,
         "pass": true
       },
       "revPass": true,
@@ -2240,35 +2212,7 @@
       "yieldNum": 1.37,
       "yieldRaw": "1.4%",
       "statusKey": "meets",
-      "note": "5yr: -4.0% \u00b7 90d: -4.3% \u00b7 Rev: +12.2% YoY \u00b7 Div streak: 11 yrs"
-    },
-    {
-      "ticker": "MPC",
-      "company": "Marathon Petroleum Corporation",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 5.5197,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2579,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.537,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 14,
-      "yieldNum": 1.34,
-      "yieldRaw": "1.3%",
-      "statusKey": "meets",
-      "note": "5yr: +552.0% \u00b7 90d: +25.8% \u00b7 Rev: +53.7% YoY \u00b7 Div streak: 14 yrs"
+      "note": "5yr: -4.2% \u00b7 90d: -4.6% \u00b7 Rev: +12.2% YoY \u00b7 Div streak: 11 yrs"
     },
     {
       "ticker": "ICE",
@@ -2278,14 +2222,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3717,
+        "pct": 0.3782,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0122,
+        "pct": -0.0076,
         "pass": true
       },
       "revPass": true,
@@ -2296,7 +2240,7 @@
       "yieldNum": 1.33,
       "yieldRaw": "1.3%",
       "statusKey": "meets",
-      "note": "5yr: +37.2% \u00b7 90d: -1.2% \u00b7 Rev: +4.8% YoY \u00b7 Div streak: 12 yrs"
+      "note": "5yr: +37.8% \u00b7 90d: -0.8% \u00b7 Rev: +4.8% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "LIN",
@@ -2306,14 +2250,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6791,
+        "pct": 0.6725,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0455,
+        "pct": -0.0493,
         "pass": true
       },
       "revPass": true,
@@ -2321,10 +2265,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 33,
-      "yieldNum": 1.27,
+      "yieldNum": 1.26,
       "yieldRaw": "1.3%",
       "statusKey": "meets",
-      "note": "5yr: +67.9% \u00b7 90d: -4.5% \u00b7 Rev: +9.3% YoY \u00b7 Div streak: 33 yrs"
+      "note": "5yr: +67.2% \u00b7 90d: -4.9% \u00b7 Rev: +9.3% YoY \u00b7 Div streak: 33 yrs"
+    },
+    {
+      "ticker": "MPC",
+      "company": "Marathon Petroleum Corporation",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 5.8474,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.3211,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.537,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 14,
+      "yieldNum": 1.25,
+      "yieldRaw": "1.2%",
+      "statusKey": "meets",
+      "note": "5yr: +584.7% \u00b7 90d: +32.1% \u00b7 Rev: +53.7% YoY \u00b7 Div streak: 14 yrs"
     },
     {
       "ticker": "RTX",
@@ -2334,14 +2306,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.959,
+        "pct": 1.9555,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2661,
+        "pct": 0.2647,
         "pass": true
       },
       "revPass": true,
@@ -2352,7 +2324,7 @@
       "yieldNum": 1.24,
       "yieldRaw": "1.2%",
       "statusKey": "meets",
-      "note": "5yr: +195.9% \u00b7 90d: +26.6% \u00b7 Rev: +14.5% YoY \u00b7 Div streak: 33 yrs"
+      "note": "5yr: +195.6% \u00b7 90d: +26.5% \u00b7 Rev: +14.5% YoY \u00b7 Div streak: 33 yrs"
     },
     {
       "ticker": "TRV",
@@ -2362,7 +2334,7 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.5737,
+        "pct": 1.5736,
         "pass": true
       },
       "t90": {
@@ -2377,7 +2349,7 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 20,
-      "yieldNum": 1.18,
+      "yieldNum": 1.21,
       "yieldRaw": "1.2%",
       "statusKey": "meets",
       "note": "5yr: +157.4% \u00b7 90d: +23.1% \u00b7 Rev: +0.3% YoY \u00b7 Div streak: 20 yrs"
@@ -2390,14 +2362,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2709,
+        "pct": 0.2645,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0732,
+        "pct": 0.0678,
         "pass": true
       },
       "revPass": true,
@@ -2408,7 +2380,7 @@
       "yieldNum": 1.17,
       "yieldRaw": "1.2%",
       "statusKey": "meets",
-      "note": "5yr: +27.1% \u00b7 90d: +7.3% \u00b7 Rev: +1.6% YoY \u00b7 Div streak: 35 yrs"
+      "note": "5yr: +26.5% \u00b7 90d: +6.8% \u00b7 Rev: +1.6% YoY \u00b7 Div streak: 35 yrs"
     },
     {
       "ticker": "CB",
@@ -2418,14 +2390,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.0008,
+        "pct": 0.9938,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0656,
+        "pct": 0.0618,
         "pass": true
       },
       "revPass": true,
@@ -2433,10 +2405,10 @@
       "revAvail": true,
       "divPass": false,
       "divStreak": 0,
-      "yieldNum": 1.12,
+      "yieldNum": 1.13,
       "yieldRaw": "1.1%",
       "statusKey": "border",
-      "note": "5yr: +100.1% \u00b7 90d: +6.6% \u00b7 Rev: +6.1% YoY"
+      "note": "5yr: +99.4% \u00b7 90d: +6.2% \u00b7 Rev: +6.1% YoY"
     },
     {
       "ticker": "ADI",
@@ -2446,14 +2418,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.5076,
+        "pct": 1.5165,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0304,
+        "pct": -0.027,
         "pass": true
       },
       "revPass": true,
@@ -2461,10 +2433,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 22,
-      "yieldNum": 1.07,
+      "yieldNum": 1.09,
       "yieldRaw": "1.1%",
       "statusKey": "meets",
-      "note": "5yr: +150.8% \u00b7 90d: -3.0% \u00b7 Rev: +37.2% YoY \u00b7 Div streak: 22 yrs"
+      "note": "5yr: +151.7% \u00b7 90d: -2.7% \u00b7 Rev: +37.2% YoY \u00b7 Div streak: 22 yrs"
+    },
+    {
+      "ticker": "DE",
+      "company": "Deere & Company",
+      "sector": "Industrials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.8779,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1708,
+        "pass": true
+      },
+      "revPass": false,
+      "revPct": -0.111,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 38,
+      "yieldNum": 1.06,
+      "yieldRaw": "1.1%",
+      "statusKey": "border",
+      "note": "5yr: +87.8% \u00b7 90d: +17.1% \u00b7 Rev: -11.1% YoY \u00b7 Div streak: 38 yrs"
     },
     {
       "ticker": "AXP",
@@ -2474,14 +2474,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.2541,
+        "pct": 1.2671,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0898,
+        "pct": 0.0961,
         "pass": true
       },
       "revPass": true,
@@ -2492,35 +2492,7 @@
       "yieldNum": 1.04,
       "yieldRaw": "1.0%",
       "statusKey": "meets",
-      "note": "5yr: +125.4% \u00b7 90d: +9.0% \u00b7 Rev: +12.8% YoY \u00b7 Div streak: 21 yrs"
-    },
-    {
-      "ticker": "DE",
-      "company": "Deere & Company",
-      "sector": "Industrials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.8515,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1544,
-        "pass": true
-      },
-      "revPass": false,
-      "revPct": -0.111,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 38,
-      "yieldNum": 1.04,
-      "yieldRaw": "1.0%",
-      "statusKey": "border",
-      "note": "5yr: +85.2% \u00b7 90d: +15.4% \u00b7 Rev: -11.1% YoY \u00b7 Div streak: 38 yrs"
+      "note": "5yr: +126.7% \u00b7 90d: +9.6% \u00b7 Rev: +12.8% YoY \u00b7 Div streak: 21 yrs"
     },
     {
       "ticker": "SYK",
@@ -2530,14 +2502,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.373,
+        "pct": 0.3823,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0956,
+        "pct": 0.103,
         "pass": true
       },
       "revPass": true,
@@ -2545,10 +2517,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 1.03,
+      "yieldNum": 1.01,
       "yieldRaw": "1.0%",
       "statusKey": "meets",
-      "note": "5yr: +37.3% \u00b7 90d: +9.6% \u00b7 Rev: +9.4% YoY \u00b7 Div streak: 16 yrs"
+      "note": "5yr: +38.2% \u00b7 90d: +10.3% \u00b7 Rev: +9.4% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "ECL",
@@ -2558,14 +2530,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3539,
+        "pct": 0.355,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1258,
+        "pct": 0.1267,
         "pass": true
       },
       "revPass": true,
@@ -2576,7 +2548,35 @@
       "yieldNum": 1.0,
       "yieldRaw": "1.0%",
       "statusKey": "meets",
-      "note": "5yr: +35.4% \u00b7 90d: +12.6% \u00b7 Rev: +9.7% YoY \u00b7 Div streak: 23 yrs"
+      "note": "5yr: +35.5% \u00b7 90d: +12.7% \u00b7 Rev: +9.7% YoY \u00b7 Div streak: 23 yrs"
+    },
+    {
+      "ticker": "YUM",
+      "company": "Yum! Brands, Inc.",
+      "sector": "Consumer Cyclical",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1823,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0625,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.122,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 8,
+      "yieldNum": 1.0,
+      "yieldRaw": "1.0%",
+      "statusKey": "monitor",
+      "note": "5yr: +18.2% \u00b7 90d: -6.2% \u00b7 Rev: +12.2% YoY \u00b7 Div streak: 8 yrs"
     },
     {
       "ticker": "DOV",
@@ -2586,14 +2586,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2941,
+        "pct": 0.2839,
         "pass": true
       },
       "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0034,
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0045,
         "pass": true
       },
       "revPass": true,
@@ -2604,63 +2604,7 @@
       "yieldNum": 0.99,
       "yieldRaw": "1.0%",
       "statusKey": "meets",
-      "note": "5yr: +29.4% \u00b7 90d: +0.3% \u00b7 Rev: +6.9% YoY \u00b7 Div streak: 41 yrs"
-    },
-    {
-      "ticker": "YUM",
-      "company": "Yum! Brands, Inc.",
-      "sector": "Consumer Cyclical",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.187,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0587,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.122,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 8,
-      "yieldNum": 0.97,
-      "yieldRaw": "1.0%",
-      "statusKey": "monitor",
-      "note": "5yr: +18.7% \u00b7 90d: -5.9% \u00b7 Rev: +12.2% YoY \u00b7 Div streak: 8 yrs"
-    },
-    {
-      "ticker": "SPGI",
-      "company": "S&P Global Inc.",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": 0.0352,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0426,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.104,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 12,
-      "yieldNum": 0.95,
-      "yieldRaw": "0.9%",
-      "statusKey": "meets",
-      "note": "5yr: +3.5% \u00b7 90d: +4.3% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 12 yrs"
+      "note": "5yr: +28.4% \u00b7 90d: -0.4% \u00b7 Rev: +6.9% YoY \u00b7 Div streak: 41 yrs"
     },
     {
       "ticker": "ETN",
@@ -2670,14 +2614,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.8714,
+        "pct": 1.9639,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1398,
+        "pct": 0.1765,
         "pass": true
       },
       "revPass": true,
@@ -2685,10 +2629,38 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 5,
-      "yieldNum": 0.95,
+      "yieldNum": 0.96,
+      "yieldRaw": "1.0%",
+      "statusKey": "meets",
+      "note": "5yr: +196.4% \u00b7 90d: +17.6% \u00b7 Rev: +21.4% YoY \u00b7 Div streak: 5 yrs"
+    },
+    {
+      "ticker": "SPGI",
+      "company": "S&P Global Inc.",
+      "sector": "Financials",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": 0.0296,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0369,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.104,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 12,
+      "yieldNum": 0.94,
       "yieldRaw": "0.9%",
       "statusKey": "meets",
-      "note": "5yr: +187.1% \u00b7 90d: +14.0% \u00b7 Rev: +21.4% YoY \u00b7 Div streak: 5 yrs"
+      "note": "5yr: +3.0% \u00b7 90d: +3.7% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "ROP",
@@ -2698,14 +2670,14 @@
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1313,
+        "pct": -0.1407,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2385,
+        "pct": 0.225,
         "pass": true
       },
       "revPass": true,
@@ -2716,7 +2688,7 @@
       "yieldNum": 0.88,
       "yieldRaw": "0.9%",
       "statusKey": "border",
-      "note": "5yr: -13.1% \u00b7 90d: +23.8% \u00b7 Rev: +8.5% YoY \u00b7 Div streak: 12 yrs"
+      "note": "5yr: -14.1% \u00b7 90d: +22.5% \u00b7 Rev: +8.5% YoY \u00b7 Div streak: 12 yrs"
     },
     {
       "ticker": "SHW",
@@ -2726,14 +2698,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2332,
+        "pct": 0.239,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1735,
+        "pct": 0.179,
         "pass": true
       },
       "revPass": true,
@@ -2741,10 +2713,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 40,
-      "yieldNum": 0.86,
+      "yieldNum": 0.88,
       "yieldRaw": "0.9%",
       "statusKey": "meets",
-      "note": "5yr: +23.3% \u00b7 90d: +17.3% \u00b7 Rev: +7.5% YoY \u00b7 Div streak: 40 yrs"
+      "note": "5yr: +23.9% \u00b7 90d: +17.9% \u00b7 Rev: +7.5% YoY \u00b7 Div streak: 40 yrs"
     },
     {
       "ticker": "WMT",
@@ -2754,14 +2726,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.37,
+        "pct": 1.3826,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0633,
+        "pct": -0.0583,
         "pass": false
       },
       "revPass": true,
@@ -2772,7 +2744,7 @@
       "yieldNum": 0.85,
       "yieldRaw": "0.8%",
       "statusKey": "monitor",
-      "note": "5yr: +137.0% \u00b7 90d: -6.3% \u00b7 Rev: +7.3% YoY \u00b7 Div streak: 43 yrs"
+      "note": "5yr: +138.3% \u00b7 90d: -5.8% \u00b7 Rev: +7.3% YoY \u00b7 Div streak: 43 yrs"
     },
     {
       "ticker": "MCO",
@@ -2782,14 +2754,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3227,
+        "pct": 0.3182,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0646,
+        "pct": 0.0609,
         "pass": true
       },
       "revPass": true,
@@ -2800,7 +2772,7 @@
       "yieldNum": 0.82,
       "yieldRaw": "0.8%",
       "statusKey": "meets",
-      "note": "5yr: +32.3% \u00b7 90d: +6.5% \u00b7 Rev: +15.1% YoY \u00b7 Div streak: 25 yrs"
+      "note": "5yr: +31.8% \u00b7 90d: +6.1% \u00b7 Rev: +15.1% YoY \u00b7 Div streak: 25 yrs"
     },
     {
       "ticker": "NUE",
@@ -2810,14 +2782,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.5408,
+        "pct": 1.5162,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1866,
+        "pct": 0.1751,
         "pass": true
       },
       "revPass": true,
@@ -2825,38 +2797,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 16,
-      "yieldNum": 0.82,
+      "yieldNum": 0.81,
       "yieldRaw": "0.8%",
       "statusKey": "meets",
-      "note": "5yr: +154.1% \u00b7 90d: +18.7% \u00b7 Rev: +23.0% YoY \u00b7 Div streak: 16 yrs"
-    },
-    {
-      "ticker": "MSFT",
-      "company": "Microsoft Corporation",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.7292,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.209,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.177,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 20,
-      "yieldNum": 0.73,
-      "yieldRaw": "0.7%",
-      "statusKey": "meets",
-      "note": "5yr: +72.9% \u00b7 90d: +20.9% \u00b7 Rev: +17.7% YoY \u00b7 Div streak: 20 yrs"
+      "note": "5yr: +151.6% \u00b7 90d: +17.5% \u00b7 Rev: +23.0% YoY \u00b7 Div streak: 16 yrs"
     },
     {
       "ticker": "CAT",
@@ -2866,14 +2810,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 3.454,
+        "pct": 3.4848,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0463,
+        "pct": -0.0397,
         "pass": true
       },
       "revPass": true,
@@ -2881,27 +2825,55 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 12,
-      "yieldNum": 0.73,
+      "yieldNum": 0.74,
       "yieldRaw": "0.7%",
       "statusKey": "meets",
-      "note": "5yr: +345.4% \u00b7 90d: -4.6% \u00b7 Rev: +24.0% YoY \u00b7 Div streak: 12 yrs"
+      "note": "5yr: +348.5% \u00b7 90d: -4.0% \u00b7 Rev: +24.0% YoY \u00b7 Div streak: 12 yrs"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corporation",
+      "sector": "Technology",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.7215,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2036,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.177,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 20,
+      "yieldNum": 0.72,
+      "yieldRaw": "0.7%",
+      "statusKey": "meets",
+      "note": "5yr: +72.2% \u00b7 90d: +20.4% \u00b7 Rev: +17.7% YoY \u00b7 Div streak: 20 yrs"
     },
     {
       "ticker": "DHR",
       "company": "Danaher Corporation",
       "sector": "Healthcare",
       "t5": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.2474,
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.2543,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2198,
+        "pct": 0.2085,
         "pass": true
       },
       "revPass": true,
@@ -2909,10 +2881,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 8,
-      "yieldNum": 0.7,
+      "yieldNum": 0.69,
       "yieldRaw": "0.7%",
       "statusKey": "border",
-      "note": "5yr: -24.7% \u00b7 90d: +22.0% \u00b7 Rev: +5.5% YoY \u00b7 Div streak: 8 yrs"
+      "note": "5yr: -25.4% \u00b7 90d: +20.8% \u00b7 Rev: +5.5% YoY \u00b7 Div streak: 8 yrs"
     },
     {
       "ticker": "AVGO",
@@ -2922,14 +2894,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 8.7645,
+        "pct": 8.6184,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0216,
+        "pct": 0.0063,
         "pass": true
       },
       "revPass": true,
@@ -2937,10 +2909,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 15,
-      "yieldNum": 0.59,
+      "yieldNum": 0.6,
       "yieldRaw": "0.6%",
       "statusKey": "meets",
-      "note": "5yr: +876.5% \u00b7 90d: +2.2% \u00b7 Rev: +47.9% YoY \u00b7 Div streak: 15 yrs"
+      "note": "5yr: +861.8% \u00b7 90d: +0.6% \u00b7 Rev: +47.9% YoY \u00b7 Div streak: 15 yrs"
     },
     {
       "ticker": "AME",
@@ -2950,14 +2922,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.9384,
+        "pct": 0.9646,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.128,
+        "pct": 0.1433,
         "pass": true
       },
       "revPass": true,
@@ -2968,7 +2940,7 @@
       "yieldNum": 0.51,
       "yieldRaw": "0.5%",
       "statusKey": "meets",
-      "note": "5yr: +93.8% \u00b7 90d: +12.8% \u00b7 Rev: +15.0% YoY \u00b7 Div streak: 23 yrs"
+      "note": "5yr: +96.5% \u00b7 90d: +14.3% \u00b7 Rev: +15.0% YoY \u00b7 Div streak: 23 yrs"
     },
     {
       "ticker": "KLAC",
@@ -2978,14 +2950,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 5.3167,
+        "pct": 5.57,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0207,
+        "pct": 0.0616,
         "pass": true
       },
       "revPass": true,
@@ -2993,10 +2965,10 @@
       "revAvail": true,
       "divPass": true,
       "divStreak": 10,
-      "yieldNum": 0.4,
+      "yieldNum": 0.42,
       "yieldRaw": "0.4%",
       "statusKey": "meets",
-      "note": "5yr: +531.7% \u00b7 90d: +2.1% \u00b7 Rev: +15.2% YoY \u00b7 Div streak: 10 yrs"
+      "note": "5yr: +557.0% \u00b7 90d: +6.2% \u00b7 Rev: +15.2% YoY \u00b7 Div streak: 10 yrs"
     },
     {
       "ticker": "AAPL",
@@ -3006,14 +2978,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.1327,
+        "pct": 1.1095,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.001,
+        "pct": -0.0118,
         "pass": true
       },
       "revPass": true,
@@ -3024,7 +2996,7 @@
       "yieldNum": 0.34,
       "yieldRaw": "0.3%",
       "statusKey": "meets",
-      "note": "5yr: +113.3% \u00b7 90d: -0.1% \u00b7 Rev: +16.4% YoY \u00b7 Div streak: 22 yrs"
+      "note": "5yr: +110.9% \u00b7 90d: -1.2% \u00b7 Rev: +16.4% YoY \u00b7 Div streak: 22 yrs"
     }
   ]
 }
