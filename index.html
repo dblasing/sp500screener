@@ -125,7 +125,7 @@
     .cagr-neg { color: var(--red); }
     .payout-warn { color: var(--yellow); }
 
-    .note-cell { color: var(--muted); font-size: 0.73rem; line-height: 1.4; max-width: 280px; }
+    .note-cell { color: var(--muted); font-size: 0.73rem; line-height: 1.4; max-width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
     /* Skeleton loader */
     .skeleton { background: linear-gradient(90deg, var(--surface2) 25%, var(--surface) 50%, var(--surface2) 75%); background-size: 400% 100%; animation: shimmer 1.4s infinite; border-radius: 4px; height: 14px; }
@@ -513,7 +513,7 @@ function render() {
           ${dotHtml(s.t5.pass)}${dotHtml(s.t90.pass)}${dotHtml(s.revPass)}${dotHtml(s.divPass)}
         </div>
       </td>
-      <td class="note-cell">${s.note}</td>
+      <td class="note-cell" title="${s.note}">${s.note}</td>
     </tr>`;
   }).join('');
 }
