@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T03:17:57Z",
+  "generated": "2026-08-25T11:22:33Z",
   "count": 146,
   "results": [
     {
@@ -1669,40 +1669,6 @@
       "note": "5yr: -18.7% \u00b7 90d: +39.7% \u00b7 Rev: +5.3% YoY \u00b7 Div streak: 42 yrs \u00b7 3Y div CAGR: +4.5% \u00b7 Payout: 47.3%"
     },
     {
-      "ticker": "MCD",
-      "company": "McDonald's Corporation",
-      "sector": "Consumer Cyclical",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2731,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0261,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.037,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 50,
-      "cagr1y": 5.75,
-      "cagr3y": 8.2,
-      "cagr5y": 7.3,
-      "tier": "Dividend King",
-      "payoutPct": 59.71,
-      "payoutFlag": false,
-      "yieldNum": 2.71,
-      "yieldRaw": "2.7%",
-      "statusKey": "meets",
-      "note": "5yr: +27.3% \u00b7 90d: -2.6% \u00b7 Rev: +3.7% YoY \u00b7 Div streak: 50 yrs \u00b7 3Y div CAGR: +8.2% \u00b7 Payout: 59.7%"
-    },
-    {
       "ticker": "DRI",
       "company": "Darden Restaurants, Inc.",
       "sector": "Consumer Cyclical",
@@ -1735,6 +1701,40 @@
       "yieldRaw": "2.7%",
       "statusKey": "meets",
       "note": "5yr: +79.6% \u00b7 90d: +14.8% \u00b7 Rev: +13.7% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +7.9% \u00b7 Payout: 57.5%"
+    },
+    {
+      "ticker": "MCD",
+      "company": "McDonald's Corporation",
+      "sector": "Consumer Cyclical",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2731,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0261,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.037,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 50,
+      "cagr1y": 5.75,
+      "cagr3y": 8.2,
+      "cagr5y": 7.3,
+      "tier": "Dividend King",
+      "payoutPct": 59.71,
+      "payoutFlag": false,
+      "yieldNum": 2.71,
+      "yieldRaw": "2.7%",
+      "statusKey": "meets",
+      "note": "5yr: +27.3% \u00b7 90d: -2.6% \u00b7 Rev: +3.7% YoY \u00b7 Div streak: 50 yrs \u00b7 3Y div CAGR: +8.2% \u00b7 Payout: 59.7%"
     },
     {
       "ticker": "EOG",
@@ -2783,12 +2783,12 @@
       "cagr3y": 7.44,
       "cagr5y": 5.7,
       "tier": "Dividend Contender",
-      "payoutPct": 225.57,
-      "payoutFlag": true,
+      "payoutPct": 28.2,
+      "payoutFlag": false,
       "yieldNum": 2.03,
       "yieldRaw": "2.0%",
       "statusKey": "meets",
-      "note": "5yr: +316.7% \u00b7 90d: +32.9% \u00b7 Rev: +53.1% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +7.4% \u00b7 Payout: 225.6% \u26a0"
+      "note": "5yr: +316.7% \u00b7 90d: +32.9% \u00b7 Rev: +53.1% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +7.4% \u00b7 Payout: 28.2%"
     },
     {
       "ticker": "JNJ",
