@@ -113,6 +113,18 @@
     .yield-mid { color: #86efac; font-weight: 600; }
     .yield-lo  { color: var(--muted); }
 
+    .tier-badge { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 0.68rem; font-weight: 600; white-space: nowrap; }
+    .tier-king   { background: rgba(245,158,11,.15); color: #fbbf24; }
+    .tier-arist  { background: rgba(168,85,247,.15); color: #c084fc; }
+    .tier-cont   { background: rgba(79,142,247,.15); color: #7cb9ff; }
+    .tier-chall  { background: rgba(34,211,238,.15); color: #67e8f9; }
+    .tier-start  { background: rgba(100,116,139,.15);color: #94a3b8; }
+    .tier-none   { background: rgba(100,116,139,.1); color: var(--muted); }
+
+    .cagr-pos { color: var(--green); }
+    .cagr-neg { color: var(--red); }
+    .payout-warn { color: var(--yellow); }
+
     .note-cell { color: var(--muted); font-size: 0.73rem; line-height: 1.4; max-width: 280px; }
 
     /* Skeleton loader */
@@ -213,6 +225,14 @@
     <option value="3">3+ criteria</option>
     <option value="2">2+ criteria</option>
   </select>
+  <select id="filterTier" onchange="applyFilters()">
+    <option value="">All Tiers</option>
+    <option value="Dividend King">Dividend King (50+ yrs)</option>
+    <option value="Dividend Aristocrat">Dividend Aristocrat (25+ yrs)</option>
+    <option value="Dividend Contender">Dividend Contender (10+ yrs)</option>
+    <option value="Dividend Challenger">Dividend Challenger (5+ yrs)</option>
+    <option value="Dividend Starter">Dividend Starter (3+ yrs)</option>
+  </select>
   <div class="count-badge" id="countBadge"><strong>—</strong> stocks</div>
 </div>
 
@@ -226,6 +246,9 @@
         <th onclick="sortBy('trend90')" data-col="trend90">90-Day Trend <span class="si">↕</span></th>
         <th onclick="sortBy('revenue')" data-col="revenue">YoY Revenue <span class="si">↕</span></th>
         <th onclick="sortBy('streak')" data-col="streak">Div Streak <span class="si">↕</span></th>
+        <th onclick="sortBy('tier')" data-col="tier">Tier <span class="si">↕</span></th>
+        <th onclick="sortBy('cagr3y')" data-col="cagr3y">3Y Div CAGR <span class="si">↕</span></th>
+        <th onclick="sortBy('payout')" data-col="payout">Payout % <span class="si">↕</span></th>
         <th onclick="sortBy('yield')" data-col="yield">Yield <span class="si">↕</span></th>
         <th onclick="sortBy('status')" data-col="status">Status <span class="si">↕</span></th>
         <th>Details</th>
@@ -260,6 +283,16 @@
     </div>
   </div>
   <div class="legend-group">
+    <h4>Tier</h4>
+    <div class="legend-items">
+      <div class="legend-item"><span class="tier-badge tier-king">King</span> 50+ consecutive years</div>
+      <div class="legend-item"><span class="tier-badge tier-arist">Aristocrat</span> 25+ consecutive years</div>
+      <div class="legend-item"><span class="tier-badge tier-cont">Contender</span> 10+ consecutive years</div>
+      <div class="legend-item"><span class="tier-badge tier-chall">Challenger</span> 5+ consecutive years</div>
+      <div class="legend-item"><span class="tier-badge tier-start">Starter</span> 3+ consecutive years</div>
+    </div>
+  </div>
+  <div class="legend-group">
     <h4>Criteria Dots</h4>
     <div class="legend-items">
       <div class="legend-item"><span style="display:flex;gap:3px"><span class="dot dot-pass"></span><span class="dot dot-pass"></span><span class="dot dot-pass"></span><span class="dot dot-pass"></span></span> All 4 pass</div>
@@ -271,7 +304,7 @@
 
 <footer>
   <strong>Data:</strong> Yahoo Finance via <code>screener.py</code> + GitHub Actions (runs weekday mornings) &nbsp;·&nbsp;
-  <strong>Universe:</strong> ~100 S&P 500 dividend-paying stocks &nbsp;·&nbsp;
+  <strong>Universe:</strong> ~150 S&P 500 dividend-paying stocks &nbsp;·&nbsp;
   <strong>Disclaimer:</strong> For research purposes only. Not investment advice. Verify independently before acting.
 </footer>
 
@@ -329,6 +362,10 @@ async function runScreen() {
 // ── Filters & sort ────────────────────────────────────────────────────────────
 const STATUS_ORDER = { meets:1, likely:2, monitor:3, border:4, flagged:5 };
 const TREND_ORDER  = { t_up:1, 't-mod':2, 't-mix':3, 't-flag':4, 't-unk':5 };
+const TIER_ORDER = {
+  'Dividend King':1, 'Dividend Aristocrat':2, 'Dividend Contender':3,
+  'Dividend Challenger':4, 'Dividend Starter':5, 'No Streak':6,
+};
 
 function applyFilters() {
   const q   = (document.getElementById('search')?.value || '').toLowerCase();
@@ -336,12 +373,14 @@ function applyFilters() {
   const sec = document.getElementById('filterSector')?.value  || '';
   const yld = parseFloat(document.getElementById('filterYield')?.value)    || 0;
   const cri = parseInt(document.getElementById('filterCriteria')?.value)   || 0;
+  const tier = document.getElementById('filterTier')?.value || '';
 
   filtered = allResults.filter(s => {
     if (q   && !s.ticker.toLowerCase().includes(q) && !s.company.toLowerCase().includes(q)) return false;
     if (st  && s.statusKey !== st)   return false;
     if (sec && s.sector !== sec)     return false;
     if (yld && s.yieldNum < yld)     return false;
+    if (tier && s.tier !== tier)    return false;
     if (cri) {
       const passes = [s.t5.pass, s.t90.pass, s.revPass, s.divPass].filter(v => v === true).length;
       if (passes < cri) return false;
@@ -359,6 +398,9 @@ function applyFilters() {
         case 'trend90': av = a.t90.order; bv = b.t90.order; break;
         case 'revenue': av = a.revPct ?? -99; bv = b.revPct ?? -99; break;
         case 'streak':  av = a.divStreak; bv = b.divStreak; break;
+        case 'tier':    av = TIER_ORDER[a.tier] ?? 9; bv = TIER_ORDER[b.tier] ?? 9; break;
+        case 'cagr3y':  av = a.cagr3y ?? -999; bv = b.cagr3y ?? -999; break;
+        case 'payout':  av = a.payoutPct ?? -999; bv = b.payoutPct ?? -999; break;
         case 'yield':   av = a.yieldNum;  bv = b.yieldNum;  break;
         case 'status':  av = STATUS_ORDER[a.statusKey] ?? 9; bv = STATUS_ORDER[b.statusKey] ?? 9; break;
         default: return 0;
@@ -407,6 +449,15 @@ function sectorCls(s) {
 
 function yieldCls(n) { return n >= 3.5 ? 'yield-hi' : n >= 1.5 ? 'yield-mid' : 'yield-lo'; }
 
+const TIER_CLS = {
+  'Dividend King': 'tier-king', 'Dividend Aristocrat': 'tier-arist', 'Dividend Contender': 'tier-cont',
+  'Dividend Challenger': 'tier-chall', 'Dividend Starter': 'tier-start', 'No Streak': 'tier-none',
+};
+function tierBadge(tier) {
+  if (!tier) return '<span class="tier-badge tier-none">—</span>';
+  return `<span class="tier-badge ${TIER_CLS[tier] || 'tier-none'}">${tier.replace('Dividend ', '')}</span>`;
+}
+
 function dotHtml(pass) {
   if (pass === true)  return '<span class="dot dot-pass" title="Pass"></span>';
   if (pass === false) return '<span class="dot dot-fail" title="Fail"></span>';
@@ -428,7 +479,7 @@ function render() {
   empty.style.display = 'none';
 
   if (filtered.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--muted)">No stocks match your filters.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="12" style="text-align:center;padding:40px;color:var(--muted)">No stocks match your filters.</td></tr>`;
     return;
   }
 
@@ -447,6 +498,13 @@ function render() {
       </td>
       <td style="font-size:0.8rem;color:${s.divStreak >= 10 ? 'var(--yellow)' : 'var(--muted)'}">
         ${s.divStreak > 0 ? `${s.divStreak} yr${s.divStreak !== 1 ? 's' : ''}` : '<span style="color:var(--muted)">—</span>'}
+      </td>
+      <td>${tierBadge(s.tier)}</td>
+      <td style="font-size:0.8rem" class="${s.cagr3y === null || s.cagr3y === undefined ? '' : (s.cagr3y >= 0 ? 'cagr-pos' : 'cagr-neg')}">
+        ${s.cagr3y !== null && s.cagr3y !== undefined ? `${s.cagr3y >= 0 ? '+' : ''}${s.cagr3y.toFixed(1)}%` : '<span style="color:var(--muted)">—</span>'}
+      </td>
+      <td style="font-size:0.8rem" class="${s.payoutFlag ? 'payout-warn' : ''}">
+        ${s.payoutPct !== null && s.payoutPct !== undefined ? `${s.payoutPct.toFixed(1)}%${s.payoutFlag ? ' ⚠' : ''}` : '<span style="color:var(--muted)">—</span>'}
       </td>
       <td class="${yieldCls(s.yieldNum)}">${s.yieldRaw}</td>
       <td>
@@ -481,7 +539,7 @@ document.addEventListener('click', e => {
 
 function exportRows() {
   const ts = document.getElementById('lastRun').textContent || '';
-  const header = ['Ticker','Company','Sector','5-Yr Trend','90-Day Trend','YoY Revenue','Div Streak (yrs)','Yield (%)','Status','5yr %','90d %','Rev Growth %'];
+  const header = ['Ticker','Company','Sector','5-Yr Trend','90-Day Trend','YoY Revenue','Div Streak (yrs)','Tier','3Y Div CAGR (%)','Payout Ratio (%)','Yield (%)','Status','5yr %','90d %','Rev Growth %'];
   const rows = filtered.map(s => [
     s.ticker,
     s.company,
@@ -490,6 +548,9 @@ function exportRows() {
     s.t90.label,
     s.revPct !== null ? `${(s.revPct*100).toFixed(1)}%` : 'N/A',
     s.divStreak || '',
+    s.tier || '',
+    s.cagr3y !== null && s.cagr3y !== undefined ? s.cagr3y : '',
+    s.payoutPct !== null && s.payoutPct !== undefined ? s.payoutPct : '',
     s.yieldNum,
     (({ meets:'Meets All', likely:'Likely', monitor:'Monitor', border:'Borderline', flagged:'Flagged' })[s.statusKey] || s.statusKey),
     s.t5.pct  !== null ? +( s.t5.pct*100).toFixed(1) : '',

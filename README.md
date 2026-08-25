@@ -1,6 +1,6 @@
 # S&P 500 Dividend Growth Stock Screener
 
-A dynamic, data-driven stock screener that applies four dividend + price-trend criteria to ~100 S&P 500 dividend-paying stocks. Data is fetched server-side via a daily GitHub Actions workflow — no API key, no backend, no CORS issues.
+A dynamic, data-driven stock screener that applies four dividend + price-trend criteria to ~150 S&P 500 dividend-paying stocks, screened concurrently and enriched with dividend CAGR, payout ratio, and dividend tier badges. Data is fetched server-side via a daily GitHub Actions workflow — no API key, no backend, no CORS issues.
 
 🔗 **Live site:** https://dblasing.github.io/sp500screener
 
@@ -14,8 +14,9 @@ screener.py  ──▶  data.json  ──▶  index.html
  runs daily)         to repo)        served via Pages)
 ```
 
-- **`screener.py`** — Python script that pulls live data from Yahoo Finance (`yfinance`), applies all four criteria, and writes `data.json`
-- **`.github/workflows/screen.yml`** — runs `screener.py` automatically at 7am ET on weekdays; commits `data.json` back to the repo
+- **`screener.py`** — Python script that pulls live data from Yahoo Finance (`yfinance`) concurrently (10 worker threads), applies all four criteria, and writes `data.json`
+- **`requirements.txt`** — pinned dependencies (`yfinance`, `pandas`)
+- **`.github/workflows/screen.yml`** — runs `screener.py` automatically at 7am ET on weekdays; pip-caches dependencies, cancels overlapping runs, and commits `data.json` back to the repo
 - **`index.html`** — pure HTML/CSS/JS; fetches `data.json` from the same GitHub Pages domain on load; no external API calls from the browser
 
 ---
@@ -47,6 +48,20 @@ Every stock is evaluated against all four criteria. The criteria are applied pro
 
 ---
 
+## Dividend Safety & Tier Metrics
+
+These are informational metrics layered on top of the four screening criteria — they don't affect `passed`/`Status`, but help judge dividend quality at a glance:
+
+| Metric | Definition |
+|--------|------------|
+| **Dividend Tier** | Badge based on consecutive years of dividend growth: **King** (50+ yrs), **Aristocrat** (25+ yrs), **Contender** (10+ yrs), **Challenger** (5+ yrs), **Starter** (3+ yrs) |
+| **Dividend CAGR (1Y/3Y/5Y)** | Compound annual growth rate of the total annual dividend, computed over completed calendar years |
+| **Payout Ratio** | `payoutRatio` from `yfinance`, flagged with ⚠ when it exceeds a sector-aware threshold (85% for Utilities/Real Estate, 75% elsewhere) — a high payout ratio can signal a dividend at risk |
+
+> **Note:** Payout ratio for REITs (Real Estate) is based on net income, not FFO/AFFO, so it commonly reads high for otherwise healthy REITs — treat the ⚠ flag as a prompt to check FFO payout independently, not a fail.
+
+---
+
 ## Status Key
 
 Status is computed automatically based on which criteria pass:
@@ -73,15 +88,17 @@ Status is computed automatically based on which criteria pass:
 ## Features
 
 - **Automated daily data** — GitHub Actions runs `screener.py` every weekday at 7am ET
-- **~100 S&P 500 dividend stocks** evaluated with live market data
+- **~150 S&P 500 dividend stocks** evaluated with live market data, fetched concurrently (10 worker threads)
 - **All criteria computed programmatically** — no manual status assignments
-- **Filter** by status, sector, minimum yield, and criteria pass count
+- **Dividend tier badges** (King / Aristocrat / Contender / Challenger / Starter) based on streak length
+- **Dividend CAGR (1Y/3Y/5Y)** and **sector-aware payout ratio safety flag**
+- **Filter** by status, sector, minimum yield, criteria pass count, and dividend tier
 - **Search** by ticker or company name
 - **Sort** any column ascending or descending
-- **Export** filtered results to **CSV** or **XLS** directly from the browser — exports reflect whatever is currently on screen after filters are applied
-- **Color-coded** sector badges, trend indicators, status pills, and yield values
+- **Export** filtered results to **CSV** or **XLS** directly from the browser — exports reflect whatever is currently on screen after filters are applied, including tier, CAGR, and payout ratio
+- **Color-coded** sector badges, trend indicators, status pills, tier badges, and yield values
 - **Per-row criteria dots** (● ● ● ●) showing exactly which of the 4 criteria each stock passes or fails
-- **Auto-generated detail notes** with real figures: `5yr: +142% · 90d: +8.2% · Rev: +6.1% YoY · Div streak: 15 yrs`
+- **Auto-generated detail notes** with real figures: `5yr: +142% · 90d: +8.2% · Rev: +6.1% YoY · Div streak: 15 yrs · 3Y div CAGR: +6.2% · Payout: 58.3%`
 - **Data timestamp** shown on the page — always know when the last run was
 - Zero frontend dependencies — pure HTML, CSS, and vanilla JavaScript
 
@@ -102,23 +119,23 @@ Status is computed automatically based on which criteria pass:
 
 ---
 
-## Ticker Universe (~100 S&P 500 Dividend Stocks)
+## Ticker Universe (~150 S&P 500 Dividend Stocks)
 
 Results vary by date based on live market data. Stocks that don't pay a dividend are automatically excluded.
 
 | Sector | Tickers |
 |--------|---------|
-| Technology | AAPL, MSFT, AVGO, TXN, QCOM, IBM, ADI, ADP, INTU, PAYX, KLAC, MCHP |
-| Healthcare | JNJ, ABBV, MRK, ABT, MDT, BMY, AMGN, PFE, ZTS, SYK, BDX, DHR, EW |
-| Consumer Staples | KO, PEP, PG, CL, KMB, WMT, MO, PM, GIS, HRL, CLX, CHD, ECL, MKC |
-| Energy | XOM, CVX, COP, EOG, PSX, VLO, MPC, KMI, WMB, OKE |
-| Financials | JPM, BAC, WFC, GS, BLK, AFL, CB, ALL, TRV, AXP, USB, PNC, TFC, MSCI, SPGI, MCO, ICE, CME |
-| Industrials | HON, MMM, RTX, LMT, CAT, DE, EMR, ETN, ITW, DOV, ROP, AME |
-| Utilities | NEE, DUK, SO, AEP, WEC, XEL, ES, AWK, ED, PPL |
-| Real Estate | O, PLD, AMT, DLR, PSA |
-| Materials | LIN, APD, SHW, NUE, PKG |
-| Communication | VZ, T, CMCSA, OMC |
-| Consumer Discretionary | HD, LOW, TGT, MCD, SBUX, NKE, YUM, DRI |
+| Technology | AAPL, MSFT, AVGO, TXN, QCOM, IBM, ADI, ADP, INTU, PAYX, KLAC, MCHP, CSCO, TEL, MSI, GLW |
+| Healthcare | JNJ, ABBV, MRK, ABT, MDT, BMY, AMGN, PFE, ZTS, SYK, BDX, DHR, EW, GILD, CVS |
+| Consumer Staples | KO, PEP, PG, CL, KMB, WMT, MO, PM, GIS, HRL, CLX, CHD, ECL, MKC, COST, SYY, ADM, HSY |
+| Energy | XOM, CVX, COP, EOG, PSX, VLO, MPC, KMI, WMB, OKE, SLB, OXY |
+| Financials | JPM, BAC, WFC, GS, BLK, AFL, CB, ALL, TRV, AXP, USB, PNC, TFC, MSCI, SPGI, MCO, ICE, CME, MS, C |
+| Industrials | HON, MMM, RTX, LMT, CAT, DE, EMR, ETN, ITW, DOV, ROP, AME, UNP, GE, PH, FDX, UPS |
+| Utilities | NEE, DUK, SO, AEP, WEC, XEL, ES, AWK, ED, PPL, SRE, D, EXC |
+| Real Estate | O, PLD, AMT, DLR, PSA, EQIX, SPG, VICI, WELL, AVB, EQR |
+| Materials | LIN, APD, SHW, NUE, PKG, NEM, FCX, DOW, VMC, MLM |
+| Communication | VZ, T, CMCSA, OMC, GOOGL, META, TMUS, EA, IPG |
+| Consumer Discretionary | HD, LOW, TGT, MCD, SBUX, NKE, YUM, DRI, TJX, BKNG, MAR |
 
 ---
 
@@ -143,7 +160,7 @@ git clone https://github.com/dblasing/sp500screener.git
 cd sp500screener
 
 # Install dependencies
-pip install yfinance pandas
+pip install -r requirements.txt
 
 # Run the screener (generates data.json)
 python screener.py
@@ -159,6 +176,9 @@ Edit the `TICKERS` list in `screener.py`, then trigger a new run. Any stock not 
 ### Adjust criteria thresholds
 Edit the `price_trend()` and `compute_status()` functions in `screener.py`. Thresholds are clearly labeled with comments.
 
+### Adjust tier or payout ratio thresholds
+Edit `assign_tier()` (streak-to-tier cutoffs) or the `max_payout` sector check inside `screen_ticker()` in `screener.py`.
+
 ---
 
 ## Project Structure
@@ -167,6 +187,7 @@ Edit the `price_trend()` and `compute_status()` functions in `screener.py`. Thre
 sp500screener/
 ├── index.html                      # Frontend — reads data.json, renders table
 ├── screener.py                     # Screening logic — writes data.json
+├── requirements.txt                # Pinned Python dependencies
 ├── data.json                       # Generated output — committed by GitHub Actions
 ├── .github/
 │   └── workflows/
