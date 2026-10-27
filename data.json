@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-26T17:06:18Z",
-  "count": 142,
+  "generated": "2026-10-27T16:09:52Z",
+  "count": 140,
   "results": [
     {
       "ticker": "VICI",
@@ -10,14 +10,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0618,
+        "pct": 0.0573,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0885,
+        "pct": -0.0924,
         "pass": false
       },
       "revPass": true,
@@ -31,10 +31,10 @@
       "tier": "Dividend Challenger",
       "payoutPct": 70.04,
       "payoutFlag": false,
-      "yieldNum": 7.58,
-      "yieldRaw": "7.6%",
+      "yieldNum": 7.49,
+      "yieldRaw": "7.5%",
       "statusKey": "monitor",
-      "note": "5yr: +6.2% \u00b7 90d: -8.8% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 7 yrs \u00b7 3Y div CAGR: +5.6% \u00b7 Payout: 70.0%"
+      "note": "5yr: +5.7% \u00b7 90d: -9.2% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 7 yrs \u00b7 3Y div CAGR: +5.6% \u00b7 Payout: 70.0%"
     },
     {
       "ticker": "UPS",
@@ -44,14 +44,14 @@
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.3914,
+        "pct": -0.3715,
         "pass": false
       },
       "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0274,
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0043,
         "pass": true
       },
       "revPass": true,
@@ -65,44 +65,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 121.93,
       "payoutFlag": true,
-      "yieldNum": 6.49,
+      "yieldNum": 6.54,
       "yieldRaw": "6.5%",
       "statusKey": "border",
-      "note": "5yr: -39.1% \u00b7 90d: -2.7% \u00b7 Rev: +7.6% YoY \u00b7 Div streak: 26 yrs \u00b7 3Y div CAGR: +2.6% \u00b7 Payout: 121.9% \u26a0"
-    },
-    {
-      "ticker": "VZ",
-      "company": "Verizon Communications Inc.",
-      "sector": "Communication",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1419,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.065,
-        "pass": false
-      },
-      "revPass": false,
-      "revPct": -0.007,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 24,
-      "cagr1y": 1.91,
-      "cagr3y": 1.92,
-      "cagr5y": 1.95,
-      "tier": "Dividend Contender",
-      "payoutPct": 72.79,
-      "payoutFlag": false,
-      "yieldNum": 6.26,
-      "yieldRaw": "6.3%",
-      "statusKey": "border",
-      "note": "5yr: +14.2% \u00b7 90d: -6.5% \u00b7 Rev: -0.7% YoY \u00b7 Div streak: 24 yrs \u00b7 3Y div CAGR: +1.9% \u00b7 Payout: 72.8%"
+      "note": "5yr: -37.1% \u00b7 90d: +0.4% \u00b7 Rev: +7.6% YoY \u00b7 Div streak: 26 yrs \u00b7 3Y div CAGR: +2.6% \u00b7 Payout: 121.9% \u26a0"
     },
     {
       "ticker": "PFE",
@@ -112,14 +78,14 @@
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.2089,
+        "pct": -0.2102,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1127,
+        "pct": 0.1108,
         "pass": true
       },
       "revPass": true,
@@ -133,10 +99,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 226.32,
       "payoutFlag": true,
-      "yieldNum": 5.73,
-      "yieldRaw": "5.7%",
+      "yieldNum": 5.77,
+      "yieldRaw": "5.8%",
       "statusKey": "border",
-      "note": "5yr: -20.9% \u00b7 90d: +11.3% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +2.4% \u00b7 Payout: 226.3% \u26a0"
+      "note": "5yr: -21.0% \u00b7 90d: +11.1% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +2.4% \u00b7 Payout: 226.3% \u26a0"
     },
     {
       "ticker": "MO",
@@ -146,14 +112,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.3971,
+        "pct": 1.381,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0968,
+        "pct": 0.0895,
         "pass": true
       },
       "revPass": true,
@@ -167,10 +133,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 89.26,
       "payoutFlag": true,
-      "yieldNum": 5.71,
-      "yieldRaw": "5.7%",
+      "yieldNum": 5.76,
+      "yieldRaw": "5.8%",
       "statusKey": "meets",
-      "note": "5yr: +139.7% \u00b7 90d: +9.7% \u00b7 Rev: +1.2% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +4.2% \u00b7 Payout: 89.3% \u26a0"
+      "note": "5yr: +138.1% \u00b7 90d: +8.9% \u00b7 Rev: +1.2% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +4.2% \u00b7 Payout: 89.3% \u26a0"
     },
     {
       "ticker": "O",
@@ -180,14 +146,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.056,
+        "pct": 0.0575,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0823,
+        "pct": -0.081,
         "pass": false
       },
       "revPass": true,
@@ -201,10 +167,10 @@
       "tier": "No Streak",
       "payoutPct": 234.71,
       "payoutFlag": true,
-      "yieldNum": 5.69,
+      "yieldNum": 5.66,
       "yieldRaw": "5.7%",
       "statusKey": "border",
-      "note": "5yr: +5.6% \u00b7 90d: -8.2% \u00b7 Rev: +9.6% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +5.5% \u00b7 Payout: 234.7% \u26a0"
+      "note": "5yr: +5.8% \u00b7 90d: -8.1% \u00b7 Rev: +9.6% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +5.5% \u00b7 Payout: 234.7% \u26a0"
     },
     {
       "ticker": "T",
@@ -214,14 +180,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4759,
+        "pct": 0.479,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1077,
+        "pct": -0.1058,
         "pass": false
       },
       "revPass": true,
@@ -235,10 +201,10 @@
       "tier": "No Streak",
       "payoutPct": 59.36,
       "payoutFlag": false,
-      "yieldNum": 5.3,
+      "yieldNum": 5.32,
       "yieldRaw": "5.3%",
       "statusKey": "border",
-      "note": "5yr: +47.6% \u00b7 90d: -10.8% \u00b7 Rev: +5.3% YoY \u00b7 Div streak: 2 yrs \u00b7 3Y div CAGR: -6.3% \u00b7 Payout: 59.4%"
+      "note": "5yr: +47.9% \u00b7 90d: -10.6% \u00b7 Rev: +5.3% YoY \u00b7 Div streak: 2 yrs \u00b7 3Y div CAGR: -6.3% \u00b7 Payout: 59.4%"
     },
     {
       "ticker": "KMB",
@@ -248,14 +214,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": 0.0061,
+        "pct": -0.0024,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0099,
+        "pct": 0.0013,
         "pass": true
       },
       "revPass": true,
@@ -269,10 +235,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 100.2,
       "payoutFlag": true,
-      "yieldNum": 4.61,
+      "yieldNum": 4.63,
       "yieldRaw": "4.6%",
       "statusKey": "meets",
-      "note": "5yr: +0.6% \u00b7 90d: +1.0% \u00b7 Rev: +0.6% YoY \u00b7 Div streak: 20 yrs \u00b7 3Y div CAGR: +2.8% \u00b7 Payout: 100.2% \u26a0"
+      "note": "5yr: -0.2% \u00b7 90d: +0.1% \u00b7 Rev: +0.6% YoY \u00b7 Div streak: 20 yrs \u00b7 3Y div CAGR: +2.8% \u00b7 Payout: 100.2% \u26a0"
     },
     {
       "ticker": "ES",
@@ -282,14 +248,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0182,
+        "pct": -0.022,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0545,
+        "pct": -0.0582,
         "pass": false
       },
       "revPass": true,
@@ -303,10 +269,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 65.06,
       "payoutFlag": false,
-      "yieldNum": 4.57,
+      "yieldNum": 4.56,
       "yieldRaw": "4.6%",
       "statusKey": "monitor",
-      "note": "5yr: -1.8% \u00b7 90d: -5.5% \u00b7 Rev: +2.3% YoY \u00b7 Div streak: 26 yrs \u00b7 3Y div CAGR: +5.7% \u00b7 Payout: 65.1%"
+      "note": "5yr: -2.2% \u00b7 90d: -5.8% \u00b7 Rev: +2.3% YoY \u00b7 Div streak: 26 yrs \u00b7 3Y div CAGR: +5.7% \u00b7 Payout: 65.1%"
     },
     {
       "ticker": "OKE",
@@ -316,14 +282,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.9107,
+        "pct": 0.9081,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1078,
+        "pct": 0.1063,
         "pass": true
       },
       "revPass": true,
@@ -337,78 +303,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 72.54,
       "payoutFlag": false,
-      "yieldNum": 4.42,
+      "yieldNum": 4.4,
       "yieldRaw": "4.4%",
       "statusKey": "meets",
-      "note": "5yr: +91.1% \u00b7 90d: +10.8% \u00b7 Rev: +52.8% YoY \u00b7 Div streak: 37 yrs \u00b7 3Y div CAGR: +3.3% \u00b7 Payout: 72.5%"
-    },
-    {
-      "ticker": "TFC",
-      "company": "Truist Financial Corporation",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0358,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0599,
-        "pass": false
-      },
-      "revPass": false,
-      "revPct": -0.158,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 11,
-      "cagr1y": 0.0,
-      "cagr3y": 1.32,
-      "cagr5y": 2.93,
-      "tier": "Dividend Contender",
-      "payoutPct": 47.82,
-      "payoutFlag": false,
-      "yieldNum": 4.29,
-      "yieldRaw": "4.3%",
-      "statusKey": "border",
-      "note": "5yr: -3.6% \u00b7 90d: -6.0% \u00b7 Rev: -15.8% YoY \u00b7 Div streak: 11 yrs \u00b7 3Y div CAGR: +1.3% \u00b7 Payout: 47.8%"
-    },
-    {
-      "ticker": "DOW",
-      "company": "Dow Inc.",
-      "sector": "Materials",
-      "t5": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.2355,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1692,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.13,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 0,
-      "cagr1y": -25.0,
-      "cagr3y": -9.14,
-      "cagr5y": -5.59,
-      "tier": "No Streak",
-      "payoutPct": 700.0,
-      "payoutFlag": true,
-      "yieldNum": 4.29,
-      "yieldRaw": "4.3%",
-      "statusKey": "border",
-      "note": "5yr: -23.5% \u00b7 90d: +16.9% \u00b7 Rev: +13.0% YoY \u00b7 3Y div CAGR: -9.1% \u00b7 Payout: 700.0% \u26a0"
+      "note": "5yr: +90.8% \u00b7 90d: +10.6% \u00b7 Rev: +52.8% YoY \u00b7 Div streak: 37 yrs \u00b7 3Y div CAGR: +3.3% \u00b7 Payout: 72.5%"
     },
     {
       "ticker": "PEP",
@@ -418,14 +316,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0418,
+        "pct": -0.0516,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0166,
+        "pct": -0.0268,
         "pass": true
       },
       "revPass": true,
@@ -439,10 +337,44 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 73.02,
       "payoutFlag": false,
-      "yieldNum": 4.28,
+      "yieldNum": 4.29,
       "yieldRaw": "4.3%",
       "statusKey": "meets",
-      "note": "5yr: -4.2% \u00b7 90d: -1.7% \u00b7 Rev: +5.6% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +7.5% \u00b7 Payout: 73.0%"
+      "note": "5yr: -5.2% \u00b7 90d: -2.7% \u00b7 Rev: +5.6% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +7.5% \u00b7 Payout: 73.0%"
+    },
+    {
+      "ticker": "TFC",
+      "company": "Truist Financial Corporation",
+      "sector": "Financials",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0337,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0579,
+        "pass": false
+      },
+      "revPass": false,
+      "revPct": -0.158,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 11,
+      "cagr1y": 0.0,
+      "cagr3y": 1.32,
+      "cagr5y": 2.93,
+      "tier": "Dividend Contender",
+      "payoutPct": 47.82,
+      "payoutFlag": false,
+      "yieldNum": 4.25,
+      "yieldRaw": "4.2%",
+      "statusKey": "border",
+      "note": "5yr: -3.4% \u00b7 90d: -5.8% \u00b7 Rev: -15.8% YoY \u00b7 Div streak: 11 yrs \u00b7 3Y div CAGR: +1.3% \u00b7 Payout: 47.8%"
     },
     {
       "ticker": "SPG",
@@ -452,14 +384,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6269,
+        "pct": 0.6242,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0358,
+        "pct": -0.0373,
         "pass": true
       },
       "revPass": true,
@@ -473,10 +405,10 @@
       "tier": "Dividend Starter",
       "payoutPct": 62.1,
       "payoutFlag": false,
-      "yieldNum": 4.16,
-      "yieldRaw": "4.2%",
+      "yieldNum": 4.14,
+      "yieldRaw": "4.1%",
       "statusKey": "meets",
-      "note": "5yr: +62.7% \u00b7 90d: -3.6% \u00b7 Rev: +19.5% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +7.4% \u00b7 Payout: 62.1%"
+      "note": "5yr: +62.4% \u00b7 90d: -3.7% \u00b7 Rev: +19.5% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +7.4% \u00b7 Payout: 62.1%"
     },
     {
       "ticker": "D",
@@ -486,14 +418,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0686,
+        "pct": 0.0652,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0212,
+        "pct": -0.0244,
         "pass": true
       },
       "revPass": true,
@@ -510,7 +442,7 @@
       "yieldNum": 4.1,
       "yieldRaw": "4.1%",
       "statusKey": "meets",
-      "note": "5yr: +6.9% \u00b7 90d: -2.1% \u00b7 Rev: +17.6% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +0.0% \u00b7 Payout: 92.4% \u26a0"
+      "note": "5yr: +6.5% \u00b7 90d: -2.4% \u00b7 Rev: +17.6% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +0.0% \u00b7 Payout: 92.4% \u26a0"
     },
     {
       "ticker": "BMY",
@@ -520,14 +452,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2655,
+        "pct": 0.2701,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0451,
+        "pct": -0.0416,
         "pass": true
       },
       "revPass": true,
@@ -541,112 +473,10 @@
       "tier": "Dividend Starter",
       "payoutPct": 55.29,
       "payoutFlag": false,
-      "yieldNum": 4.08,
+      "yieldNum": 4.07,
       "yieldRaw": "4.1%",
       "statusKey": "meets",
-      "note": "5yr: +26.6% \u00b7 90d: -4.5% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +4.7% \u00b7 Payout: 55.3%"
-    },
-    {
-      "ticker": "MKC",
-      "company": "McCormick & Company, Incorporated",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.3346,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0851,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.174,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 27,
-      "cagr1y": 7.02,
-      "cagr3y": 6.85,
-      "cagr5y": 7.58,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 34.18,
-      "payoutFlag": false,
-      "yieldNum": 3.93,
-      "yieldRaw": "3.9%",
-      "statusKey": "border",
-      "note": "5yr: -33.5% \u00b7 90d: -8.5% \u00b7 Rev: +17.4% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +6.8% \u00b7 Payout: 34.2%"
-    },
-    {
-      "ticker": "PAYX",
-      "company": "Paychex, Inc.",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0727,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0412,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.059,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 12,
-      "cagr1y": 10.18,
-      "cagr3y": 11.68,
-      "cagr5y": 11.22,
-      "tier": "Dividend Contender",
-      "payoutPct": 90.08,
-      "payoutFlag": true,
-      "yieldNum": 3.89,
-      "yieldRaw": "3.9%",
-      "statusKey": "meets",
-      "note": "5yr: +7.3% \u00b7 90d: -4.1% \u00b7 Rev: +5.9% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +11.7% \u00b7 Payout: 90.1% \u26a0"
-    },
-    {
-      "ticker": "PSA",
-      "company": "Public Storage",
-      "sector": "Real Estate",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1886,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0553,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.033,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 2,
-      "cagr1y": 0.0,
-      "cagr3y": -17.21,
-      "cagr5y": 8.45,
-      "tier": "No Streak",
-      "payoutPct": 114.61,
-      "payoutFlag": true,
-      "yieldNum": 3.87,
-      "yieldRaw": "3.9%",
-      "statusKey": "border",
-      "note": "5yr: +18.9% \u00b7 90d: -5.5% \u00b7 Rev: +3.3% YoY \u00b7 Div streak: 2 yrs \u00b7 3Y div CAGR: -17.2% \u00b7 Payout: 114.6% \u26a0"
+      "note": "5yr: +27.0% \u00b7 90d: -4.2% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +4.7% \u00b7 Payout: 55.3%"
     },
     {
       "ticker": "OMC",
@@ -656,14 +486,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3733,
+        "pct": 0.3663,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0633,
+        "pct": -0.0681,
         "pass": false
       },
       "revPass": true,
@@ -677,44 +507,78 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 815.79,
       "payoutFlag": true,
-      "yieldNum": 3.87,
-      "yieldRaw": "3.9%",
+      "yieldNum": 4.01,
+      "yieldRaw": "4.0%",
       "statusKey": "monitor",
-      "note": "5yr: +37.3% \u00b7 90d: -6.3% \u00b7 Rev: +59.1% YoY \u00b7 Div streak: 39 yrs \u00b7 3Y div CAGR: +1.2% \u00b7 Payout: 815.8% \u26a0"
+      "note": "5yr: +36.6% \u00b7 90d: -6.8% \u00b7 Rev: +59.1% YoY \u00b7 Div streak: 39 yrs \u00b7 3Y div CAGR: +1.2% \u00b7 Payout: 815.8% \u26a0"
     },
     {
-      "ticker": "EXC",
-      "company": "Exelon Corporation",
-      "sector": "Utilities",
+      "ticker": "MKC",
+      "company": "McCormick & Company, Incorporated",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.3432,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.097,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.174,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 27,
+      "cagr1y": 7.02,
+      "cagr3y": 6.85,
+      "cagr5y": 7.58,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 34.18,
+      "payoutFlag": false,
+      "yieldNum": 3.94,
+      "yieldRaw": "3.9%",
+      "statusKey": "border",
+      "note": "5yr: -34.3% \u00b7 90d: -9.7% \u00b7 Rev: +17.4% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +6.8% \u00b7 Payout: 34.2%"
+    },
+    {
+      "ticker": "PAYX",
+      "company": "Paychex, Inc.",
+      "sector": "Technology",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3731,
+        "pct": 0.0515,
         "pass": true
       },
       "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0176,
-        "pass": true
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0602,
+        "pass": false
       },
       "revPass": true,
-      "revPct": 0.099,
+      "revPct": 0.059,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 11,
-      "cagr1y": 5.26,
-      "cagr3y": 5.77,
-      "cagr5y": 7.92,
+      "divStreak": 12,
+      "cagr1y": 10.18,
+      "cagr3y": 11.68,
+      "cagr5y": 11.22,
       "tier": "Dividend Contender",
-      "payoutPct": 60.29,
-      "payoutFlag": false,
-      "yieldNum": 3.69,
-      "yieldRaw": "3.7%",
-      "statusKey": "meets",
-      "note": "5yr: +37.3% \u00b7 90d: -1.8% \u00b7 Rev: +9.9% YoY \u00b7 Div streak: 11 yrs \u00b7 3Y div CAGR: +5.8% \u00b7 Payout: 60.3%"
+      "payoutPct": 90.08,
+      "payoutFlag": true,
+      "yieldNum": 3.92,
+      "yieldRaw": "3.9%",
+      "statusKey": "monitor",
+      "note": "5yr: +5.1% \u00b7 90d: -6.0% \u00b7 Rev: +5.9% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +11.7% \u00b7 Payout: 90.1% \u26a0"
     },
     {
       "ticker": "AMT",
@@ -724,14 +588,14 @@
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1966,
+        "pct": -0.2113,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1116,
+        "pct": 0.0913,
         "pass": true
       },
       "revPass": true,
@@ -745,10 +609,44 @@
       "tier": "Dividend Contender",
       "payoutPct": 96.01,
       "payoutFlag": true,
-      "yieldNum": 3.69,
+      "yieldNum": 3.71,
       "yieldRaw": "3.7%",
       "statusKey": "border",
-      "note": "5yr: -19.7% \u00b7 90d: +11.2% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +5.1% \u00b7 Payout: 96.0% \u26a0"
+      "note": "5yr: -21.1% \u00b7 90d: +9.1% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +5.1% \u00b7 Payout: 96.0% \u26a0"
+    },
+    {
+      "ticker": "EXC",
+      "company": "Exelon Corporation",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.3695,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0201,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.099,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 11,
+      "cagr1y": 5.26,
+      "cagr3y": 5.77,
+      "cagr5y": 7.92,
+      "tier": "Dividend Contender",
+      "payoutPct": 60.29,
+      "payoutFlag": false,
+      "yieldNum": 3.68,
+      "yieldRaw": "3.7%",
+      "statusKey": "meets",
+      "note": "5yr: +37.0% \u00b7 90d: -2.0% \u00b7 Rev: +9.9% YoY \u00b7 Div streak: 11 yrs \u00b7 3Y div CAGR: +5.8% \u00b7 Payout: 60.3%"
     },
     {
       "ticker": "HON",
@@ -758,14 +656,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0923,
+        "pct": 0.0772,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1028,
+        "pct": -0.1152,
         "pass": false
       },
       "revPass": true,
@@ -779,10 +677,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 38.87,
       "payoutFlag": false,
-      "yieldNum": 3.55,
-      "yieldRaw": "3.5%",
+      "yieldNum": 3.58,
+      "yieldRaw": "3.6%",
       "statusKey": "monitor",
-      "note": "5yr: +9.2% \u00b7 90d: -10.3% \u00b7 Rev: +1.3% YoY \u00b7 Div streak: 31 yrs \u00b7 3Y div CAGR: +5.4% \u00b7 Payout: 38.9%"
+      "note": "5yr: +7.7% \u00b7 90d: -11.5% \u00b7 Rev: +1.3% YoY \u00b7 Div streak: 31 yrs \u00b7 3Y div CAGR: +5.4% \u00b7 Payout: 38.9%"
     },
     {
       "ticker": "USB",
@@ -792,14 +690,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2286,
+        "pct": 0.2258,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0552,
+        "pct": -0.0574,
         "pass": false
       },
       "revPass": true,
@@ -816,7 +714,7 @@
       "yieldNum": 3.52,
       "yieldRaw": "3.5%",
       "statusKey": "monitor",
-      "note": "5yr: +22.9% \u00b7 90d: -5.5% \u00b7 Rev: +8.4% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +2.8% \u00b7 Payout: 41.5%"
+      "note": "5yr: +22.6% \u00b7 90d: -5.7% \u00b7 Rev: +8.4% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +2.8% \u00b7 Payout: 41.5%"
     },
     {
       "ticker": "KMI",
@@ -826,14 +724,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.5876,
+        "pct": 1.5685,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1019,
+        "pct": 0.0938,
         "pass": true
       },
       "revPass": true,
@@ -847,10 +745,10 @@
       "tier": "Dividend Challenger",
       "payoutPct": 75.81,
       "payoutFlag": true,
-      "yieldNum": 3.44,
-      "yieldRaw": "3.4%",
+      "yieldNum": 3.49,
+      "yieldRaw": "3.5%",
       "statusKey": "meets",
-      "note": "5yr: +158.8% \u00b7 90d: +10.2% \u00b7 Rev: +9.3% YoY \u00b7 Div streak: 9 yrs \u00b7 3Y div CAGR: +1.9% \u00b7 Payout: 75.8% \u26a0"
+      "note": "5yr: +156.8% \u00b7 90d: +9.4% \u00b7 Rev: +9.3% YoY \u00b7 Div streak: 9 yrs \u00b7 3Y div CAGR: +1.9% \u00b7 Payout: 75.8% \u26a0"
     },
     {
       "ticker": "DUK",
@@ -860,14 +758,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4849,
+        "pct": 0.4791,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0062,
+        "pct": 0.0022,
         "pass": true
       },
       "revPass": true,
@@ -881,10 +779,44 @@
       "tier": "Dividend Contender",
       "payoutPct": 64.16,
       "payoutFlag": false,
-      "yieldNum": 3.41,
+      "yieldNum": 3.42,
       "yieldRaw": "3.4%",
       "statusKey": "meets",
-      "note": "5yr: +48.5% \u00b7 90d: +0.6% \u00b7 Rev: +1.1% YoY \u00b7 Div streak: 19 yrs \u00b7 3Y div CAGR: +2.0% \u00b7 Payout: 64.2%"
+      "note": "5yr: +47.9% \u00b7 90d: +0.2% \u00b7 Rev: +1.1% YoY \u00b7 Div streak: 19 yrs \u00b7 3Y div CAGR: +2.0% \u00b7 Payout: 64.2%"
+    },
+    {
+      "ticker": "HSY",
+      "company": "The Hershey Company",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0666,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0884,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.066,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 34,
+      "cagr1y": 0.0,
+      "cagr3y": 12.26,
+      "cagr5y": 11.68,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 77.1,
+      "payoutFlag": true,
+      "yieldNum": 3.35,
+      "yieldRaw": "3.4%",
+      "statusKey": "monitor",
+      "note": "5yr: +6.7% \u00b7 90d: -8.8% \u00b7 Rev: +6.6% YoY \u00b7 Div streak: 34 yrs \u00b7 3Y div CAGR: +12.3% \u00b7 Payout: 77.1% \u26a0"
     },
     {
       "ticker": "PLD",
@@ -894,14 +826,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0029,
+        "pct": 0.0008,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0922,
+        "pct": -0.0888,
         "pass": false
       },
       "revPass": true,
@@ -918,41 +850,7 @@
       "yieldNum": 3.34,
       "yieldRaw": "3.3%",
       "statusKey": "monitor",
-      "note": "5yr: -0.3% \u00b7 90d: -9.2% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +8.5% \u00b7 Payout: 92.4% \u26a0"
-    },
-    {
-      "ticker": "HSY",
-      "company": "The Hershey Company",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0829,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0745,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.066,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 34,
-      "cagr1y": 0.0,
-      "cagr3y": 12.26,
-      "cagr5y": 11.68,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 77.1,
-      "payoutFlag": true,
-      "yieldNum": 3.33,
-      "yieldRaw": "3.3%",
-      "statusKey": "monitor",
-      "note": "5yr: +8.3% \u00b7 90d: -7.4% \u00b7 Rev: +6.6% YoY \u00b7 Div streak: 34 yrs \u00b7 3Y div CAGR: +12.3% \u00b7 Payout: 77.1% \u26a0"
+      "note": "5yr: +0.1% \u00b7 90d: -8.9% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +8.5% \u00b7 Payout: 92.4% \u26a0"
     },
     {
       "ticker": "WEC",
@@ -962,14 +860,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.45,
+        "pct": 0.4456,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0411,
+        "pct": 0.038,
         "pass": true
       },
       "revPass": true,
@@ -986,7 +884,7 @@
       "yieldNum": 3.32,
       "yieldRaw": "3.3%",
       "statusKey": "meets",
-      "note": "5yr: +45.0% \u00b7 90d: +4.1% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 24 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 71.7%"
+      "note": "5yr: +44.6% \u00b7 90d: +3.8% \u00b7 Rev: +2.6% YoY \u00b7 Div streak: 24 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 71.7%"
     },
     {
       "ticker": "SO",
@@ -996,14 +894,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.7634,
+        "pct": 0.7521,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0082,
+        "pct": 0.0017,
         "pass": true
       },
       "revPass": true,
@@ -1017,10 +915,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 71.81,
       "payoutFlag": false,
-      "yieldNum": 3.21,
+      "yieldNum": 3.22,
       "yieldRaw": "3.2%",
       "statusKey": "meets",
-      "note": "5yr: +76.3% \u00b7 90d: +0.8% \u00b7 Rev: +0.1% YoY \u00b7 Div streak: 43 yrs \u00b7 3Y div CAGR: +2.9% \u00b7 Payout: 71.8%"
+      "note": "5yr: +75.2% \u00b7 90d: +0.2% \u00b7 Rev: +0.1% YoY \u00b7 Div streak: 43 yrs \u00b7 3Y div CAGR: +2.9% \u00b7 Payout: 71.8%"
     },
     {
       "ticker": "PPL",
@@ -1030,14 +928,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4536,
+        "pct": 0.447,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0018,
+        "pct": -0.0063,
         "pass": true
       },
       "revPass": true,
@@ -1054,7 +952,7 @@
       "yieldNum": 3.19,
       "yieldRaw": "3.2%",
       "statusKey": "meets",
-      "note": "5yr: +45.4% \u00b7 90d: -0.2% \u00b7 Rev: +4.2% YoY \u00b7 Div streak: 3 yrs \u00b7 3Y div CAGR: +7.7% \u00b7 Payout: 66.0%"
+      "note": "5yr: +44.7% \u00b7 90d: -0.6% \u00b7 Rev: +4.2% YoY \u00b7 Div streak: 3 yrs \u00b7 3Y div CAGR: +7.7% \u00b7 Payout: 66.0%"
     },
     {
       "ticker": "PNC",
@@ -1064,14 +962,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3157,
+        "pct": 0.3203,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0964,
+        "pct": -0.0933,
         "pass": false
       },
       "revPass": true,
@@ -1085,10 +983,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 37.44,
       "payoutFlag": false,
-      "yieldNum": 3.16,
-      "yieldRaw": "3.2%",
+      "yieldNum": 3.14,
+      "yieldRaw": "3.1%",
       "statusKey": "monitor",
-      "note": "5yr: +31.6% \u00b7 90d: -9.6% \u00b7 Rev: +10.9% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +4.7% \u00b7 Payout: 37.4%"
+      "note": "5yr: +32.0% \u00b7 90d: -9.3% \u00b7 Rev: +10.9% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +4.7% \u00b7 Payout: 37.4%"
     },
     {
       "ticker": "SRE",
@@ -1098,14 +996,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.5471,
+        "pct": 0.5496,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0126,
+        "pct": 0.0142,
         "pass": true
       },
       "revPass": false,
@@ -1122,143 +1020,7 @@
       "yieldNum": 3.1,
       "yieldRaw": "3.1%",
       "statusKey": "border",
-      "note": "5yr: +54.7% \u00b7 90d: +1.3% \u00b7 Rev: -0.1% YoY \u00b7 Div streak: 18 yrs \u00b7 3Y div CAGR: +4.0% \u00b7 Payout: 75.3%"
-    },
-    {
-      "ticker": "PM",
-      "company": "Philip Morris International Inc.",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.7071,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0792,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.055,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 13,
-      "cagr1y": 6.42,
-      "cagr3y": 3.82,
-      "cagr5y": 3.54,
-      "tier": "Dividend Contender",
-      "payoutPct": 84.48,
-      "payoutFlag": true,
-      "yieldNum": 3.01,
-      "yieldRaw": "3.0%",
-      "statusKey": "meets",
-      "note": "5yr: +170.7% \u00b7 90d: +7.9% \u00b7 Rev: +5.5% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +3.8% \u00b7 Payout: 84.5% \u26a0"
-    },
-    {
-      "ticker": "ED",
-      "company": "Consolidated Edison, Inc.",
-      "sector": "Utilities",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.7498,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.075,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.132,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 37,
-      "cagr1y": 2.41,
-      "cagr3y": 2.47,
-      "cagr5y": 2.13,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 57.25,
-      "payoutFlag": false,
-      "yieldNum": 3.0,
-      "yieldRaw": "3.0%",
-      "statusKey": "meets",
-      "note": "5yr: +75.0% \u00b7 90d: +7.5% \u00b7 Rev: +13.2% YoY \u00b7 Div streak: 37 yrs \u00b7 3Y div CAGR: +2.5% \u00b7 Payout: 57.2%"
-    },
-    {
-      "ticker": "MDT",
-      "company": "Medtronic plc",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.1008,
-        "pass": false
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0901,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.137,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 7,
-      "cagr1y": 1.43,
-      "cagr3y": 1.96,
-      "cagr5y": 4.42,
-      "tier": "Dividend Challenger",
-      "payoutPct": 70.02,
-      "payoutFlag": false,
-      "yieldNum": 2.99,
-      "yieldRaw": "3.0%",
-      "statusKey": "border",
-      "note": "5yr: -10.1% \u00b7 90d: +9.0% \u00b7 Rev: +13.7% YoY \u00b7 Div streak: 7 yrs \u00b7 3Y div CAGR: +2.0% \u00b7 Payout: 70.0%"
-    },
-    {
-      "ticker": "CVX",
-      "company": "Chevron Corporation",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.4745,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2563,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.535,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 45,
-      "cagr1y": 4.91,
-      "cagr3y": 6.39,
-      "cagr5y": 5.8,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 67.18,
-      "payoutFlag": false,
-      "yieldNum": 2.99,
-      "yieldRaw": "3.0%",
-      "statusKey": "meets",
-      "note": "5yr: +147.4% \u00b7 90d: +25.6% \u00b7 Rev: +53.5% YoY \u00b7 Div streak: 45 yrs \u00b7 3Y div CAGR: +6.4% \u00b7 Payout: 67.2%"
+      "note": "5yr: +55.0% \u00b7 90d: +1.4% \u00b7 Rev: -0.1% YoY \u00b7 Div streak: 18 yrs \u00b7 3Y div CAGR: +4.0% \u00b7 Payout: 75.3%"
     },
     {
       "ticker": "TGT",
@@ -1268,14 +1030,14 @@
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.3145,
+        "pct": -0.3151,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.004,
+        "pct": 0.0032,
         "pass": true
       },
       "revPass": true,
@@ -1289,10 +1051,112 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 47.35,
       "payoutFlag": false,
-      "yieldNum": 2.99,
+      "yieldNum": 3.07,
+      "yieldRaw": "3.1%",
+      "statusKey": "border",
+      "note": "5yr: -31.5% \u00b7 90d: +0.3% \u00b7 Rev: +5.3% YoY \u00b7 Div streak: 42 yrs \u00b7 3Y div CAGR: +4.5% \u00b7 Payout: 47.4%"
+    },
+    {
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1049,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0851,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.137,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 7,
+      "cagr1y": 1.43,
+      "cagr3y": 1.96,
+      "cagr5y": 4.42,
+      "tier": "Dividend Challenger",
+      "payoutPct": 70.02,
+      "payoutFlag": false,
+      "yieldNum": 3.01,
       "yieldRaw": "3.0%",
       "statusKey": "border",
-      "note": "5yr: -31.4% \u00b7 90d: +0.4% \u00b7 Rev: +5.3% YoY \u00b7 Div streak: 42 yrs \u00b7 3Y div CAGR: +4.5% \u00b7 Payout: 47.4%"
+      "note": "5yr: -10.5% \u00b7 90d: +8.5% \u00b7 Rev: +13.7% YoY \u00b7 Div streak: 7 yrs \u00b7 3Y div CAGR: +2.0% \u00b7 Payout: 70.0%"
+    },
+    {
+      "ticker": "CVX",
+      "company": "Chevron Corporation",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.4289,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2332,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.535,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 45,
+      "cagr1y": 4.91,
+      "cagr3y": 6.39,
+      "cagr5y": 5.8,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 67.18,
+      "payoutFlag": false,
+      "yieldNum": 3.01,
+      "yieldRaw": "3.0%",
+      "statusKey": "meets",
+      "note": "5yr: +142.9% \u00b7 90d: +23.3% \u00b7 Rev: +53.5% YoY \u00b7 Div streak: 45 yrs \u00b7 3Y div CAGR: +6.4% \u00b7 Payout: 67.2%"
+    },
+    {
+      "ticker": "ED",
+      "company": "Consolidated Edison, Inc.",
+      "sector": "Utilities",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.7413,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0697,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.132,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 37,
+      "cagr1y": 2.41,
+      "cagr3y": 2.47,
+      "cagr5y": 2.13,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 57.25,
+      "payoutFlag": false,
+      "yieldNum": 3.01,
+      "yieldRaw": "3.0%",
+      "statusKey": "meets",
+      "note": "5yr: +74.1% \u00b7 90d: +7.0% \u00b7 Rev: +13.2% YoY \u00b7 Div streak: 37 yrs \u00b7 3Y div CAGR: +2.5% \u00b7 Payout: 57.2%"
     },
     {
       "ticker": "XEL",
@@ -1302,14 +1166,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4306,
+        "pct": 0.4274,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0036,
+        "pct": 0.0013,
         "pass": true
       },
       "revPass": false,
@@ -1323,10 +1187,44 @@
       "tier": "No Streak",
       "payoutPct": 63.7,
       "payoutFlag": false,
-      "yieldNum": 2.98,
+      "yieldNum": 2.99,
       "yieldRaw": "3.0%",
       "statusKey": "border",
-      "note": "5yr: +43.1% \u00b7 90d: +0.4% \u00b7 Rev: -5.1% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +13.2% \u00b7 Payout: 63.7%"
+      "note": "5yr: +42.7% \u00b7 90d: +0.1% \u00b7 Rev: -5.1% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +13.2% \u00b7 Payout: 63.7%"
+    },
+    {
+      "ticker": "PM",
+      "company": "Philip Morris International Inc.",
+      "sector": "Consumer Defensive",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.7143,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0821,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.055,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 13,
+      "cagr1y": 6.42,
+      "cagr3y": 3.82,
+      "cagr5y": 3.54,
+      "tier": "Dividend Contender",
+      "payoutPct": 84.48,
+      "payoutFlag": true,
+      "yieldNum": 2.98,
+      "yieldRaw": "3.0%",
+      "statusKey": "meets",
+      "note": "5yr: +171.4% \u00b7 90d: +8.2% \u00b7 Rev: +5.5% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +3.8% \u00b7 Payout: 84.5% \u26a0"
     },
     {
       "ticker": "NEE",
@@ -1336,14 +1234,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0991,
+        "pct": 0.0966,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0218,
+        "pct": -0.024,
         "pass": true
       },
       "revPass": true,
@@ -1360,41 +1258,7 @@
       "yieldNum": 2.97,
       "yieldRaw": "3.0%",
       "statusKey": "meets",
-      "note": "5yr: +9.9% \u00b7 90d: -2.2% \u00b7 Rev: +1.6% YoY \u00b7 Div streak: 30 yrs \u00b7 3Y div CAGR: +10.1% \u00b7 Payout: 43.9%"
-    },
-    {
-      "ticker": "MCD",
-      "company": "McDonald's Corporation",
-      "sector": "Consumer Cyclical",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1007,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0844,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.037,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 50,
-      "cagr1y": 5.75,
-      "cagr3y": 8.2,
-      "cagr5y": 7.3,
-      "tier": "Dividend King",
-      "payoutPct": 59.71,
-      "payoutFlag": false,
-      "yieldNum": 2.96,
-      "yieldRaw": "3.0%",
-      "statusKey": "monitor",
-      "note": "5yr: +10.1% \u00b7 90d: -8.4% \u00b7 Rev: +3.7% YoY \u00b7 Div streak: 50 yrs \u00b7 3Y div CAGR: +8.2% \u00b7 Payout: 59.7%"
+      "note": "5yr: +9.7% \u00b7 90d: -2.4% \u00b7 Rev: +1.6% YoY \u00b7 Div streak: 30 yrs \u00b7 3Y div CAGR: +10.1% \u00b7 Payout: 43.9%"
     },
     {
       "ticker": "AEP",
@@ -1404,14 +1268,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.8234,
+        "pct": 0.8134,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0381,
+        "pct": 0.0325,
         "pass": true
       },
       "revPass": true,
@@ -1425,10 +1289,78 @@
       "tier": "Dividend Contender",
       "payoutPct": 65.51,
       "payoutFlag": false,
-      "yieldNum": 2.91,
+      "yieldNum": 2.93,
       "yieldRaw": "2.9%",
       "statusKey": "meets",
-      "note": "5yr: +82.3% \u00b7 90d: +3.8% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +5.7% \u00b7 Payout: 65.5%"
+      "note": "5yr: +81.3% \u00b7 90d: +3.2% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +5.7% \u00b7 Payout: 65.5%"
+    },
+    {
+      "ticker": "MCD",
+      "company": "McDonald's Corporation",
+      "sector": "Consumer Cyclical",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0973,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0873,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.037,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 50,
+      "cagr1y": 5.75,
+      "cagr3y": 8.2,
+      "cagr5y": 7.3,
+      "tier": "Dividend King",
+      "payoutPct": 59.71,
+      "payoutFlag": false,
+      "yieldNum": 2.93,
+      "yieldRaw": "2.9%",
+      "statusKey": "monitor",
+      "note": "5yr: +9.7% \u00b7 90d: -8.7% \u00b7 Rev: +3.7% YoY \u00b7 Div streak: 50 yrs \u00b7 3Y div CAGR: +8.2% \u00b7 Payout: 59.7%"
+    },
+    {
+      "ticker": "CVS",
+      "company": "CVS Health Corporation",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1594,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0319,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.071,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 28,
+      "cagr1y": 0.0,
+      "cagr3y": 6.53,
+      "cagr5y": 5.87,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 70.0,
+      "payoutFlag": false,
+      "yieldNum": 2.87,
+      "yieldRaw": "2.9%",
+      "statusKey": "meets",
+      "note": "5yr: +15.9% \u00b7 90d: -3.2% \u00b7 Rev: +7.1% YoY \u00b7 Div streak: 28 yrs \u00b7 3Y div CAGR: +6.5% \u00b7 Payout: 70.0%"
     },
     {
       "ticker": "DRI",
@@ -1438,14 +1370,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6326,
+        "pct": 0.6282,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.008,
+        "pct": 0.0053,
         "pass": true
       },
       "revPass": true,
@@ -1459,10 +1391,10 @@
       "tier": "Dividend Challenger",
       "payoutPct": 59.42,
       "payoutFlag": false,
-      "yieldNum": 2.88,
+      "yieldNum": 2.87,
       "yieldRaw": "2.9%",
       "statusKey": "meets",
-      "note": "5yr: +63.3% \u00b7 90d: +0.8% \u00b7 Rev: +5.1% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +7.9% \u00b7 Payout: 59.4%"
+      "note": "5yr: +62.8% \u00b7 90d: +0.5% \u00b7 Rev: +5.1% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +7.9% \u00b7 Payout: 59.4%"
     },
     {
       "ticker": "WMB",
@@ -1472,14 +1404,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 2.1307,
+        "pct": 2.2068,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0269,
+        "pct": 0.0519,
         "pass": true
       },
       "revPass": true,
@@ -1496,41 +1428,7 @@
       "yieldNum": 2.86,
       "yieldRaw": "2.9%",
       "statusKey": "meets",
-      "note": "5yr: +213.1% \u00b7 90d: +2.7% \u00b7 Rev: +7.8% YoY \u00b7 Div streak: 8 yrs \u00b7 3Y div CAGR: +5.6% \u00b7 Payout: 81.7% \u26a0"
-    },
-    {
-      "ticker": "CVS",
-      "company": "CVS Health Corporation",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1654,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0269,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.071,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 28,
-      "cagr1y": 0.0,
-      "cagr3y": 6.53,
-      "cagr5y": 5.87,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 70.0,
-      "payoutFlag": false,
-      "yieldNum": 2.85,
-      "yieldRaw": "2.9%",
-      "statusKey": "meets",
-      "note": "5yr: +16.5% \u00b7 90d: -2.7% \u00b7 Rev: +7.1% YoY \u00b7 Div streak: 28 yrs \u00b7 3Y div CAGR: +6.5% \u00b7 Payout: 70.0%"
+      "note": "5yr: +220.7% \u00b7 90d: +5.2% \u00b7 Rev: +7.8% YoY \u00b7 Div streak: 8 yrs \u00b7 3Y div CAGR: +5.6% \u00b7 Payout: 81.7% \u26a0"
     },
     {
       "ticker": "DLR",
@@ -1540,14 +1438,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3232,
+        "pct": 0.3532,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0983,
+        "pct": -0.0779,
         "pass": false
       },
       "revPass": true,
@@ -1561,10 +1459,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 236.89,
       "payoutFlag": true,
-      "yieldNum": 2.83,
+      "yieldNum": 2.8,
       "yieldRaw": "2.8%",
       "statusKey": "monitor",
-      "note": "5yr: +32.3% \u00b7 90d: -9.8% \u00b7 Rev: +29.9% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +0.0% \u00b7 Payout: 236.9% \u26a0"
+      "note": "5yr: +35.3% \u00b7 90d: -7.8% \u00b7 Rev: +29.9% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +0.0% \u00b7 Payout: 236.9% \u26a0"
     },
     {
       "ticker": "TMUS",
@@ -1574,14 +1472,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2486,
+        "pct": 0.2591,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.1734,
+        "pct": -0.1664,
         "pass": false
       },
       "revPass": true,
@@ -1598,41 +1496,41 @@
       "yieldNum": 2.78,
       "yieldRaw": "2.8%",
       "statusKey": "border",
-      "note": "5yr: +24.9% \u00b7 90d: -17.3% \u00b7 Rev: +7.9% YoY \u00b7 Div streak: 2 yrs \u00b7 3Y div CAGR: -3.4% \u00b7 Payout: 41.2%"
+      "note": "5yr: +25.9% \u00b7 90d: -16.6% \u00b7 Rev: +7.9% YoY \u00b7 Div streak: 2 yrs \u00b7 3Y div CAGR: -3.4% \u00b7 Payout: 41.2%"
     },
     {
-      "ticker": "SYY",
-      "company": "Sysco Corporation",
+      "ticker": "PG",
+      "company": "The Procter & Gamble Company",
       "sector": "Consumer Defensive",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1525,
+        "pct": 0.2353,
         "pass": true
       },
       "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0204,
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.095,
         "pass": true
       },
       "revPass": true,
-      "revPct": 0.047,
+      "revPct": 0.04,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 10,
-      "cagr1y": 3.96,
-      "cagr3y": 3.03,
-      "cagr5y": 3.13,
+      "divStreak": 22,
+      "cagr1y": 5.45,
+      "cagr3y": 5.0,
+      "cagr5y": 6.02,
       "tier": "Dividend Contender",
-      "payoutPct": 59.29,
+      "payoutPct": 64.62,
       "payoutFlag": false,
-      "yieldNum": 2.67,
+      "yieldNum": 2.68,
       "yieldRaw": "2.7%",
       "statusKey": "meets",
-      "note": "5yr: +15.2% \u00b7 90d: -2.0% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 10 yrs \u00b7 3Y div CAGR: +3.0% \u00b7 Payout: 59.3%"
+      "note": "5yr: +23.5% \u00b7 90d: +9.5% \u00b7 Rev: +4.0% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +5.0% \u00b7 Payout: 64.6%"
     },
     {
       "ticker": "IBM",
@@ -1642,14 +1540,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.4731,
+        "pct": 1.4465,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0716,
+        "pct": 0.0601,
         "pass": true
       },
       "revPass": true,
@@ -1666,41 +1564,41 @@
       "yieldNum": 2.66,
       "yieldRaw": "2.7%",
       "statusKey": "meets",
-      "note": "5yr: +147.3% \u00b7 90d: +7.2% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 31 yrs \u00b7 3Y div CAGR: +0.6% \u00b7 Payout: 57.5%"
+      "note": "5yr: +144.6% \u00b7 90d: +6.0% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 31 yrs \u00b7 3Y div CAGR: +0.6% \u00b7 Payout: 57.5%"
     },
     {
-      "ticker": "PG",
-      "company": "The Procter & Gamble Company",
+      "ticker": "SYY",
+      "company": "Sysco Corporation",
       "sector": "Consumer Defensive",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2448,
+        "pct": 0.1518,
         "pass": true
       },
       "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1035,
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.021,
         "pass": true
       },
       "revPass": true,
-      "revPct": 0.04,
+      "revPct": 0.047,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 22,
-      "cagr1y": 5.45,
-      "cagr3y": 5.0,
-      "cagr5y": 6.02,
+      "divStreak": 10,
+      "cagr1y": 3.96,
+      "cagr3y": 3.03,
+      "cagr5y": 3.13,
       "tier": "Dividend Contender",
-      "payoutPct": 64.62,
+      "payoutPct": 59.29,
       "payoutFlag": false,
-      "yieldNum": 2.66,
-      "yieldRaw": "2.7%",
+      "yieldNum": 2.64,
+      "yieldRaw": "2.6%",
       "statusKey": "meets",
-      "note": "5yr: +24.5% \u00b7 90d: +10.3% \u00b7 Rev: +4.0% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +5.0% \u00b7 Payout: 64.6%"
+      "note": "5yr: +15.2% \u00b7 90d: -2.1% \u00b7 Rev: +4.7% YoY \u00b7 Div streak: 10 yrs \u00b7 3Y div CAGR: +3.0% \u00b7 Payout: 59.3%"
     },
     {
       "ticker": "ADM",
@@ -1710,14 +1608,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4279,
+        "pct": 0.4014,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0504,
+        "pct": 0.0309,
         "pass": true
       },
       "revPass": true,
@@ -1731,10 +1629,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 56.44,
       "payoutFlag": false,
-      "yieldNum": 2.57,
+      "yieldNum": 2.61,
       "yieldRaw": "2.6%",
       "statusKey": "meets",
-      "note": "5yr: +42.8% \u00b7 90d: +5.0% \u00b7 Rev: +7.2% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +8.4% \u00b7 Payout: 56.4%"
+      "note": "5yr: +40.1% \u00b7 90d: +3.1% \u00b7 Rev: +7.2% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +8.4% \u00b7 Payout: 56.4%"
     },
     {
       "ticker": "ZTS",
@@ -1744,14 +1642,14 @@
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.6087,
+        "pct": -0.6161,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1047,
+        "pct": 0.0839,
         "pass": true
       },
       "revPass": false,
@@ -1768,7 +1666,7 @@
       "yieldNum": 2.54,
       "yieldRaw": "2.5%",
       "statusKey": "border",
-      "note": "5yr: -60.9% \u00b7 90d: +10.5% \u00b7 Rev: -0.2% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +15.4% \u00b7 Payout: 33.9%"
+      "note": "5yr: -61.6% \u00b7 90d: +8.4% \u00b7 Rev: -0.2% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +15.4% \u00b7 Payout: 33.9%"
     },
     {
       "ticker": "EOG",
@@ -1778,14 +1676,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.1769,
+        "pct": 1.1576,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2191,
+        "pct": 0.2083,
         "pass": true
       },
       "revPass": true,
@@ -1799,78 +1697,10 @@
       "tier": "No Streak",
       "payoutPct": 31.4,
       "payoutFlag": false,
-      "yieldNum": 2.5,
+      "yieldNum": 2.49,
       "yieldRaw": "2.5%",
       "statusKey": "border",
-      "note": "5yr: +117.7% \u00b7 90d: +21.9% \u00b7 Rev: +58.7% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: -23.5% \u00b7 Payout: 31.4%"
-    },
-    {
-      "ticker": "MCHP",
-      "company": "Microchip Technology Incorporated",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0138,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0992,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.38,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 14,
-      "cagr1y": 0.5,
-      "cagr3y": 16.27,
-      "cagr5y": 19.85,
-      "tier": "Dividend Contender",
-      "payoutPct": 267.65,
-      "payoutFlag": true,
-      "yieldNum": 2.46,
-      "yieldRaw": "2.5%",
-      "statusKey": "monitor",
-      "note": "5yr: -1.4% \u00b7 90d: -9.9% \u00b7 Rev: +38.0% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +16.3% \u00b7 Payout: 267.6% \u26a0"
-    },
-    {
-      "ticker": "SBUX",
-      "company": "Starbucks Corporation",
-      "sector": "Consumer Cyclical",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0175,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0281,
-        "pass": true
-      },
-      "revPass": false,
-      "revPct": -0.014,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 15,
-      "cagr1y": 5.6,
-      "cagr3y": 7.0,
-      "cagr5y": 7.84,
-      "tier": "Dividend Contender",
-      "payoutPct": 142.77,
-      "payoutFlag": true,
-      "yieldNum": 2.46,
-      "yieldRaw": "2.5%",
-      "statusKey": "border",
-      "note": "5yr: -1.8% \u00b7 90d: -2.8% \u00b7 Rev: -1.4% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 142.8% \u26a0"
+      "note": "5yr: +115.8% \u00b7 90d: +20.8% \u00b7 Rev: +58.7% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: -23.5% \u00b7 Payout: 31.4%"
     },
     {
       "ticker": "LOW",
@@ -1880,14 +1710,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0736,
+        "pct": -0.0759,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.11,
+        "pct": -0.1123,
         "pass": false
       },
       "revPass": true,
@@ -1901,10 +1731,78 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 41.0,
       "payoutFlag": false,
-      "yieldNum": 2.44,
+      "yieldNum": 2.45,
+      "yieldRaw": "2.5%",
+      "statusKey": "monitor",
+      "note": "5yr: -7.6% \u00b7 90d: -11.2% \u00b7 Rev: +8.3% YoY \u00b7 Div streak: 26 yrs \u00b7 3Y div CAGR: +8.3% \u00b7 Payout: 41.0%"
+    },
+    {
+      "ticker": "SBUX",
+      "company": "Starbucks Corporation",
+      "sector": "Consumer Cyclical",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0149,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0255,
+        "pass": true
+      },
+      "revPass": false,
+      "revPct": -0.014,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "cagr1y": 5.6,
+      "cagr3y": 7.0,
+      "cagr5y": 7.84,
+      "tier": "Dividend Contender",
+      "payoutPct": 142.77,
+      "payoutFlag": true,
+      "yieldNum": 2.42,
+      "yieldRaw": "2.4%",
+      "statusKey": "border",
+      "note": "5yr: -1.5% \u00b7 90d: -2.5% \u00b7 Rev: -1.4% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 142.8% \u26a0"
+    },
+    {
+      "ticker": "MCHP",
+      "company": "Microchip Technology Incorporated",
+      "sector": "Technology",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": 0.0259,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0629,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.38,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 14,
+      "cagr1y": 0.5,
+      "cagr3y": 16.27,
+      "cagr5y": 19.85,
+      "tier": "Dividend Contender",
+      "payoutPct": 267.65,
+      "payoutFlag": true,
+      "yieldNum": 2.4,
       "yieldRaw": "2.4%",
       "statusKey": "monitor",
-      "note": "5yr: -7.4% \u00b7 90d: -11.0% \u00b7 Rev: +8.3% YoY \u00b7 Div streak: 26 yrs \u00b7 3Y div CAGR: +8.3% \u00b7 Payout: 41.0%"
+      "note": "5yr: +2.6% \u00b7 90d: -6.3% \u00b7 Rev: +38.0% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +16.3% \u00b7 Payout: 267.6% \u26a0"
     },
     {
       "ticker": "ABT",
@@ -1914,14 +1812,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.075,
+        "pct": -0.0822,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0281,
+        "pct": -0.0357,
         "pass": true
       },
       "revPass": true,
@@ -1935,44 +1833,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 78.71,
       "payoutFlag": true,
-      "yieldNum": 2.43,
-      "yieldRaw": "2.4%",
-      "statusKey": "meets",
-      "note": "5yr: -7.5% \u00b7 90d: -2.8% \u00b7 Rev: +14.5% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +7.9% \u00b7 Payout: 78.7% \u26a0"
-    },
-    {
-      "ticker": "MS",
-      "company": "Morgan Stanley",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.1516,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.147,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.108,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 15,
-      "cagr1y": 8.45,
-      "cagr3y": 9.28,
-      "cagr5y": 22.42,
-      "tier": "Dividend Contender",
-      "payoutPct": 32.31,
-      "payoutFlag": false,
       "yieldNum": 2.4,
       "yieldRaw": "2.4%",
-      "statusKey": "monitor",
-      "note": "5yr: +115.2% \u00b7 90d: -14.7% \u00b7 Rev: +10.8% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +9.3% \u00b7 Payout: 32.3%"
+      "statusKey": "meets",
+      "note": "5yr: -8.2% \u00b7 90d: -3.6% \u00b7 Rev: +14.5% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +7.9% \u00b7 Payout: 78.7% \u26a0"
     },
     {
       "ticker": "ABBV",
@@ -1982,14 +1846,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.9153,
+        "pct": 1.9212,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1697,
+        "pct": 0.172,
         "pass": true
       },
       "revPass": true,
@@ -2003,10 +1867,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 190.4,
       "payoutFlag": true,
-      "yieldNum": 2.39,
+      "yieldNum": 2.38,
       "yieldRaw": "2.4%",
       "statusKey": "meets",
-      "note": "5yr: +191.5% \u00b7 90d: +17.0% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +5.2% \u00b7 Payout: 190.4% \u26a0"
+      "note": "5yr: +192.1% \u00b7 90d: +17.2% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +5.2% \u00b7 Payout: 190.4% \u26a0"
     },
     {
       "ticker": "AWK",
@@ -2016,14 +1880,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0744,
+        "pct": -0.0817,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0489,
+        "pct": 0.0406,
         "pass": true
       },
       "revPass": true,
@@ -2037,78 +1901,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 58.54,
       "payoutFlag": false,
-      "yieldNum": 2.37,
+      "yieldNum": 2.38,
       "yieldRaw": "2.4%",
       "statusKey": "meets",
-      "note": "5yr: -7.4% \u00b7 90d: +4.9% \u00b7 Rev: +6.2% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +8.2% \u00b7 Payout: 58.5%"
-    },
-    {
-      "ticker": "ITW",
-      "company": "Illinois Tool Works Inc.",
-      "sector": "Industrials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.3311,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0613,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.061,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 30,
-      "cagr1y": 7.24,
-      "cagr3y": 7.12,
-      "cagr5y": 7.07,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 58.39,
-      "payoutFlag": false,
-      "yieldNum": 2.34,
-      "yieldRaw": "2.3%",
-      "statusKey": "monitor",
-      "note": "5yr: +33.1% \u00b7 90d: -6.1% \u00b7 Rev: +6.1% YoY \u00b7 Div streak: 30 yrs \u00b7 3Y div CAGR: +7.1% \u00b7 Payout: 58.4%"
-    },
-    {
-      "ticker": "APD",
-      "company": "Air Products and Chemicals, Inc.",
-      "sector": "Materials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1273,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0191,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.046,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 1,
-      "cagr1y": 34.46,
-      "cagr3y": 3.29,
-      "cagr5y": 5.9,
-      "tier": "No Streak",
-      "payoutPct": 75.66,
-      "payoutFlag": true,
-      "yieldNum": 2.34,
-      "yieldRaw": "2.3%",
-      "statusKey": "border",
-      "note": "5yr: +12.7% \u00b7 90d: +1.9% \u00b7 Rev: +4.6% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +3.3% \u00b7 Payout: 75.7% \u26a0"
+      "note": "5yr: -8.2% \u00b7 90d: +4.1% \u00b7 Rev: +6.2% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +8.2% \u00b7 Payout: 58.5%"
     },
     {
       "ticker": "MRK",
@@ -2118,14 +1914,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.0042,
+        "pct": 1.0335,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0981,
+        "pct": 0.1142,
         "pass": true
       },
       "revPass": true,
@@ -2139,10 +1935,112 @@
       "tier": "Dividend Contender",
       "payoutPct": 266.67,
       "payoutFlag": true,
-      "yieldNum": 2.29,
-      "yieldRaw": "2.3%",
+      "yieldNum": 2.36,
+      "yieldRaw": "2.4%",
       "statusKey": "meets",
-      "note": "5yr: +100.4% \u00b7 90d: +9.8% \u00b7 Rev: +5.1% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +5.4% \u00b7 Payout: 266.7% \u26a0"
+      "note": "5yr: +103.4% \u00b7 90d: +11.4% \u00b7 Rev: +5.1% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +5.4% \u00b7 Payout: 266.7% \u26a0"
+    },
+    {
+      "ticker": "APD",
+      "company": "Air Products and Chemicals, Inc.",
+      "sector": "Materials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1238,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.016,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.046,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 1,
+      "cagr1y": 34.46,
+      "cagr3y": 3.29,
+      "cagr5y": 5.9,
+      "tier": "No Streak",
+      "payoutPct": 75.66,
+      "payoutFlag": true,
+      "yieldNum": 2.36,
+      "yieldRaw": "2.4%",
+      "statusKey": "border",
+      "note": "5yr: +12.4% \u00b7 90d: +1.6% \u00b7 Rev: +4.6% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +3.3% \u00b7 Payout: 75.7% \u26a0"
+    },
+    {
+      "ticker": "MS",
+      "company": "Morgan Stanley",
+      "sector": "Financials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.1782,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.1365,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.108,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "cagr1y": 8.45,
+      "cagr3y": 9.28,
+      "cagr5y": 22.42,
+      "tier": "Dividend Contender",
+      "payoutPct": 32.31,
+      "payoutFlag": false,
+      "yieldNum": 2.34,
+      "yieldRaw": "2.3%",
+      "statusKey": "monitor",
+      "note": "5yr: +117.8% \u00b7 90d: -13.7% \u00b7 Rev: +10.8% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +9.3% \u00b7 Payout: 32.3%"
+    },
+    {
+      "ticker": "ITW",
+      "company": "Illinois Tool Works Inc.",
+      "sector": "Industrials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.3263,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0646,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.061,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 30,
+      "cagr1y": 7.24,
+      "cagr3y": 7.12,
+      "cagr5y": 7.07,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 58.39,
+      "payoutFlag": false,
+      "yieldNum": 2.33,
+      "yieldRaw": "2.3%",
+      "statusKey": "monitor",
+      "note": "5yr: +32.6% \u00b7 90d: -6.5% \u00b7 Rev: +6.1% YoY \u00b7 Div streak: 30 yrs \u00b7 3Y div CAGR: +7.1% \u00b7 Payout: 58.4%"
     },
     {
       "ticker": "BAC",
@@ -2152,14 +2050,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2236,
+        "pct": 0.2185,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.1909,
+        "pct": -0.1943,
         "pass": false
       },
       "revPass": true,
@@ -2173,78 +2071,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 25.87,
       "payoutFlag": false,
-      "yieldNum": 2.29,
+      "yieldNum": 2.3,
       "yieldRaw": "2.3%",
       "statusKey": "monitor",
-      "note": "5yr: +22.4% \u00b7 90d: -19.1% \u00b7 Rev: +7.1% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +7.9% \u00b7 Payout: 25.9%"
-    },
-    {
-      "ticker": "LMT",
-      "company": "Lockheed Martin Corporation",
-      "sector": "Industrials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.1114,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0744,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.113,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 25,
-      "cagr1y": 4.71,
-      "cagr3y": 5.4,
-      "cagr5y": 6.38,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 49.01,
-      "payoutFlag": false,
-      "yieldNum": 2.28,
-      "yieldRaw": "2.3%",
-      "statusKey": "meets",
-      "note": "5yr: +111.1% \u00b7 90d: +7.4% \u00b7 Rev: +11.3% YoY \u00b7 Div streak: 25 yrs \u00b7 3Y div CAGR: +5.4% \u00b7 Payout: 49.0%"
-    },
-    {
-      "ticker": "WFC",
-      "company": "Wells Fargo & Company",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.8528,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.048,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.004,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 4,
-      "cagr1y": 13.33,
-      "cagr3y": 15.62,
-      "cagr5y": 6.86,
-      "tier": "Dividend Starter",
-      "payoutPct": 26.16,
-      "payoutFlag": false,
-      "yieldNum": 2.25,
-      "yieldRaw": "2.2%",
-      "statusKey": "meets",
-      "note": "5yr: +85.3% \u00b7 90d: -4.8% \u00b7 Rev: +0.4% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +15.6% \u00b7 Payout: 26.2%"
+      "note": "5yr: +21.9% \u00b7 90d: -19.4% \u00b7 Rev: +7.1% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +7.9% \u00b7 Payout: 25.9%"
     },
     {
       "ticker": "KO",
@@ -2254,14 +2084,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.8852,
+        "pct": 0.8777,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0697,
+        "pct": 0.0655,
         "pass": true
       },
       "revPass": true,
@@ -2278,75 +2108,7 @@
       "yieldNum": 2.24,
       "yieldRaw": "2.2%",
       "statusKey": "meets",
-      "note": "5yr: +88.5% \u00b7 90d: +7.0% \u00b7 Rev: +6.7% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +5.0% \u00b7 Payout: 62.5%"
-    },
-    {
-      "ticker": "AMGN",
-      "company": "Amgen Inc.",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.4089,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0788,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.095,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 14,
-      "cagr1y": 5.78,
-      "cagr3y": 7.05,
-      "cagr5y": 8.27,
-      "tier": "Dividend Contender",
-      "payoutPct": 60.87,
-      "payoutFlag": false,
-      "yieldNum": 2.23,
-      "yieldRaw": "2.2%",
-      "statusKey": "meets",
-      "note": "5yr: +140.9% \u00b7 90d: +7.9% \u00b7 Rev: +9.5% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 60.9%"
-    },
-    {
-      "ticker": "XOM",
-      "company": "ExxonMobil Holdings Corporation",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 2.3703,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2095,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.441,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 42,
-      "cagr1y": 4.17,
-      "cagr3y": 4.06,
-      "cagr5y": 2.82,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 52.51,
-      "payoutFlag": false,
-      "yieldNum": 2.23,
-      "yieldRaw": "2.2%",
-      "statusKey": "meets",
-      "note": "5yr: +237.0% \u00b7 90d: +20.9% \u00b7 Rev: +44.1% YoY \u00b7 Div streak: 42 yrs \u00b7 3Y div CAGR: +4.1% \u00b7 Payout: 52.5%"
+      "note": "5yr: +87.8% \u00b7 90d: +6.6% \u00b7 Rev: +6.7% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +5.0% \u00b7 Payout: 62.5%"
     },
     {
       "ticker": "CL",
@@ -2356,14 +2118,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3454,
+        "pct": 0.3344,
         "pass": true
       },
       "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0027,
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0055,
         "pass": true
       },
       "revPass": true,
@@ -2377,78 +2139,44 @@
       "tier": "Dividend King",
       "payoutPct": 82.28,
       "payoutFlag": true,
-      "yieldNum": 2.22,
+      "yieldNum": 2.24,
       "yieldRaw": "2.2%",
       "statusKey": "meets",
-      "note": "5yr: +34.5% \u00b7 90d: +0.3% \u00b7 Rev: +4.9% YoY \u00b7 Div streak: 52 yrs \u00b7 3Y div CAGR: +3.5% \u00b7 Payout: 82.3% \u26a0"
+      "note": "5yr: +33.4% \u00b7 90d: -0.5% \u00b7 Rev: +4.9% YoY \u00b7 Div streak: 52 yrs \u00b7 3Y div CAGR: +3.5% \u00b7 Payout: 82.3% \u26a0"
     },
     {
-      "ticker": "SLB",
-      "company": "SLB N.V.",
-      "sector": "Energy",
+      "ticker": "WFC",
+      "company": "Wells Fargo & Company",
+      "sector": "Financials",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.752,
+        "pct": 0.8432,
         "pass": true
       },
       "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0458,
-        "pass": true
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.053,
+        "pass": false
       },
       "revPass": true,
-      "revPct": 0.058,
+      "revPct": 0.004,
       "revAvail": true,
       "divPass": true,
       "divStreak": 4,
-      "cagr1y": 3.64,
-      "cagr3y": 20.6,
-      "cagr5y": 5.43,
+      "cagr1y": 13.33,
+      "cagr3y": 15.62,
+      "cagr5y": 6.86,
       "tier": "Dividend Starter",
-      "payoutPct": 56.04,
+      "payoutPct": 26.16,
       "payoutFlag": false,
-      "yieldNum": 2.21,
+      "yieldNum": 2.24,
       "yieldRaw": "2.2%",
-      "statusKey": "meets",
-      "note": "5yr: +75.2% \u00b7 90d: +4.6% \u00b7 Rev: +5.8% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +20.6% \u00b7 Payout: 56.0%"
-    },
-    {
-      "ticker": "COP",
-      "company": "ConocoPhillips",
-      "sector": "Energy",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.3832,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2967,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.355,
-      "revAvail": true,
-      "divPass": false,
-      "divStreak": 1,
-      "cagr1y": 1.92,
-      "cagr3y": -13.95,
-      "cagr5y": 13.48,
-      "tier": "No Streak",
-      "payoutPct": 43.71,
-      "payoutFlag": false,
-      "yieldNum": 2.19,
-      "yieldRaw": "2.2%",
-      "statusKey": "border",
-      "note": "5yr: +138.3% \u00b7 90d: +29.7% \u00b7 Rev: +35.5% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: -13.9% \u00b7 Payout: 43.7%"
+      "statusKey": "monitor",
+      "note": "5yr: +84.3% \u00b7 90d: -5.3% \u00b7 Rev: +0.4% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +15.6% \u00b7 Payout: 26.2%"
     },
     {
       "ticker": "ADP",
@@ -2458,14 +2186,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4605,
+        "pct": 0.4261,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1125,
+        "pct": 0.0863,
         "pass": true
       },
       "revPass": true,
@@ -2479,10 +2207,180 @@
       "tier": "Dividend Contender",
       "payoutPct": 60.69,
       "payoutFlag": false,
-      "yieldNum": 2.18,
+      "yieldNum": 2.21,
       "yieldRaw": "2.2%",
       "statusKey": "meets",
-      "note": "5yr: +46.1% \u00b7 90d: +11.2% \u00b7 Rev: +6.8% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +13.1% \u00b7 Payout: 60.7%"
+      "note": "5yr: +42.6% \u00b7 90d: +8.6% \u00b7 Rev: +6.8% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +13.1% \u00b7 Payout: 60.7%"
+    },
+    {
+      "ticker": "XOM",
+      "company": "ExxonMobil Holdings Corporation",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 2.3163,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1901,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.441,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 42,
+      "cagr1y": 4.17,
+      "cagr3y": 4.06,
+      "cagr5y": 2.82,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 52.51,
+      "payoutFlag": false,
+      "yieldNum": 2.21,
+      "yieldRaw": "2.2%",
+      "statusKey": "meets",
+      "note": "5yr: +231.6% \u00b7 90d: +19.0% \u00b7 Rev: +44.1% YoY \u00b7 Div streak: 42 yrs \u00b7 3Y div CAGR: +4.1% \u00b7 Payout: 52.5%"
+    },
+    {
+      "ticker": "AMGN",
+      "company": "Amgen Inc.",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.446,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0954,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.095,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 14,
+      "cagr1y": 5.78,
+      "cagr3y": 7.05,
+      "cagr5y": 8.27,
+      "tier": "Dividend Contender",
+      "payoutPct": 60.87,
+      "payoutFlag": false,
+      "yieldNum": 2.2,
+      "yieldRaw": "2.2%",
+      "statusKey": "meets",
+      "note": "5yr: +144.6% \u00b7 90d: +9.5% \u00b7 Rev: +9.5% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 60.9%"
+    },
+    {
+      "ticker": "SLB",
+      "company": "SLB N.V.",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.7828,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0642,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.058,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 4,
+      "cagr1y": 3.64,
+      "cagr3y": 20.6,
+      "cagr5y": 5.43,
+      "tier": "Dividend Starter",
+      "payoutPct": 56.04,
+      "payoutFlag": false,
+      "yieldNum": 2.2,
+      "yieldRaw": "2.2%",
+      "statusKey": "meets",
+      "note": "5yr: +78.3% \u00b7 90d: +6.4% \u00b7 Rev: +5.8% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +20.6% \u00b7 Payout: 56.0%"
+    },
+    {
+      "ticker": "COP",
+      "company": "ConocoPhillips",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.336,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.2711,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.355,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 1,
+      "cagr1y": 1.92,
+      "cagr3y": -13.95,
+      "cagr5y": 13.48,
+      "tier": "No Streak",
+      "payoutPct": 43.71,
+      "payoutFlag": false,
+      "yieldNum": 2.18,
+      "yieldRaw": "2.2%",
+      "statusKey": "border",
+      "note": "5yr: +133.6% \u00b7 90d: +27.1% \u00b7 Rev: +35.5% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: -13.9% \u00b7 Payout: 43.7%"
+    },
+    {
+      "ticker": "LMT",
+      "company": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.1119,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0746,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.113,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 25,
+      "cagr1y": 4.71,
+      "cagr3y": 5.4,
+      "cagr5y": 6.38,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 49.01,
+      "payoutFlag": false,
+      "yieldNum": 2.17,
+      "yieldRaw": "2.2%",
+      "statusKey": "meets",
+      "note": "5yr: +111.2% \u00b7 90d: +7.5% \u00b7 Rev: +11.3% YoY \u00b7 Div streak: 25 yrs \u00b7 3Y div CAGR: +5.4% \u00b7 Payout: 49.0%"
     },
     {
       "ticker": "BDX",
@@ -2492,14 +2390,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1405,
+        "pct": 0.1412,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1084,
+        "pct": 0.1091,
         "pass": true
       },
       "revPass": true,
@@ -2513,112 +2411,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 72.49,
       "payoutFlag": false,
-      "yieldNum": 2.11,
+      "yieldNum": 2.13,
       "yieldRaw": "2.1%",
       "statusKey": "meets",
-      "note": "5yr: +14.1% \u00b7 90d: +10.8% \u00b7 Rev: +5.4% YoY \u00b7 Div streak: 43 yrs \u00b7 3Y div CAGR: +6.0% \u00b7 Payout: 72.5%"
-    },
-    {
-      "ticker": "GILD",
-      "company": "Gilead Sciences, Inc.",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.8567,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.1969,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.102,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 10,
-      "cagr1y": 2.6,
-      "cagr3y": 2.67,
-      "cagr5y": 3.04,
-      "tier": "Dividend Contender",
-      "payoutPct": 43.46,
-      "payoutFlag": false,
-      "yieldNum": 2.06,
-      "yieldRaw": "2.1%",
-      "statusKey": "meets",
-      "note": "5yr: +185.7% \u00b7 90d: +19.7% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 10 yrs \u00b7 3Y div CAGR: +2.7% \u00b7 Payout: 43.5%"
-    },
-    {
-      "ticker": "GS",
-      "company": "The Goldman Sachs Group, Inc.",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.4881,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.1327,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.233,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 15,
-      "cagr1y": 21.74,
-      "cagr3y": 15.87,
-      "cagr5y": 22.87,
-      "tier": "Dividend Contender",
-      "payoutPct": 26.25,
-      "payoutFlag": false,
-      "yieldNum": 2.06,
-      "yieldRaw": "2.1%",
-      "statusKey": "monitor",
-      "note": "5yr: +148.8% \u00b7 90d: -13.3% \u00b7 Rev: +23.3% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +15.9% \u00b7 Payout: 26.2%"
-    },
-    {
-      "ticker": "EQIX",
-      "company": "Equinix, Inc.",
-      "sector": "Real Estate",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.3723,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0639,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.167,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 9,
-      "cagr1y": 10.09,
-      "cagr3y": 14.8,
-      "cagr5y": 12.01,
-      "tier": "Dividend Challenger",
-      "payoutPct": 126.77,
-      "payoutFlag": true,
-      "yieldNum": 2.06,
-      "yieldRaw": "2.1%",
-      "statusKey": "monitor",
-      "note": "5yr: +37.2% \u00b7 90d: -6.4% \u00b7 Rev: +16.7% YoY \u00b7 Div streak: 9 yrs \u00b7 3Y div CAGR: +14.8% \u00b7 Payout: 126.8% \u26a0"
+      "note": "5yr: +14.1% \u00b7 90d: +10.9% \u00b7 Rev: +5.4% YoY \u00b7 Div streak: 43 yrs \u00b7 3Y div CAGR: +6.0% \u00b7 Payout: 72.5%"
     },
     {
       "ticker": "C",
@@ -2628,14 +2424,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.1427,
+        "pct": 1.1551,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0971,
+        "pct": -0.0919,
         "pass": false
       },
       "revPass": true,
@@ -2649,10 +2445,112 @@
       "tier": "Dividend Contender",
       "payoutPct": 25.92,
       "payoutFlag": false,
-      "yieldNum": 2.05,
+      "yieldNum": 2.04,
       "yieldRaw": "2.0%",
       "statusKey": "monitor",
-      "note": "5yr: +114.3% \u00b7 90d: -9.7% \u00b7 Rev: +8.0% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +4.4% \u00b7 Payout: 25.9%"
+      "note": "5yr: +115.5% \u00b7 90d: -9.2% \u00b7 Rev: +8.0% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +4.4% \u00b7 Payout: 25.9%"
+    },
+    {
+      "ticker": "EQIX",
+      "company": "Equinix, Inc.",
+      "sector": "Real Estate",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.407,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0402,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.167,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 9,
+      "cagr1y": 10.09,
+      "cagr3y": 14.8,
+      "cagr5y": 12.01,
+      "tier": "Dividend Challenger",
+      "payoutPct": 126.77,
+      "payoutFlag": true,
+      "yieldNum": 2.04,
+      "yieldRaw": "2.0%",
+      "statusKey": "meets",
+      "note": "5yr: +40.7% \u00b7 90d: -4.0% \u00b7 Rev: +16.7% YoY \u00b7 Div streak: 9 yrs \u00b7 3Y div CAGR: +14.8% \u00b7 Payout: 126.8% \u26a0"
+    },
+    {
+      "ticker": "GILD",
+      "company": "Gilead Sciences, Inc.",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.8355,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.188,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.102,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 10,
+      "cagr1y": 2.6,
+      "cagr3y": 2.67,
+      "cagr5y": 3.04,
+      "tier": "Dividend Contender",
+      "payoutPct": 43.46,
+      "payoutFlag": false,
+      "yieldNum": 2.03,
+      "yieldRaw": "2.0%",
+      "statusKey": "meets",
+      "note": "5yr: +183.5% \u00b7 90d: +18.8% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 10 yrs \u00b7 3Y div CAGR: +2.7% \u00b7 Payout: 43.5%"
+    },
+    {
+      "ticker": "GS",
+      "company": "The Goldman Sachs Group, Inc.",
+      "sector": "Financials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.5303,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.118,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.233,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "cagr1y": 21.74,
+      "cagr3y": 15.87,
+      "cagr5y": 22.87,
+      "tier": "Dividend Contender",
+      "payoutPct": 26.25,
+      "payoutFlag": false,
+      "yieldNum": 2.02,
+      "yieldRaw": "2.0%",
+      "statusKey": "monitor",
+      "note": "5yr: +153.0% \u00b7 90d: -11.8% \u00b7 Rev: +23.3% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +15.9% \u00b7 Payout: 26.2%"
     },
     {
       "ticker": "QCOM",
@@ -2662,14 +2560,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2198,
+        "pct": 0.2439,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0684,
+        "pct": 0.0895,
         "pass": true
       },
       "revPass": false,
@@ -2683,78 +2581,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 41.55,
       "payoutFlag": false,
-      "yieldNum": 2.04,
+      "yieldNum": 2.0,
       "yieldRaw": "2.0%",
       "statusKey": "border",
-      "note": "5yr: +22.0% \u00b7 90d: +6.8% \u00b7 Rev: -4.0% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +6.3% \u00b7 Payout: 41.5%"
-    },
-    {
-      "ticker": "TXN",
-      "company": "Texas Instruments Incorporated",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.7405,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0275,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.277,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 27,
-      "cagr1y": 4.56,
-      "cagr3y": 5.45,
-      "cagr5y": 8.13,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 85.54,
-      "payoutFlag": true,
-      "yieldNum": 2.0,
-      "yieldRaw": "2.0%",
-      "statusKey": "meets",
-      "note": "5yr: +74.1% \u00b7 90d: +2.8% \u00b7 Rev: +27.7% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +5.5% \u00b7 Payout: 85.5% \u26a0"
-    },
-    {
-      "ticker": "JNJ",
-      "company": "Johnson & Johnson",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.867,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0287,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.059,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 63,
-      "cagr1y": 4.68,
-      "cagr3y": 4.92,
-      "cagr5y": 5.25,
-      "tier": "Dividend King",
-      "payoutPct": 80.12,
-      "payoutFlag": true,
-      "yieldNum": 2.0,
-      "yieldRaw": "2.0%",
-      "statusKey": "meets",
-      "note": "5yr: +86.7% \u00b7 90d: +2.9% \u00b7 Rev: +5.9% YoY \u00b7 Div streak: 63 yrs \u00b7 3Y div CAGR: +4.9% \u00b7 Payout: 80.1% \u26a0"
+      "note": "5yr: +24.4% \u00b7 90d: +8.9% \u00b7 Rev: -4.0% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +6.3% \u00b7 Payout: 41.5%"
     },
     {
       "ticker": "BLK",
@@ -2764,14 +2594,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3367,
+        "pct": 0.3417,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0002,
+        "pct": 0.004,
         "pass": true
       },
       "revPass": true,
@@ -2785,10 +2615,44 @@
       "tier": "Dividend Contender",
       "payoutPct": 52.37,
       "payoutFlag": false,
-      "yieldNum": 2.0,
+      "yieldNum": 1.99,
       "yieldRaw": "2.0%",
       "statusKey": "meets",
-      "note": "5yr: +33.7% \u00b7 90d: +0.0% \u00b7 Rev: +19.1% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +2.2% \u00b7 Payout: 52.4%"
+      "note": "5yr: +34.2% \u00b7 90d: +0.4% \u00b7 Rev: +19.1% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +2.2% \u00b7 Payout: 52.4%"
+    },
+    {
+      "ticker": "JNJ",
+      "company": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.884,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.038,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.059,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 63,
+      "cagr1y": 4.68,
+      "cagr3y": 4.92,
+      "cagr5y": 5.25,
+      "tier": "Dividend King",
+      "payoutPct": 80.12,
+      "payoutFlag": true,
+      "yieldNum": 1.98,
+      "yieldRaw": "2.0%",
+      "statusKey": "meets",
+      "note": "5yr: +88.4% \u00b7 90d: +3.8% \u00b7 Rev: +5.9% YoY \u00b7 Div streak: 63 yrs \u00b7 3Y div CAGR: +4.9% \u00b7 Payout: 80.1% \u26a0"
     },
     {
       "ticker": "AFL",
@@ -2798,14 +2662,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.3924,
+        "pct": 1.3918,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0221,
+        "pct": -0.0223,
         "pass": true
       },
       "revPass": false,
@@ -2825,6 +2689,40 @@
       "note": "5yr: +139.2% \u00b7 90d: -2.2% \u00b7 Rev: -1.0% YoY \u00b7 Div streak: 41 yrs \u00b7 3Y div CAGR: +13.2% \u00b7 Payout: 25.6%"
     },
     {
+      "ticker": "TXN",
+      "company": "Texas Instruments Incorporated",
+      "sector": "Technology",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.8118,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0696,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.277,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 27,
+      "cagr1y": 4.56,
+      "cagr3y": 5.45,
+      "cagr5y": 8.13,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 85.54,
+      "payoutFlag": true,
+      "yieldNum": 1.91,
+      "yieldRaw": "1.9%",
+      "statusKey": "meets",
+      "note": "5yr: +81.2% \u00b7 90d: +7.0% \u00b7 Rev: +27.7% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +5.5% \u00b7 Payout: 85.5% \u26a0"
+    },
+    {
       "ticker": "UNP",
       "company": "Union Pacific Corporation",
       "sector": "Industrials",
@@ -2832,14 +2730,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3799,
+        "pct": 0.3954,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0091,
+        "pct": 0.0205,
         "pass": true
       },
       "revPass": true,
@@ -2853,10 +2751,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 43.37,
       "payoutFlag": false,
-      "yieldNum": 1.9,
+      "yieldNum": 1.87,
       "yieldRaw": "1.9%",
       "statusKey": "meets",
-      "note": "5yr: +38.0% \u00b7 90d: +0.9% \u00b7 Rev: +15.3% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +2.3% \u00b7 Payout: 43.4%"
+      "note": "5yr: +39.5% \u00b7 90d: +2.1% \u00b7 Rev: +15.3% YoY \u00b7 Div streak: 27 yrs \u00b7 3Y div CAGR: +2.3% \u00b7 Payout: 43.4%"
     },
     {
       "ticker": "FDX",
@@ -2866,15 +2764,15 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6945,
+        "pct": 0.7231,
         "pass": true
       },
       "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0547,
-        "pass": false
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0388,
+        "pass": true
       },
       "revPass": true,
       "revPct": 0.125,
@@ -2887,10 +2785,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 31.27,
       "payoutFlag": false,
-      "yieldNum": 1.86,
+      "yieldNum": 1.85,
       "yieldRaw": "1.9%",
-      "statusKey": "monitor",
-      "note": "5yr: +69.5% \u00b7 90d: -5.5% \u00b7 Rev: +12.5% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +10.9% \u00b7 Payout: 31.3%"
+      "statusKey": "meets",
+      "note": "5yr: +72.3% \u00b7 90d: -3.9% \u00b7 Rev: +12.5% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +10.9% \u00b7 Payout: 31.3%"
     },
     {
       "ticker": "JPM",
@@ -2900,14 +2798,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.2543,
+        "pct": 1.2635,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0594,
+        "pct": -0.0555,
         "pass": false
       },
       "revPass": true,
@@ -2921,10 +2819,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 25.71,
       "payoutFlag": false,
-      "yieldNum": 1.85,
-      "yieldRaw": "1.9%",
+      "yieldNum": 1.84,
+      "yieldRaw": "1.8%",
       "statusKey": "monitor",
-      "note": "5yr: +125.4% \u00b7 90d: -5.9% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +11.5% \u00b7 Payout: 25.7%"
+      "note": "5yr: +126.4% \u00b7 90d: -5.5% \u00b7 Rev: +10.2% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +11.5% \u00b7 Payout: 25.7%"
     },
     {
       "ticker": "MMM",
@@ -2934,15 +2832,15 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3561,
+        "pct": 0.3467,
         "pass": true
       },
       "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0499,
-        "pass": true
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.0564,
+        "pass": false
       },
       "revPass": true,
       "revPct": 0.01,
@@ -2955,10 +2853,10 @@
       "tier": "No Streak",
       "payoutPct": 45.82,
       "payoutFlag": false,
-      "yieldNum": 1.77,
+      "yieldNum": 1.78,
       "yieldRaw": "1.8%",
       "statusKey": "border",
-      "note": "5yr: +35.6% \u00b7 90d: -5.0% \u00b7 Rev: +1.0% YoY \u00b7 3Y div CAGR: -16.3% \u00b7 Payout: 45.8%"
+      "note": "5yr: +34.7% \u00b7 90d: -5.6% \u00b7 Rev: +1.0% YoY \u00b7 3Y div CAGR: -16.3% \u00b7 Payout: 45.8%"
     },
     {
       "ticker": "PSX",
@@ -2968,14 +2866,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 3.4609,
+        "pct": 3.1597,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4265,
+        "pct": 0.3302,
         "pass": true
       },
       "revPass": true,
@@ -2989,10 +2887,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 28.23,
       "payoutFlag": false,
-      "yieldNum": 1.74,
+      "yieldNum": 1.71,
       "yieldRaw": "1.7%",
       "statusKey": "meets",
-      "note": "5yr: +346.1% \u00b7 90d: +42.6% \u00b7 Rev: +53.1% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +7.4% \u00b7 Payout: 28.2%"
+      "note": "5yr: +316.0% \u00b7 90d: +33.0% \u00b7 Rev: +53.1% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +7.4% \u00b7 Payout: 28.2%"
     },
     {
       "ticker": "CME",
@@ -3002,14 +2900,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.7093,
+        "pct": 0.6484,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1705,
+        "pct": 0.1288,
         "pass": true
       },
       "revPass": true,
@@ -3023,10 +2921,10 @@
       "tier": "No Streak",
       "payoutPct": 95.42,
       "payoutFlag": true,
-      "yieldNum": 1.68,
+      "yieldNum": 1.67,
       "yieldRaw": "1.7%",
       "statusKey": "border",
-      "note": "5yr: +70.9% \u00b7 90d: +17.1% \u00b7 Rev: +13.0% YoY \u00b7 3Y div CAGR: -16.2% \u00b7 Payout: 95.4% \u26a0"
+      "note": "5yr: +64.8% \u00b7 90d: +12.9% \u00b7 Rev: +13.0% YoY \u00b7 3Y div CAGR: -16.2% \u00b7 Payout: 95.4% \u26a0"
     },
     {
       "ticker": "ALL",
@@ -3036,15 +2934,15 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.4574,
+        "pct": 1.409,
         "pass": true
       },
       "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.038,
-        "pass": true
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.057,
+        "pass": false
       },
       "revPass": true,
       "revPct": 0.118,
@@ -3057,44 +2955,44 @@
       "tier": "Dividend Contender",
       "payoutPct": 8.32,
       "payoutFlag": false,
-      "yieldNum": 1.64,
+      "yieldNum": 1.63,
       "yieldRaw": "1.6%",
-      "statusKey": "meets",
-      "note": "5yr: +145.7% \u00b7 90d: -3.8% \u00b7 Rev: +11.8% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +5.6% \u00b7 Payout: 8.3%"
+      "statusKey": "monitor",
+      "note": "5yr: +140.9% \u00b7 90d: -5.7% \u00b7 Rev: +11.8% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +5.6% \u00b7 Payout: 8.3%"
     },
     {
-      "ticker": "CSCO",
-      "company": "Cisco Systems, Inc.",
-      "sector": "Technology",
+      "ticker": "VZ",
+      "company": "Verizon Communications Inc.",
+      "sector": "Communication",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.2149,
+        "pct": 0.1527,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0887,
+        "pct": -0.0561,
         "pass": false
       },
       "revPass": true,
-      "revPct": 0.176,
+      "revPct": 0.015,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 14,
-      "cagr1y": 2.52,
-      "cagr3y": 2.58,
-      "cagr5y": 2.65,
+      "divStreak": 24,
+      "cagr1y": 1.91,
+      "cagr3y": 1.92,
+      "cagr5y": 1.95,
       "tier": "Dividend Contender",
-      "payoutPct": 49.85,
+      "payoutPct": 72.79,
       "payoutFlag": false,
-      "yieldNum": 1.56,
+      "yieldNum": 1.6,
       "yieldRaw": "1.6%",
       "statusKey": "monitor",
-      "note": "5yr: +121.5% \u00b7 90d: -8.9% \u00b7 Rev: +17.6% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +2.6% \u00b7 Payout: 49.9%"
+      "note": "5yr: +15.3% \u00b7 90d: -5.6% \u00b7 Rev: +1.5% YoY \u00b7 Div streak: 24 yrs \u00b7 3Y div CAGR: +1.9% \u00b7 Payout: 72.8%"
     },
     {
       "ticker": "OXY",
@@ -3104,14 +3002,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.0605,
+        "pct": 1.0259,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.151,
+        "pct": 0.1317,
         "pass": true
       },
       "revPass": true,
@@ -3128,41 +3026,41 @@
       "yieldNum": 1.56,
       "yieldRaw": "1.6%",
       "statusKey": "meets",
-      "note": "5yr: +106.0% \u00b7 90d: +15.1% \u00b7 Rev: +53.4% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +22.7% \u00b7 Payout: 28.4%"
+      "note": "5yr: +102.6% \u00b7 90d: +13.2% \u00b7 Rev: +53.4% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +22.7% \u00b7 Payout: 28.4%"
     },
     {
-      "ticker": "RTX",
-      "company": "RTX Corporation",
-      "sector": "Industrials",
+      "ticker": "CSCO",
+      "company": "Cisco Systems, Inc.",
+      "sector": "Technology",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.4009,
+        "pct": 1.2627,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1155,
+        "pct": -0.0691,
         "pass": false
       },
       "revPass": true,
-      "revPct": 0.111,
+      "revPct": 0.176,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 33,
-      "cagr1y": 7.66,
-      "cagr3y": 7.32,
-      "cagr5y": 7.18,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 45.85,
+      "divStreak": 14,
+      "cagr1y": 2.52,
+      "cagr3y": 2.58,
+      "cagr5y": 2.65,
+      "tier": "Dividend Contender",
+      "payoutPct": 49.85,
       "payoutFlag": false,
-      "yieldNum": 1.48,
+      "yieldNum": 1.51,
       "yieldRaw": "1.5%",
       "statusKey": "monitor",
-      "note": "5yr: +140.1% \u00b7 90d: -11.6% \u00b7 Rev: +11.1% YoY \u00b7 Div streak: 33 yrs \u00b7 3Y div CAGR: +7.3% \u00b7 Payout: 45.9%"
+      "note": "5yr: +126.3% \u00b7 90d: -6.9% \u00b7 Rev: +17.6% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +2.6% \u00b7 Payout: 49.9%"
     },
     {
       "ticker": "HD",
@@ -3172,14 +3070,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0214,
+        "pct": -0.0188,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1003,
+        "pct": -0.0979,
         "pass": false
       },
       "revPass": true,
@@ -3196,7 +3094,41 @@
       "yieldNum": 1.45,
       "yieldRaw": "1.4%",
       "statusKey": "monitor",
-      "note": "5yr: -2.1% \u00b7 90d: -10.0% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +6.6% \u00b7 Payout: 64.8%"
+      "note": "5yr: -1.9% \u00b7 90d: -9.8% \u00b7 Rev: +5.7% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +6.6% \u00b7 Payout: 64.8%"
+    },
+    {
+      "ticker": "RTX",
+      "company": "RTX Corporation",
+      "sector": "Industrials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.3944,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.1179,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.111,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 33,
+      "cagr1y": 7.66,
+      "cagr3y": 7.32,
+      "cagr5y": 7.18,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 45.85,
+      "payoutFlag": false,
+      "yieldNum": 1.43,
+      "yieldRaw": "1.4%",
+      "statusKey": "monitor",
+      "note": "5yr: +139.4% \u00b7 90d: -11.8% \u00b7 Rev: +11.1% YoY \u00b7 Div streak: 33 yrs \u00b7 3Y div CAGR: +7.3% \u00b7 Payout: 45.9%"
     },
     {
       "ticker": "INTU",
@@ -3206,14 +3138,14 @@
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.4348,
+        "pct": -0.4453,
         "pass": false
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0317,
+        "pct": 0.0125,
         "pass": true
       },
       "revPass": true,
@@ -3227,10 +3159,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 29.16,
       "payoutFlag": false,
-      "yieldNum": 1.4,
+      "yieldNum": 1.41,
       "yieldRaw": "1.4%",
       "statusKey": "border",
-      "note": "5yr: -43.5% \u00b7 90d: +3.2% \u00b7 Rev: +13.7% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +15.3% \u00b7 Payout: 29.2%"
+      "note": "5yr: -44.5% \u00b7 90d: +1.2% \u00b7 Rev: +13.7% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +15.3% \u00b7 Payout: 29.2%"
     },
     {
       "ticker": "TEL",
@@ -3240,14 +3172,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4645,
+        "pct": 0.4864,
         "pass": true
       },
       "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0014,
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0136,
         "pass": true
       },
       "revPass": true,
@@ -3261,10 +3193,10 @@
       "tier": "No Streak",
       "payoutPct": 28.5,
       "payoutFlag": false,
-      "yieldNum": 1.4,
+      "yieldNum": 1.36,
       "yieldRaw": "1.4%",
       "statusKey": "border",
-      "note": "5yr: +46.5% \u00b7 90d: -0.1% \u00b7 Rev: +13.8% YoY \u00b7 3Y div CAGR: -1.7% \u00b7 Payout: 28.5%"
+      "note": "5yr: +48.6% \u00b7 90d: +1.4% \u00b7 Rev: +13.8% YoY \u00b7 3Y div CAGR: -1.7% \u00b7 Payout: 28.5%"
     },
     {
       "ticker": "EMR",
@@ -3274,14 +3206,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.8292,
+        "pct": 0.8572,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0288,
+        "pct": 0.0445,
         "pass": true
       },
       "revPass": true,
@@ -3298,7 +3230,41 @@
       "yieldNum": 1.36,
       "yieldRaw": "1.4%",
       "statusKey": "meets",
-      "note": "5yr: +82.9% \u00b7 90d: +2.9% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 34 yrs \u00b7 3Y div CAGR: +1.2% \u00b7 Payout: 48.0%"
+      "note": "5yr: +85.7% \u00b7 90d: +4.5% \u00b7 Rev: +7.0% YoY \u00b7 Div streak: 34 yrs \u00b7 3Y div CAGR: +1.2% \u00b7 Payout: 48.0%"
+    },
+    {
+      "ticker": "MSCI",
+      "company": "MSCI Inc.",
+      "sector": "Financials",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0172,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0806,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.124,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 11,
+      "cagr1y": 12.5,
+      "cagr3y": 16.28,
+      "cagr5y": 19.78,
+      "tier": "Dividend Contender",
+      "payoutPct": 42.04,
+      "payoutFlag": false,
+      "yieldNum": 1.29,
+      "yieldRaw": "1.3%",
+      "statusKey": "meets",
+      "note": "5yr: -1.7% \u00b7 90d: +8.1% \u00b7 Rev: +12.4% YoY \u00b7 Div streak: 11 yrs \u00b7 3Y div CAGR: +16.3% \u00b7 Payout: 42.0%"
     },
     {
       "ticker": "WELL",
@@ -3308,14 +3274,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 2.1764,
+        "pct": 2.023,
         "pass": true
       },
       "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.01,
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0388,
         "pass": true
       },
       "revPass": true,
@@ -3329,10 +3295,10 @@
       "tier": "Dividend Starter",
       "payoutPct": 132.74,
       "payoutFlag": true,
-      "yieldNum": 1.29,
+      "yieldNum": 1.28,
       "yieldRaw": "1.3%",
       "statusKey": "meets",
-      "note": "5yr: +217.6% \u00b7 90d: +1.0% \u00b7 Rev: +39.1% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +4.9% \u00b7 Payout: 132.7% \u26a0"
+      "note": "5yr: +202.3% \u00b7 90d: -3.9% \u00b7 Rev: +39.1% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +4.9% \u00b7 Payout: 132.7% \u26a0"
     },
     {
       "ticker": "TJX",
@@ -3342,14 +3308,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.1808,
+        "pct": 1.1223,
         "pass": true
       },
       "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.102,
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.1261,
         "pass": false
       },
       "revPass": true,
@@ -3363,10 +3329,10 @@
       "tier": "Dividend Challenger",
       "payoutPct": 32.5,
       "payoutFlag": false,
-      "yieldNum": 1.25,
-      "yieldRaw": "1.2%",
+      "yieldNum": 1.26,
+      "yieldRaw": "1.3%",
       "statusKey": "monitor",
-      "note": "5yr: +118.1% \u00b7 90d: -10.2% \u00b7 Rev: +5.4% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +12.9% \u00b7 Payout: 32.5%"
+      "note": "5yr: +112.2% \u00b7 90d: -12.6% \u00b7 Rev: +5.4% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +12.9% \u00b7 Payout: 32.5%"
     },
     {
       "ticker": "ICE",
@@ -3376,14 +3342,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2623,
+        "pct": 0.2384,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0736,
+        "pct": 0.0533,
         "pass": true
       },
       "revPass": true,
@@ -3397,10 +3363,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 28.21,
       "payoutFlag": false,
-      "yieldNum": 1.23,
+      "yieldNum": 1.25,
       "yieldRaw": "1.2%",
       "statusKey": "meets",
-      "note": "5yr: +26.2% \u00b7 90d: +7.4% \u00b7 Rev: +4.8% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +8.1% \u00b7 Payout: 28.2%"
+      "note": "5yr: +23.8% \u00b7 90d: +5.3% \u00b7 Rev: +4.8% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +8.1% \u00b7 Payout: 28.2%"
     },
     {
       "ticker": "LIN",
@@ -3410,14 +3376,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6439,
+        "pct": 0.6338,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0444,
+        "pct": 0.038,
         "pass": true
       },
       "revPass": true,
@@ -3434,7 +3400,7 @@
       "yieldNum": 1.22,
       "yieldRaw": "1.2%",
       "statusKey": "meets",
-      "note": "5yr: +64.4% \u00b7 90d: +4.4% \u00b7 Rev: +9.3% YoY \u00b7 Div streak: 33 yrs \u00b7 3Y div CAGR: +8.6% \u00b7 Payout: 40.0%"
+      "note": "5yr: +63.4% \u00b7 90d: +3.8% \u00b7 Rev: +9.3% YoY \u00b7 Div streak: 33 yrs \u00b7 3Y div CAGR: +8.6% \u00b7 Payout: 40.0%"
     },
     {
       "ticker": "TRV",
@@ -3444,14 +3410,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.7551,
+        "pct": 1.7235,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.044,
+        "pct": 0.032,
         "pass": true
       },
       "revPass": false,
@@ -3465,10 +3431,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 12.36,
       "payoutFlag": false,
-      "yieldNum": 1.18,
+      "yieldNum": 1.17,
       "yieldRaw": "1.2%",
       "statusKey": "border",
-      "note": "5yr: +175.5% \u00b7 90d: +4.4% \u00b7 Rev: -0.5% YoY \u00b7 Div streak: 20 yrs \u00b7 3Y div CAGR: +5.8% \u00b7 Payout: 12.4%"
+      "note": "5yr: +172.3% \u00b7 90d: +3.2% \u00b7 Rev: -0.5% YoY \u00b7 Div streak: 20 yrs \u00b7 3Y div CAGR: +5.8% \u00b7 Payout: 12.4%"
     },
     {
       "ticker": "AXP",
@@ -3478,14 +3444,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.8842,
+        "pct": 0.8928,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0787,
+        "pct": -0.0746,
         "pass": false
       },
       "revPass": true,
@@ -3499,10 +3465,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 21.48,
       "payoutFlag": false,
-      "yieldNum": 1.17,
+      "yieldNum": 1.16,
       "yieldRaw": "1.2%",
       "statusKey": "monitor",
-      "note": "5yr: +88.4% \u00b7 90d: -7.9% \u00b7 Rev: +11.3% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +16.7% \u00b7 Payout: 21.5%"
+      "note": "5yr: +89.3% \u00b7 90d: -7.5% \u00b7 Rev: +11.3% YoY \u00b7 Div streak: 21 yrs \u00b7 3Y div CAGR: +16.7% \u00b7 Payout: 21.5%"
     },
     {
       "ticker": "ETN",
@@ -3512,14 +3478,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.3615,
+        "pct": 1.4243,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.1657,
+        "pct": -0.1435,
         "pass": false
       },
       "revPass": true,
@@ -3533,44 +3499,10 @@
       "tier": "Dividend Challenger",
       "payoutPct": 43.54,
       "payoutFlag": false,
-      "yieldNum": 1.17,
-      "yieldRaw": "1.2%",
-      "statusKey": "monitor",
-      "note": "5yr: +136.2% \u00b7 90d: -16.6% \u00b7 Rev: +21.4% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +8.7% \u00b7 Payout: 43.5%"
-    },
-    {
-      "ticker": "CHD",
-      "company": "Church & Dwight Co., Inc.",
-      "sector": "Consumer Defensive",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2555,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0201,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.016,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 35,
-      "cagr1y": 3.87,
-      "cagr3y": 3.9,
-      "cagr5y": 4.21,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 38.62,
-      "payoutFlag": false,
       "yieldNum": 1.15,
       "yieldRaw": "1.1%",
-      "statusKey": "meets",
-      "note": "5yr: +25.6% \u00b7 90d: +2.0% \u00b7 Rev: +1.6% YoY \u00b7 Div streak: 35 yrs \u00b7 3Y div CAGR: +3.9% \u00b7 Payout: 38.6%"
+      "statusKey": "monitor",
+      "note": "5yr: +142.4% \u00b7 90d: -14.3% \u00b7 Rev: +21.4% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +8.7% \u00b7 Payout: 43.5%"
     },
     {
       "ticker": "SYK",
@@ -3580,14 +3512,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1588,
+        "pct": 0.1429,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.1018,
+        "pct": -0.1141,
         "pass": false
       },
       "revPass": true,
@@ -3601,44 +3533,44 @@
       "tier": "Dividend Contender",
       "payoutPct": 36.06,
       "payoutFlag": false,
-      "yieldNum": 1.13,
+      "yieldNum": 1.14,
       "yieldRaw": "1.1%",
       "statusKey": "monitor",
-      "note": "5yr: +15.9% \u00b7 90d: -10.2% \u00b7 Rev: +9.4% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +6.2% \u00b7 Payout: 36.1%"
+      "note": "5yr: +14.3% \u00b7 90d: -11.4% \u00b7 Rev: +9.4% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +6.2% \u00b7 Payout: 36.1%"
     },
     {
-      "ticker": "VLO",
-      "company": "Valero Energy Corporation",
-      "sector": "Energy",
+      "ticker": "CHD",
+      "company": "Church & Dwight Co., Inc.",
+      "sector": "Consumer Defensive",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 5.3764,
+        "pct": 0.2529,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.4267,
+        "pct": 0.0181,
         "pass": true
       },
       "revPass": true,
-      "revPct": 0.519,
+      "revPct": 0.016,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 15,
-      "cagr1y": 5.61,
-      "cagr3y": 4.86,
-      "cagr5y": 2.89,
-      "tier": "Dividend Contender",
-      "payoutPct": 19.42,
+      "divStreak": 35,
+      "cagr1y": 3.87,
+      "cagr3y": 3.9,
+      "cagr5y": 4.21,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 38.62,
       "payoutFlag": false,
-      "yieldNum": 1.13,
+      "yieldNum": 1.14,
       "yieldRaw": "1.1%",
       "statusKey": "meets",
-      "note": "5yr: +537.6% \u00b7 90d: +42.7% \u00b7 Rev: +51.9% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +4.9% \u00b7 Payout: 19.4%"
+      "note": "5yr: +25.3% \u00b7 90d: +1.8% \u00b7 Rev: +1.6% YoY \u00b7 Div streak: 35 yrs \u00b7 3Y div CAGR: +3.9% \u00b7 Payout: 38.6%"
     },
     {
       "ticker": "CB",
@@ -3648,14 +3580,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.9776,
+        "pct": 0.9567,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.024,
+        "pct": 0.0132,
         "pass": true
       },
       "revPass": true,
@@ -3672,7 +3604,41 @@
       "yieldNum": 1.12,
       "yieldRaw": "1.1%",
       "statusKey": "border",
-      "note": "5yr: +97.8% \u00b7 90d: +2.4% \u00b7 Rev: +1.3% YoY \u00b7 3Y div CAGR: -17.0% \u00b7 Payout: 13.9%"
+      "note": "5yr: +95.7% \u00b7 90d: +1.3% \u00b7 Rev: +1.3% YoY \u00b7 3Y div CAGR: -17.0% \u00b7 Payout: 13.9%"
+    },
+    {
+      "ticker": "VLO",
+      "company": "Valero Energy Corporation",
+      "sector": "Energy",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 4.9067,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.3216,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.519,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "cagr1y": 5.61,
+      "cagr3y": 4.86,
+      "cagr5y": 2.89,
+      "tier": "Dividend Contender",
+      "payoutPct": 19.42,
+      "payoutFlag": false,
+      "yieldNum": 1.11,
+      "yieldRaw": "1.1%",
+      "statusKey": "meets",
+      "note": "5yr: +490.7% \u00b7 90d: +32.2% \u00b7 Rev: +51.9% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +4.9% \u00b7 Payout: 19.4%"
     },
     {
       "ticker": "ADI",
@@ -3682,14 +3648,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.4088,
+        "pct": 1.4773,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0498,
+        "pct": 0.0796,
         "pass": true
       },
       "revPass": true,
@@ -3703,44 +3669,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 49.64,
       "payoutFlag": false,
-      "yieldNum": 1.1,
-      "yieldRaw": "1.1%",
-      "statusKey": "meets",
-      "note": "5yr: +140.9% \u00b7 90d: +5.0% \u00b7 Rev: +39.6% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +9.2% \u00b7 Payout: 49.6%"
-    },
-    {
-      "ticker": "DOV",
-      "company": "Dover Corporation",
-      "sector": "Industrials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.2599,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0363,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.075,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 41,
-      "cagr1y": 0.98,
-      "cagr3y": 0.99,
-      "cagr5y": 1.0,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 24.33,
-      "payoutFlag": false,
       "yieldNum": 1.05,
       "yieldRaw": "1.1%",
       "statusKey": "meets",
-      "note": "5yr: +26.0% \u00b7 90d: -3.6% \u00b7 Rev: +7.5% YoY \u00b7 Div streak: 41 yrs \u00b7 3Y div CAGR: +1.0% \u00b7 Payout: 24.3%"
+      "note": "5yr: +147.7% \u00b7 90d: +8.0% \u00b7 Rev: +39.6% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +9.2% \u00b7 Payout: 49.6%"
     },
     {
       "ticker": "BKNG",
@@ -3750,14 +3682,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.482,
+        "pct": 0.486,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.291,
+        "pct": -0.2891,
         "pass": false
       },
       "revPass": true,
@@ -3771,10 +3703,44 @@
       "tier": "No Streak",
       "payoutPct": 17.82,
       "payoutFlag": false,
+      "yieldNum": 1.05,
+      "yieldRaw": "1.1%",
+      "statusKey": "border",
+      "note": "5yr: +48.6% \u00b7 90d: -28.9% \u00b7 Rev: +8.1% YoY \u00b7 Div streak: 1 yr \u00b7 Payout: 17.8%"
+    },
+    {
+      "ticker": "DOW",
+      "company": "Dow Inc.",
+      "sector": "Materials",
+      "t5": {
+        "label": "\u2194 Mixed",
+        "cls": "t-mix",
+        "order": 3,
+        "pct": -0.2356,
+        "pass": false
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.169,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.13,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 0,
+      "cagr1y": -25.0,
+      "cagr3y": -9.14,
+      "cagr5y": -5.59,
+      "tier": "No Streak",
+      "payoutPct": 700.0,
+      "payoutFlag": true,
       "yieldNum": 1.03,
       "yieldRaw": "1.0%",
       "statusKey": "border",
-      "note": "5yr: +48.2% \u00b7 90d: -29.1% \u00b7 Rev: +8.1% YoY \u00b7 Div streak: 1 yr \u00b7 Payout: 17.8%"
+      "note": "5yr: -23.6% \u00b7 90d: +16.9% \u00b7 Rev: +13.0% YoY \u00b7 3Y div CAGR: -9.1% \u00b7 Payout: 700.0% \u26a0"
     },
     {
       "ticker": "DE",
@@ -3784,14 +3750,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.9181,
+        "pct": 0.9335,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0306,
+        "pct": 0.039,
         "pass": true
       },
       "revPass": true,
@@ -3805,44 +3771,10 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 36.02,
       "payoutFlag": false,
-      "yieldNum": 1.0,
+      "yieldNum": 1.01,
       "yieldRaw": "1.0%",
       "statusKey": "meets",
-      "note": "5yr: +91.8% \u00b7 90d: +3.1% \u00b7 Rev: +4.9% YoY \u00b7 Div streak: 38 yrs \u00b7 3Y div CAGR: +12.8% \u00b7 Payout: 36.0%"
-    },
-    {
-      "ticker": "MSI",
-      "company": "Motorola Solutions, Inc.",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 1.0752,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0382,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.133,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 14,
-      "cagr1y": 11.17,
-      "cagr3y": 11.29,
-      "cagr5y": 11.24,
-      "tier": "Dividend Contender",
-      "payoutPct": 37.17,
-      "payoutFlag": false,
-      "yieldNum": 0.98,
-      "yieldRaw": "1.0%",
-      "statusKey": "meets",
-      "note": "5yr: +107.5% \u00b7 90d: +3.8% \u00b7 Rev: +13.3% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +11.3% \u00b7 Payout: 37.2%"
+      "note": "5yr: +93.3% \u00b7 90d: +3.9% \u00b7 Rev: +4.9% YoY \u00b7 Div streak: 38 yrs \u00b7 3Y div CAGR: +12.8% \u00b7 Payout: 36.0%"
     },
     {
       "ticker": "ECL",
@@ -3852,14 +3784,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3264,
+        "pct": 0.3432,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0171,
+        "pct": 0.03,
         "pass": true
       },
       "revPass": true,
@@ -3876,7 +3808,7 @@
       "yieldNum": 0.98,
       "yieldRaw": "1.0%",
       "statusKey": "meets",
-      "note": "5yr: +32.6% \u00b7 90d: +1.7% \u00b7 Rev: +9.7% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +9.2% \u00b7 Payout: 38.1%"
+      "note": "5yr: +34.3% \u00b7 90d: +3.0% \u00b7 Rev: +9.7% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +9.2% \u00b7 Payout: 38.1%"
     },
     {
       "ticker": "YUM",
@@ -3886,14 +3818,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2925,
+        "pct": 0.2836,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0074,
+        "pct": -0.0143,
         "pass": true
       },
       "revPass": true,
@@ -3910,41 +3842,41 @@
       "yieldNum": 0.98,
       "yieldRaw": "1.0%",
       "statusKey": "meets",
-      "note": "5yr: +29.2% \u00b7 90d: -0.7% \u00b7 Rev: +12.2% YoY \u00b7 Div streak: 8 yrs \u00b7 3Y div CAGR: +7.6% \u00b7 Payout: 36.8%"
+      "note": "5yr: +28.4% \u00b7 90d: -1.4% \u00b7 Rev: +12.2% YoY \u00b7 Div streak: 8 yrs \u00b7 3Y div CAGR: +7.6% \u00b7 Payout: 36.8%"
     },
     {
-      "ticker": "NEM",
-      "company": "Newmont Corporation",
-      "sector": "Materials",
+      "ticker": "MSI",
+      "company": "Motorola Solutions, Inc.",
+      "sector": "Technology",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.2279,
+        "pct": 1.0781,
         "pass": true
       },
       "t90": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0295,
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.0397,
         "pass": true
       },
       "revPass": true,
-      "revPct": 0.152,
+      "revPct": 0.133,
       "revAvail": true,
-      "divPass": false,
-      "divStreak": 1,
-      "cagr1y": 0.0,
-      "cagr3y": -23.11,
-      "cagr5y": -0.78,
-      "tier": "No Streak",
-      "payoutPct": 11.95,
+      "divPass": true,
+      "divStreak": 14,
+      "cagr1y": 11.17,
+      "cagr3y": 11.29,
+      "cagr5y": 11.24,
+      "tier": "Dividend Contender",
+      "payoutPct": 37.17,
       "payoutFlag": false,
-      "yieldNum": 0.96,
+      "yieldNum": 0.97,
       "yieldRaw": "1.0%",
-      "statusKey": "border",
-      "note": "5yr: +122.8% \u00b7 90d: -2.9% \u00b7 Rev: +15.2% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: -23.1% \u00b7 Payout: 11.9%"
+      "statusKey": "meets",
+      "note": "5yr: +107.8% \u00b7 90d: +4.0% \u00b7 Rev: +13.3% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +11.3% \u00b7 Payout: 37.2%"
     },
     {
       "ticker": "SHW",
@@ -3954,14 +3886,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1084,
+        "pct": 0.0848,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0839,
+        "pct": -0.1034,
         "pass": false
       },
       "revPass": true,
@@ -3975,10 +3907,44 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 29.31,
       "payoutFlag": false,
-      "yieldNum": 0.94,
+      "yieldNum": 0.95,
       "yieldRaw": "0.9%",
       "statusKey": "monitor",
-      "note": "5yr: +10.8% \u00b7 90d: -8.4% \u00b7 Rev: +7.5% YoY \u00b7 Div streak: 40 yrs \u00b7 3Y div CAGR: +9.6% \u00b7 Payout: 29.3%"
+      "note": "5yr: +8.5% \u00b7 90d: -10.3% \u00b7 Rev: +7.5% YoY \u00b7 Div streak: 40 yrs \u00b7 3Y div CAGR: +9.6% \u00b7 Payout: 29.3%"
+    },
+    {
+      "ticker": "NEM",
+      "company": "Newmont Corporation",
+      "sector": "Materials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.2938,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0008,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.152,
+      "revAvail": true,
+      "divPass": false,
+      "divStreak": 1,
+      "cagr1y": 0.0,
+      "cagr3y": -23.11,
+      "cagr5y": -0.78,
+      "tier": "No Streak",
+      "payoutPct": 11.95,
+      "payoutFlag": false,
+      "yieldNum": 0.94,
+      "yieldRaw": "0.9%",
+      "statusKey": "border",
+      "note": "5yr: +129.4% \u00b7 90d: -0.1% \u00b7 Rev: +15.2% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: -23.1% \u00b7 Payout: 11.9%"
     },
     {
       "ticker": "FCX",
@@ -3988,15 +3954,15 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.8857,
+        "pct": 0.9107,
         "pass": true
       },
       "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0617,
-        "pass": false
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0492,
+        "pass": true
       },
       "revPass": false,
       "revPct": -0.073,
@@ -4012,41 +3978,7 @@
       "yieldNum": 0.92,
       "yieldRaw": "0.9%",
       "statusKey": "border",
-      "note": "5yr: +88.6% \u00b7 90d: -6.2% \u00b7 Rev: -7.3% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +0.0% \u00b7 Payout: 29.6%"
-    },
-    {
-      "ticker": "GLW",
-      "company": "Corning Incorporated",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 2.7702,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.2287,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.166,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 18,
-      "cagr1y": 0.0,
-      "cagr3y": 1.22,
-      "cagr5y": 4.94,
-      "tier": "Dividend Contender",
-      "payoutPct": 51.38,
-      "payoutFlag": false,
-      "yieldNum": 0.91,
-      "yieldRaw": "0.9%",
-      "statusKey": "monitor",
-      "note": "5yr: +277.0% \u00b7 90d: -22.9% \u00b7 Rev: +16.6% YoY \u00b7 Div streak: 18 yrs \u00b7 3Y div CAGR: +1.2% \u00b7 Payout: 51.4%"
+      "note": "5yr: +91.1% \u00b7 90d: -4.9% \u00b7 Rev: -7.3% YoY \u00b7 Div streak: 5 yrs \u00b7 3Y div CAGR: +0.0% \u00b7 Payout: 29.6%"
     },
     {
       "ticker": "CAT",
@@ -4056,14 +3988,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 2.6549,
+        "pct": 2.7667,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.1756,
+        "pct": -0.1504,
         "pass": false
       },
       "revPass": true,
@@ -4077,44 +4009,78 @@
       "tier": "Dividend Contender",
       "payoutPct": 26.0,
       "payoutFlag": false,
-      "yieldNum": 0.9,
+      "yieldNum": 0.89,
       "yieldRaw": "0.9%",
       "statusKey": "monitor",
-      "note": "5yr: +265.5% \u00b7 90d: -17.6% \u00b7 Rev: +24.0% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +8.1% \u00b7 Payout: 26.0%"
+      "note": "5yr: +276.7% \u00b7 90d: -15.0% \u00b7 Rev: +24.0% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +8.1% \u00b7 Payout: 26.0%"
     },
     {
-      "ticker": "MPC",
-      "company": "Marathon Petroleum Corporation",
-      "sector": "Energy",
+      "ticker": "GLW",
+      "company": "Corning Incorporated",
+      "sector": "Technology",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 6.9775,
+        "pct": 2.7548,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.2318,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.166,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 18,
+      "cagr1y": 0.0,
+      "cagr3y": 1.22,
+      "cagr5y": 4.94,
+      "tier": "Dividend Contender",
+      "payoutPct": 51.38,
+      "payoutFlag": false,
+      "yieldNum": 0.88,
+      "yieldRaw": "0.9%",
+      "statusKey": "monitor",
+      "note": "5yr: +275.5% \u00b7 90d: -23.2% \u00b7 Rev: +16.6% YoY \u00b7 Div streak: 18 yrs \u00b7 3Y div CAGR: +1.2% \u00b7 Payout: 51.4%"
+    },
+    {
+      "ticker": "NUE",
+      "company": "Nucor Corporation",
+      "sector": "Materials",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 1.6158,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.5793,
+        "pct": 0.0034,
         "pass": true
       },
       "revPass": true,
-      "revPct": 0.537,
+      "revPct": 0.23,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 14,
-      "cagr1y": 10.19,
-      "cagr3y": 14.42,
-      "cagr5y": 9.96,
+      "divStreak": 16,
+      "cagr1y": 1.84,
+      "cagr3y": 3.21,
+      "cagr5y": 6.49,
       "tier": "Dividend Contender",
-      "payoutPct": 13.54,
+      "payoutPct": 17.78,
       "payoutFlag": false,
       "yieldNum": 0.87,
       "yieldRaw": "0.9%",
       "statusKey": "meets",
-      "note": "5yr: +697.8% \u00b7 90d: +57.9% \u00b7 Rev: +53.7% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +14.4% \u00b7 Payout: 13.5%"
+      "note": "5yr: +161.6% \u00b7 90d: +0.3% \u00b7 Rev: +23.0% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +3.2% \u00b7 Payout: 17.8%"
     },
     {
       "ticker": "SPGI",
@@ -4124,14 +4090,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0763,
+        "pct": 0.0867,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1031,
+        "pct": 0.1138,
         "pass": true
       },
       "revPass": true,
@@ -4148,41 +4114,41 @@
       "yieldNum": 0.86,
       "yieldRaw": "0.9%",
       "statusKey": "meets",
-      "note": "5yr: +7.6% \u00b7 90d: +10.3% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +5.0% \u00b7 Payout: 23.5%"
+      "note": "5yr: +8.7% \u00b7 90d: +11.4% \u00b7 Rev: +10.4% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +5.0% \u00b7 Payout: 23.5%"
     },
     {
-      "ticker": "NUE",
-      "company": "Nucor Corporation",
-      "sector": "Materials",
+      "ticker": "MPC",
+      "company": "Marathon Petroleum Corporation",
+      "sector": "Energy",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.4757,
+        "pct": 6.5204,
         "pass": true
       },
       "t90": {
-        "label": "\u2194 Mixed",
-        "cls": "t-mix",
-        "order": 3,
-        "pct": -0.0504,
-        "pass": false
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.4888,
+        "pass": true
       },
       "revPass": true,
-      "revPct": 0.23,
+      "revPct": 0.537,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 16,
-      "cagr1y": 1.84,
-      "cagr3y": 3.21,
-      "cagr5y": 6.49,
+      "divStreak": 14,
+      "cagr1y": 10.19,
+      "cagr3y": 14.42,
+      "cagr5y": 9.96,
       "tier": "Dividend Contender",
-      "payoutPct": 17.78,
+      "payoutPct": 13.54,
       "payoutFlag": false,
-      "yieldNum": 0.86,
-      "yieldRaw": "0.9%",
-      "statusKey": "monitor",
-      "note": "5yr: +147.6% \u00b7 90d: -5.0% \u00b7 Rev: +23.0% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +3.2% \u00b7 Payout: 17.8%"
+      "yieldNum": 0.85,
+      "yieldRaw": "0.8%",
+      "statusKey": "meets",
+      "note": "5yr: +652.0% \u00b7 90d: +48.9% \u00b7 Rev: +53.7% YoY \u00b7 Div streak: 14 yrs \u00b7 3Y div CAGR: +14.4% \u00b7 Payout: 13.5%"
     },
     {
       "ticker": "PH",
@@ -4192,14 +4158,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.9518,
+        "pct": 1.953,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.1576,
+        "pct": -0.1573,
         "pass": false
       },
       "revPass": true,
@@ -4213,44 +4179,44 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 25.98,
       "payoutFlag": false,
-      "yieldNum": 0.84,
+      "yieldNum": 0.82,
       "yieldRaw": "0.8%",
       "statusKey": "monitor",
-      "note": "5yr: +195.2% \u00b7 90d: -15.8% \u00b7 Rev: +9.8% YoY \u00b7 Div streak: 37 yrs \u00b7 3Y div CAGR: +11.9% \u00b7 Payout: 26.0%"
+      "note": "5yr: +195.3% \u00b7 90d: -15.7% \u00b7 Rev: +9.8% YoY \u00b7 Div streak: 37 yrs \u00b7 3Y div CAGR: +11.9% \u00b7 Payout: 26.0%"
     },
     {
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "sector": "Technology",
+      "ticker": "MCO",
+      "company": "Moody's Corporation",
+      "sector": "Financials",
       "t5": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 5.4519,
+        "pct": 0.2804,
         "pass": true
       },
       "t90": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.2269,
-        "pass": false
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0037,
+        "pass": true
       },
       "revPass": true,
-      "revPct": 0.855,
+      "revPct": 0.008,
       "revAvail": true,
       "divPass": true,
-      "divStreak": 15,
-      "cagr1y": 11.52,
-      "cagr3y": 12.71,
-      "cagr5y": 12.63,
-      "tier": "Dividend Contender",
-      "payoutPct": 32.44,
+      "divStreak": 25,
+      "cagr1y": 10.59,
+      "cagr3y": 10.33,
+      "cagr5y": 10.91,
+      "tier": "Dividend Aristocrat",
+      "payoutPct": 24.59,
       "payoutFlag": false,
       "yieldNum": 0.81,
       "yieldRaw": "0.8%",
-      "statusKey": "monitor",
-      "note": "5yr: +545.2% \u00b7 90d: -22.7% \u00b7 Rev: +85.5% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +12.7% \u00b7 Payout: 32.4%"
+      "statusKey": "meets",
+      "note": "5yr: +28.0% \u00b7 90d: -0.4% \u00b7 Rev: +0.8% YoY \u00b7 Div streak: 25 yrs \u00b7 3Y div CAGR: +10.3% \u00b7 Payout: 24.6%"
     },
     {
       "ticker": "WMT",
@@ -4260,14 +4226,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.5556,
+        "pct": 1.5304,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0774,
+        "pct": 0.0667,
         "pass": true
       },
       "revPass": true,
@@ -4284,7 +4250,41 @@
       "yieldNum": 0.8,
       "yieldRaw": "0.8%",
       "statusKey": "meets",
-      "note": "5yr: +155.6% \u00b7 90d: +7.7% \u00b7 Rev: +5.9% YoY \u00b7 Div streak: 43 yrs \u00b7 3Y div CAGR: +8.0% \u00b7 Payout: 35.0%"
+      "note": "5yr: +153.0% \u00b7 90d: +6.7% \u00b7 Rev: +5.9% YoY \u00b7 Div streak: 43 yrs \u00b7 3Y div CAGR: +8.0% \u00b7 Payout: 35.0%"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "sector": "Technology",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 5.6765,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.2,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.855,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 15,
+      "cagr1y": 11.52,
+      "cagr3y": 12.71,
+      "cagr5y": 12.63,
+      "tier": "Dividend Contender",
+      "payoutPct": 32.44,
+      "payoutFlag": false,
+      "yieldNum": 0.79,
+      "yieldRaw": "0.8%",
+      "statusKey": "monitor",
+      "note": "5yr: +567.6% \u00b7 90d: -20.0% \u00b7 Rev: +85.5% YoY \u00b7 Div streak: 15 yrs \u00b7 3Y div CAGR: +12.7% \u00b7 Payout: 32.4%"
     },
     {
       "ticker": "VMC",
@@ -4294,14 +4294,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.3864,
+        "pct": 0.3885,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0808,
+        "pct": -0.0794,
         "pass": false
       },
       "revPass": true,
@@ -4318,7 +4318,7 @@
       "yieldNum": 0.77,
       "yieldRaw": "0.8%",
       "statusKey": "monitor",
-      "note": "5yr: +38.6% \u00b7 90d: -8.1% \u00b7 Rev: +2.5% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 23.8%"
+      "note": "5yr: +38.9% \u00b7 90d: -7.9% \u00b7 Rev: +2.5% YoY \u00b7 Div streak: 13 yrs \u00b7 3Y div CAGR: +7.0% \u00b7 Payout: 23.8%"
     },
     {
       "ticker": "MAR",
@@ -4328,14 +4328,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.456,
+        "pct": 1.407,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.1174,
+        "pct": 0.0951,
         "pass": true
       },
       "revPass": true,
@@ -4349,10 +4349,10 @@
       "tier": "Dividend Starter",
       "payoutPct": 28.36,
       "payoutFlag": false,
-      "yieldNum": 0.7,
+      "yieldNum": 0.69,
       "yieldRaw": "0.7%",
       "statusKey": "meets",
-      "note": "5yr: +145.6% \u00b7 90d: +11.7% \u00b7 Rev: +11.1% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +38.2% \u00b7 Payout: 28.4%"
+      "note": "5yr: +140.7% \u00b7 90d: +9.5% \u00b7 Rev: +11.1% YoY \u00b7 Div streak: 4 yrs \u00b7 3Y div CAGR: +38.2% \u00b7 Payout: 28.4%"
     },
     {
       "ticker": "MSFT",
@@ -4362,14 +4362,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.6461,
+        "pct": 0.6574,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0639,
+        "pct": 0.0711,
         "pass": true
       },
       "revPass": true,
@@ -4383,44 +4383,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 19.83,
       "payoutFlag": false,
-      "yieldNum": 0.69,
+      "yieldNum": 0.68,
       "yieldRaw": "0.7%",
       "statusKey": "meets",
-      "note": "5yr: +64.6% \u00b7 90d: +6.4% \u00b7 Rev: +17.7% YoY \u00b7 Div streak: 20 yrs \u00b7 3Y div CAGR: +10.2% \u00b7 Payout: 19.8%"
-    },
-    {
-      "ticker": "DHR",
-      "company": "Danaher Corporation",
-      "sector": "Healthcare",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": -0.0801,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.136,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.083,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 8,
-      "cagr1y": 18.52,
-      "cagr3y": 13.02,
-      "cagr5y": 14.93,
-      "tier": "Dividend Challenger",
-      "payoutPct": 25.17,
-      "payoutFlag": false,
-      "yieldNum": 0.66,
-      "yieldRaw": "0.7%",
-      "statusKey": "meets",
-      "note": "5yr: -8.0% \u00b7 90d: +13.6% \u00b7 Rev: +8.3% YoY \u00b7 Div streak: 8 yrs \u00b7 3Y div CAGR: +13.0% \u00b7 Payout: 25.2%"
+      "note": "5yr: +65.7% \u00b7 90d: +7.1% \u00b7 Rev: +17.7% YoY \u00b7 Div streak: 20 yrs \u00b7 3Y div CAGR: +10.2% \u00b7 Payout: 19.8%"
     },
     {
       "ticker": "MLM",
@@ -4430,14 +4396,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.2658,
+        "pct": 0.2581,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0759,
+        "pct": -0.0815,
         "pass": false
       },
       "revPass": true,
@@ -4451,10 +4417,44 @@
       "tier": "Dividend Aristocrat",
       "payoutPct": 21.59,
       "payoutFlag": false,
-      "yieldNum": 0.65,
+      "yieldNum": 0.66,
       "yieldRaw": "0.7%",
       "statusKey": "monitor",
-      "note": "5yr: +26.6% \u00b7 90d: -7.6% \u00b7 Rev: +21.0% YoY \u00b7 Div streak: 31 yrs \u00b7 3Y div CAGR: +8.4% \u00b7 Payout: 21.6%"
+      "note": "5yr: +25.8% \u00b7 90d: -8.2% \u00b7 Rev: +21.0% YoY \u00b7 Div streak: 31 yrs \u00b7 3Y div CAGR: +8.4% \u00b7 Payout: 21.6%"
+    },
+    {
+      "ticker": "DHR",
+      "company": "Danaher Corporation",
+      "sector": "Healthcare",
+      "t5": {
+        "label": "\u2197 Moderate",
+        "cls": "t-mod",
+        "order": 2,
+        "pct": -0.0782,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 0.1383,
+        "pass": true
+      },
+      "revPass": true,
+      "revPct": 0.083,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 8,
+      "cagr1y": 18.52,
+      "cagr3y": 13.02,
+      "cagr5y": 14.93,
+      "tier": "Dividend Challenger",
+      "payoutPct": 25.17,
+      "payoutFlag": false,
+      "yieldNum": 0.65,
+      "yieldRaw": "0.7%",
+      "statusKey": "meets",
+      "note": "5yr: -7.8% \u00b7 90d: +13.8% \u00b7 Rev: +8.3% YoY \u00b7 Div streak: 8 yrs \u00b7 3Y div CAGR: +13.0% \u00b7 Payout: 25.2%"
     },
     {
       "ticker": "GE",
@@ -4464,14 +4464,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 3.3506,
+        "pct": 3.485,
         "pass": true
       },
       "t90": {
         "label": "\u26a0 Flagged",
         "cls": "t-flag",
         "order": 4,
-        "pct": -0.2218,
+        "pct": -0.1978,
         "pass": false
       },
       "revPass": true,
@@ -4485,44 +4485,10 @@
       "tier": "Dividend Challenger",
       "payoutPct": 20.23,
       "payoutFlag": false,
-      "yieldNum": 0.62,
+      "yieldNum": 0.61,
       "yieldRaw": "0.6%",
       "statusKey": "monitor",
-      "note": "5yr: +335.1% \u00b7 90d: -22.2% \u00b7 Rev: +15.9% YoY \u00b7 Div streak: 6 yrs \u00b7 3Y div CAGR: +93.3% \u00b7 Payout: 20.2%"
-    },
-    {
-      "ticker": "KLAC",
-      "company": "KLA Corporation",
-      "sector": "Technology",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 2.7947,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u26a0 Flagged",
-        "cls": "t-flag",
-        "order": 4,
-        "pct": -0.2388,
-        "pass": false
-      },
-      "revPass": true,
-      "revPct": 0.152,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 10,
-      "cagr1y": 22.31,
-      "cagr3y": 16.34,
-      "cagr5y": 16.15,
-      "tier": "Dividend Contender",
-      "payoutPct": 21.86,
-      "payoutFlag": false,
-      "yieldNum": 0.55,
-      "yieldRaw": "0.6%",
-      "statusKey": "monitor",
-      "note": "5yr: +279.5% \u00b7 90d: -23.9% \u00b7 Rev: +15.2% YoY \u00b7 Div streak: 10 yrs \u00b7 3Y div CAGR: +16.3% \u00b7 Payout: 21.9%"
+      "note": "5yr: +348.5% \u00b7 90d: -19.8% \u00b7 Rev: +15.9% YoY \u00b7 Div streak: 6 yrs \u00b7 3Y div CAGR: +93.3% \u00b7 Payout: 20.2%"
     },
     {
       "ticker": "COST",
@@ -4532,14 +4498,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.0602,
+        "pct": 1.0345,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0587,
+        "pct": 0.0455,
         "pass": true
       },
       "revPass": true,
@@ -4556,7 +4522,41 @@
       "yieldNum": 0.55,
       "yieldRaw": "0.6%",
       "statusKey": "border",
-      "note": "5yr: +106.0% \u00b7 90d: +5.9% \u00b7 Rev: +11.1% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +13.2% \u00b7 Payout: 26.7%"
+      "note": "5yr: +103.5% \u00b7 90d: +4.5% \u00b7 Rev: +11.1% YoY \u00b7 Div streak: 1 yr \u00b7 3Y div CAGR: +13.2% \u00b7 Payout: 26.7%"
+    },
+    {
+      "ticker": "KLAC",
+      "company": "KLA Corporation",
+      "sector": "Technology",
+      "t5": {
+        "label": "\u2b06 Uptrend",
+        "cls": "t-up",
+        "order": 1,
+        "pct": 2.869,
+        "pass": true
+      },
+      "t90": {
+        "label": "\u26a0 Flagged",
+        "cls": "t-flag",
+        "order": 4,
+        "pct": -0.2239,
+        "pass": false
+      },
+      "revPass": true,
+      "revPct": 0.152,
+      "revAvail": true,
+      "divPass": true,
+      "divStreak": 10,
+      "cagr1y": 22.31,
+      "cagr3y": 16.34,
+      "cagr5y": 16.15,
+      "tier": "Dividend Contender",
+      "payoutPct": 21.86,
+      "payoutFlag": false,
+      "yieldNum": 0.54,
+      "yieldRaw": "0.5%",
+      "statusKey": "monitor",
+      "note": "5yr: +286.9% \u00b7 90d: -22.4% \u00b7 Rev: +15.2% YoY \u00b7 Div streak: 10 yrs \u00b7 3Y div CAGR: +16.3% \u00b7 Payout: 21.9%"
     },
     {
       "ticker": "AME",
@@ -4566,14 +4566,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.7841,
+        "pct": 0.7982,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.039,
+        "pct": -0.0314,
         "pass": true
       },
       "revPass": true,
@@ -4590,7 +4590,7 @@
       "yieldNum": 0.54,
       "yieldRaw": "0.5%",
       "statusKey": "meets",
-      "note": "5yr: +78.4% \u00b7 90d: -3.9% \u00b7 Rev: +15.0% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +12.1% \u00b7 Payout: 19.0%"
+      "note": "5yr: +79.8% \u00b7 90d: -3.1% \u00b7 Rev: +15.0% YoY \u00b7 Div streak: 23 yrs \u00b7 3Y div CAGR: +12.1% \u00b7 Payout: 19.0%"
     },
     {
       "ticker": "PKG",
@@ -4600,14 +4600,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.1629,
+        "pct": 1.1609,
         "pass": true
       },
       "t90": {
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0066,
+        "pct": -0.0075,
         "pass": true
       },
       "revPass": true,
@@ -4621,10 +4621,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 68.27,
       "payoutFlag": false,
-      "yieldNum": 0.51,
+      "yieldNum": 0.49,
       "yieldRaw": "0.5%",
       "statusKey": "meets",
-      "note": "5yr: +116.3% \u00b7 90d: -0.7% \u00b7 Rev: +12.5% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +1.7% \u00b7 Payout: 68.3%"
+      "note": "5yr: +116.1% \u00b7 90d: -0.8% \u00b7 Rev: +12.5% YoY \u00b7 Div streak: 16 yrs \u00b7 3Y div CAGR: +1.7% \u00b7 Payout: 68.3%"
     },
     {
       "ticker": "META",
@@ -4634,14 +4634,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.9025,
+        "pct": 0.85,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0866,
+        "pct": 0.0566,
         "pass": true
       },
       "revPass": true,
@@ -4658,7 +4658,7 @@
       "yieldNum": 0.33,
       "yieldRaw": "0.3%",
       "statusKey": "border",
-      "note": "5yr: +90.2% \u00b7 90d: +8.7% \u00b7 Rev: +26.1% YoY \u00b7 Div streak: 1 yr \u00b7 Payout: 7.2%"
+      "note": "5yr: +85.0% \u00b7 90d: +5.7% \u00b7 Rev: +26.1% YoY \u00b7 Div streak: 1 yr \u00b7 Payout: 7.2%"
     },
     {
       "ticker": "AAPL",
@@ -4668,14 +4668,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.328,
+        "pct": 1.3413,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0988,
+        "pct": 0.1051,
         "pass": true
       },
       "revPass": true,
@@ -4689,44 +4689,10 @@
       "tier": "Dividend Contender",
       "payoutPct": 12.04,
       "payoutFlag": false,
-      "yieldNum": 0.3,
+      "yieldNum": 0.31,
       "yieldRaw": "0.3%",
       "statusKey": "meets",
-      "note": "5yr: +132.8% \u00b7 90d: +9.9% \u00b7 Rev: +16.4% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +4.2% \u00b7 Payout: 12.0%"
-    },
-    {
-      "ticker": "MSCI",
-      "company": "MSCI Inc.",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2197 Moderate",
-        "cls": "t-mod",
-        "order": 2,
-        "pct": 0.0014,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.101,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.124,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 11,
-      "cagr1y": 12.5,
-      "cagr3y": 16.28,
-      "cagr5y": 19.78,
-      "tier": "Dividend Contender",
-      "payoutPct": 42.04,
-      "payoutFlag": false,
-      "yieldNum": 0.29,
-      "yieldRaw": "0.3%",
-      "statusKey": "meets",
-      "note": "5yr: +0.1% \u00b7 90d: +10.1% \u00b7 Rev: +12.4% YoY \u00b7 Div streak: 11 yrs \u00b7 3Y div CAGR: +16.3% \u00b7 Payout: 42.0%"
+      "note": "5yr: +134.1% \u00b7 90d: +10.5% \u00b7 Rev: +16.4% YoY \u00b7 Div streak: 22 yrs \u00b7 3Y div CAGR: +4.2% \u00b7 Payout: 12.0%"
     },
     {
       "ticker": "GOOGL",
@@ -4736,14 +4702,14 @@
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 1.1654,
+        "pct": 1.1797,
         "pass": true
       },
       "t90": {
         "label": "\u2194 Mixed",
         "cls": "t-mix",
         "order": 3,
-        "pct": -0.0983,
+        "pct": -0.0923,
         "pass": false
       },
       "revPass": true,
@@ -4760,7 +4726,7 @@
       "yieldNum": 0.27,
       "yieldRaw": "0.3%",
       "statusKey": "border",
-      "note": "5yr: +116.5% \u00b7 90d: -9.8% \u00b7 Rev: +24.2% YoY \u00b7 Div streak: 1 yr \u00b7 Payout: 4.3%"
+      "note": "5yr: +118.0% \u00b7 90d: -9.2% \u00b7 Rev: +24.2% YoY \u00b7 Div streak: 1 yr \u00b7 Payout: 4.3%"
     },
     {
       "ticker": "ROP",
@@ -4770,14 +4736,14 @@
         "label": "\u2197 Moderate",
         "cls": "t-mod",
         "order": 2,
-        "pct": -0.0635,
+        "pct": -0.074,
         "pass": true
       },
       "t90": {
         "label": "\u2b06 Uptrend",
         "cls": "t-up",
         "order": 1,
-        "pct": 0.0936,
+        "pct": 0.0814,
         "pass": true
       },
       "revPass": true,
@@ -4794,41 +4760,7 @@
       "yieldNum": 0.21,
       "yieldRaw": "0.2%",
       "statusKey": "meets",
-      "note": "5yr: -6.3% \u00b7 90d: +9.4% \u00b7 Rev: +7.6% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +10.0% \u00b7 Payout: 14.5%"
-    },
-    {
-      "ticker": "MCO",
-      "company": "Moody's Corporation",
-      "sector": "Financials",
-      "t5": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.3102,
-        "pass": true
-      },
-      "t90": {
-        "label": "\u2b06 Uptrend",
-        "cls": "t-up",
-        "order": 1,
-        "pct": 0.0195,
-        "pass": true
-      },
-      "revPass": true,
-      "revPct": 0.008,
-      "revAvail": true,
-      "divPass": true,
-      "divStreak": 25,
-      "cagr1y": 10.59,
-      "cagr3y": 10.33,
-      "cagr5y": 10.91,
-      "tier": "Dividend Aristocrat",
-      "payoutPct": 24.59,
-      "payoutFlag": false,
-      "yieldNum": 0.19,
-      "yieldRaw": "0.2%",
-      "statusKey": "meets",
-      "note": "5yr: +31.0% \u00b7 90d: +1.9% \u00b7 Rev: +0.8% YoY \u00b7 Div streak: 25 yrs \u00b7 3Y div CAGR: +10.3% \u00b7 Payout: 24.6%"
+      "note": "5yr: -7.4% \u00b7 90d: +8.1% \u00b7 Rev: +7.6% YoY \u00b7 Div streak: 12 yrs \u00b7 3Y div CAGR: +10.0% \u00b7 Payout: 14.5%"
     }
   ]
 }
